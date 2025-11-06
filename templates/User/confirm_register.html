@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <title>{% block title %} Confirm Registration {% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'User/css/confirm_register.css' %}">
+</head>
+<body>
+    <div class="Header">
+        <h1 class="title">Rhytmify</h1>
+    </div>
+
+    <div class="login-container">
+        {% block content %}
+            <form method="post">
+                <img src="{{ image }}" class="user-image" alt="Picture">
+                <h2 class="welcome-text">{{ name }}</h2>
+
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Confirm Registration</button>
+            </form>
+            <a href="{% url 'login' %}" class="register-button">Back to login</a>
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+from spotipy.oauth2 import SpotifyOAuth
+from Rhythmify.settings import CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, SCOPE
+from .serializers import SpotifyProfileSerializer
+from datetime import datetime, timezone as dt_timezone
+import spotipy
+
+class SpotifyService:
+    @staticmethod
+    def oauth():
+        sp_oauth = SpotifyOAuth(
+            client_id=CLIENT_ID,
+            client_secret=CLIENT_SECRET,
+            redirect_uri=REDIRECT_URL,
+            scope=SCOPE,
+        )
+
+        return sp_oauth
+
+    @staticmethod
+    def get_tokens(token_info):
+        access_token = token_info.get('access_token')
+        refresh_token = token_info.get('refresh_token')
+        expires_at = token_info.get('expires_at')
+        return access_token, refresh_token, expires_at
+
+    @staticmethod
+    def get_user_data(access_token):
+        profile = spotipy.Spotify(auth=access_token)
+        data = profile.current_user()
+
+        serializer = SpotifyProfileSerializer(data=data)
+
+        if serializer.is_valid():
+            return serializer.validated_data, None
+
+        return None, serializer.errors
+
+    @staticmethod
+    def convert_expires_at(expires_at):
+        if isinstance(expires_at, (int, float)):
+            return datetime.fromtimestamp(expires_at, tz=dt_timezone.utc)
+
+        return None
+
+    @staticmethod
+    def get_user_info(data):
+        name = data.get('display_name')
+        spotify_id = data.get('id')
+        spotify_url = data.get('external_urls').get('spotify')
+        followers = data.get('followers').get('total')
+        images = data.get('images', [])
+        image = images[0].get('url') if images else None
+
+        return name, spotify_id, spotify_url, followers, image
