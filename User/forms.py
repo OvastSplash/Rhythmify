@@ -2,7 +2,7 @@ from django import forms
 from SpotifyController.services import SpotifyService
 from .models import CustomUser
 from .services import UserService
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 import secrets
 import string
 
@@ -159,13 +159,12 @@ class ConfirmRegisterForm(forms.ModelForm):
         user.username, user.spotify_id, user.spotify_url, user.followers, image_url = (
             SpotifyService.get_user_info(data))
 
-        user.user_image = UserService.update_user_image(user, image_url, save=False)
+        user.user_image = UserService.update_object_image(user, image_url, save=False)
 
         password = ''.join(secrets.choice(string.ascii_letters + string.digits) for _ in range(21))
         user.set_password(password)
 
         if commit:
             user.save()
-            authenticate(username=user.username, password=password)
 
         return user

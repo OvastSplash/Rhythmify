@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "User",
     "SpotifyController",
+    "Profile",
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,12 @@ AUTH_USER_MODEL = "User.CustomUser"
 CLIENT_ID = config("CLIENT_ID")
 CLIENT_SECRET = config("CLIENT_SECRET")
 REDIRECT_URL = config("REDIRECT_URL")
-SCOPE = "user-read-currently-playing user-read-playback-state playlist-modify-private playlist-modify-public"
+SCOPE = (
+    "user-read-currently-playing "
+    "user-read-playback-state "
+    "playlist-modify-private "
+    "playlist-modify-public "
+    "user-top-read"
+)
 
 MEDIA_ROOT = BASE_DIR / "media"

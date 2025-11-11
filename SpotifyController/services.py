@@ -1,20 +1,27 @@
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyOAuth, CacheHandler
 from Rhythmify.settings import CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, SCOPE
 from .serializers import SpotifyProfileSerializer
 from datetime import datetime, timezone as dt_timezone
 import spotipy
 
+# Cache no save
+class NoCacheHandler(CacheHandler):
+    def get_cached_token(self):
+        return None
+
+    def save_token_to_cache(self, token_info):
+        pass
+
 class SpotifyService:
     @staticmethod
     def oauth():
-        sp_oauth = SpotifyOAuth(
+        return SpotifyOAuth(
             client_id=CLIENT_ID,
             client_secret=CLIENT_SECRET,
             redirect_uri=REDIRECT_URL,
             scope=SCOPE,
+            cache_handler=NoCacheHandler(),
         )
-
-        return sp_oauth
 
     @staticmethod
     def get_tokens(token_info):

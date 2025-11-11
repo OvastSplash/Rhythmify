@@ -6,7 +6,7 @@ from SpotifyController.services import SpotifyService
 
 class LoginView(View):
     form = LoginForm
-    #test
+
     def get(self, request):
         return render(request, "User/login.html", {"form": self.form})
 
@@ -21,10 +21,10 @@ class LoginView(View):
 
             if user and user.is_active:
                 login(request, user)
-                print(f"User {user_login} logged in")
-                return redirect("login")
+                print(f"User {user_login} logged in {user.id} type {type(user.id)}")
+                return redirect("profile", user_id = user.id)
 
-        return render(request, "User/login.html", {"form": self.form})
+        return render(request, "User/login.html", {"form": form})
 
 class RegisterView(View):
     form = RegisterForm
@@ -36,8 +36,8 @@ class RegisterView(View):
         form = RegisterForm(request.POST)
 
         if form.is_valid():
-            form.save()
-            return redirect("login")
+            user = form.save()
+            return redirect("profile", user_id = user.id)
 
         return render(request, "User/registration.html", {"form": self.form})
 
@@ -65,13 +65,10 @@ class ConfirmRegisterView(View):
 
         if form.is_valid() and spotify_data:
             user = form.save_with_spotify_data(data=spotify_data)
-            print(spotify_data)
-            print(f"User {user.user_login} logged in")
-            print(user.username)
-            print(f"Spotify ID: {user.spotify_id}")
+            print(user.spotify_id)
+            login(request, user)
+            request.session.clear()
 
-
-            #redirect to profile
-            return redirect("login")
+            return redirect("profile", user_id = user.id)
 
         return render(request, "User/confirm_register.html", {"form": self.form})

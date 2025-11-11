@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth import login
 from django.views import View
 from django.shortcuts import redirect
 from .services import SpotifyService
@@ -23,20 +24,26 @@ class SpotifyCallbackView(View):
         access_token, refresh_token, expires_at = SpotifyService.get_tokens(token_info)
 
         user = request.user
-        data, user_updated, error = UserService.spotify_update_user(
+        user_logged_in = user if user.is_authenticated else None
+
+        result = UserService.spotify_update_user(
             access_token,
             refresh_token,
             expires_at,
-            user if user.is_authenticated else None
+            user_logged_in
         )
 
-        if error is not None:
-            messages.error(request, error)
+        if result.error:
+            messages.error(request, result.error)
             return redirect("login")
 
-        if not user_updated:
-            request.session['spotify_user_info'] = data
+        if not result.is_existing and result.data:
+            request.session['spotify_user_info'] = result.data
             return redirect("confirm_register")
 
-        #сделать редирект на страницу пользователя
-        return redirect('/')
+        if not user_logged_in:
+            login(request, result.user)
+            print(f"user {result.user.user_login} is logged in")
+
+        print(result.user.id)
+        return redirect('profile', user_id = result.user.id)
