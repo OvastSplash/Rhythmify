@@ -1,21 +1,22 @@
-from User.models import CustomUser
+from .spotify_data_service import ConstructSpotifyDataService
 import spotipy
 
 class SpotifyClientService:
-    def __init__(self, access_token, user:CustomUser = None):
+    def __init__(self, access_token):
         self.access_token = access_token
         self.client = spotipy.Spotify(auth=self.access_token)
-        self.user = user
 
     def get_artist_info(self, artist_id):
         return self.client.artist(artist_id)
 
-    def get_user_top_tracks(self, commit=False):
-        top_tracks = self.client.current_user_top_tracks(limit=20, time_range="medium_term")
+    def get_user_top_tracks(self, construct=True):
+        top_tracks = self.client.current_user_top_tracks(limit=20, time_range="short_term")
 
-        if commit and self.user:
-            from .db_services import SpotifyDatabaseService
-            spotify_db = SpotifyDatabaseService(top_tracks['items'], self.user, self)
-            return spotify_db.add_track_to_db()
+        if construct:
+            spotify_construct = ConstructSpotifyDataService(
+                tracks_data=top_tracks["items"],
+                access_token=self.access_token,
+            )
+            return spotify_construct.construct_track_data()
 
         return top_tracks

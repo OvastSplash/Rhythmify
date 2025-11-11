@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
 from pathlib import Path
 from decouple import config
+from celery.schedules import crontab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django_celery_beat",
+    "django_celery_results",
     "User",
     "SpotifyController",
     "Profile",
@@ -141,3 +143,26 @@ SCOPE = (
 )
 
 MEDIA_ROOT = BASE_DIR / "media"
+
+CELERY_BROKER_URL = "amqp://guest:guest@localhost:5672//"
+CELERY_RESULT_BACKEND = "django-db"
+
+CELERY_TIMEZONE = "UTC"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_RESULT_SERIALIZER = "json"
+
+CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
+
+CELERY_BEAT_SCHEDULE = {
+    "refresh-spotify-tokens-every-5-minutes": {
+        "task": "SpotifyController.tasks.refresh_spotify_tokens",
+        "schedule": crontab(minute="*/5"),
+        "args": (),
+    },
+    "update-user-favorite-tracks-every-day": {
+        "task": "SpotifyController.tasks.update_user_favorite_tracks",
+        "schedule": crontab(hour=3, minute=0),
+        "args": (),
+    }
+}

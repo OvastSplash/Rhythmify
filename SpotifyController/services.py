@@ -1,5 +1,6 @@
 from spotipy.oauth2 import SpotifyOAuth, CacheHandler
 from Rhythmify.settings import CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, SCOPE
+from User.models import CustomUser
 from .serializers import SpotifyProfileSerializer
 from datetime import datetime, timezone as dt_timezone
 import spotipy
@@ -59,3 +60,21 @@ class SpotifyService:
         image = images[0].get('url') if images else None
 
         return name, spotify_id, spotify_url, followers, image
+
+    @staticmethod
+    def refresh_user_tokens(user: CustomUser):
+        sp_oauth = SpotifyService.oauth()
+        token_info = {
+            'access_token': user.access_token,
+            'refresh_token': user.refresh_token,
+            'expires_at': user.token_expires_at.timestamp(),
+        }
+
+        if sp_oauth.is_token_expired(token_info):
+            new_token_info = sp_oauth.refresh_access_token(token_info.get('refresh_token'))
+
+            user.access_token = new_token_info.get('access_token')
+            user.token_expires_at = SpotifyService.convert_expires_at(new_token_info.get('expires_at'))
+            user.save()
+
+            print(f"User: {user.username} was refreshed successfully")

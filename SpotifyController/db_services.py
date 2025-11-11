@@ -1,83 +1,63 @@
 from .models import Artist, Track, FavoriteUserTracks
+from .spotify_data_service import Artist as ArtistClass
+from .spotify_data_service import Track as TrackClass
+from typing import List
 from User.models import CustomUser
-from .client_services import SpotifyClientService
 from User.services import UserService
-from datetime import datetime
 
 class SpotifyDatabaseService:
-    def __init__(self, tracks_data, user:CustomUser, spotify_client:SpotifyClientService):
-        self.tracks_data = tracks_data
-        self.user = user
-        self.spotify_client = spotify_client
+    @staticmethod
+    def create_artist(artist_data: ArtistClass) -> Artist:
+        artist, _ = Artist.objects.get_or_create(
+            name=artist_data.name,
+            defaults={
+                'spotify_id': artist_data.spotify_id,
+                'spotify_url': artist_data.spotify_url,
+            }
+        )
+        image_exists = bool(artist.image)
+        artist_current_image_name = artist.image.url.split('/')[-1].replace('.jpg', "") if image_exists else None
+        new_image_name = artist_data.image_url.split('/')[-1] if artist_data.image_url else None
 
-    def get_artist_image_url(self, artist_id):
-        try:
-            artist_data = self.spotify_client.get_artist_info(artist_id)
-            print(artist_data)
-            artist_image_url = artist_data.get('images')[0].get('url')
-            return artist_image_url
+        if not image_exists or artist_current_image_name != new_image_name:
+            artist.image = UserService.update_object_image(
+                artist,
+                artist_data.image_url,
+            ) if artist_data.image_url else None
 
-        except:
-            return None
+            print(f"Image was created or updated for {artist.name} --- Image Name: {artist.image}")
 
-    def create_artist(self, artist_data):
-        if artist_data:
-            artist_id = artist_data.get("id")
+        return artist
 
-            artist = Artist.objects.filter(spotify_id=artist_id).first()
-            if artist:
-                return artist
+    @staticmethod
+    def create_track(constructed_tracks: List[TrackClass]) -> List[Track]:
+        tracks: List[Track] = []
+        for track in constructed_tracks:
 
-            artist = Artist()
-            artist.name = artist_data.get('name')
-            artist.spotify_id = artist_id
-
-            image_url = self.get_artist_image_url(artist_id)
-            artist.image = UserService.update_object_image(artist, image_url, save=False) if image_url else None
-
-            artist.spotify_url = artist_data.get('external_urls').get('spotify')
-            return artist
-
-        return None
-
-    def add_track_to_db(self):
-        tracks = []
-        for track in self.tracks_data:
-            track_id = track.get('id')
-            track_exists = Track.objects.filter(spotify_id=track_id).first()
-
-            if track_exists:
-                if not FavoriteUserTracks.objects.filter(track=track_exists, user=self.user).exists():
-                    FavoriteUserTracks.objects.create(
-                        track=track_exists,
-                        user=self.user,
-                    )
-
-                tracks.append(track_exists)
-                continue
-
-            artists = [self.create_artist(artist) for artist in track.get("artists", [])]
-
-            new_track = Track()
-            new_track.name = track.get("name")
-            new_track.url = track.get("external_urls").get("spotify")
-            new_track.spotify_id = track_id
-
-            release_date_str = track.get("album").get("release_date")
-            new_track.release_date = datetime.strptime(release_date_str, "%Y-%m-%d").date()
-            new_track.save()
-
-            if artists:
-                for artist in artists:
-                    artist.save()
-                    print(artist.name)
-                    artist.track_list.add(new_track)
-
-            FavoriteUserTracks.objects.create(
-                track=new_track,
-                user=self.user,
+            new_track, created = Track.objects.get_or_create(
+                name=track.name,
+                defaults={
+                    'url': track.url,
+                    'spotify_id': track.spotify_id,
+                    'release_date': track.release_date
+                }
             )
+
+            if track.artists:
+                artists: List[Artist] = [SpotifyDatabaseService.create_artist(artist) for artist in track.artists]
+
+                if artists:
+                    for artist in artists:
+                        artist.track_list.add(new_track)
 
             tracks.append(new_track)
 
         return tracks
+
+    @staticmethod
+    def save_tracks_to_user_favorite_list(tracks: List[Track], user: CustomUser) -> List[Track]:
+        for track in tracks:
+            FavoriteUserTracks.objects.create(
+                track=track,
+                user=user,
+            )

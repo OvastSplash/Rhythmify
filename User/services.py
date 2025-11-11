@@ -23,9 +23,8 @@ class UserService:
         except requests.RequestException:
             return None  # или бросить исключение
 
-        content_type = response.headers.get('Content-Type', '')
-        ext = content_type.split('/')[-1] if '/' in content_type else 'jpg'
-        file_name = f"{uuid.uuid4()}.{ext}"
+        ext = 'jpg'
+        file_name = f"{image_url.split('/')[-1]}.{ext}"
 
         object.image.save(file_name, ContentFile(response.content), save=save)
         return object.image.url
@@ -42,12 +41,12 @@ class UserService:
 
         name, spotify_id, spotify_url, followers, image = SpotifyService.get_user_info(data)
 
-        existing_user = CustomUser.objects.filter(spotify_id=spotify_id).first()
+        user_exists = CustomUser.objects.filter(spotify_id=spotify_id).first()
 
-        if existing_user and not user:
+        if user_exists and not user:
             return SpotifyUserUpdateResult(
                 is_existing=True,
-                user=existing_user
+                user=user_exists
             )
 
         if user:
@@ -58,7 +57,7 @@ class UserService:
             user.spotify_url = spotify_url
             user.access_token = access_token
             user.refresh_token = refresh_token
-            user.token_expires_at = expires_at
+            user.token_expires_at = SpotifyService.convert_expires_at(expires_at)
 
             if not user.image:
                 UserService.update_object_image(user, image, save=False)
