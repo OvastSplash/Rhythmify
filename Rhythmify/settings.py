@@ -139,8 +139,14 @@ SCOPE = (
     "user-read-playback-state "
     "playlist-modify-private "
     "playlist-modify-public "
-    "user-top-read"
+    "user-top-read "
+    "user-library-read "
+    "user-read-recently-played"
 )
+
+LAST_FM_KEY=config("LAST_FM_KEY")
+LAST_FM_SECRET=config("LAST_FM_SECRET")
+
 
 MEDIA_ROOT = BASE_DIR / "media"
 
@@ -162,7 +168,17 @@ CELERY_BEAT_SCHEDULE = {
     },
     "update-user-favorite-tracks-every-day": {
         "task": "SpotifyController.tasks.update_user_favorite_tracks",
-        "schedule": crontab(hour=3, minute=0),
+        "schedule": crontab(minute="*"),
+        "args": (),
+    },
+    # "update-artist-data-every-day":{
+    #     "task": "SpotifyController.tasks.update_artist_data",
+    #     "schedule": crontab(minute="*"),
+    #     "args": (),
+    # }
+    "update-user-recommendations-list-every-day": {
+        "task": "SpotifyController.tasks.update_user_recommendations",
+        "schedule": crontab(hour="3"),
         "args": (),
     }
 }

@@ -1,4 +1,4 @@
-from spotipy.oauth2 import SpotifyOAuth, CacheHandler
+from spotipy.oauth2 import SpotifyOAuth, CacheHandler, SpotifyClientCredentials
 from Rhythmify.settings import CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, SCOPE
 from User.models import CustomUser
 from .serializers import SpotifyProfileSerializer
@@ -22,6 +22,16 @@ class SpotifyService:
             redirect_uri=REDIRECT_URL,
             scope=SCOPE,
             cache_handler=NoCacheHandler(),
+        )
+
+    @staticmethod
+    def get_public_spotify_client():
+        return spotipy.Spotify(
+            auth_manager=SpotifyClientCredentials(
+                client_id=CLIENT_ID,
+                client_secret=CLIENT_SECRET,
+                cache_handler=NoCacheHandler(),
+            )
         )
 
     @staticmethod
@@ -78,3 +88,4 @@ class SpotifyService:
             user.save()
 
             print(f"User: {user.username} was refreshed successfully")
+

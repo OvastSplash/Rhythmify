@@ -1,11 +1,13 @@
-from typing import Optional
+from typing import Optional, Union
 
 from django.core.files.base import ContentFile
+
+from SpotifyController.models import Artist
 from SpotifyController.services import SpotifyService
 from .models import CustomUser
 from dataclasses import dataclass
 import requests
-import uuid
+import os
 
 @dataclass
 class SpotifyUserUpdateResult:
@@ -16,18 +18,21 @@ class SpotifyUserUpdateResult:
 
 class UserService:
     @staticmethod
-    def update_object_image(object, image_url, save=True):
+    def update_object_image(object: Union[Artist, CustomUser], image_url, save=True):
         try:
             response = requests.get(image_url, timeout=10)
             response.raise_for_status()
         except requests.RequestException:
             return None  # или бросить исключение
 
-        ext = 'jpg'
-        file_name = f"{image_url.split('/')[-1]}.{ext}"
+        ext = '.jpg'
+        file_name = f"{os.path.basename(image_url)}{ext}"
+
+        if object.image and object.image.name != file_name:
+            object.image.delete(save=False)
 
         object.image.save(file_name, ContentFile(response.content), save=save)
-        return object.image.url
+        return object.image.name
 
     @staticmethod
     def spotify_update_user(access_token, refresh_token, expires_at, user: CustomUser = None) -> SpotifyUserUpdateResult:
