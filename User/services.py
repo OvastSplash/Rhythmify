@@ -1,7 +1,5 @@
 from typing import Optional, Union
-
 from django.core.files.base import ContentFile
-
 from SpotifyController.models import Artist
 from SpotifyController.services import SpotifyService
 from .models import CustomUser

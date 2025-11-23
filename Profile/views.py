@@ -1,27 +1,31 @@
 from django.shortcuts import render
 from django.views import View
 from User.models import CustomUser
-from SpotifyController.client_services import SpotifyClientService
-from SpotifyController.db_services import SpotifyDatabaseService
-from SpotifyController.models import FavoriteUserTracks
+from SpotifyController.CacheService import UserCacheService
+from SpotifyController.DataAggregatorService import AggregatorService
 
 class ProfileView(View):
     def get(self, request, user_id):
         user:CustomUser = request.user
 
-        #TODO: пофиксить ошибку с анонимусом при регистрации
-
         if user.spotify_id:
-            if user.top_tracks.exists():
-                user_favorite_tracks = user.top_tracks.all()
+            user_favorite_tracks = UserCacheService.get_user_favorite_tracks(user.id)
+            user_recommended_tracks = UserCacheService.get_user_recommended_tracks(user.id)
 
-            else:
-                spotify_service = SpotifyClientService(user.access_token)
-                constructed_data = spotify_service.get_user_top_tracks()
-                user_favorite_tracks = SpotifyDatabaseService.create_track(constructed_data)
-                SpotifyDatabaseService.save_tracks_to_user_list(FavoriteUserTracks, user_favorite_tracks, user)
+            if user_recommended_tracks is None:
+                AggregatorService.update_user_recommendations(user)
+                user_recommended_tracks = UserCacheService.get_user_recommended_tracks(user.id)
 
-            for track in user_favorite_tracks:
-                print(f"Track: {track.name} --- Artists: {', '.join(artist.name for artist in track.artists.all())}")
+            if user_favorite_tracks is None:
+                AggregatorService.update_user_favorite_tracks(user)
+                user_favorite_tracks = UserCacheService.get_user_favorite_tracks(user.id)
+
+            context = {
+                "user_favorite_tracks": user_favorite_tracks,
+                "user_recommended_tracks": user_recommended_tracks,
+                "user": user,
+            }
+
+            return render(request, "Profile/profile.html", context)
 
         return render(request, "Profile/profile.html")

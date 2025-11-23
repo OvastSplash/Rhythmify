@@ -115,8 +115,15 @@ class GetSpotifyInfoFromDatabase:
     def get_user_top_genres(user: CustomUser, count: int = 5) -> List[str]:
         return list(
             Genre.objects
-            .filter(artists__track_list__favorite_users__user__id=user.id)
+            .filter(artists__track_list__favorite_users__user=user)
             .annotate(artist_count=Count('artists'))
             .order_by("-artist_count")
             .values_list("name", flat=True)
         )[:count]
+
+    @staticmethod
+    def get_user_recommend_tracks(user: CustomUser) -> List[Track]:
+        return list(
+            Track.objects
+            .filter(recommendations__user=user)
+        )

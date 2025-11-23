@@ -1,7 +1,7 @@
-from typing import List
-from .models import Track
+from .db_services import GetSpotifyInfoFromDatabase
 from .spotify_data_service import ConstructSpotifyDataService
 from .services import SpotifyService
+from User.models import CustomUser
 import spotipy
 import random
 
@@ -35,7 +35,9 @@ class SpotifyClientService:
 
         return top_tracks
 
-    def create_user_recommendation_playlist(self, tracks: List[Track], shuffle=True):
+    def create_user_recommendation_playlist(self, user: CustomUser, shuffle=True):
+        tracks = GetSpotifyInfoFromDatabase.get_user_recommend_tracks(user)
+
         if shuffle:
             random.shuffle(tracks)
 

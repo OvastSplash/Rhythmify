@@ -3,6 +3,7 @@ from django.views import View
 from .forms import LoginForm, RegisterForm, ConfirmRegisterForm
 from django.contrib.auth import authenticate, login
 from SpotifyController.services import SpotifyService
+from SpotifyController.DataAggregatorService import AggregatorService
 
 class LoginView(View):
     form = LoginForm
@@ -65,9 +66,12 @@ class ConfirmRegisterView(View):
 
         if form.is_valid() and spotify_data:
             user = form.save_with_spotify_data(data=spotify_data)
-            print(user.spotify_id)
+
             login(request, user)
-            request.session.clear()
+            del request.session["spotify_user_info"]
+
+            AggregatorService.update_user_favorite_tracks(users=user, clear_cache=False)
+            AggregatorService.update_user_recommendations(users=user, clear_cache=False)
 
             return redirect("profile", user_id = user.id)
 
