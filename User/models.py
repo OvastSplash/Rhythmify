@@ -32,8 +32,9 @@ class CustomUser(AbstractBaseUser):
     refresh_token = models.CharField(verbose_name="Refresh Token", max_length=400, null=True, blank=True)
     token_expires_at = models.DateTimeField(verbose_name="Token Expires", null=True, blank=True)
 
-    top_tracks = models.ManyToManyField("SpotifyController.Track", verbose_name="Top Tracks", related_name="users", through="SpotifyController.FavoriteUserTracks", blank=True)
-    # recommendation_tracks = models.ManyToManyField("SpotifyController.Track", verbose_name="Recommendations", related_name="user", blank=True)
+    top_tracks = models.ManyToManyField("SpotifyController.Track", verbose_name="Top Tracks", related_name="favorite_users", through="SpotifyController.FavoriteUserTracks", blank=True)
+    recommendation_tracks = models.ManyToManyField("SpotifyController.Track", verbose_name="Recommendations", related_name="recommended_by_users", through="SpotifyController.RecommendationTracks", blank=True)
+    listen_track_history = models.ManyToManyField("SpotifyController.Track", verbose_name="User Listen History", related_name="history_users",  through="SpotifyController.UsersListenHistory",blank=True)
 
     is_active = models.BooleanField(verbose_name="Is Active", default=True)
     is_staff = models.BooleanField(verbose_name="Is Staff", default=False)

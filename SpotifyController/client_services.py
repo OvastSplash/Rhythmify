@@ -17,7 +17,7 @@ class SpotifyPublicClientService:
             q=f"{track_name} - {artist_name}",
             type="track",
             limit=1,
-        )['tracks']['items']
+        )['tracks']['items'][0]
 
 class SpotifyClientService:
     def __init__(self, access_token):
@@ -25,18 +25,31 @@ class SpotifyClientService:
         self.client = spotipy.Spotify(auth=self.access_token)
         self.headers = {"Authorization": f"Bearer {self.access_token}"}
 
-    def get_user_top_tracks(self, construct=True):
-        top_tracks = self.client.current_user_top_tracks(limit=20, time_range="short_term")
-
+    def get_user_top_tracks(self, construct=True, limit: int = 20):
+        top_tracks = self.client.current_user_top_tracks(limit=limit, time_range="short_term")
+        print(top_tracks)
         if construct:
-            return ConstructSpotifyDataService.construct_track_data(
-                tracks_data=top_tracks["items"],
+            construct_sp = ConstructSpotifyDataService()
+            return construct_sp.construct_tracks_data(
+                tracks_data=top_tracks['items'],
             )
 
         return top_tracks
 
+    def get_user_recently_played(self, construct=True, limit: int = 50):
+        recently_played = self.client.current_user_recently_played(limit=limit)
+
+        if construct:
+            construct_sp = ConstructSpotifyDataService()
+            return construct_sp.construct_tracks_data_with_played_at(
+                tracks_data=recently_played['items'],
+            )
+
+        return recently_played
+
     def create_user_recommendation_playlist(self, user: CustomUser, shuffle=True):
-        tracks = GetSpotifyInfoFromDatabase.get_user_recommend_tracks(user)
+        get_sp_db = GetSpotifyInfoFromDatabase(user)
+        tracks = get_sp_db.get_user_recommend_tracks()
 
         if shuffle:
             random.shuffle(tracks)
@@ -52,12 +65,12 @@ class SpotifyClientService:
         print("Создан плейлист:", playlist["name"], playlist["id"])
 
         tracks_uri = [f"spotify:track:{track.spotify_id}" for track in tracks]
-        self.client.playlist_add_items(
-            playlist_id=playlist['id'],
-            items=tracks_uri,
-        )
+
+        for i in range(0, len(tracks_uri), 100):
+            chunk = tracks_uri[i:i + 100]
+            self.client.playlist_add_items(
+                playlist_id=playlist['id'],
+                items=chunk,
+            )
 
         print(tracks_uri)
-
-
-        return 1

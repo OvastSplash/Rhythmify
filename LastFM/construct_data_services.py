@@ -32,16 +32,18 @@ class TrackSyncManager:
         last_fm_data_service = LastFMDataService()
 
         similar_tracks = set()
-        similar_tracks.update(last_fm_data_service.collect_tracks_by_tracks(tracks, count=5))
-        similar_tracks.update(last_fm_data_service.collect_tracks_by_genre(genres, count=5))
+        similar_tracks.update(last_fm_data_service.collect_tracks_by_tracks(tracks, count=7))
+        similar_tracks.update(last_fm_data_service.collect_tracks_by_genre(genres, count=7))
 
-        similar_artists = last_fm_data_service.collect_similar_artists(artists, count=3)
+        similar_artists = last_fm_data_service.collect_similar_artists(artists, count=7)
         transformed_artists = last_fm_data_service.transform_similar_artists_to_artists(similar_artists)
         similar_tracks.update(last_fm_data_service.collect_artists_top_tracks(transformed_artists, count=2))
 
 
         converted_tracks = list()
         existed_tracks: List[Track] = list()
+
+        construct_sp = ConstructSpotifyDataService()
 
         for track in similar_tracks:
             spotify_data = ConvertToSpotifyDataService.convert_track_data(track)
@@ -50,10 +52,12 @@ class TrackSyncManager:
                 existed_tracks.append(spotify_data)
 
             else:
-                converted_tracks.extend(ConstructSpotifyDataService.construct_track_data(spotify_data))
+                converted_tracks.append(construct_sp.construct_track_data(spotify_data))
 
         if commit:
-            saved_tracks: List[Track] = SpotifyDatabaseService.create_track(converted_tracks)
+            sp_db = SpotifyDatabaseService()
+            saved_tracks: List[Track] = sp_db.create_tracks(converted_tracks)
+
             return saved_tracks, existed_tracks
 
         return converted_tracks, existed_tracks

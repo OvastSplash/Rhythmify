@@ -1,9 +1,12 @@
 from typing import List, Union
+
+from django.db.models import QuerySet
+
 from User.models import CustomUser
 from .client_services import SpotifyClientService, SpotifyPublicClientService
 from .spotify_data_service import ConstructSpotifyDataService
 from .db_services import SpotifyDatabaseService, GetSpotifyInfoFromDatabase
-from .models import FavoriteUserTracks, RecommendationTracks
+from .models import FavoriteUserTracks, RecommendationTracks, Track
 from .CacheService import UserCacheService
 from LastFM.construct_data_services import TrackSyncManager
 
@@ -20,7 +23,8 @@ class AggregatorService:
             sp_client = SpotifyClientService(access_token=user.access_token)
             constructed_data = sp_client.get_user_top_tracks()
 
-            tracks = sp_db.create_track(constructed_data)
+            tracks:List[Track] = sp_db.create_tracks(constructed_data)
+
             sp_db.save_tracks_to_user_list(FavoriteUserTracks, tracks, user)
 
             if clear_cache:
@@ -54,10 +58,11 @@ class AggregatorService:
 
         for user in users:
             print(user.username)
+            get_sp_db = GetSpotifyInfoFromDatabase(user)
 
-            tracks = GetSpotifyInfoFromDatabase.get_user_top_tracks(user, count=10)
-            artists = GetSpotifyInfoFromDatabase.get_user_top_artists(user, count=5)
-            genres = GetSpotifyInfoFromDatabase.get_user_top_genres(user, count=5)
+            tracks = get_sp_db.get_user_top_tracks(count=10)
+            artists = get_sp_db.get_user_top_artists(count=5)
+            genres = get_sp_db.get_user_top_genres(count=5)
 
             recommended_tracks, existed_tracks = TrackSyncManager.collect_recommendations(tracks, artists, genres, commit=True)
             recommended_tracks.extend(existed_tracks)
@@ -74,3 +79,22 @@ class AggregatorService:
             UserCacheService.set_user_recommended_tracks(user.id, recommended_tracks)
 
             print(tracks)
+
+    @staticmethod
+    def save_users_listen_tracks(users: Union[List[CustomUser]]):
+        sp_db = SpotifyDatabaseService()
+
+        for user in users:
+            print(user.username)
+
+            sp_client = SpotifyClientService(access_token=user.access_token)
+            constructed_tracks = sp_client.get_user_recently_played(limit=5)
+            tracks = sp_db.create_played_at_tracks(constructed_tracks)
+            sp_db.save_user_listen_tracks_history(user, tracks)
+
+            get_sp_db = GetSpotifyInfoFromDatabase(user)
+            cache_data = get_sp_db.get_user_listen_statistic()
+
+            print(cache_data)
+
+            UserCacheService.set_user_statistics(user.id, cache_data)

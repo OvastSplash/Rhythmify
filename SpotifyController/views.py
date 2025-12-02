@@ -1,9 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth import login
+from django.http import HttpResponse
 from django.views import View
 from django.shortcuts import redirect
 from .services import SpotifyService
 from User.services import UserService
+from .client_services import SpotifyClientService
 
 class SpotifyLoginView(View):
     @staticmethod
@@ -16,8 +18,6 @@ class SpotifyCallbackView(View):
     @staticmethod
     def get(request):
         code = request.GET.get('code')
-        if not code:
-            print("code is none")
 
         sp_oauth = SpotifyService.oauth()
         token_info = sp_oauth.get_access_token(code)
@@ -46,4 +46,13 @@ class SpotifyCallbackView(View):
             print(f"user {result.user.user_login} is logged in")
 
         print(result.user.id)
+
         return redirect('profile', user_id = result.user.id)
+
+class CreateSpotifyPlaylistView(View):
+    @staticmethod
+    def post(request):
+        user = request.user
+        sp_client = SpotifyClientService(user.access_token)
+        sp_client.create_user_recommendation_playlist(user)
+        return HttpResponse(status=200)

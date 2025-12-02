@@ -1,8 +1,11 @@
-from dataclasses import dataclass, field
-from typing import Optional, List, Union
-from datetime import datetime, date
-from .models import Artist
+from dataclasses import (dataclass, field)
+from typing import (Optional, List, Dict, Tuple)
+from datetime import (datetime, date)
+from .models import (Artist, Track, Genre)
+from django.contrib.auth import get_user_model
 import os
+
+CustomUser = get_user_model()
 
 @dataclass
 class GenreClass:
@@ -21,46 +24,80 @@ class TrackClass:
     name: str
     url: str
     spotify_id: str
+    played_at: Optional[datetime] = field(default=None)
     artists: Optional[List[ArtistClass]] = field(default_factory=list)
     release_date: Optional[date] = None
 
 
 class ConstructSpotifyDataService:
-    @staticmethod
-    def construct_track_data(tracks_data: Union[List[dict], dict]) -> List[TrackClass]:
+    def __init__(self):
         from .client_services import SpotifyPublicClientService
 
-        if isinstance(tracks_data, dict):
-            tracks_data = [tracks_data]
+        self.sp_public_client = SpotifyPublicClientService()
 
-        tracks: List[TrackClass] = []
+    @staticmethod
+    def _get_player_at(track_data: dict) -> datetime:
+        played_at_str: str = track_data.get("played_at")
+        return datetime.fromisoformat(played_at_str.replace("Z", "+00:00"))
 
-        for track in tracks_data:
-            artists: List[ArtistClass] = []
+    def construct_track_data_with_played_at(self, track_data: dict) -> TrackClass:
+        played_at = self._get_player_at(track_data)
+        track_data = track_data.get("track")
 
-            for artist in track.get("artists", []):
-                artist_id = artist.get("id")
+        constructed_track: TrackClass = self.construct_track_data(track_data)
+        constructed_track.played_at = played_at
 
-                if artist_id:
-                    spotify_artist_data = SpotifyPublicClientService.get_artist_info(artist_id)
-                    artists.append(ConstructSpotifyDataService.construct_artist_data(spotify_artist_data))
+        return constructed_track
 
-            new_track = TrackClass(
-                name=track.get("name"),
-                url=track.get("external_urls").get("spotify"),
-                spotify_id=track.get("id"),
-            )
+    def construct_tracks_data_with_played_at(self, tracks_data: dict) -> List[TrackClass]:
+        tracks: List[TrackClass] = list()
 
-            release_date_str = track.get("album").get("release_date")
-            try:
-                new_track.release_date = datetime.strptime(release_date_str, "%Y-%m-%d").date()
-            except:
-                new_track.release_date = None
-
-            new_track.artists.extend([artist for artist in artists if artist])
-            tracks.append(new_track)
+        for track_data in tracks_data:
+            tracks.append(self.construct_track_data_with_played_at(track_data))
 
         return tracks
+
+
+    def construct_track_data(self, track_data: dict) -> TrackClass:
+        artists: List[ArtistClass] = self.get_artist_data(track_data.get("artists"))
+
+        track = TrackClass(
+            name=track_data.get("name"),
+            url=track_data.get("external_urls").get("spotify"),
+            spotify_id=track_data.get("id"),
+        )
+
+        track.artists.extend([artist for artist in artists if artist])
+        return track
+
+    def construct_tracks_data(self, tracks_data: List[dict]) -> List[TrackClass]:
+        tracks: List[TrackClass] = list()
+
+        for track_data in tracks_data:
+            tracks.append(self.construct_track_data(track_data))
+
+        return tracks
+
+    @staticmethod
+    def _get_release_data(track_data: dict) -> date | None:
+        release_date_str = track_data.get("album").get("release_date")
+
+        try:
+            return datetime.strptime(release_date_str, "%Y-%m-%d").date()
+        except ValueError:
+            return None
+
+    def get_artist_data(self, artists_data: List[dict]) -> List[ArtistClass]:
+        artists: List[ArtistClass] = list()
+
+        for artist in artists_data:
+            artist_id = artist.get("id")
+
+            if artist_id:
+                spotify_artist_data = self.sp_public_client.get_artist_info(artist_id)
+                artists.append(self.construct_artist_data(spotify_artist_data))
+
+        return artists
 
     @staticmethod
     def construct_artist_data(artist_data) -> ArtistClass:
@@ -90,3 +127,34 @@ class CheckSpotifyDataService:
                 print(f"NEW IMAGE: {new_image_name}")
 
         return True
+
+@dataclass
+class UserFavoriteTrackStat:
+    Track: Track
+    Count: int
+
+@dataclass
+class UserFavoriteGenreStat:
+    Genre: Genre
+    Count: int
+
+@dataclass
+class UserFavoriteArtistStat:
+    Artist: Artist
+    Count: int
+
+@dataclass
+class UserStats:
+    FavoriteGenres: Dict[date, List[UserFavoriteGenreStat]] = field(default_factory=dict)
+    FavoriteTracks: Dict[date, List[Track]] = field(default_factory=dict)
+    FavoriteArtists: Dict[date, List[Artist]] = field(default_factory=dict)
+
+class UserHistoryTrackStatisticsService:
+    def __init__(self, tracks_stats: Dict[str, List[Tuple[Track, int]]]):
+        self.tracks_stats = tracks_stats
+
+    def get_stats(self):
+        user_stats = UserStats()
+
+        for played_at, tracks in self.tracks_stats.items():
+            print(f"{played_at}: {tracks}")

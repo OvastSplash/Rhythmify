@@ -56,8 +56,9 @@ class SpotifyService:
     @staticmethod
     def convert_expires_at(expires_at):
         if isinstance(expires_at, (int, float)):
-            return datetime.fromtimestamp(expires_at, tz=dt_timezone.utc)
-
+            return datetime.fromtimestamp(int(expires_at), tz=dt_timezone.utc)
+        elif isinstance(expires_at, datetime):
+            return expires_at.astimezone(dt_timezone.utc)
         return None
 
     @staticmethod
@@ -80,6 +81,8 @@ class SpotifyService:
             'expires_at': user.token_expires_at.timestamp(),
         }
 
+        print(token_info["expires_at"])
+
         if sp_oauth.is_token_expired(token_info):
             new_token_info = sp_oauth.refresh_access_token(token_info.get('refresh_token'))
 
@@ -88,4 +91,3 @@ class SpotifyService:
             user.save()
 
             print(f"User: {user.username} was refreshed successfully")
-

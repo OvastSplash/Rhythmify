@@ -28,7 +28,7 @@ class Artist(models.Model):
         return self.name
 
 class FavoriteUserTracks(models.Model):
-    track = models.ForeignKey(Track, verbose_name="Track", related_name="favorite_users", on_delete=models.CASCADE)
+    track = models.ForeignKey(Track, verbose_name="Track", related_name="favorite", on_delete=models.CASCADE)
     user = models.ForeignKey(CustomUser, verbose_name="User",  related_name="favorite_tracks_links", on_delete=models.CASCADE)
     add_time = models.DateTimeField(verbose_name="Add Time", auto_now_add=True)
 
@@ -39,6 +39,14 @@ class RecommendationTracks(models.Model):
     track = models.ForeignKey(Track, verbose_name="Track", related_name="recommendations", on_delete=models.CASCADE)
     user = models.ForeignKey(CustomUser, verbose_name="User", related_name="recommendations_links", on_delete=models.CASCADE)
     add_time = models.DateTimeField(verbose_name="Add Time", auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.track.name}"
+
+class UsersListenHistory(models.Model):
+    track = models.ForeignKey(Track, verbose_name="Track", related_name="listen_history", on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, verbose_name="User", related_name="listen_history_links", on_delete=models.CASCADE)
+    played_at = models.DateTimeField(verbose_name="Played At")
 
     def __str__(self):
         return f"{self.user.username} - {self.track.name}"

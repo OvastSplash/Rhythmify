@@ -52,8 +52,16 @@ class LastFMDataService:
     def collect_tracks_by_tracks(self, tracks: List[TrackModel], count: int = 5) -> List[SimilarItem]:
         similar_tracks: List[SimilarItem] = []
         for track in tracks:
+            print("Track: ", track.name)
             get_tracks = self.client.get_track(artist_name=track.artists.first().name, track_name=track.name)
-            similar_tracks.extend(self.last_fm_service.get_similar_tracks(track=get_tracks, count=count))
+            print(get_tracks)
+            try:
+                similar = self.last_fm_service.get_similar_tracks(track=get_tracks, count=count)
+
+            except Exception as e:
+                print(e)
+                continue
+
 
         return similar_tracks
 

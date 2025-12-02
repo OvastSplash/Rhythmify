@@ -170,7 +170,7 @@ CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 CELERY_BEAT_SCHEDULE = {
     "refresh-spotify-tokens-every-5-minutes": {
         "task": "SpotifyController.tasks.refresh_spotify_tokens",
-        "schedule": crontab(minute="*/5"),
+        "schedule": crontab(minute="*"),
         "args": (),
     },
     "update-user-favorite-tracks-every-day": {
@@ -178,14 +178,19 @@ CELERY_BEAT_SCHEDULE = {
         "schedule": crontab(minute="*"),
         "args": (),
     },
+    "save_users_listen_tracks-every-day": {
+        "task": "SpotifyController.tasks.save_user_listen_tracks",
+        "schedule": crontab(minute="*"),
+        "args": (),
+    },
     # "update-artist-data-every-day":{
     #     "task": "SpotifyController.tasks.update_artist_data",
+    #     "schedule": crontab(hour="3"),
+    #     "args": (),
+    # },
+    # "update-user-recommendations-list-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_recommendations",
     #     "schedule": crontab(minute="*"),
     #     "args": (),
     # }
-    "update-user-recommendations-list-every-day": {
-        "task": "SpotifyController.tasks.update_user_recommendations",
-        "schedule": crontab(hour="3"),
-        "args": (),
-    }
 }
