@@ -7,6 +7,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token }}">
     <link rel="stylesheet" href="{% static 'Profile/css/main.css' %}">
+    <style>
+        /* Scoped styles for the range dropdown to avoid conflicts */
+        .range-dropdown { position: relative; display: inline-block; }
+        .range-dropdown .dropdown-trigger {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 12px 16px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff; cursor: pointer;
+            min-width: 140px; font-size: 15px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            transition: all 0.2s ease;
+        }
+        .range-dropdown .dropdown-trigger:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255,255,255,0.2);
+        }
+        .range-dropdown.open .dropdown-trigger,
+        .range-dropdown .dropdown-trigger:focus {
+            outline: none;
+            border-color: #1DB954;
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .range-dropdown .dropdown-trigger .caret { width: 14px; height: 14px; opacity: .8; transition: transform .2s ease; }
+        .range-dropdown.open .dropdown-trigger .caret { transform: rotate(180deg); }
+
+        .range-dropdown .dropdown-menu {
+            position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px;
+            background: rgba(20,20,24,0.96); backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 6px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+            z-index: 20;
+        }
+        .range-dropdown .dropdown-item {
+            width: 100%; text-align: left; background: transparent; border: 0; color: #eaeaea;
+            padding: 10px 12px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px;
+            transition: background .15s ease, color .15s ease;
+        }
+        .range-dropdown .dropdown-item:hover { background: rgba(255,255,255,0.08); color: #fff; }
+        .range-dropdown .dropdown-item.active { background: rgba(88, 101, 242, 0.25); color: #fff; }
+
+        /* Container alignment with the section */
+        .tracks-range-switch { display: flex; justify-content: flex-start; align-items: center; margin: 12px 0 18px; }
+    </style>
 </head>
 <body>
     <div class="Header">
@@ -36,18 +78,44 @@
 
         <div class="tab-content active" id="tracks-tab">
             {% if user.spotify_id %}
-                {% if user_favorite_tracks %}
-                    <div class="tracks-list">
-                        {% for track in user_favorite_tracks %}
-                            <div class="track-item">
+                <div class="playlist-section">
+                    <div class="playlist-header">
+                        <button class="create-playlist-button" id="tracks-term-btn" type="button" aria-haspopup="true" aria-expanded="false" title="Выбор периода">Период: <span id="tracks-term-label">Short Term</span>
+                            <svg class="caret" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:14px;height:14px;margin-left:8px;opacity:.85;vertical-align:-2px;"><path d="M7 10l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="range-dropdown" id="tracks-term-dropdown" style="position: relative; margin-left: 12px;">
+                            <div class="dropdown-menu" role="menu" style="display:none; position: absolute; top: 8px; left: 0; min-width: 220px; background: rgba(20,20,24,0.96); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 6px; box-shadow: 0 12px 30px rgba(0,0,0,0.35); z-index: 20;">
+                                <button type="button" class="dropdown-item active" data-range="short">Short Term</button>
+                                <button type="button" class="dropdown-item" data-range="medium">Medium Term</button>
+                                <button type="button" class="dropdown-item" data-range="long">Long Term</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short Term List -->
+                <div class="tracks-list tracks-range" id="tracks-range-short">
+                    {% if user_favorite_short_term_tracks %}
+                        {% for track in user_favorite_short_term_tracks %}
+                            <div class="track-item {% if forloop.counter <= 3 %}top-rank top-rank-{{ forloop.counter }}{% endif %}"
+                                 data-rank="{{ forloop.counter }}"
+                                 {% if track.preview %}data-preview="{{ track.preview.url }}"{% endif %}
+{#                                 <div>#}
+{#                                    {% if track.preview %}#}
+{#                                        <audio src="{{ track.preview.url }}" controls></audio>#}
+{#                                    {% else %}#}
+{#                                        <p>{{ track.preview }}</p>#}
+{#                                    {% endif %}#}
+{#                                </div>#}
+                                 data-track-name="{{ track.name }}"
+                                 data-track-artists="{% for artist in track.artists.all %}{{ artist.name }}{% if not forloop.last %}, {% endif %}{% endfor %}"
+                                 {% if track.image %}data-track-image="{{ track.image.url }}"{% endif %}>
                                 <div class="track-number">{{ forloop.counter }}</div>
-                                {% with track.artists.all|first as first_artist %}
-                                    {% if first_artist and first_artist.image %}
-                                        <img src="{{ first_artist.image.url }}" class="track-image" alt="Track Image">
-                                    {% else %}
-                                        <div class="track-image-placeholder">♪</div>
-                                    {% endif %}
-                                {% endwith %}
+                                {% if track.image %}
+                                    <img src="{{ track.image.url }}" class="track-image" alt="Track Image">
+                                {% else %}
+                                    <div class="track-image-placeholder">♪</div>
+                                {% endif %}
                                 <div class="track-info">
                                     <div class="track-name">
                                         {% if track.url %}
@@ -59,27 +127,191 @@
                                     <div class="track-artists">
                                         {% if track.artists.all %}
                                             {% for artist in track.artists.all %}
-                                                {% if artist.spotify_url %}
-                                                    <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
-                                                {% else %}
-                                                    <span class="artist-name">{{ artist.name }}</span>
-                                                {% endif %}
-                                                {% if not forloop.last %}, {% endif %}
+                                                <span class="artist-inline">
+                                                    {% if artist.image %}
+                                                        <img src="{{ artist.image.url }}" class="artist-avatar" alt="{{ artist.name }}">
+                                                    {% endif %}
+                                                    {% if artist.spotify_url %}
+                                                        <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
+                                                    {% else %}
+                                                        <span class="artist-name">{{ artist.name }}</span>
+                                                    {% endif %}
+                                                </span>{% if not forloop.last %}<span class="artist-sep">,</span>{% endif %}
                                             {% endfor %}
                                         {% else %}
                                             <span class="artist-name">Неизвестный артист</span>
                                         {% endif %}
                                     </div>
+                                    {% with track.artists.all|first as first_artist %}
+                                        {% if first_artist and first_artist.genres.all %}
+                                            <div class="track-genres">
+                                                {% for g in first_artist.genres.all|slice:":4" %}
+                                                    <span class="genre-chip">{{ g.name }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    {% endwith %}
+                                    {% if track.popularity %}
+                                        <div class="popularity" data-popularity="{{ track.popularity }}">
+                                            <div class="popularity-bar">
+                                                <div class="popularity-fill"></div>
+                                            </div>
+                                            <span class="popularity-label">{{ track.popularity }}%</span>
+                                        </div>
+                                    {% endif %}
                                 </div>
-                                <div class="track-duration">-</div>
+                                <div class="track-duration" {% if track.duration_ms %}data-duration-ms="{{ track.duration_ms }}"{% endif %}>-</div>
                             </div>
                         {% endfor %}
-                    </div>
-                {% else %}
-                    <div class="empty-state">
-                        <p>У вас пока нет любимых треков</p>
-                    </div>
-                {% endif %}
+                    {% else %}
+                        <div class="empty-state">
+                            <p>У вас пока нет любимых треков за Short Term</p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Medium Term List -->
+                <div class="tracks-list tracks-range" id="tracks-range-medium" style="display:none;">
+                    {% if user_favorite_medium_term_tracks %}
+                        {% for track in user_favorite_medium_term_tracks %}
+                            <div class="track-item {% if forloop.counter <= 3 %}top-rank top-rank-{{ forloop.counter }}{% endif %}"
+                                 data-rank="{{ forloop.counter }}"
+                                 {% if track.preview %}data-preview="{{ track.preview.url }}"{% endif %}
+                                 data-track-name="{{ track.name }}"
+                                 data-track-artists="{% for artist in track.artists.all %}{{ artist.name }}{% if not forloop.last %}, {% endif %}{% endfor %}"
+                                 {% if track.image %}data-track-image="{{ track.image.url }}"{% endif %}>
+                                <div class="track-number">{{ forloop.counter }}</div>
+                                <div class="track-cover">
+                                    {% if track.image %}
+                                        <img src="{{ track.image.url }}" class="track-image" alt="Track Image">
+                                    {% else %}
+                                        <div class="track-image-placeholder">♪</div>
+                                    {% endif %}
+                                    <div class="track-cover-overlay" aria-hidden="true"><span class="track-cover-icon">▶</span></div>
+                                </div>
+                                <div class="track-info">
+                                    <div class="track-name">
+                                        {% if track.url %}
+                                            <a href="{{ track.url }}" class="track-name-link" target="_blank">{{ track.name }}</a>
+                                        {% else %}
+                                            {{ track.name }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="track-artists">
+                                        {% if track.artists.all %}
+                                            {% for artist in track.artists.all %}
+                                                <span class="artist-inline">
+                                                    {% if artist.image %}
+                                                        <img src="{{ artist.image.url }}" class="artist-avatar" alt="{{ artist.name }}">
+                                                    {% endif %}
+                                                    {% if artist.spotify_url %}
+                                                        <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
+                                                    {% else %}
+                                                        <span class="artist-name">{{ artist.name }}</span>
+                                                    {% endif %}
+                                                </span>{% if not forloop.last %}<span class="artist-sep">,</span>{% endif %}
+                                            {% endfor %}
+                                        {% else %}
+                                            <span class="artist-name">Неизвестный артист</span>
+                                        {% endif %}
+                                    </div>
+                                    {% with track.artists.all|first as first_artist %}
+                                        {% if first_artist and first_artist.genres.all %}
+                                            <div class="track-genres">
+                                                {% for g in first_artist.genres.all|slice:":4" %}
+                                                    <span class="genre-chip">{{ g.name }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    {% endwith %}
+                                </div>
+                                {% if track.popularity %}
+                                    <div class="popularity" data-popularity="{{ track.popularity }}">
+                                        <div class="popularity-bar">
+                                            <div class="popularity-fill"></div>
+                                        </div>
+                                        <span class="popularity-label">{{ track.popularity }}%</span>
+                                    </div>
+                                {% endif %}
+                                <div class="track-duration" {% if track.duration_ms %}data-duration-ms="{{ track.duration_ms }}"{% endif %}>-</div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="empty-state">
+                            <p>У вас пока нет любимых треков за Medium Term</p>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Long Term List -->
+                <div class="tracks-list tracks-range" id="tracks-range-long" style="display:none;">
+                    {% if user_favorite_long_term_tracks %}
+                        {% for track in user_favorite_long_term_tracks %}
+                            <div class="track-item {% if forloop.counter <= 3 %}top-rank top-rank-{{ forloop.counter }}{% endif %}"
+                                 data-rank="{{ forloop.counter }}"
+                                 {% if track.preview %}data-preview="{{ track.preview.url }}"{% endif %}
+                                 data-track-name="{{ track.name }}"
+                                 data-track-artists="{% for artist in track.artists.all %}{{ artist.name }}{% if not forloop.last %}, {% endif %}{% endfor %}"
+                                 {% if track.image %}data-track-image="{{ track.image.url }}"{% endif %}>
+                                <div class="track-number">{{ forloop.counter }}</div>
+                                {% if track.image %}
+                                    <img src="{{ track.image.url }}" class="track-image" alt="Track Image">
+                                {% else %}
+                                    <div class="track-image-placeholder">♪</div>
+                                {% endif %}
+                                <div class="track-info">
+                                    <div class="track-name">
+                                        {% if track.url %}
+                                            <a href="{{ track.url }}" class="track-name-link" target="_blank">{{ track.name }}</a>
+                                        {% else %}
+                                            {{ track.name }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="track-artists">
+                                        {% if track.artists.all %}
+                                            {% for artist in track.artists.all %}
+                                                <span class="artist-inline">
+                                                    {% if artist.image %}
+                                                        <img src="{{ artist.image.url }}" class="artist-avatar" alt="{{ artist.name }}">
+                                                    {% endif %}
+                                                    {% if artist.spotify_url %}
+                                                        <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
+                                                    {% else %}
+                                                        <span class="artist-name">{{ artist.name }}</span>
+                                                    {% endif %}
+                                                </span>{% if not forloop.last %}<span class="artist-sep">,</span>{% endif %}
+                                            {% endfor %}
+                                        {% else %}
+                                            <span class="artist-name">Неизвестный артист</span>
+                                        {% endif %}
+                                    </div>
+                                    {% with track.artists.all|first as first_artist %}
+                                        {% if first_artist and first_artist.genres.all %}
+                                            <div class="track-genres">
+                                                {% for g in first_artist.genres.all|slice:":4" %}
+                                                    <span class="genre-chip">{{ g.name }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                    {% endwith %}
+                                    {% if track.popularity %}
+                                        <div class="popularity" data-popularity="{{ track.popularity }}">
+                                            <div class="popularity-bar">
+                                                <div class="popularity-fill"></div>
+                                            </div>
+                                            <span class="popularity-label">{{ track.popularity }}%</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <div class="track-duration" {% if track.duration_ms %}data-duration-ms="{{ track.duration_ms }}"{% endif %}>-</div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="empty-state">
+                            <p>У вас пока нет любимых треков за Long Term</p>
+                        </div>
+                    {% endif %}
+                </div>
             {% else %}
                 <div class="empty-state">
                     <p>Подключите Spotify, чтобы увидеть свои любимые треки</p>
@@ -98,15 +330,17 @@
                     {% if user_recommended_tracks %}
                         <div class="tracks-list">
                             {% for track in user_recommended_tracks %}
-                                <div class="track-item">
+                                <div class="track-item"
+                                     {% if track.preview %}data-preview="{{ track.preview.url }}"{% endif %}
+                                     data-track-name="{{ track.name }}"
+                                     data-track-artists="{% for artist in track.artists.all %}{{ artist.name }}{% if not forloop.last %}, {% endif %}{% endfor %}"
+                                     {% if track.image %}data-track-image="{{ track.image.url }}"{% endif %}>
                                     <div class="track-number">{{ forloop.counter }}</div>
-                                    {% with track.artists.all|first as first_artist %}
-                                        {% if first_artist and first_artist.image %}
-                                            <img src="{{ first_artist.image.url }}" class="track-image" alt="Track Image">
-                                        {% else %}
-                                            <div class="track-image-placeholder">♪</div>
-                                        {% endif %}
-                                    {% endwith %}
+                                    {% if track.image %}
+                                        <img src="{{ track.image.url }}" class="track-image" alt="Track Image">
+                                    {% else %}
+                                        <div class="track-image-placeholder">♪</div>
+                                    {% endif %}
                                     <div class="track-info">
                                         <div class="track-name">
                                             {% if track.url %}
@@ -118,19 +352,23 @@
                                         <div class="track-artists">
                                             {% if track.artists.all %}
                                                 {% for artist in track.artists.all %}
-                                                    {% if artist.spotify_url %}
-                                                        <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
-                                                    {% else %}
-                                                        <span class="artist-name">{{ artist.name }}</span>
-                                                    {% endif %}
-                                                    {% if not forloop.last %}, {% endif %}
+                                                    <span class="artist-inline">
+                                                        {% if artist.image %}
+                                                            <img src="{{ artist.image.url }}" class="artist-avatar" alt="{{ artist.name }}">
+                                                        {% endif %}
+                                                        {% if artist.spotify_url %}
+                                                            <a href="{{ artist.spotify_url }}" class="artist-link" target="_blank">{{ artist.name }}</a>
+                                                        {% else %}
+                                                            <span class="artist-name">{{ artist.name }}</span>
+                                                        {% endif %}
+                                                    </span>{% if not forloop.last %}<span class="artist-sep">,</span>{% endif %}
                                                 {% endfor %}
                                             {% else %}
                                                 <span class="artist-name">Неизвестный артист</span>
                                             {% endif %}
                                         </div>
                                     </div>
-                                    <div class="track-duration">-</div>
+                                    <div class="track-duration" {% if track.duration_ms %}data-duration-ms="{{ track.duration_ms }}"{% endif %}>-</div>
                                 </div>
                             {% endfor %}
                         </div>
@@ -165,6 +403,7 @@
                         </div>
                     </div>
 
+
                     <div class="stats-container" id="stats-container">
                         {% for month_data in user_statistics_sorted %}
                             {% with month=month_data.0 data=month_data.1 %}
@@ -175,25 +414,30 @@
                                         <h2 class="stats-period-title">{{ month }}</h2>
                                     </div>
 
+
                                     <div class="stats-grid">
                                         <!-- Топ треки -->
                                         <div class="stats-card stats-card-tracks">
                                             <div class="stats-card-header">
                                                 <h3 class="stats-card-title">Топ треки</h3>
-                                                <span class="stats-card-count">{{ data.tracks|length }}</span>
+                                                <div class="stats-card-actions">
+                                                    <div class="sort-buttons" data-scope="tracks">
+                                                        <button type="button" class="sort-btn" data-sort="count" data-order="desc" title="Сортировать по количеству">По количеству</button>
+                                                        <button type="button" class="sort-btn" data-sort="time" data-order="asc" title="Сортировать по времени">По времени</button>
+                                                    </div>
+                                                    <span class="stats-card-count">{{ data.tracks|length }}</span>
+                                                </div>
                                             </div>
                                             {% if data.tracks %}
                                                 <div class="stats-tracks-list">
                                                     {% for item in data.tracks %}
-                                                        <div class="stats-track-item">
+                                                        <div class="stats-track-item" data-count="{{ item.count|default:0 }}" data-period-code="{% if item.period == '00:00 - 05:00' %}1{% elif item.period == '05:00 - 10:00' %}2{% elif item.period == '10:00 - 18:00' %}3{% elif item.period == '18:00 - 00:00' %}4{% else %}0{% endif %}">
                                                             <div class="stats-track-rank">{{ forloop.counter }}</div>
-                                                            {% with item.track.artists.all|first as first_artist %}
-                                                                {% if first_artist and first_artist.image %}
-                                                                    <img src="{{ first_artist.image.url }}" class="stats-track-image" alt="Track Image">
-                                                                {% else %}
-                                                                    <div class="stats-track-image-placeholder">♪</div>
-                                                                {% endif %}
-                                                            {% endwith %}
+                                                            {% if item.track.image %}
+                                                                <img src="{{ item.track.image.url }}" class="stats-track-image" alt="Track Image">
+                                                            {% else %}
+                                                                <div class="stats-track-image-placeholder">♪</div>
+                                                            {% endif %}
                                                             <div class="stats-track-info">
                                                                 <div class="stats-track-name">
                                                                     {% if item.track.url %}
@@ -205,17 +449,24 @@
                                                                 <div class="stats-track-artists">
                                                                     {% if item.track.artists.all %}
                                                                         {% for artist in item.track.artists.all %}
-                                                                            {% if artist.spotify_url %}
-                                                                                <a href="{{ artist.spotify_url }}" class="stats-artist-link" target="_blank">{{ artist.name }}</a>
-                                                                            {% else %}
-                                                                                <span>{{ artist.name }}</span>
-                                                                            {% endif %}
-                                                                            {% if not forloop.last %}, {% endif %}
+                                                                            <span class="artist-inline">
+                                                                                {% if artist.image %}
+                                                                                    <img src="{{ artist.image.url }}" class="artist-avatar" alt="{{ artist.name }}">
+                                                                                {% endif %}
+                                                                                {% if artist.spotify_url %}
+                                                                                    <a href="{{ artist.spotify_url }}" class="stats-artist-link" target="_blank">{{ artist.name }}</a>
+                                                                                {% else %}
+                                                                                    <span>{{ artist.name }}</span>
+                                                                                {% endif %}
+                                                                            </span>{% if not forloop.last %}<span class="artist-sep">,</span>{% endif %}
                                                                         {% endfor %}
                                                                     {% else %}
                                                                         <span>Неизвестный артист</span>
                                                                     {% endif %}
                                                                 </div>
+                                                                {% if item.period %}
+                                                                    <div class="stats-track-period" title="Чаще всего в это время">{{ item.period }}</div>
+                                                                {% endif %}
                                                             </div>
                                                             <div class="stats-track-plays">{{ item.count }}</div>
                                                         </div>
@@ -230,12 +481,18 @@
                                         <div class="stats-card stats-card-artists">
                                             <div class="stats-card-header">
                                                 <h3 class="stats-card-title">Топ артисты</h3>
-                                                <span class="stats-card-count">{{ data.artists|length }}</span>
+                                                <div class="stats-card-actions">
+                                                    <div class="sort-buttons" data-scope="artists">
+                                                        <button type="button" class="sort-btn" data-sort="count" data-order="desc" title="Сортировать по количеству">По количеству</button>
+                                                        <button type="button" class="sort-btn" data-sort="time" data-order="asc" title="Сортировать по времени">По времени</button>
+                                                    </div>
+                                                    <span class="stats-card-count">{{ data.artists|length }}</span>
+                                                </div>
                                             </div>
                                             {% if data.artists %}
                                                 <div class="stats-artists-list">
                                                     {% for item in data.artists %}
-                                                        <div class="stats-artist-item">
+                                                        <div class="stats-artist-item" data-count="{{ item.count|default:0 }}" data-period-code="{% if item.period == '00:00 - 05:00' %}1{% elif item.period == '05:00 - 10:00' %}2{% elif item.period == '10:00 - 18:00' %}3{% elif item.period == '18:00 - 00:00' %}4{% else %}0{% endif %}">
                                                             <div class="stats-artist-rank">{{ forloop.counter }}</div>
                                                             {% if item.artist.image %}
                                                                 <img class="stats-artist-avatar" src="{{ item.artist.image.url }}" alt="{{ item.artist.name }}">
@@ -247,6 +504,9 @@
                                                                     <a href="{{ item.artist.spotify_url }}" target="_blank" class="stats-artist-name">{{ item.artist.name }}</a>
                                                                 {% else %}
                                                                     <span class="stats-artist-name">{{ item.artist.name }}</span>
+                                                                {% endif %}
+                                                                {% if item.period %}
+                                                                    <div class="stats-artist-period">{{ item.period }}</div>
                                                                 {% endif %}
                                                             </div>
                                                             <div class="stats-artist-plays">{{ item.count }}</div>
@@ -262,15 +522,30 @@
                                         <div class="stats-card stats-card-genres">
                                             <div class="stats-card-header">
                                                 <h3 class="stats-card-title">Топ жанры</h3>
-                                                <span class="stats-card-count">{{ data.genres|length }}</span>
+                                                <div class="stats-card-actions">
+                                                    <div class="sort-buttons" data-scope="genres">
+                                                        <button type="button" class="sort-btn" data-sort="count" data-order="desc" title="Сортировать по количеству">По количеству</button>
+                                                        <button type="button" class="sort-btn" data-sort="time" data-order="asc" title="Сортировать по времени">По времени</button>
+                                                    </div>
+                                                    <span class="stats-card-count">{{ data.genres|length }}</span>
+                                                </div>
                                             </div>
                                             {% if data.genres %}
                                                 <div class="stats-genres-grid">
                                                     {% for item in data.genres %}
-                                                        <div class="stats-genre-item">
-                                                            <span class="stats-genre-name">{{ item.genre|default:"Без жанра" }}</span>
+                                                        {% with g=item.genre|default_if_none:'' %}
+                                                        {% with gl=g|lower %}
+                                                        {% if g and gl != 'undefined' and gl != 'none' and gl != 'null' and gl != 'unknown' %}
+                                                        <div class="stats-genre-item" data-count="{{ item.count|default:0 }}" data-period-code="{% if item.period == '00:00 - 05:00' %}1{% elif item.period == '05:00 - 10:00' %}2{% elif item.period == '10:00 - 18:00' %}3{% elif item.period == '18:00 - 00:00' %}4{% else %}0{% endif %}">
+                                                            <span class="stats-genre-name">{{ g }}</span>
+                                                            {% if item.period %}
+                                                                <span class="stats-genre-period">{{ item.period }}</span>
+                                                            {% endif %}
                                                             <span class="stats-genre-count">{{ item.count }}</span>
                                                         </div>
+                                                        {% endif %}
+                                                        {% endwith %}
+                                                        {% endwith %}
                                                     {% endfor %}
                                                 </div>
                                             {% else %}
@@ -298,7 +573,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabButtons = document.querySelectorAll('.tabs-container .tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
 
             tabButtons.forEach(button => {
@@ -314,6 +589,53 @@
                     document.getElementById(targetTab + '-tab').classList.add('active');
                 });
             });
+
+            // Диапазон топ-треков: выпадающий список выбора периода
+            const rangeSections = {
+                short: document.getElementById('tracks-range-short'),
+                medium: document.getElementById('tracks-range-medium'),
+                long: document.getElementById('tracks-range-long')
+            };
+            function showRange(range) {
+                Object.values(rangeSections).forEach(el => { if (el) el.style.display = 'none'; });
+                if (rangeSections[range]) rangeSections[range].style.display = '';
+            }
+
+            // New: term selection button styled like the Playlist tab button
+            const termBtn = document.getElementById('tracks-term-btn');
+            const termWrap = document.getElementById('tracks-term-dropdown');
+            const termLabel = document.getElementById('tracks-term-label');
+            if (termBtn && termWrap) {
+                const menu = termWrap.querySelector('.dropdown-menu');
+                const items = termWrap.querySelectorAll('.dropdown-item');
+
+                function openMenu(){ menu.style.display = 'block'; termWrap.classList.add('open'); termBtn.setAttribute('aria-expanded','true'); }
+                function closeMenu(){ menu.style.display = 'none'; termWrap.classList.remove('open'); termBtn.setAttribute('aria-expanded','false'); }
+                function toggleMenu(){ if (menu.style.display === 'block') { closeMenu(); } else { openMenu(); } }
+
+                termBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleMenu(); });
+                items.forEach(it => {
+                    it.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const r = it.getAttribute('data-range');
+                        items.forEach(i => i.classList.remove('active'));
+                        it.classList.add('active');
+                        if (termLabel) termLabel.textContent = it.textContent.trim();
+                        showRange(r);
+                        closeMenu();
+                    });
+                });
+                document.addEventListener('click', (e) => { if (!termWrap.contains(e.target)) closeMenu(); });
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+
+                // Default state
+                showRange('short');
+                if (termLabel) termLabel.textContent = 'Short Term';
+                closeMenu();
+            } else {
+                // Fallback ensure default range is visible
+                showRange('short');
+            }
 
             // Обработка создания плейлиста
             const createPlaylistBtn = document.getElementById('create-playlist-btn');
@@ -472,6 +794,122 @@
                 });
             }
 
+            // ===== Сортировка в карточках статистики (по количеству и по времени) =====
+            (function initStatsSorting(){
+                const scopeToSelector = {
+                    tracks: '.stats-tracks-list',
+                    artists: '.stats-artists-list',
+                    genres: '.stats-genres-grid'
+                };
+                const blocks = document.querySelectorAll('#stats-container .stats-period-block');
+
+                function cmpNumbers(a, b, order) {
+                    return order === 'asc' ? (a - b) : (b - a);
+                }
+
+                function normalizeInt(v) { const n = parseInt(v, 10); return Number.isFinite(n) ? n : 0; }
+
+                function sortChildren(listEl, key, order, scope) {
+                    if (!listEl) return;
+                    const items = Array.from(listEl.children);
+                    const getKey = (el) => {
+                        if (key === 'count') return normalizeInt(el.dataset.count);
+                        if (key === 'time') {
+                            const codeRaw = normalizeInt(el.dataset.periodCode);
+                            return codeRaw; // 0 means no period
+                        }
+                        return 0;
+                    };
+                    items.sort((elA, elB) => {
+                        const a = getKey(elA);
+                        const b = getKey(elB);
+                        // Особое правило для сортировки по времени: отсутствующие period (0) всегда в конце
+                        if (key === 'time') {
+                            const aMissing = a === 0;
+                            const bMissing = b === 0;
+                            if (aMissing && !bMissing) return 1;
+                            if (!aMissing && bMissing) return -1;
+                            // оба имеют/оба не имеют — обычная числовая
+                        }
+                        return cmpNumbers(a, b, order);
+                    });
+
+                    // Переустанавливаем порядок DOM
+                    items.forEach(el => listEl.appendChild(el));
+
+                    // Обновляем порядковые номера там, где они есть
+                    if (scope === 'tracks') {
+                        Array.from(listEl.children).forEach((el, idx) => {
+                            const rank = el.querySelector('.stats-track-rank');
+                            if (rank) rank.textContent = String(idx + 1);
+                        });
+                    } else if (scope === 'artists') {
+                        Array.from(listEl.children).forEach((el, idx) => {
+                            const rank = el.querySelector('.stats-artist-rank');
+                            if (rank) rank.textContent = String(idx + 1);
+                        });
+                    }
+                }
+
+                function attachForBlock(block) {
+                    const groups = block.querySelectorAll('.sort-buttons');
+                    groups.forEach(group => {
+                        const scope = group.getAttribute('data-scope');
+                        const listSelector = scopeToSelector[scope];
+                        if (!listSelector) return;
+                        const card = group.closest('.stats-card');
+                        if (!card) return;
+                        const listEl = card.querySelector(listSelector);
+                        if (!listEl) return;
+
+                        const buttons = group.querySelectorAll('.sort-btn');
+                        buttons.forEach(btn => {
+                            btn.addEventListener('click', () => {
+                                const sortKey = btn.getAttribute('data-sort'); // 'count' | 'time'
+                                // toggle order when clicking the same button, otherwise set default
+                                let order = btn.getAttribute('data-order') || 'desc';
+                                const isActive = btn.classList.contains('active');
+                                if (isActive) {
+                                    order = order === 'asc' ? 'desc' : 'asc';
+                                    btn.setAttribute('data-order', order);
+                                } else {
+                                    order = sortKey === 'count' ? 'desc' : 'asc';
+                                    btn.setAttribute('data-order', order);
+                                }
+
+                                // set active state
+                                buttons.forEach(b => b.classList.remove('active'));
+                                btn.classList.add('active');
+                                btn.setAttribute('aria-pressed', 'true');
+                                buttons.forEach(b => { if (b !== btn) b.setAttribute('aria-pressed', 'false'); });
+
+                                sortChildren(listEl, sortKey, order, scope);
+                            });
+                        });
+                    });
+                }
+
+                blocks.forEach(attachForBlock);
+            })();
+
+            // Post-filter Top Genres on the client: update counts and show empty state if needed
+            (function sanitizeGenres(){
+                const genreCards = document.querySelectorAll('#stats-container .stats-card-genres');
+                genreCards.forEach(card => {
+                    const list = card.querySelector('.stats-genres-grid');
+                    const countBadge = card.querySelector('.stats-card-count');
+                    if (!list) return;
+                    const validCount = list.children.length; // template already skipped invalid/None
+                    if (countBadge) countBadge.textContent = String(validCount);
+                    if (validCount === 0) {
+                        const empty = document.createElement('div');
+                        empty.className = 'stats-empty';
+                        empty.textContent = 'Нет данных по жанрам';
+                        list.replaceWith(empty);
+                    }
+                });
+            })();
+
             // Функция для получения CSRF токена из cookies
             function getCookie(name) {
                 let cookieValue = null;
@@ -488,6 +926,165 @@
                 return cookieValue;
             }
         });
+    </script>
+
+    <!-- Fixed Bottom Audio Player -->
+    <div id="bottom-audio-player" class="audio-player" style="display:none;">
+        <div class="player-track">
+            <div class="player-cover">
+                <img id="player-cover-img" src="" alt="Cover" />
+            </div>
+            <div class="player-meta">
+                <div id="player-track-name" class="player-title">—</div>
+                <div id="player-track-artists" class="player-artists">—</div>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="player-play" class="player-btn" aria-label="Play/Pause">
+                <span class="player-icon" id="player-play-icon">▶</span>
+            </button>
+            <div class="player-timeline">
+                <span id="player-current" class="player-time">0:00</span>
+                <div class="player-progress">
+                    <div id="player-progress-fill"></div>
+                </div>
+                <span id="player-duration" class="player-time">0:30</span>
+            </div>
+            <div class="player-volume">
+                <span class="player-volume-icon">🔊</span>
+                <input id="player-volume-range" type="range" min="0" max="1" step="0.01" value="1" />
+            </div>
+            <button id="player-close" class="player-btn" aria-label="Close Player">✕</button>
+        </div>
+        <audio id="player-audio"></audio>
+    </div>
+
+    <script>
+        // Initialize durations in track lists (mm:ss) or em dash when missing
+        (function initTrackDurations(){
+            function fmt(ms){
+                const n = Number(ms);
+                if (!Number.isFinite(n) || n <= 0) return '—';
+                const totalSec = Math.floor(n/1000);
+                const m = Math.floor(totalSec/60);
+                const s = totalSec % 60;
+                return String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+            }
+            document.querySelectorAll('.track-duration').forEach(el => {
+                const ms = parseInt(el.getAttribute('data-duration-ms'));
+                el.textContent = fmt(ms);
+            });
+        })();
+
+        // Bottom player logic
+        (function initBottomPlayer(){
+            const player = document.getElementById('bottom-audio-player');
+            const audio = document.getElementById('player-audio');
+            const playBtn = document.getElementById('player-play');
+            const playIcon = document.getElementById('player-play-icon');
+            const closeBtn = document.getElementById('player-close');
+            const vol = document.getElementById('player-volume-range');
+            const cover = document.getElementById('player-cover-img');
+            const title = document.getElementById('player-track-name');
+            const artists = document.getElementById('player-track-artists');
+            const cur = document.getElementById('player-current');
+            const dur = document.getElementById('player-duration');
+            const progress = document.getElementById('player-progress-fill');
+            const progressBar = progress && progress.parentElement;
+
+            function fmtTime(sec){
+                if (!isFinite(sec)) return '0:00';
+                sec = Math.max(0, Math.floor(sec));
+                const m = Math.floor(sec/60);
+                const s = sec % 60;
+                return m + ':' + String(s).padStart(2,'0');
+            }
+
+            function setPlayingUI(isPlaying){
+                playIcon.textContent = isPlaying ? '⏸' : '▶';
+            }
+
+            function openAndPlay(fromEl){
+                const item = fromEl.closest('.track-item');
+                if (!item) return;
+                const src = item.getAttribute('data-preview');
+                if (!src) return; // no preview, do nothing
+                const img = item.getAttribute('data-track-image');
+                const name = item.getAttribute('data-track-name') || '—';
+
+                if (img) cover.src = img; else cover.removeAttribute('src');
+                title.textContent = name;
+                // Copy rich artists markup (with avatars) if available
+                const artistsBlock = item.querySelector('.track-artists');
+                if (artistsBlock) {
+                    artists.innerHTML = artistsBlock.innerHTML;
+                } else {
+                    const art = item.getAttribute('data-track-artists') || '—';
+                    artists.textContent = art;
+                }
+
+                audio.src = src;
+                audio.currentTime = 0;
+                audio.volume = parseFloat(vol.value || '1');
+                player.style.display = 'flex';
+                document.body.classList.add('has-player');
+                audio.play().then(()=> setPlayingUI(true)).catch(()=> setPlayingUI(false));
+            }
+
+            // Initialize explicit play buttons for tracks with preview
+            (function initPreviewButtons(){
+                document.querySelectorAll('.track-item').forEach(item => {
+                    const src = item.getAttribute('data-preview');
+                    if (!src) return;
+                    const nameBlock = item.querySelector('.track-name');
+                    if (!nameBlock) return;
+                    if (nameBlock.querySelector('.play-preview-btn')) return;
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'play-preview-btn';
+                    btn.title = 'Прослушать превью';
+                    btn.setAttribute('aria-label', 'Play preview');
+                    btn.textContent = '▶';
+                    nameBlock.appendChild(btn);
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        openAndPlay(btn);
+                    });
+                });
+            })();
+
+            // Controls
+            playBtn.addEventListener('click', () => {
+                if (audio.paused) { audio.play(); setPlayingUI(true); }
+                else { audio.pause(); setPlayingUI(false); }
+            });
+            vol.addEventListener('input', () => { audio.volume = parseFloat(vol.value || '1'); });
+            audio.addEventListener('timeupdate', () => {
+                cur.textContent = fmtTime(audio.currentTime);
+                const d = audio.duration || 30; // default for previews
+                dur.textContent = fmtTime(d);
+                const p = d ? Math.min(100, Math.max(0, (audio.currentTime/d)*100)) : 0;
+                if (progress) progress.style.width = p + '%';
+            });
+            audio.addEventListener('ended', () => { setPlayingUI(false); });
+            if (progressBar) {
+                progressBar.addEventListener('click', (e) => {
+                    const rect = progressBar.getBoundingClientRect();
+                    const ratio = (e.clientX - rect.left) / rect.width;
+                    if (isFinite(ratio) && audio.duration) {
+                        audio.currentTime = Math.max(0, Math.min(audio.duration * ratio, audio.duration));
+                    }
+                });
+            }
+            // Close player
+            closeBtn.addEventListener('click', () => {
+                audio.pause();
+                setPlayingUI(false);
+                player.style.display = 'none';
+                document.body.classList.remove('has-player');
+                audio.removeAttribute('src');
+            });
+        })();
     </script>
 </body>
 </html>

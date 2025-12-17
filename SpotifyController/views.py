@@ -3,14 +3,14 @@ from django.contrib.auth import login
 from django.http import HttpResponse
 from django.views import View
 from django.shortcuts import redirect
-from .services import SpotifyService
+from SpotifyController.services.spotify_auth import AuthService
 from User.services import UserService
-from .client_services import SpotifyClientService
+from SpotifyController.services.client_services import UserClient
 
 class SpotifyLoginView(View):
     @staticmethod
     def get(request):
-        sp_oauth = SpotifyService.oauth()
+        sp_oauth = AuthService.oauth()
         auth_url = sp_oauth.get_authorize_url()
         return redirect(auth_url)
 
@@ -19,9 +19,9 @@ class SpotifyCallbackView(View):
     def get(request):
         code = request.GET.get('code')
 
-        sp_oauth = SpotifyService.oauth()
+        sp_oauth = AuthService.oauth()
         token_info = sp_oauth.get_access_token(code)
-        access_token, refresh_token, expires_at = SpotifyService.get_tokens(token_info)
+        access_token, refresh_token, expires_at = AuthService.get_tokens(token_info)
 
         user = request.user
         user_logged_in = user if user.is_authenticated else None
@@ -53,6 +53,6 @@ class CreateSpotifyPlaylistView(View):
     @staticmethod
     def post(request):
         user = request.user
-        sp_client = SpotifyClientService(user.access_token)
+        sp_client = UserClient(user=user)
         sp_client.create_user_recommendation_playlist(user)
         return HttpResponse(status=200)

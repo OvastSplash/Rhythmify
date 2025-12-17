@@ -1,8 +1,8 @@
 from django import forms
-from SpotifyController.services import SpotifyService
+from SpotifyController.services.spotify_auth import AuthService
 from .models import CustomUser
 from .services import UserService
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate
 import secrets
 import string
 
@@ -152,12 +152,12 @@ class ConfirmRegisterForm(forms.ModelForm):
         user: CustomUser = super().save(commit=False)
 
         user.access_token, user.refresh_token, user.token_expires_at = (
-            SpotifyService.get_tokens(data))
+            AuthService.get_tokens(data))
 
-        user.token_expires_at = SpotifyService.convert_expires_at(user.token_expires_at)
+        user.token_expires_at = AuthService.convert_expires_at(user.token_expires_at)
 
         user.username, user.spotify_id, user.spotify_url, user.followers, image_url = (
-            SpotifyService.get_user_info(data))
+            AuthService.get_user_info(data))
 
         user.user_image = UserService.update_object_image(user, image_url, save=False)
 

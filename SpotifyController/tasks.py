@@ -1,35 +1,29 @@
 from celery import shared_task
+
 from User.models import CustomUser
-from .CacheService import UserCacheService
-from .db_services import SpotifyDatabaseService, GetSpotifyInfoFromDatabase
-from .models import Artist
-from .services import SpotifyService
-from .DataAggregatorService import AggregatorService
+from SpotifyController.models.models import Artist
 
-@shared_task
-def refresh_spotify_tokens():
-    users = CustomUser.objects.filter(
-        is_active=True,
-        refresh_token__isnull=False,
-        access_token__isnull=False,
-        token_expires_at__isnull=False,
-    ).all()
-    for user in users:
-        print(f"refreshing spotify token for {user.username}")
-        SpotifyService.refresh_user_tokens(user)
+from SpotifyController.services.data_aggregator import AggregatorService
 
-@shared_task
-def update_user_favorite_tracks():
-    users = CustomUser.objects.filter(
+from typing import List
+
+def _get_active_users() -> List[CustomUser]:
+    return CustomUser.objects.filter(
         is_active=True,
         access_token__isnull=False,
     )
 
-    AggregatorService.update_user_favorite_tracks(users)
+@shared_task
+def update_user_favorite_tracks():
+    print("update_user_favorite_tracks")
 
+    aggregator = AggregatorService(users=_get_active_users())
+    aggregator.update_users_favorite_tracks()
 
 @shared_task
 def update_artist_data():
+    print("update_artist_data")
+
     artists = list(Artist.objects.all().values_list(
         'spotify_id', flat=True))
 
@@ -37,18 +31,16 @@ def update_artist_data():
 
 @shared_task
 def update_user_recommendations():
-    users = CustomUser.objects.filter(
-        is_active=True,
-        access_token__isnull=False,
-    ).prefetch_related("favorite_tracks_links__track__artists")
+    print("update_user_recommendations")
 
-    AggregatorService.update_user_recommendations(users)
-    print(UserCacheService.get_user_recommended_tracks(users[0].id))
+    aggregator = AggregatorService(users=_get_active_users())
+    aggregator.update_users_recommendations()
+
 
 @shared_task
-def save_user_listen_tracks():
-    users = CustomUser.objects.filter(
-        is_active=True,
-        access_token__isnull=False,
-    )
-    AggregatorService.save_users_listen_tracks(users)
+def update_user_listen_tracks():
+    print("update_user_listen_tracks")
+
+    aggregator = AggregatorService(users=_get_active_users())
+    aggregator.save_users_listened_tracks()
+

@@ -1,13 +1,16 @@
 from pylast import Track, SimilarItem, Tag, LastFMNetwork, Artist, TopItem
-from SpotifyController.models import Track as TrackModel, Artist as ArtistModel
+from SpotifyController.models.models import Track as TrackModel, Artist as ArtistModel
 from typing import List, Union
 from Rhythmify.settings import LAST_FM_KEY, LAST_FM_SECRET
 import pylast
 
 class LastFMService:
     @staticmethod
-    def get_client() -> LastFMNetwork:
-        return pylast.LastFMNetwork(api_key=LAST_FM_KEY, api_secret=LAST_FM_SECRET)
+    def get_client() -> LastFMNetwork | None:
+        try:
+            return pylast.LastFMNetwork(api_key=LAST_FM_KEY, api_secret=LAST_FM_SECRET)
+        except Exception as e:
+            print(f"Error: {e}")
 
     @staticmethod
     def get_similar_tracks(track: Track, count: int = 10) -> List[SimilarItem]:
@@ -34,6 +37,9 @@ class LastFMClientService:
     def __init__(self):
         self.client = LastFMService.get_client()
 
+        if not self.client:
+            raise Exception("LastFM client is not initialized")
+
     def get_track(self, artist_name: str, track_name: str) -> Track:
         return self.client.get_track(artist_name, track_name)
 
@@ -49,37 +55,49 @@ class LastFMDataService:
         self.client = LastFMClientService()
         self.last_fm_service = LastFMService()
 
-    def collect_tracks_by_tracks(self, tracks: List[TrackModel], count: int = 5) -> List[SimilarItem]:
+    def collect_tracks_by_tracks(self, tracks: List[TrackModel], count: int = 3) -> List[SimilarItem]:
         similar_tracks: List[SimilarItem] = []
-        for track in tracks:
+
+        for index, track in enumerate(tracks):
             print("Track: ", track.name)
             get_tracks = self.client.get_track(artist_name=track.artists.first().name, track_name=track.name)
             print(get_tracks)
+
+            multiplier = max(1.0, 2.0 - (index * 0.2))
+            track_count = int(count * multiplier)
+
             try:
-                similar = self.last_fm_service.get_similar_tracks(track=get_tracks, count=count)
+                similar = self.last_fm_service.get_similar_tracks(track=get_tracks, count=track_count)
+                similar_tracks.extend(similar)
 
             except Exception as e:
                 print(e)
-                continue
-
 
         return similar_tracks
 
     def collect_tracks_by_genre(self, genres: List[str], count: int = 5) -> List[Track]:
         tracks: List[Track] = []
 
-        for genre in genres:
+        for index, genre in enumerate(genres):
             get_genre = self.client.get_genre(genre)
-            tracks.extend(self.last_fm_service.get_tracks_by_genre(genre=get_genre, count=count))
+
+            multiplier = max(1.0, 2.0 - (index * 0.2))
+            genre_count = int(count * multiplier)
+
+            tracks.extend(self.last_fm_service.get_tracks_by_genre(genre=get_genre, count=genre_count))
 
         return tracks
 
-    def collect_similar_artists(self, artists: List[ArtistModel], count: int = 5) -> List[SimilarItem]:
+    def collect_similar_artists(self, artists: List[ArtistModel], count: int = 2) -> List[SimilarItem]:
         similar_artists: List[SimilarItem] = []
 
-        for artist in artists:
+        for index, artist in enumerate(artists):
             get_artist = self.client.get_artist(artist.name)
-            similar_artists.extend(self.last_fm_service.get_similar_artists(artist=get_artist, count=count))
+
+            multiplier = max(1.0, 2.0 - (index * 0.2))
+            artist_count = int(count * multiplier)
+
+            similar_artists.extend(self.last_fm_service.get_similar_artists(artist=get_artist, count=artist_count))
 
         return similar_artists
 

@@ -1,9 +1,10 @@
 from typing import Optional, Union
 from django.core.files.base import ContentFile
-from SpotifyController.models import Artist
-from SpotifyController.services import SpotifyService
+from SpotifyController.models.models import Artist, Track, Album
+from SpotifyController.services.spotify_auth import AuthService
 from .models import CustomUser
 from dataclasses import dataclass
+
 import requests
 import os
 
@@ -16,7 +17,7 @@ class SpotifyUserUpdateResult:
 
 class UserService:
     @staticmethod
-    def update_object_image(object: Union[Artist, CustomUser], image_url, save=True):
+    def update_object_image(object: Union[Artist, CustomUser, Track, Album], image_url, save=True):
         try:
             response = requests.get(image_url, timeout=10)
             response.raise_for_status()
@@ -34,7 +35,7 @@ class UserService:
 
     @staticmethod
     def spotify_update_user(access_token, refresh_token, expires_at, user: CustomUser = None) -> SpotifyUserUpdateResult:
-        data, error = SpotifyService.get_user_data(access_token)
+        data, error = AuthService.get_user_data(access_token)
 
         if error:
             return SpotifyUserUpdateResult(
@@ -42,7 +43,7 @@ class UserService:
                 error=error,
             )
 
-        name, spotify_id, spotify_url, followers, image = SpotifyService.get_user_info(data)
+        name, spotify_id, spotify_url, followers, image = AuthService.get_user_info(data)
 
         user_exists = CustomUser.objects.filter(spotify_id=spotify_id).first()
 
@@ -53,14 +54,14 @@ class UserService:
             )
 
         if user:
-            expires_at = SpotifyService.convert_expires_at(expires_at)
+            expires_at = AuthService.convert_expires_at(expires_at)
 
             user.spotify_id = spotify_id
             user.followers = followers
             user.spotify_url = spotify_url
             user.access_token = access_token
             user.refresh_token = refresh_token
-            user.token_expires_at = SpotifyService.convert_expires_at(expires_at)
+            user.token_expires_at = AuthService.convert_expires_at(expires_at)
 
             if not user.image:
                 UserService.update_object_image(user, image, save=False)

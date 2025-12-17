@@ -40,9 +40,13 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_celery_beat",
     "django_celery_results",
+
     "User",
     "SpotifyController",
     "Profile",
+
+    "LastFM",
+    "Deezer",
 ]
 
 MIDDLEWARE = [
@@ -78,7 +82,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "Rhythmify.wsgi.application"
 
 
-# Database
+# database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
@@ -141,7 +145,8 @@ SCOPE = (
     "playlist-modify-public "
     "user-top-read "
     "user-library-read "
-    "user-read-recently-played"
+    "user-read-recently-played "
+    "user-read-private "
 )
 
 LAST_FM_KEY=config("LAST_FM_KEY")
@@ -168,19 +173,14 @@ CACHES = {
 CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
 CELERY_BEAT_SCHEDULE = {
-    "refresh-spotify-tokens-every-5-minutes": {
-        "task": "SpotifyController.tasks.refresh_spotify_tokens",
-        "schedule": crontab(minute="*"),
-        "args": (),
-    },
     "update-user-favorite-tracks-every-day": {
         "task": "SpotifyController.tasks.update_user_favorite_tracks",
-        "schedule": crontab(minute="*"),
+        "schedule": crontab(hour="2", minute="0"),
         "args": (),
     },
     "save_users_listen_tracks-every-day": {
-        "task": "SpotifyController.tasks.save_user_listen_tracks",
-        "schedule": crontab(minute="*"),
+        "task": "SpotifyController.tasks.update_user_listen_tracks",
+        "schedule": crontab(minute="*/5"),
         "args": (),
     },
     # "update-artist-data-every-day":{
@@ -190,7 +190,7 @@ CELERY_BEAT_SCHEDULE = {
     # },
     # "update-user-recommendations-list-every-day": {
     #     "task": "SpotifyController.tasks.update_user_recommendations",
-    #     "schedule": crontab(minute="*"),
+    #     "schedule": crontab(minute="*/2"),
     #     "args": (),
     # }
 }

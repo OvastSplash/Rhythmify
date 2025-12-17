@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from django.views import View
 from .forms import LoginForm, RegisterForm, ConfirmRegisterForm
 from django.contrib.auth import authenticate, login
-from SpotifyController.services import SpotifyService
-from SpotifyController.DataAggregatorService import AggregatorService
+from SpotifyController.services.spotify_auth import AuthService
+from SpotifyController.services.data_aggregator import AggregatorService
 
 class LoginView(View):
     form = LoginForm
@@ -51,7 +51,7 @@ class ConfirmRegisterView(View):
         if not spotify_data:
             return redirect("login")
 
-        name, spotify_id, spotify_url, followers, image = SpotifyService.get_user_info(data=spotify_data)
+        name, spotify_id, spotify_url, followers, image = AuthService.get_user_info(data=spotify_data)
 
         context = {
             "form": self.form,

@@ -7,6 +7,11 @@ body {
     color: #ffffff;
 }
 
+/* When bottom player is visible, avoid overlap */
+body.has-player .profile-container {
+    padding-bottom: 120px; /* space for fixed player */
+}
+
 .Header {
     position: fixed;
     top: 0;
@@ -812,3 +817,693 @@ a.stats-artist-name:hover {
         padding: 16px;
     }
 }
+/*** Schedule (Ваше расписание) styles ***/
+.schedule-section {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.schedule-title {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.5px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.schedule-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 18px;
+    transition: all 0.3s ease;
+}
+
+.schedule-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+}
+
+.schedule-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.schedule-card-title {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 320px;
+    overflow: auto;
+    padding-right: 6px;
+}
+
+/* subtle custom scrollbar */
+.schedule-list::-webkit-scrollbar { width: 8px; height: 8px; }
+.schedule-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+.schedule-list::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+.schedule-item {
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.schedule-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.schedule-thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.06);
+}
+
+.schedule-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.schedule-thumb-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-weight: 700;
+}
+
+.schedule-genre-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #bfbfbf;
+}
+
+.schedule-content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.schedule-name {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.schedule-meta {
+    margin-top: 2px;
+    font-size: 12px;
+    color: #b3b3b3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.schedule-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.schedule-link:hover { color: #1DB954; text-decoration: underline; }
+
+.schedule-time {
+    background: rgba(29, 185, 84, 0.15);
+    color: #1DB954;
+    padding: 6px 10px 6px 28px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    position: relative;
+}
+
+.schedule-time::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    /* Simple clock using border */
+    border: 2px solid #1DB954;
+    border-radius: 50%;
+}
+
+/* Period chips inside existing stats blocks */
+.stats-track-period, .stats-artist-period, .stats-genre-period {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e6e6e6;
+    padding: 4px 10px 4px 26px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    white-space: nowrap;
+}
+
+.stats-track-period::before, .stats-artist-period::before, .stats-genre-period::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
+    border: 2px solid rgba(230,230,230,0.8);
+    border-radius: 50%;
+}
+
+/* Align period chips and counts in lists */
+.stats-track-item .stats-track-period { justify-self: end; margin-right: 8px; }
+.stats-artist-item .stats-artist-period { color: #b3b3b3; margin-top: 4px; }
+.stats-genre-item .stats-genre-period { color: #b3b3b3; }
+
+/* Responsive tweaks for schedule */
+@media (max-width: 1100px) {
+    .schedule-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+    .schedule-grid { grid-template-columns: 1fr; }
+    .schedule-title { font-size: 22px; }
+    .schedule-list { max-height: 260px; }
+}
+/* Top tracks: adjust period placement and visibility so it doesn't clash with plays counter */
+.stats-track-info .stats-track-period {
+    display: inline-block;
+    margin-top: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #bfbfbf;
+    padding: 3px 8px 3px 22px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    position: relative;
+}
+
+/* keep tiny clock ring but lighter */
+.stats-track-info .stats-track-period::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%);
+    border: 2px solid rgba(230,230,230,0.65);
+    border-radius: 50%;
+}
+
+/* ensure plays counter always occupies the right edge */
+.stats-track-plays {
+    justify-self: end;
+}
+
+/* mobile: hide period chip inside Top tracks to keep layout clean */
+@media (max-width: 600px) {
+    .stats-track-info .stats-track-period { display: none; }
+}
+
+/* Sorting controls for stats cards */
+.stats-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sort-buttons {
+    display: inline-flex;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+    padding: 4px;
+}
+
+.sort-btn {
+    appearance: none;
+    background: transparent;
+    color: #b3b3b3;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sort-btn:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.06);
+}
+
+.sort-btn.active {
+    color: #1DB954;
+    background: rgba(29, 185, 84, 0.12);
+}
+
+/* compact on small screens */
+@media (max-width: 600px) {
+    .sort-btn { padding: 6px 10px; font-size: 11px; }
+}
+
+/* --- Top Tracks: Enhanced Stylish Presentation (scoped to #tracks-tab) --- */
+#tracks-tab .tracks-list {
+    gap: 10px;
+}
+
+#tracks-tab .track-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+
+#tracks-tab .track-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-1px);
+}
+
+#tracks-tab .track-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 4px auto;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(29,185,84,0.25), rgba(29,185,84,0.05));
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#tracks-tab .track-image,
+#tracks-tab .track-image-placeholder {
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+#tracks-tab .track-image-placeholder {
+    background: linear-gradient(135deg, #1DB954 0%, #0b5 100%);
+}
+
+#tracks-tab .track-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#tracks-tab .track-artists {
+    color: #c7c7c7;
+    font-size: 13.5px;
+}
+
+#tracks-tab .artist-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#tracks-tab .track-duration {
+    color: #e6e6e6;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    #tracks-tab .track-item {
+        grid-template-columns: 28px 56px 1fr;
+        gap: 12px;
+    }
+    #tracks-tab .track-duration { display: none; }
+}
+
+/* Chips for genres */
+#tracks-tab .track-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+}
+#tracks-tab .genre-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #e9e9e9;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    backdrop-filter: blur(3px);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+/* Popularity bar */
+#tracks-tab .popularity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+#tracks-tab .popularity-bar {
+    position: relative;
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 999px;
+    overflow: hidden;
+}
+#tracks-tab .popularity-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #1DB954 0%, #3ee27d 100%);
+    box-shadow: 0 0 10px rgba(29,185,84,0.35);
+    transition: width .6s ease;
+}
+#tracks-tab .popularity-label {
+    font-size: 12px;
+    color: #cfcfcf;
+}
+
+/* --- Top Tracks: Creative Accents, Big Numbers, Animations (scoped to #tracks-tab) --- */
+#tracks-tab .tracks-list {
+    position: relative;
+    backdrop-filter: blur(2px);
+}
+
+#tracks-tab .track-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Oversized gradient rank number as a decorative background */
+#tracks-tab .track-item::before {
+    content: attr(data-rank);
+    position: absolute;
+    top: -10px;
+    left: -6px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+    background: linear-gradient(135deg, #1DB954 0%, #58e370 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.08;
+    pointer-events: none;
+    transform: translateY(0);
+    transition: opacity .3s ease, transform .3s ease;
+}
+#tracks-tab .track-item:hover::before {
+    opacity: 0.15;
+    transform: translateY(-2px);
+}
+
+/* Shimmer sweep on hover */
+#tracks-tab .track-item::after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: -150%;
+    width: 50%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%);
+    transform: skewX(-20deg);
+    transition: left .6s ease;
+    pointer-events: none;
+}
+#tracks-tab .track-item:hover::after {
+    left: 150%;
+}
+
+/* Stronger hover micro-interactions */
+#tracks-tab .track-item:hover .track-image {
+    transform: scale(1.03);
+}
+#tracks-tab .track-image { transition: transform .25s ease; }
+
+/* Stylish small rank badge; top-3 have special accents */
+#tracks-tab .track-number {
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.06);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+}
+#tracks-tab .top-rank .track-number {
+    background: linear-gradient(135deg, rgba(29,185,84,0.35), rgba(29,185,84,0.12));
+    border-color: rgba(29,185,84,0.35);
+}
+
+/* Top-3 visual accents */
+#tracks-tab .track-item.top-rank {
+    border-color: rgba(255,255,255,0.14);
+}
+#tracks-tab .track-item.top-rank-1 {
+    background: linear-gradient(180deg, rgba(29,185,84,0.10), rgba(29,185,84,0.03));
+    box-shadow: 0 10px 30px rgba(29,185,84,0.12), inset 0 0 0 1px rgba(29,185,84,0.15);
+}
+#tracks-tab .track-item.top-rank-2 {
+    background: linear-gradient(180deg, rgba(88,101,242,0.10), rgba(88,101,242,0.03));
+    box-shadow: 0 10px 30px rgba(88,101,242,0.12), inset 0 0 0 1px rgba(88,101,242,0.15);
+}
+#tracks-tab .track-item.top-rank-3 {
+    background: linear-gradient(180deg, rgba(255,170,51,0.12), rgba(255,170,51,0.04));
+    box-shadow: 0 10px 30px rgba(255,170,51,0.14), inset 0 0 0 1px rgba(255,170,51,0.18);
+}
+
+/* Accent artwork ring for top-3 */
+#tracks-tab .top-rank-1 .track-image { outline: 2px solid rgba(29,185,84,0.7); }
+#tracks-tab .top-rank-2 .track-image { outline: 2px solid rgba(88,101,242,0.7); }
+#tracks-tab .top-rank-3 .track-image { outline: 2px solid rgba(255,170,51,0.8); }
+#tracks-tab .top-rank-1 .track-image,
+#tracks-tab .top-rank-2 .track-image,
+#tracks-tab .top-rank-3 .track-image {
+    outline-offset: 0px;
+    border-radius: 12px;
+}
+
+/* Entrance animation with subtle stagger */
+@keyframes riseInTrack {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+#tracks-tab .tracks-list .track-item {
+    animation: riseInTrack .4s ease both;
+}
+#tracks-tab .tracks-list .track-item:nth-child(1) { animation-delay: .02s; }
+#tracks-tab .tracks-list .track-item:nth-child(2) { animation-delay: .04s; }
+#tracks-tab .tracks-list .track-item:nth-child(3) { animation-delay: .06s; }
+#tracks-tab .tracks-list .track-item:nth-child(4) { animation-delay: .08s; }
+#tracks-tab .tracks-list .track-item:nth-child(5) { animation-delay: .10s; }
+#tracks-tab .tracks-list .track-item:nth-child(6) { animation-delay: .12s; }
+#tracks-tab .tracks-list .track-item:nth-child(7) { animation-delay: .14s; }
+#tracks-tab .tracks-list .track-item:nth-child(8) { animation-delay: .16s; }
+#tracks-tab .tracks-list .track-item:nth-child(9) { animation-delay: .18s; }
+#tracks-tab .tracks-list .track-item:nth-child(10) { animation-delay: .20s; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    #tracks-tab .track-item,
+    #tracks-tab .track-item::after,
+    #tracks-tab .track-image {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* --- Top Tracks: Unified serious style overrides (to align with other tabs) --- */
+#tracks-tab .track-item::before,
+#tracks-tab .track-item::after {
+    content: none !important; /* remove oversized number & shimmer */
+}
+
+#tracks-tab .track-item {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transform: none !important;
+    box-shadow: none;
+}
+#tracks-tab .track-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: none;
+}
+
+/* Neutral rank badge */
+#tracks-tab .track-number {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d9d9d9;
+    font-weight: 600;
+    font-size: 13px;
+}
+#tracks-tab .top-rank .track-number {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tone down imagery and hover micro-interactions */
+#tracks-tab .track-item:hover .track-image { transform: none !important; }
+#tracks-tab .track-image, #tracks-tab .track-image-placeholder { box-shadow: none; }
+
+/* Keep typography consistent */
+#tracks-tab .track-name { font-weight: 600; }
+
+/* Subtle chips and popularity */
+#tracks-tab .genre-chip { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.08); }
+#tracks-tab .popularity-fill { box-shadow: none; }
+
+/* Remove special top-3 accents for a cleaner, serious look */
+#tracks-tab .track-item.top-rank {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+}
+#tracks-tab .track-item.top-rank .track-image { box-shadow: none !important; outline: none !important; }
+
+
+/* --- Top Tracks: Compact centered layout --- */
+
+/* --- Top Tracks: Minimal playlist-alike overrides (final) --- */
+#tracks-tab .tracks-list { gap: 4px !important; backdrop-filter: none !important; }
+#tracks-tab .track-item { background: transparent !important; border: 0 !important; border-radius: 4px !important; padding: 8px 16px !important; grid-template-columns: 40px 56px 1fr 64px !important; box-shadow: none !important; }
+#tracks-tab .track-item:hover { background: rgba(255, 255, 255, 0.1) !important; border: 0 !important; transform: none !important; }
+#tracks-tab .track-item::before, #tracks-tab .track-item::after { content: none !important; }
+#tracks-tab .track-number { background: none !important; border: 0 !important; width: auto !important; height: auto !important; margin: 0 !important; border-radius: 0 !important; color: #b3b3b3 !important; font-weight: 400 !important; font-size: 16px !important; text-align: center !important; }
+#tracks-tab .track-image, #tracks-tab .track-image-placeholder { box-shadow: none !important; border-radius: 4px !important; }
+#tracks-tab .track-duration { justify-self: end; align-self: center; color: #d0d0d0; font-variant-numeric: tabular-nums; min-width: 44px; text-align: right; }
+
+/* Hover overlay on track cover */
+.track-cover { position: relative; display: inline-block; }
+.track-cover .track-image, .track-cover .track-image-placeholder { display: block; }
+.track-cover .track-cover-overlay {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.12);
+    opacity: 0; display: flex; align-items: center; justify-content: center;
+    transition: opacity .2s ease, background .2s ease;
+    pointer-events: none;
+}
+.track-cover:hover .track-cover-overlay { opacity: 1; background: rgba(0,0,0,0.2); }
+.track-cover .track-cover-icon { font-size: 20px; color: #fff; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6)); }
+
+/* In Top Tracks tab, hide hover overlay to avoid implying click on image */
+#tracks-tab .track-cover-overlay { display: none !important; }
+#tracks-tab .track-cover { cursor: default !important; }
+
+/* Play preview button */
+.play-preview-btn {
+    margin-left: 8px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 14px; line-height: 1;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease, transform .05s ease;
+}
+.play-preview-btn:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.3); }
+.play-preview-btn:active { transform: scale(0.96); }
+
+/* Player close button tweak */
+.audio-player #player-close { background: rgba(255,255,255,0.06); }
+.audio-player #player-close:hover { background: rgba(255,255,255,0.12); }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .audio-player { flex-wrap: wrap; gap: 10px; }
+  .audio-player .player-volume { order: 3; width: 100%; justify-content: flex-end; }
+  .audio-player .player-timeline { min-width: 120px; }
+}
+#tracks-tab .popularity, #tracks-tab .popularity-bar, #tracks-tab .popularity-fill, #tracks-tab .popularity-label { display: none !important; }
+#tracks-tab .top-rank { background: transparent !important; border: 0 !important; }
+
+/* Fixed Bottom Audio Player */
+.audio-player {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 20px;
+    background: rgba(18,18,18,0.92);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    z-index: 950;
+}
+.audio-player .player-track { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.audio-player .player-cover { width: 48px; height: 48px; border-radius: 8px; overflow: hidden; background: #2a2a2a; flex: 0 0 auto; }
+.audio-player .player-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.audio-player .player-meta { display: flex; flex-direction: column; min-width: 0; }
+.audio-player .player-title { font-weight: 600; font-size: 14px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.audio-player .player-artists { font-size: 12px; color: #bbb; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.audio-player .player-controls { display: flex; align-items: center; gap: 14px; flex: 1 1 auto; min-width: 0; }
+.audio-player .player-btn { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.06); color: #fff; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; transition: all .2s ease; }
+.audio-player .player-btn:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.2); }
+.audio-player .player-icon { font-size: 16px; line-height: 1; }
+
+.audio-player .player-timeline { display: flex; align-items: center; gap: 10px; flex: 1 1 auto; min-width: 160px; }
+.audio-player .player-time { font-size: 12px; color: #aaa; width: 36px; text-align: center; }
+.audio-player .player-progress { position: relative; height: 6px; background: rgba(255,255,255,0.08); border-radius: 999px; flex: 1 1 auto; cursor: pointer; }
+.audio-player #player-progress-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: linear-gradient(90deg, #1DB954, #42E695); border-radius: 999px; }
+
+.audio-player .player-volume { display: flex; align-items: center; gap: 8px; }
+.audio-player .player-volume-icon { font-size: 16px; }
+.audio-player #player-volume-range { width: 120px; accent-color: #1DB954; }
+
+/* Inline artist avatar next to names */
+.artist-inline { display: inline-flex; align-items: center; gap: 6px; }
+.artist-avatar { width: 18px; height: 18px; border-radius: 50%; object-fit: cover; vertical-align: middle; border: 1px solid rgba(255,255,255,0.15); }
+.artist-sep { margin: 0 4px; color: #aaa; }

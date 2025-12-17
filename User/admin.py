@@ -1,10 +1,6 @@
 from django.contrib import admin
 from .models import CustomUser
-from SpotifyController.models import (
-    FavoriteUserTracks,
-    RecommendationTracks,
-    UsersListenHistory,
-)
+from SpotifyController.models.through import FavoriteUserTracks, RecommendationTracks, UsersListenHistory
 
 
 class FavoriteUserTracksInline(admin.TabularInline):
