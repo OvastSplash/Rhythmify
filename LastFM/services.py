@@ -3,6 +3,9 @@ from SpotifyController.models.models import Track as TrackModel, Artist as Artis
 from typing import List, Union
 from Rhythmify.settings import LAST_FM_KEY, LAST_FM_SECRET
 import pylast
+import logging
+
+logger = logging.getLogger(__name__)
 
 class LastFMService:
     @staticmethod
@@ -10,7 +13,7 @@ class LastFMService:
         try:
             return pylast.LastFMNetwork(api_key=LAST_FM_KEY, api_secret=LAST_FM_SECRET)
         except Exception as e:
-            print(f"Error: {e}")
+            logger.exception("LastFM client init error")
 
     @staticmethod
     def get_similar_tracks(track: Track, count: int = 10) -> List[SimilarItem]:
@@ -59,9 +62,9 @@ class LastFMDataService:
         similar_tracks: List[SimilarItem] = []
 
         for index, track in enumerate(tracks):
-            print("Track: ", track.name)
+            logger.debug("Processing track: name=%s", track.name)
             get_tracks = self.client.get_track(artist_name=track.artists.first().name, track_name=track.name)
-            print(get_tracks)
+            logger.debug("Fetched LastFM track: track=%s", str(get_tracks))
 
             multiplier = max(1.0, 2.0 - (index * 0.2))
             track_count = int(count * multiplier)
@@ -70,8 +73,8 @@ class LastFMDataService:
                 similar = self.last_fm_service.get_similar_tracks(track=get_tracks, count=track_count)
                 similar_tracks.extend(similar)
 
-            except Exception as e:
-                print(e)
+            except Exception:
+                logger.exception("Failed to get similar tracks: track=%s", track.name)
 
         return similar_tracks
 

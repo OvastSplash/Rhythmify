@@ -6,6 +6,9 @@ from django.shortcuts import redirect
 from SpotifyController.services.spotify_auth import AuthService
 from User.services import UserService
 from SpotifyController.services.client_services import UserClient
+import logging
+
+logger = logging.getLogger(__name__)
 
 class SpotifyLoginView(View):
     @staticmethod
@@ -43,9 +46,9 @@ class SpotifyCallbackView(View):
 
         if not user_logged_in:
             login(request, result.user)
-            print(f"user {result.user.user_login} is logged in")
+            logger.info("User logged in: login=%s user_id=%s", result.user.user_login, result.user.id)
 
-        print(result.user.id)
+        logger.debug("Redirecting to profile: user_id=%s", result.user.id)
 
         return redirect('profile', user_id = result.user.id)
 

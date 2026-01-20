@@ -1,6 +1,9 @@
 from typing import List, Dict
 from collections import defaultdict
-from SpotifyController.models.models import Track, Artist
+
+from Rhythmify.settings import STATIC_URL
+from SpotifyController.models.models import Track, Artist, Playlist
+
 
 class ConvertSpotifyDataBaseService:
     @staticmethod
@@ -13,21 +16,57 @@ class ConvertSpotifyDataBaseService:
         return [tracks[spotify_id] for spotify_id in spotify_ids if spotify_id in tracks]
 
     @staticmethod
+    def convert_ids_to_playlists(spotify_ids: List[str]) -> List[Playlist]:
+        return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+
+    @staticmethod
     def convert_user_statistic(user_statistic_data: Dict):
-        converted_user_statistic = defaultdict(lambda: {"tracks": [], "artists": [], "genres": []})
+        converted_user_statistic = defaultdict(
+            lambda: {
+                "total_listen_ms": 0,
+                "total_tracks_count": 0,
+                "tracks": [],
+                "artists": [],
+                "genres": []
+            }
+        )
+
+        last_date_str = None
+        total_listen_ms: int = 0
+        total_tracks_count = 0
 
         for track_data in user_statistic_data["tracks"]:
             date = track_data['month_year']
+
+            if last_date_str and date != last_date_str:
+                converted_user_statistic[last_date_str]['total_listen_ms'] = total_listen_ms
+                converted_user_statistic[last_date_str]['total_tracks_count'] = total_tracks_count
+                total_listen_ms = 0
+                total_tracks_count = 0
+
+            last_date_str = date
+
             spotify_id = track_data["track__spotify_id"]
-            played_count = track_data["play_count"]
             most_popular_period = track_data["most_popular_period"]
+
+            played_count = track_data["play_count"]
+            total_tracks_count += int(played_count)
+
+            listen_ms = track_data["total_listen_ms"]
+            total_listen_ms += int(listen_ms)
 
             track = Track.objects.get(spotify_id=spotify_id)
             converted_user_statistic[date]["tracks"].append({
                 "track": track,
                 "count": played_count,
-                "period": most_popular_period
+                "period": most_popular_period,
+                'listen_ms': listen_ms
             })
+
+        # Set total_listen_ms and total_tracks_count for the last month
+        if last_date_str:
+            converted_user_statistic[last_date_str]['total_listen_ms'] = total_listen_ms
+            converted_user_statistic[last_date_str]['total_tracks_count'] = total_tracks_count
 
         for artist_data in user_statistic_data["artists"]:
             spotify_id = artist_data["track__artists__spotify_id"]

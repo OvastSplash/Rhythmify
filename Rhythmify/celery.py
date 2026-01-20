@@ -1,5 +1,6 @@
 import os
 from celery import Celery
+import logging
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Rhythmify.settings")
 app = Celery("Rhythmify")
@@ -9,4 +10,4 @@ app.autodiscover_tasks()
 
 @app.task(bind=True)
 def debug_task(self):
-    print('Request: {0!r}'.format(self.request))
+    logging.getLogger(__name__).debug('Request: %s', repr(self.request))

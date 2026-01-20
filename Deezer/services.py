@@ -2,6 +2,7 @@ from SpotifyController.services.construct_data import TrackClass
 
 import deezer
 import requests
+import logging
 
 class AuthService:
     @staticmethod
@@ -12,6 +13,7 @@ class AuthService:
 class ClientService:
     def __init__(self):
         self.client = AuthService.get_client()
+        self.logger = logging.getLogger(__name__)
 
     def _get_preview_by_name(self, track_name: str, artist_name: str):
         try:
@@ -25,8 +27,8 @@ class ClientService:
                     return mp3_bytes
 
             return None
-        except Exception as e:
-            print(f"Deezer Error: {e}")
+        except Exception:
+            self.logger.exception("Deezer preview fetch error: track=%s artist=%s", track_name, artist_name)
             return None
 
     from SpotifyController.models.models import Track

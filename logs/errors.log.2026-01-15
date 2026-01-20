@@ -1,0 +1,240 @@
+2026-01-15 14:22:27 [ERROR] [log:253] Internal Server Error: /spotify/callback
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "User_customuser_spotify_id_key"
+DETAIL:  Key (spotify_id)=(31bjzg32ny6ulk4lise3eucjlyvm) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/SpotifyController/views.py", line 32, in get
+    result = UserService.spotify_update_user(
+  File "/Users/obscurum/Rhythmify/User/services.py", line 74, in spotify_update_user
+    user.save()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1138, in _save_table
+    updated = self._do_update(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1203, in _do_update
+    return filtered._update(values) > 0
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1288, in _update
+    return query.get_compiler(self.db).execute_sql(ROW_COUNT)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 2060, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "User_customuser_spotify_id_key"
+DETAIL:  Key (spotify_id)=(31bjzg32ny6ulk4lise3eucjlyvm) already exists.
+
+2026-01-15 14:22:46 [ERROR] [log:253] Internal Server Error: /profile/5
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 53, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_user' not found. 'search_user' is not a valid view function or pattern name.
+2026-01-15 14:23:05 [ERROR] [log:253] Internal Server Error: /profile/5
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 53, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_user_post' not found. 'search_user_post' is not a valid view function or pattern name.
+2026-01-15 14:23:30 [ERROR] [log:253] Internal Server Error: /profile/5
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 53, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_user_post' not found. 'search_user_post' is not a valid view function or pattern name.
+2026-01-15 14:26:41 [ERROR] [log:253] Internal Server Error: /profile/5
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 53, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_user' not found. 'search_user' is not a valid view function or pattern name.
+2026-01-15 14:27:18 [ERROR] [log:253] Internal Server Error: /profile/5
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 53, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'search_user' not found. 'search_user' is not a valid view function or pattern name.
+2026-01-15 14:48:51 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:48:53 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:48:54 [ERROR] [log:253] Internal Server Error: /search/PlayHard
+2026-01-15 14:55:49 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:55:52 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:55:53 [ERROR] [log:253] Internal Server Error: /search/playHard
+2026-01-15 14:56:06 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:56:07 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:56:07 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:56:08 [ERROR] [log:253] Internal Server Error: /search/
+2026-01-15 14:56:09 [ERROR] [log:253] Internal Server Error: /search/playHard

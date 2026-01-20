@@ -6,6 +6,7 @@ class UserCacheService:
     SHORT_TERM_FAVORITE_TRACKS_KEY = "short_term_favorite_tracks_{user_id}"
     MEDIUM_TERM_FAVORITE_TRACKS_KEY = "medium_term_favorite_tracks_{user_id}"
     LONG_TERM_FAVORITE_TRACKS_KEY = "long_term_favorite_tracks_{user_id}"
+    PLAYLISTS_KEY = "playlists_{user_id}"
 
     TERM_KEYS = {
         'short_term': 'SHORT_TERM_FAVORITE_TRACKS_KEY',
@@ -102,3 +103,21 @@ class UserCacheService:
 
     def clear_user_statistics(self):
         cache.delete(UserCacheService.USER_LISTEN_HISTORY_KEY.format(user_id=self.user_id))
+
+
+    """
+    USER PLAYLIST CACHE
+    """
+
+    def set_user_playlists(self, playlist_ids: List[str], timeout: int = None) -> None:
+        cache.set(UserCacheService.PLAYLISTS_KEY.format(user_id=self.user_id), playlist_ids, timeout)
+
+    def get_user_playlists(self) -> List[str] | None:
+        key = UserCacheService.PLAYLISTS_KEY.format(user_id=self.user_id)
+        if cache.get(key) is not None:
+            return cache.get(key)
+
+        return None
+
+    def clear_user_playlists(self):
+        cache.delete(UserCacheService.PLAYLISTS_KEY.format(user_id=self.user_id))

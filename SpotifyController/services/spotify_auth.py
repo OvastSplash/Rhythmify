@@ -6,6 +6,7 @@ from User.models import CustomUser
 from SpotifyController.serializers import SpotifyProfileSerializer
 from datetime import datetime, timezone as dt_timezone
 import spotipy
+import logging
 
 # Cache no save
 class NoCacheHandler(CacheHandler):
@@ -30,7 +31,7 @@ class AuthService:
                 cache_handler=NoCacheHandler(),
             )
         except Exception as e:
-            print(f"Spotify Auth Error: {e}")
+            logging.getLogger(__name__).exception("Spotify OAuth init error")
 
     @staticmethod
     def get_client(access_token: str):
@@ -68,7 +69,7 @@ class AuthService:
 
             return AuthService._public_client
         except Exception as e:
-            print(f"Spotify Auth Error: {e}")
+            logging.getLogger(__name__).exception("Spotify public client init error")
 
     @staticmethod
     def get_tokens(token_info):
@@ -78,7 +79,7 @@ class AuthService:
             expires_at = token_info.get('expires_at')
             return access_token, refresh_token, expires_at
         except Exception as e:
-            print(f"Spotify Auth Error: {e}")
+            logging.getLogger(__name__).exception("Spotify token parsing error")
 
     @staticmethod
     def get_user_data(access_token):
@@ -123,7 +124,7 @@ class AuthService:
             'expires_at': user.token_expires_at.timestamp(),
         }
 
-        print(token_info["expires_at"])
+        logging.getLogger(__name__).debug("Token expires_at: %s", token_info.get("expires_at"))
 
         if sp_oauth.is_token_expired(token_info):
             new_token_info = sp_oauth.refresh_access_token(token_info.get('refresh_token'))
@@ -134,7 +135,7 @@ class AuthService:
             user.token_expires_at = AuthService.convert_expires_at(new_token_info.get('expires_at'))
             user.save()
 
-            print(f"User: {user.username} was refreshed successfully")
+            logging.getLogger(__name__).info("User tokens refreshed: username=%s", user.username)
             return True
 
         return False

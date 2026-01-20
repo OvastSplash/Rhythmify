@@ -1,0 +1,135 @@
+2026-01-13 10:33:31 [INFO] [fetch_new_obj:28] Process artist: Europe
+2026-01-13 10:33:31 [INFO] [fetch_new_obj:17] Process album: Together
+2026-01-13 10:33:31 [INFO] [artist:22] Updating artist's top_tracks: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:33 [INFO] [data_builder:137] Track created: sid=3MrRksHupTVEQ7YbA0FsZK name=The Final Countdown
+2026-01-13 10:33:33 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:34 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:34 [INFO] [models:61] [ALBUM] WAS CREATED: album=The Final Countdown (Expanded Edition) sid=5Jkd47JEaCU1g4DcGBnHm3
+2026-01-13 10:33:34 [INFO] [models:65] [ALBUM] WAS UPDATED: album=The Final Countdown (Expanded Edition) sid=5Jkd47JEaCU1g4DcGBnHm3
+2026-01-13 10:33:34 [INFO] [data_builder:73] Album created: sid=5Jkd47JEaCU1g4DcGBnHm3 name=The Final Countdown (Expanded Edition)
+2026-01-13 10:33:35 [INFO] [data_builder:137] Track created: sid=29wJiSQcze8HEmxkUQykyp name=Carrie
+2026-01-13 10:33:35 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:35 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:36 [INFO] [data_builder:114] Artist image updating: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:37 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:37 [INFO] [data_builder:114] Artist image updating: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:37 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:37 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:37 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:37 [INFO] [data_builder:137] Track created: sid=3J9NEWkd9Cx1MwSSvDySkL name=Rock the Night
+2026-01-13 10:33:37 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:37 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:39 [INFO] [data_builder:137] Track created: sid=3pVj1Dpgf45D4yCG7w8f6M name=The Final Countdown
+2026-01-13 10:33:39 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:39 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:39 [INFO] [models:61] [ALBUM] WAS CREATED: album=On Your 80's Radio sid=2AjQTzyF876gsd1NISM9sK
+2026-01-13 10:33:39 [INFO] [models:65] [ALBUM] WAS UPDATED: album=On Your 80's Radio sid=2AjQTzyF876gsd1NISM9sK
+2026-01-13 10:33:39 [INFO] [data_builder:73] Album created: sid=2AjQTzyF876gsd1NISM9sK name=On Your 80's Radio
+2026-01-13 10:33:40 [INFO] [data_builder:137] Track created: sid=4cPE441DlsfXRh57rl1PAX name=Open Your Heart
+2026-01-13 10:33:40 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:41 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:41 [INFO] [models:61] [ALBUM] WAS CREATED: album=Wings Of Tomorrow sid=0xvqPhWUfdiLly1cdR4WVx
+2026-01-13 10:33:41 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Wings Of Tomorrow sid=0xvqPhWUfdiLly1cdR4WVx
+2026-01-13 10:33:41 [INFO] [data_builder:73] Album created: sid=0xvqPhWUfdiLly1cdR4WVx name=Wings Of Tomorrow
+2026-01-13 10:33:42 [INFO] [data_builder:137] Track created: sid=4Mq8m1rgMittyGnP5ty36Q name=Superstitious
+2026-01-13 10:33:42 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:42 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:42 [INFO] [models:61] [ALBUM] WAS CREATED: album=Out Of This World sid=1ikr6RzwUtV3WWB0VYeEkz
+2026-01-13 10:33:42 [INFO] [data_builder:114] Artist image updating: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:42 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Out Of This World sid=1ikr6RzwUtV3WWB0VYeEkz
+2026-01-13 10:33:42 [INFO] [data_builder:73] Album created: sid=1ikr6RzwUtV3WWB0VYeEkz name=Out Of This World
+2026-01-13 10:33:43 [INFO] [data_builder:137] Track created: sid=2Gah9qQMVdxCZJllU9HmnZ name=Cherokee
+2026-01-13 10:33:43 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:43 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:44 [INFO] [data_builder:137] Track created: sid=3tR7f9xvL8u8jT5mY5MsvY name=Tomorrow
+2026-01-13 10:33:44 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:45 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:46 [INFO] [data_builder:137] Track created: sid=4KMjFUypPugxrCwpaMWay9 name=Sign of the Times
+2026-01-13 10:33:46 [INFO] [data_builder:114] Artist image updating: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:46 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:47 [INFO] [artist:30] Successfully added 10 top tracks to artist=Europe sid=7Js6Lde8thlIHXggv2SCBz
+2026-01-13 10:33:47 [INFO] [fetch_new_obj:34] Artist successfully processed: Europe
+2026-01-13 10:33:47 [INFO] [fetch_new_obj:17] Process album: Burn It All Down
+2026-01-13 10:33:49 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:49 [INFO] [data_builder:114] Artist image updating: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:49 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:49 [INFO] [data_builder:114] Artist image updating: artist=Bonnie Tyler sid=0SD4eZCN4Kr0wQk56hCdh2
+2026-01-13 10:33:49 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Bonnie Tyler sid=0SD4eZCN4Kr0wQk56hCdh2
+2026-01-13 10:33:49 [INFO] [data_builder:137] Track created: sid=5u7sicPk0KDmAXNkqgyH8Z name=Together - Extended
+2026-01-13 10:33:49 [INFO] [data_builder:114] Artist image updating: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:50 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2026-01-13 10:33:50 [INFO] [data_builder:114] Artist image updating: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:50 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2026-01-13 10:33:50 [INFO] [data_builder:114] Artist image updating: artist=Bonnie Tyler sid=0SD4eZCN4Kr0wQk56hCdh2
+2026-01-13 10:33:50 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Bonnie Tyler sid=0SD4eZCN4Kr0wQk56hCdh2
+2026-01-13 10:33:51 [INFO] [album:18] Album was successfully supplement tracks: album=Together sid=0mKkxxckoZDTcB1JhlCpcH
+2026-01-13 10:33:51 [INFO] [fetch_new_obj:22] Album successfully processed: Together
+2026-01-13 10:33:51 [INFO] [fetch_new_obj:28] Process artist: Enei
+2026-01-13 10:33:51 [INFO] [artist:22] Updating artist's top_tracks: artist=Enei sid=6X3QjCYg5HcTwO5FPVQj0J
+2026-01-13 10:33:54 [INFO] [data_builder:137] Track created: sid=0K8RSylT88y3xAE2Hto0Uf name=Proud - Enei Remix
+2026-01-13 10:33:54 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Sam Binga sid=2oyU4eToyQkxAFjkB3blsi
+2026-01-13 10:33:54 [INFO] [data_builder:114] Artist image updating: artist=Sam Binga sid=2oyU4eToyQkxAFjkB3blsi
+2026-01-13 10:33:54 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Sam Binga sid=2oyU4eToyQkxAFjkB3blsi
+2026-01-13 10:33:54 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Rider Shafique sid=3Q0LSoV64A2FTwAFCzyDyq
+2026-01-13 10:33:54 [INFO] [data_builder:114] Artist image updating: artist=Rider Shafique sid=3Q0LSoV64A2FTwAFCzyDyq
+2026-01-13 10:33:55 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Rider Shafique sid=3Q0LSoV64A2FTwAFCzyDyq
+2026-01-13 10:33:55 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Tiffanie Malvo sid=1pliPsl6yHIkyhtdo54ERZ
+2026-01-13 10:33:55 [INFO] [data_builder:114] Artist image updating: artist=Tiffanie Malvo sid=1pliPsl6yHIkyhtdo54ERZ
+2026-01-13 10:33:55 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Tiffanie Malvo sid=1pliPsl6yHIkyhtdo54ERZ
+2026-01-13 10:33:55 [INFO] [models:61] [ALBUM] WAS CREATED: album=Champion Ep [RELOADED] sid=6ZWGo4ZiVTkiYZET3jWOLq
+2026-01-13 10:33:55 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Champion Ep [RELOADED] sid=6ZWGo4ZiVTkiYZET3jWOLq
+2026-01-13 10:33:55 [INFO] [data_builder:73] Album created: sid=6ZWGo4ZiVTkiYZET3jWOLq name=Champion Ep [RELOADED]
+2026-01-13 10:33:55 [INFO] [data_builder:137] Track created: sid=666PF2FESBW9oHyz5iGJP1 name=Be The One
+2026-01-13 10:33:55 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Kasra sid=3W1ubrHvNSMltB1l7zo6xt
+2026-01-13 10:33:56 [INFO] [data_builder:114] Artist image updating: artist=Kasra sid=3W1ubrHvNSMltB1l7zo6xt
+2026-01-13 10:33:56 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Kasra sid=3W1ubrHvNSMltB1l7zo6xt
+2026-01-13 10:33:56 [INFO] [models:88] [ARTIST] WAS CREATED: artist=KLŌ sid=04PGhfooPK0YQZPAj3itqo
+2026-01-13 10:33:56 [INFO] [data_builder:114] Artist image updating: artist=KLŌ sid=04PGhfooPK0YQZPAj3itqo
+2026-01-13 10:33:57 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=KLŌ sid=04PGhfooPK0YQZPAj3itqo
+2026-01-13 10:33:57 [INFO] [data_builder:137] Track created: sid=5U5oaOiehyao2wV2Seb2Yo name=Haunted
+2026-01-13 10:33:57 [INFO] [models:88] [ARTIST] WAS CREATED: artist=SOLAH sid=4jrJBSg0c2qx8SMGa7ququ
+2026-01-13 10:33:57 [INFO] [data_builder:114] Artist image updating: artist=SOLAH sid=4jrJBSg0c2qx8SMGa7ququ
+2026-01-13 10:33:58 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=SOLAH sid=4jrJBSg0c2qx8SMGa7ququ
+2026-01-13 10:33:58 [INFO] [models:61] [ALBUM] WAS CREATED: album=New Energy Vol.3 sid=5lidLG63b4yHaMxioijZ5c
+2026-01-13 10:33:58 [INFO] [data_builder:114] Artist image updating: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2026-01-13 10:33:58 [INFO] [models:65] [ALBUM] WAS UPDATED: album=New Energy Vol.3 sid=5lidLG63b4yHaMxioijZ5c
+2026-01-13 10:33:58 [INFO] [data_builder:73] Album created: sid=5lidLG63b4yHaMxioijZ5c name=New Energy Vol.3
+2026-01-13 10:33:58 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2026-01-13 10:33:58 [INFO] [data_builder:114] Artist image updating: artist=PVRIS sid=6oFs3qk4VepIVFdoD4jmsy
+2026-01-13 10:33:58 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=PVRIS sid=6oFs3qk4VepIVFdoD4jmsy
+2026-01-13 10:33:58 [INFO] [album:18] Album was successfully supplement tracks: album=Burn It All Down sid=75CPtRKAed4edoPl3xVAOF
+2026-01-13 10:33:58 [INFO] [fetch_new_obj:22] Album successfully processed: Burn It All Down
+2026-01-13 10:33:58 [INFO] [fetch_new_obj:17] Process album: White Noise
+2026-01-13 10:33:59 [INFO] [data_builder:137] Track created: sid=0hfizldOxCUJadOOLDXNHm name=Sinking
+2026-01-13 10:33:59 [INFO] [models:61] [ALBUM] WAS CREATED: album=Sinking EP sid=79GOUhG7DWuEqvmZnyl5bI
+2026-01-13 10:33:59 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Sinking EP sid=79GOUhG7DWuEqvmZnyl5bI
+2026-01-13 10:33:59 [INFO] [data_builder:73] Album created: sid=79GOUhG7DWuEqvmZnyl5bI name=Sinking EP
+2026-01-13 10:34:00 [INFO] [data_builder:137] Track created: sid=4KLtzrLuwCekit1PYusfMB name=Runnin
+2026-01-13 10:34:00 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Georgia Yates sid=7B1FCygPQ6nndcfVmKNZtE
+2026-01-13 10:34:00 [INFO] [data_builder:114] Artist image updating: artist=Georgia Yates sid=7B1FCygPQ6nndcfVmKNZtE
+2026-01-13 10:34:00 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Georgia Yates sid=7B1FCygPQ6nndcfVmKNZtE
+2026-01-13 10:34:00 [INFO] [models:61] [ALBUM] WAS CREATED: album=Machines sid=3vkHlDxUQAErivbONSM941
+2026-01-13 10:34:00 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Machines sid=3vkHlDxUQAErivbONSM941
+2026-01-13 10:34:00 [INFO] [data_builder:73] Album created: sid=3vkHlDxUQAErivbONSM941 name=Machines
+2026-01-13 10:34:01 [INFO] [data_builder:137] Track created: sid=4MxHutRACnfl9vW2xt2qlp name=Checks Up
+2026-01-13 10:34:01 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Limmz sid=4cm0e6rUO2nxaJjkbNqNwf
+2026-01-13 10:34:01 [INFO] [data_builder:114] Artist image updating: artist=Limmz sid=4cm0e6rUO2nxaJjkbNqNwf
+2026-01-13 10:34:02 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Limmz sid=4cm0e6rUO2nxaJjkbNqNwf
+2026-01-13 10:34:02 [INFO] [data_builder:137] Track created: sid=7qT199QR07810wuiCuPie4 name=Overthinking
+2026-01-13 10:34:02 [INFO] [models:88] [ARTIST] WAS CREATED: artist=DRS sid=0WCfu8x76QX3CjVgiE3Hn2
+2026-01-13 10:34:02 [INFO] [data_builder:114] Artist image updating: artist=DRS sid=0WCfu8x76QX3CjVgiE3Hn2
+2026-01-13 10:34:03 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=DRS sid=0WCfu8x76QX3CjVgiE3Hn2
+2026-01-13 10:34:03 [INFO] [models:61] [ALBUM] WAS CREATED: album=Inside The Box EP sid=1irkZFB2gmwcr7kAQzHYAt
+2026-01-13 10:34:03 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Inside The Box EP sid=1irkZFB2gmwcr7kAQzHYAt
+2026-01-13 10:34:03 [INFO] [data_builder:73] Album created: sid=1irkZFB2gmwcr7kAQzHYAt name=Inside The Box EP
+2026-01-13 10:34:04 [INFO] [data_builder:137] Track created: sid=2kHzxgPwktkyKSk2xlGmNX name=Sinking VIP
+2026-01-13 10:34:04 [INFO] [models:61] [ALBUM] WAS CREATED: album=Sinking VIP sid=1DPqM4UsdMwjykm3QWkryy
+2026-01-13 10:34:04 [INFO] [models:65] [ALBUM] WAS UPDATED: album=Sinking VIP sid=1DPqM4UsdMwjykm3QWkryy
+2026-01-13 10:34:04 [INFO] [data_builder:73] Album created: sid=1DPqM4UsdMwjykm3QWkryy name=Sinking VIP
+2026-01-13 10:34:05 [INFO] [data_builder:137] Track created: sid=4JHhRWSZFtAJgm33DRzdLn name=Nobody Else
+2026-01-13 10:34:05 [INFO] [models:88] [ARTIST] WAS CREATED: artist=Killa P sid=0yZqTQF0ULKX2gFE6fBHXZ
+2026-01-13 10:34:05 [INFO] [data_builder:114] Artist image updating: artist=Killa P sid=0yZqTQF0ULKX2gFE6fBHXZ
+2026-01-13 10:34:05 [INFO] [models:92] [ARTIST] WAS UPDATED: artist=Killa P sid=0yZqTQF0ULKX2gFE6fBHXZ
+2026-01-13 10:34:06 [INFO] [artist:30] Successfully added 10 top tracks to artist=Enei sid=6X3QjCYg5HcTwO5FPVQj0J
+2026-01-13 10:34:06 [INFO] [fetch_new_obj:34] Artist successfully processed: Enei
+2026-01-13 10:34:06 [INFO] [fetch_new_obj:17] Process album: Ascend

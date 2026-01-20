@@ -1,0 +1,484 @@
+.artist-container {
+    margin-top: 60px;
+    padding: 40px 32px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header Section */
+.artist-header {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 56px;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.artist-image-wrapper {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.artist-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 4px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 4px rgba(29, 185, 84, 0.2);
+}
+
+.artist-image-placeholder {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 4px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-image-placeholder:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7), 0 0 0 4px rgba(29, 185, 84, 0.2);
+}
+
+.artist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 8px;
+    flex: 1;
+}
+
+.artist-type {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b3b3b3;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.artist-name {
+    font-size: 80px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -3px;
+    color: #ffffff;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.artist-followers {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 4px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: fit-content;
+    backdrop-filter: blur(10px);
+}
+
+.followers-count {
+    font-size: 24px;
+    font-weight: 800;
+    color: #1DB954;
+    font-variant-numeric: tabular-nums;
+}
+
+.followers-label {
+    font-size: 15px;
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.spotify-button {
+    padding: 16px 36px;
+    background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.spotify-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.spotify-button:hover::before {
+    left: 100%;
+}
+
+.spotify-button:hover {
+    background: linear-gradient(135deg, #1ed760 0%, #1DB954 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.4);
+}
+
+/* Sections */
+.section-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 28px 0;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.genres-section {
+    margin-bottom: 56px;
+}
+
+.genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.genre-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.genre-chip::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(29, 185, 84, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.genre-chip:hover {
+    transform: translateY(-2px);
+    border-color: rgba(29, 185, 84, 0.4);
+    background: linear-gradient(135deg, rgba(29, 185, 84, 0.15), rgba(29, 185, 84, 0.05));
+    box-shadow: 0 4px 12px rgba(29, 185, 84, 0.2);
+}
+
+.genre-chip:hover::before {
+    left: 100%;
+}
+
+/* Tracks Section */
+.tracks-section {
+    margin-bottom: 56px;
+}
+
+.tracks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.track-item {
+    display: grid;
+    grid-template-columns: 48px 56px 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.track-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background: linear-gradient(90deg, rgba(29, 185, 84, 0.2), transparent);
+    transition: width 0.3s ease;
+}
+
+.track-item:hover::before {
+    width: 4px;
+}
+
+.track-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.track-number {
+    color: #b3b3b3;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.3s ease;
+}
+
+.track-item:hover .track-number {
+    color: #1DB954;
+}
+
+.track-image {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.track-image-placeholder {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.track-item:hover .track-image {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.track-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+}
+
+.track-item:hover .track-name {
+    color: #1DB954;
+}
+
+.track-duration {
+    color: #b3b3b3;
+    font-size: 14px;
+    text-align: right;
+    min-width: 50px;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.3s ease;
+}
+
+.track-item:hover .track-duration {
+    color: #ffffff;
+}
+
+/* Albums Section */
+.albums-section {
+    margin-bottom: 56px;
+}
+
+.albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 28px;
+}
+
+.album-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.album-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(29, 185, 84, 0.1), rgba(88, 101, 242, 0.1));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.album-card:hover::before {
+    opacity: 1;
+}
+
+.album-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.album-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.album-card:hover .album-image {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.album-image-placeholder {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.album-card:hover .album-image-placeholder {
+    transform: scale(1.05);
+}
+
+.album-info {
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.album-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.3s ease;
+}
+
+.album-card:hover .album-name {
+    color: #1DB954;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .artist-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .artist-image,
+    .artist-image-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+
+    .artist-name {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+    .albums-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .track-item {
+        grid-template-columns: 40px 48px 1fr auto;
+        gap: 16px;
+        padding: 12px 16px;
+    }
+
+    .track-image,
+    .track-image-placeholder {
+        width: 48px;
+        height: 48px;
+    }
+}

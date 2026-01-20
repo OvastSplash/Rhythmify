@@ -69,11 +69,13 @@ class ConfirmRegisterView(View):
             user = form.save_with_spotify_data(data=spotify_data)
 
             login(request, user)
-            del request.session["spotify_user_info"]
 
-            AggregatorService.update_user_favorite_tracks(users=user, clear_cache=False)
-            AggregatorService.update_user_recommendations(users=user, clear_cache=False)
+            aggregator = AggregatorService(user=user)
+
+            aggregator.update_user_favorite_tracks()
+            aggregator.update_user_recommendations()
 
             return redirect("profile", user_id = user.id)
 
         return render(request, "User/confirm_register.html", {"form": self.form})
+

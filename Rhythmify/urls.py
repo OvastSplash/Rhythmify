@@ -26,6 +26,8 @@ urlpatterns = [
     path("", include("User.urls")),
     path("spotify/", include("SpotifyController.urls")),
     path("profile/", include("Profile.urls")),
+    path("catalog/", include("Catalog.urls")),
+    path("search/", include("Search.urls")),
 ]
 
 if settings.DEBUG:

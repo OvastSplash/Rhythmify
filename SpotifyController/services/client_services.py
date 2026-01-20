@@ -1,14 +1,20 @@
 from spotipy import SpotifyException
+import logging
 
+from SpotifyController.services.database.check_data import CheckDataService
 from SpotifyController.services.database.convert_data import ConvertSpotifyDataBaseService
 from SpotifyController.services.database.get_user_data import GetUserDataService
-from SpotifyController.services.construct_data import ConstructDataService, TrackClass, AlbumClass
+from SpotifyController.services.construct_data import ConstructDataService, ConstructPlaylistDataService, TrackClass, AlbumClass, PlaylistClass
 from SpotifyController.services.spotify_auth import AuthService
 from SpotifyController.services.user_cache import UserCacheService
 from SpotifyController.serializers import SpotifyProfileSerializer
+from SpotifyController.services.database.data_builder import UpdateDataService
+
 
 from User.models import CustomUser
 from typing import List
+
+logger = logging.getLogger(__name__)
 
 class PublicClient:
     def __init__(self):
@@ -72,6 +78,14 @@ class PublicClient:
 
         return track_data
 
+    def get_tracks_info(self, spotify_ids: List[str], constructed: bool = True) -> List[TrackClass] | List[dict]:
+        tracks_data = self.client.tracks(spotify_ids, market="US")
+
+        if constructed:
+            return self._construct_tracks_data(tracks_data['tracks'])
+
+        return tracks_data
+
 class UserClient:
     def __init__(self, user: CustomUser):
         self.user = user
@@ -81,6 +95,7 @@ class UserClient:
 
         self.access_token = user.access_token
         self.client = AuthService.get_client(self.access_token)
+        self.construct_playlist = ConstructPlaylistDataService(user_sid=user.spotify_id)
 
         if not self._is_token_valid():
             AuthService.refresh_user_tokens(user)
@@ -99,7 +114,7 @@ class UserClient:
 
     def get_user_data(self):
         user_data = self.client.current_user()
-        print(user_data)
+        logger.debug("Fetched user data: length=%d", len(str(user_data)))
         serializer = SpotifyProfileSerializer(data=user_data)
 
         if serializer.is_valid():
@@ -157,7 +172,7 @@ class UserClient:
             description=f"Recommendation for {user['display_name']} playlist",
         )
 
-        print("Создан плейлист:", playlist["name"], playlist["id"])
+        logger.info("Playlist created: name=%s id=%s", playlist["name"], playlist["id"])
 
         tracks_uri = [f"spotify:track:{track.spotify_id}" for track in tracks]
 
@@ -167,5 +182,69 @@ class UserClient:
                 playlist_id=playlist['id'],
                 items=chunk,
             )
+        logger.debug("Playlist tracks URIs: count=%d", len(tracks_uri))
 
-        print(tracks_uri)
+
+    def get_user_playlists_data(self, construct=True) -> List[PlaylistClass] | List[dict]:
+        """Get user playlists data"""
+
+        playlists_data = self.client.current_user_playlists(limit=50)
+
+        if construct:
+            logging.debug("Fetched playlists data: length=%d", len(str(playlists_data)))
+            return self.construct_playlist.construct_playlists(playlists_data)
+
+        return playlists_data
+
+    # def _track_in_playlist(self, playlist_id: str, track_id: str) -> bool:
+
+    def sync_track_to_playlist(self, playlist_id: str, track_id: str) -> None:
+        """Add track to playlist, by id"""
+        try:
+            update_data_service = UpdateDataService()
+
+            if not CheckDataService.track_in_playlist(playlist_id=playlist_id, track_id=track_id):
+                self.client.playlist_add_items(playlist_id=playlist_id, items=[f"spotify:track:{track_id}"])
+                update_data_service.add_track_to_playlist(playlist_id=playlist_id, track_id=track_id)
+
+                logger.info("Track added to playlist: pid=%s tid=%s", playlist_id, track_id)
+
+            else:
+                self.client.playlist_remove_all_occurrences_of_items(playlist_id=playlist_id, items=[f"spotify:track:{track_id}"])
+                update_data_service.remove_track_from_playlist(playlist_id=playlist_id, track_id=track_id)
+
+                logger.info("Track removed from playlist: pid=%s tid=%s", playlist_id, track_id)
+
+        except SpotifyException as e:
+            logger.error("Track adding error: pid=%s tid=%s error=%s", playlist_id, track_id, e)
+
+
+    def get_playlist_tracks(self, playlist_id: str,  constructed=True) -> List[TrackClass] | List[dict]:
+        logger.info("Fetching playlist tracks: pid=%s", playlist_id)
+
+        data = self.client.playlist_items(
+            playlist_id,
+            limit=100,
+            offset=0,
+            additional_types=["track"]
+        )
+
+        tracks_data = []
+
+        while True:
+            tracks_data.extend(
+                item["track"]
+                for item in data["items"]
+                if item.get("track")
+            )
+
+            if data["next"]:
+                data = self.client.next(data)
+            else:
+                break
+
+        if constructed:
+            db_builder = ConstructDataService()
+            return db_builder.tracks_data(tracks_data)
+
+        return tracks_data

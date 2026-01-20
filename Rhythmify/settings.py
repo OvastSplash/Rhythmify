@@ -10,8 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 from pathlib import Path
+
 from decouple import config
 from celery.schedules import crontab
+import os
+import logging.config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -44,6 +47,7 @@ INSTALLED_APPS = [
     "User",
     "SpotifyController",
     "Profile",
+    "Catalog",
 
     "LastFM",
     "Deezer",
@@ -74,6 +78,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+
+                "processors.context_processor.user_header_data",
             ],
         },
     },
@@ -87,8 +93,12 @@ WSGI_APPLICATION = "Rhythmify.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "rhythmify",
+        "USER": "admin",
+        "PASSWORD": "admin",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
 
@@ -111,6 +121,75 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOG_LEVEL = os.getenv("DJANGO_LOG_LEVEL", "INFO").upper()
+DJANGO_LOG_LEVEL = getattr(logging, LOG_LEVEL, logging.INFO)
+APP_LOG_DIR = os.path.join(BASE_DIR, "logs")
+os.makedirs(APP_LOG_DIR, exist_ok=True)
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,  # оставляем логгеры Django
+    "formatters": {
+        "verbose": {
+            "format": "%(asctime)s [%(levelname)s] [%(module)s:%(lineno)d] %(message)s",
+            "datefmt": "%Y-%m-%d %H:%M:%S",
+        },
+        "simple": {
+            "format": "[%(levelname)s] %(name)s: %(message)s",
+        },
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+            "level": DJANGO_LOG_LEVEL,
+        },
+        "app_file": {
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": os.path.join(APP_LOG_DIR, "app.log"),
+            "when": "midnight",
+            "backupCount": 7,
+            "encoding": "utf-8",
+            "formatter": "verbose",
+            "level": DJANGO_LOG_LEVEL,
+        },
+        "errors_file": {
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": os.path.join(APP_LOG_DIR, "errors.log"),
+            "when": "midnight",
+            "backupCount": 14,
+            "encoding": "utf-8",
+            "formatter": "verbose",
+            "level": "ERROR",
+        },
+    },
+    "loggers": {
+        # Ваше приложение целиком
+        "SpotifyController": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+        # Можно сузить до подмодулей
+        "SpotifyController.services": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+        # Django запросы/ошибки
+        "django.request": {
+            "handlers": ["errors_file", "console"],
+            "level": "ERROR",
+            "propagate": False,
+        },
+        # SQL в DEV (включайте, когда надо диагностировать)
+        "django.db.backends": {
+            "handlers": ["console"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
+    },
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
@@ -147,6 +226,8 @@ SCOPE = (
     "user-library-read "
     "user-read-recently-played "
     "user-read-private "
+    "playlist-read-private "
+    "playlist-read-collaborative "
 )
 
 LAST_FM_KEY=config("LAST_FM_KEY")
@@ -172,17 +253,18 @@ CACHES = {
 
 CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 
+# Что бы запустить добавь тэг -B при запуске celery
 CELERY_BEAT_SCHEDULE = {
-    "update-user-favorite-tracks-every-day": {
-        "task": "SpotifyController.tasks.update_user_favorite_tracks",
-        "schedule": crontab(hour="2", minute="0"),
-        "args": (),
-    },
-    "save_users_listen_tracks-every-day": {
-        "task": "SpotifyController.tasks.update_user_listen_tracks",
-        "schedule": crontab(minute="*/5"),
-        "args": (),
-    },
+    # "update-user-favorite-tracks-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_favorite_tracks",
+    #     "schedule": crontab(hour="2", minute="0"),
+    #     "args": (),
+    # },
+    # "save_users_listen_tracks-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_listen_tracks",
+    #     "schedule": crontab(minute="*/5"),
+    #     "args": (),
+    # },
     # "update-artist-data-every-day":{
     #     "task": "SpotifyController.tasks.update_artist_data",
     #     "schedule": crontab(hour="3"),
@@ -193,4 +275,14 @@ CELERY_BEAT_SCHEDULE = {
     #     "schedule": crontab(minute="*/2"),
     #     "args": (),
     # }
+    "update-user-playlists-every-day": {
+        "task": "SpotifyController.tasks.update_user_playlists",
+        "schedule": crontab(minute="*"),
+        "args": (),
+    }
+}
+
+CELERY_TASK_ROUTES = {
+    'SpotifyController.tasks.fetch_new_obj.*': {'queue': 'heavy_tasks'},
+    'SpotifyController.tasks.update_data.update_user_playlists': {'queue': 'low_priority'},
 }

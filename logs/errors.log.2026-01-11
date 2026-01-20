@@ -1,0 +1,54 @@
+2026-01-11 19:18:40 [ERROR] [log:253] Internal Server Error: /spotify/callback
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "User_customuser_spotify_id_key"
+DETAIL:  Key (spotify_id)=(31bjzg32ny6ulk4lise3eucjlyvm) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/SpotifyController/views.py", line 32, in get
+    result = UserService.spotify_update_user(
+  File "/Users/obscurum/Rhythmify/User/services.py", line 69, in spotify_update_user
+    user.save()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1138, in _save_table
+    updated = self._do_update(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1203, in _do_update
+    return filtered._update(values) > 0
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1288, in _update
+    return query.get_compiler(self.db).execute_sql(ROW_COUNT)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 2060, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "User_customuser_spotify_id_key"
+DETAIL:  Key (spotify_id)=(31bjzg32ny6ulk4lise3eucjlyvm) already exists.
+

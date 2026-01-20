@@ -1,4 +1,5 @@
 from typing import List, Union, Tuple
+import logging
 
 from User.models import CustomUser
 
@@ -10,6 +11,8 @@ from SpotifyController.services.database.save_user_data import SaveUserDataServi
 
 from SpotifyController.models.models import Track
 from LastFM.construct_data_services import TrackSyncManager
+
+logger = logging.getLogger(__name__)
 
 
 #TODO: Написать декоратор который в случае не правильной передачи данных будет передавать данные в новую функцию
@@ -24,20 +27,20 @@ class AggregatorService:
         sp_client = UserClient(user=self.user)
 
         #TODO: Понять почему так долго работает (возможно баг консоли)
-        print(f"Construct favorite tracks --- {self.user.username}")
+        logger.info("Construct favorite tracks: username=%s", self.user.username)
 
         short_term_constructed_data = sp_client.get_user_short_term_top_tracks(limit=20)
         medium_term_constructed_data = sp_client.get_user_medium_term_top_tracks(limit=20)
         long_term_constructed_data = sp_client.get_user_long_term_top_tracks(limit=20)
 
-        print(f"User {self.user.username} favorite tracks has been constructed")
+        logger.info("User favorite tracks constructed: username=%s", self.user.username)
 
-        print(f"Start saving favorite tracks to database")
+        logger.info("Start saving favorite tracks to database: username=%s", self.user.username)
         short_term_tracks: List[Track] = sp_db.create_tracks(short_term_constructed_data)
         medium_term_tracks: List[Track] = sp_db.create_tracks(medium_term_constructed_data)
         long_term_tracks: List[Track] = sp_db.create_tracks(long_term_constructed_data)
 
-        print(f"User {self.user.username} favorite tracks has been saved")
+        logger.info("User favorite tracks saved: username=%s", self.user.username)
 
         save_user_data = SaveUserDataService(user=self.user)
 
@@ -45,19 +48,19 @@ class AggregatorService:
         save_user_data.favorite_user_tracks_medium_term(medium_term_tracks)
         save_user_data.favorite_user_tracks_long_term(long_term_tracks)
 
-        print(f"User {self.user.username} short term tracks has been updated")
-        print(f"User {self.user.username} medium term tracks has been updated")
-        print(f"User {self.user.username} long term favorite tracks has been updated")
+        logger.info("User short term tracks updated: username=%s", self.user.username)
+        logger.info("User medium term tracks updated: username=%s", self.user.username)
+        logger.info("User long term favorite tracks updated: username=%s", self.user.username)
 
         return short_term_tracks, medium_term_tracks, long_term_tracks
 
     def update_users_favorite_tracks(self) -> None:
         if self.users:
             for user in self.users:
-                print(f"Updating favorite tracks --- {user.username}")
+                logger.info("Updating favorite tracks: username=%s", user.username)
                 self.user = user
                 self.update_user_favorite_tracks()
-                print(f"User {self.user.username} favorite tracks has been updated")
+                logger.info("User favorite tracks updated: username=%s", self.user.username)
 
         else:
             raise Exception("Users list is empty")
@@ -98,7 +101,7 @@ class AggregatorService:
         if create_playlist:
             sp_client.create_user_recommendation_playlist(self.user)
 
-        print(f"User {self.user.username} recommendations has been updated")
+        logger.info("User recommendations updated: username=%s", self.user.username)
         return recommendations
 
     def update_users_recommendations(self, create_playlist: bool = False):
@@ -114,7 +117,7 @@ class AggregatorService:
     def save_user_listen_tracks(self):
         sp_db = BuildDataService()
 
-        print(self.user.username)
+        logger.debug("Saving user listened tracks: username=%s", self.user.username)
 
         sp_client = UserClient(user=self.user)
         constructed_tracks = sp_client.get_user_recently_played(limit=5)
@@ -123,7 +126,7 @@ class AggregatorService:
         save_user_data = SaveUserDataService(user=self.user)
         save_user_data.listen_tracks_history(tracks)
 
-        print(f"User {self.user.username} listen statistic has been updated")
+        logger.info("User listen statistic updated: username=%s", self.user.username)
 
 
     def save_users_listened_tracks(self):
@@ -131,6 +134,27 @@ class AggregatorService:
             for user in self.users:
                 self.user = user
                 self.save_user_listen_tracks()
+
+        else:
+            raise Exception("Users list is empty")
+
+
+    def update_user_playlists(self):
+        logger.info("Updating user playlists: username=%s", self.user.username)
+
+        client = UserClient(self.user)
+        playlists = client.get_user_playlists_data()
+
+        user_db = SaveUserDataService(self.user)
+        user_db.create_playlists(playlists)
+
+        logger.info("User playlists updated: username=%s", self.user.username)
+
+    def update_users_playlists(self):
+        if self.users:
+            for user in self.users:
+                self.user = user
+                self.update_user_playlists()
 
         else:
             raise Exception("Users list is empty")

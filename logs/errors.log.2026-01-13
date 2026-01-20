@@ -1,0 +1,172 @@
+2026-01-13 17:07:15 [ERROR] [views:161] Search user error: error=Profile/search_users.html
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 158, in get
+    return render(request, "Profile/search_users.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Profile/search_users.html
+2026-01-13 17:07:15 [ERROR] [log:253] Internal Server Error: /profile/search/andre
+2026-01-13 17:30:28 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:28 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:30 [ERROR] [views:161] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 151, in get
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:30 [ERROR] [log:253] Internal Server Error: /profile/search/Obscuam
+2026-01-13 17:30:32 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:32 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:34 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:34 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:36 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:36 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:37 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:37 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:37 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:37 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:38 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:38 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:44 [ERROR] [views:137] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 122, in post
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:44 [ERROR] [log:253] Internal Server Error: /profile/search/
+2026-01-13 17:30:45 [ERROR] [views:161] Search user error: error=Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 151, in get
+    users = self._search_users(username)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 141, in _search_users
+    return UserService.search_users(username)
+  File "/Users/obscurum/Rhythmify/User/services.py", line 92, in search_users
+    .order_by('distance')
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1727, in order_by
+    obj.query.add_ordering(*field_names)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 2305, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1806, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'distance' into field. Choices are: access_token, favorite_tracks_links, followers, id, image, is_active, is_staff, is_superuser, last_login, listen_history_links, listen_track_history, logentry, password, playlists, recommendation_tracks, recommendations_links, refresh_token, similarity, spotify_id, spotify_url, token_expires_at, top_tracks, user_login, username
+2026-01-13 17:30:45 [ERROR] [log:253] Internal Server Error: /profile/search/Obscurum

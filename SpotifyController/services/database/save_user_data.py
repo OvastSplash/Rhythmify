@@ -1,11 +1,19 @@
 from SpotifyController.services.database.get_user_data import GetUserDataService
 from SpotifyController.services.user_cache import UserCacheService
 from SpotifyController.services.database.data_builder import PlayedTrackDTO
+
+from SpotifyController.services.construct_data import PlaylistClass
+
+from django.db import transaction
+from django.shortcuts import get_object_or_404
+
+import logging
 from SpotifyController.services.database.convert_data import ConvertSpotifyDataBaseService
 
 
 from SpotifyController.models.models import (
-    Track
+    Track,
+    Playlist
 )
 from SpotifyController.models.through import FavoriteUserTracks, RecommendationTracks, UsersListenHistory
 
@@ -15,9 +23,14 @@ from typing import (List, Type, Union)
 
 import random
 
+from User.services import UserService
+
+logger = logging.getLogger(__name__)
+
 class SaveUserDataService:
     def __init__(self, user: CustomUser):
         self.user = user
+        self.user_service = UserService()
         self.user_cache_service = UserCacheService(user_id=user.id)
 
     def _clear_existing_tracks(self, tracks: List[Track], model: Union[Type[FavoriteUserTracks], Type[RecommendationTracks]]) -> List[Track]:
@@ -56,8 +69,8 @@ class SaveUserDataService:
 
         RecommendationTracks.objects.bulk_create(add_tracks)
 
-        print(f"Tracks count: {len(tracks)}")
-        print(f"Tracks IDs saved to Redis: {len(tracks_ids)}")
+        logger.info("Recommendation tracks saved: count=%d", len(tracks))
+        logger.debug("Tracks IDs saved to Redis: count=%d", len(tracks_ids))
 
         return tracks
 
@@ -89,7 +102,7 @@ class SaveUserDataService:
         return self._save_and_cache_favorite_tracks(tracks, term="long_term")
 
 
-    # USER LISTEN HISTORY
+    # USER LISTEN TO HISTORY
 
     def listen_tracks_history(self, tracks: List[PlayedTrackDTO]) -> List[UsersListenHistory]:
         existing = set(UsersListenHistory.objects.filter(user=self.user).values_list(
@@ -113,4 +126,52 @@ class SaveUserDataService:
         get_user_data.listen_statistic() # For saving statistics to cache
 
         return user_listen_history
+
+    @transaction.atomic
+    def create_playlist(self, playlist_class: PlaylistClass) -> Playlist:
+        user = get_object_or_404(CustomUser, spotify_id=playlist_class.owner_sid)
+
+        playlist, created = Playlist.objects.get_or_create(
+            spotify_id=playlist_class.spotify_id,
+            defaults={
+                'name': playlist_class.name,
+                'spotify_url': playlist_class.spotify_url,
+                'description': playlist_class.description,
+                'track_count': playlist_class.track_count,
+                'user': user,
+            }
+        )
+
+        if created:
+            logger.debug("Playlist created: sid=%s", playlist.spotify_id)
+            self._handle_playlist_creation(playlist, playlist_class.image_url)
+
+            from SpotifyController.tasks.fetch_new_obj import process_new_playlist_task
+
+            transaction.on_commit(
+                lambda : process_new_playlist_task.delay(playlist.spotify_id)
+            )
+
+        else:
+            logger.debug("Playlist already exists: sid=%s", playlist.spotify_id)
+
+        return playlist
+
+    def create_playlists(self, playlists_classes: List[PlaylistClass]) -> List[Playlist]:
+        playlists: List[Playlist] = list()
+        playlists_ids = list()
+
+        for playlist_class in playlists_classes:
+            playlist = self.create_playlist(playlist_class)
+
+            playlists.append(playlist)
+            playlists_ids.append(playlist.spotify_id)
+
+        self.user_cache_service.set_user_playlists(playlists_ids)
+        logger.info(f"Playlists cached: sid=%s", playlists_ids)
+
+        return playlists
+
+    def _handle_playlist_creation(self, playlist: Playlist, image_url: str) -> None:
+        self.user_service.update_object_image(playlist, image_url)
 

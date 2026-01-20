@@ -1,0 +1,38 @@
+2026-01-06 11:56:40 [INFO] [views:49] User logged in: login=test user_id=14
+2026-01-06 11:59:10 [INFO] [views:53] User statistics loaded: has_stats=True
+2026-01-06 11:59:10 [INFO] [views:54] User playlists loaded: has_stats=True
+2026-01-06 12:07:36 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-01-06 12:07:36 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-06 12:09:28 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-01-06 12:09:28 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-06 12:14:36 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-01-06 12:14:36 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-06 12:16:39 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-01-06 12:16:39 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-06 12:17:13 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-01-06 12:17:13 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-06 12:20:04 [INFO] [views:52] User statistics loaded: has_stats=True
+2026-01-06 12:20:04 [INFO] [views:53] User playlists loaded: has_stats=True
+2026-01-06 12:20:09 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-01-06 12:20:10 [INFO] [client_services:192] Track added to playlist: sid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:20:10 [INFO] [views:72] Track added to playlist: sid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr pid=14
+2026-01-06 12:20:32 [INFO] [client_services:192] Track added to playlist: sid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:20:32 [INFO] [views:72] Track added to playlist: sid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr pid=14
+2026-01-06 12:22:48 [INFO] [views:52] User statistics loaded: has_stats=True
+2026-01-06 12:22:48 [INFO] [views:53] User playlists loaded: has_stats=True
+2026-01-06 12:22:51 [INFO] [client_services:192] Track added to playlist: sid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:22:51 [INFO] [views:72] Track added to playlist: pid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr uid=14
+2026-01-06 12:23:51 [INFO] [views:52] User statistics loaded: has_stats=True
+2026-01-06 12:23:51 [INFO] [views:53] User playlists loaded: has_stats=True
+2026-01-06 12:24:10 [INFO] [client_services:192] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:24:10 [INFO] [views:72] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr uid=14
+2026-01-06 12:24:32 [INFO] [client_services:192] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:24:32 [INFO] [views:72] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr uid=14
+2026-01-06 12:24:41 [INFO] [client_services:192] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:24:41 [INFO] [views:72] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=6jppHdy8EW9ghHlOCpGBEr uid=14
+2026-01-06 12:24:55 [INFO] [client_services:192] Track added to playlist: pid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr
+2026-01-06 12:24:55 [INFO] [views:72] Track added to playlist: pid=1fGIAZCku6hRmg0hHljIId tid=6jppHdy8EW9ghHlOCpGBEr uid=14
+2026-01-06 12:25:46 [INFO] [client_services:192] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=0Vwc4ONQtM3dEVcCMnLDHc
+2026-01-06 12:25:46 [INFO] [views:72] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=0Vwc4ONQtM3dEVcCMnLDHc uid=14
+2026-01-06 12:26:11 [INFO] [client_services:192] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=0Vwc4ONQtM3dEVcCMnLDHc
+2026-01-06 12:26:11 [INFO] [views:72] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=0Vwc4ONQtM3dEVcCMnLDHc uid=14

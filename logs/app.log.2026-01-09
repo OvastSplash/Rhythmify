@@ -1,0 +1,21 @@
+2026-01-09 07:40:25 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:40:33 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:40:38 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:40:44 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:41:05 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:41:27 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:41:46 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:41:55 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:28] Process artist: NOTION
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:28] Process artist: Bonnie Tyler
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:28] Process artist: Coldplay
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:28] Process artist: La Bouche
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:28] Process artist: Elyanna
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:17] Process album: FORWARDS
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:17] Process album: Ma Meilleure Ennemie ft. Coldplay
+2026-01-09 07:42:21 [INFO] [fetch_new_obj:17] Process album: Be My Lover (feat. La Bouche) [2023 Mix]
+2026-01-09 07:42:21 [INFO] [artist:22] Updating artist's top_tracks: artist=NOTION sid=1uRVM0wBdtyEuU582EeKJM
+2026-01-09 07:42:21 [INFO] [artist:22] Updating artist's top_tracks: artist=Coldplay sid=4gzpq5DPGxSnKTe4SA8HAU
+2026-01-09 07:42:21 [INFO] [artist:22] Updating artist's top_tracks: artist=La Bouche sid=488v7rQzthLNK22r0UvMie
+2026-01-09 07:42:21 [INFO] [artist:22] Updating artist's top_tracks: artist=Elyanna sid=0jIWKlfmD4Ew7HeVVrq03g
+2026-01-09 07:42:21 [INFO] [artist:22] Updating artist's top_tracks: artist=Bonnie Tyler sid=0SD4eZCN4Kr0wQk56hCdh2

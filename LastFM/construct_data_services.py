@@ -6,6 +6,9 @@ from .services import LastFMDataService
 from SpotifyController.services.construct_data import ConstructDataService
 from SpotifyController.services.database.data_builder import BuildDataService
 from SpotifyController.services.construct_data import TrackClass
+import logging
+
+logger = logging.getLogger(__name__)
 
 class ConvertToSpotifyDataService:
     @staticmethod
@@ -19,10 +22,10 @@ class ConvertToSpotifyDataService:
         track_exist = Track.objects.filter(name=track_name).first()
 
         if track_exist:
-            print(f"track {track_name} already exists")
+            logger.info("Track already exists: track=%s artist=%s", track_name, artist_name)
             return track_exist
 
-        print(f"Creating track: {track_name} - {artist_name}")
+        logger.info("Creating track from LastFM: track=%s artist=%s", track_name, artist_name)
         public_client = PublicClient()
 
         return public_client.get_track_info_by_name(track_name, artist_name)

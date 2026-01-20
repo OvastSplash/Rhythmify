@@ -1,8 +1,11 @@
 import time
 
 from django.core.management.base import BaseCommand
+import logging
 
 from SpotifyController.models.models import Track
+
+logger = logging.getLogger(__name__)
 from SpotifyController.services.client_services import PublicClient
 
 class Command(BaseCommand):
@@ -14,7 +17,7 @@ class Command(BaseCommand):
 
         for i, track in enumerate(tracks):
             if track.duration_ms:
-                print(f"Track {track.name} already has duration: {track.duration_ms}")
+                logger.info("Track already has duration: name=%s duration_ms=%s", track.name, track.duration_ms)
                 continue
 
             if i % 50 == 0 and i > 0:
@@ -24,4 +27,4 @@ class Command(BaseCommand):
             track.duration_ms = track_data.duration_ms
             track.save()
 
-            print(f"Track duration updated: {track.name} - {track.duration_ms}")
+            logger.info("Track duration updated: name=%s duration_ms=%s", track.name, track.duration_ms)

@@ -1,10 +1,13 @@
 from django.core.management import BaseCommand
+import logging
 
 from SpotifyController.models.models import Artist
 from SpotifyController.services.client_services import PublicClient
 from SpotifyController.services.database.data_builder import BuildDataService
 
 import time
+
+logger = logging.getLogger(__name__)
 
 class Command(BaseCommand):
     help = "This command is used to update artist's albums"
@@ -24,9 +27,13 @@ class Command(BaseCommand):
 
             artist.albums.add(*albums)
 
-            print(f'{artist.name} albums updated')
+            logger.info("[COMMAND] Artist albums updated: artist=%s sid=%s", artist.name, artist.spotify_id)
 
-            print(", ".join(album.name for album in artist.albums.all()))
+            logger.info(
+                "[COMMAND] Albums list: artist=%s albums=%s",
+                artist.name,
+                ", ".join(album.name for album in artist.albums.all()),
+            )
 
             if i % 5 == 0:
                 time.sleep(60)

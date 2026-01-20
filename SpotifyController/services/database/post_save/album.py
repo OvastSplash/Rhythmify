@@ -1,4 +1,5 @@
 import time
+import logging
 
 class PostSaveAlbum:
     def __init__(self, album) -> None:
@@ -14,4 +15,8 @@ class PostSaveAlbum:
         constructed_data = self.client.get_album_info(self.album.spotify_id)
         db_service = BuildDataService()
         self.album.tracks.add(*db_service.create_tracks(constructed_data))
-        print(f"Album was successfully supplement tracks --- {self.album.name}")
+        logging.getLogger(__name__).info(
+            "Album was successfully supplement tracks: album=%s sid=%s",
+            self.album.name,
+            self.album.spotify_id,
+        )

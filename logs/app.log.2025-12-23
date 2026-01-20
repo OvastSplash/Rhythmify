@@ -1,0 +1,29 @@
+2025-12-23 05:17:03 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2025-12-23 05:17:03 [INFO] [client_services:163] Playlist created: name=Obscurum Recommendation Playlist id=1fGIAZCku6hRmg0hHljIId
+2025-12-23 06:19:33 [INFO] [views:49] User logged in: login=test user_id=14
+2025-12-23 06:19:41 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2025-12-23 07:19:11 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2025-12-23 07:37:31 [INFO] [save_user_data:164] Playlists cached: sid=['6B3JNjzJoxykTZWOLMal3E', '39UHgToFdgKvhPqNFfhEgH', '1eXForund74SKoJT146u5i', '1fGIAZCku6hRmg0hHljIId', '6eaYmn3mIU0mKtptw30f48', '0BXmx3qPq1K3JAeYfAexRH', '6JMvJI2hl5U4wkw3X5FdT7', '1pV87Tlec0x5Hk634CdOst', '4NsU6r6EomEmjgHK4N5Yju']
+2025-12-23 07:42:39 [INFO] [tasks:45] update_user_listen_tracks
+2025-12-23 07:42:40 [INFO] [data_builder:137] Track created: sid=45hOioMDJktr86iKDHC8gr name=Girlfriend
+2025-12-23 07:42:40 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Avril Lavigne sid=0p4nmQO2msCgU4IF37Wi3j
+2025-12-23 07:42:40 [INFO] [artist:22] Updating artist's top_tracks: artist=Avril Lavigne sid=0p4nmQO2msCgU4IF37Wi3j
+2025-12-23 07:42:42 [INFO] [data_builder:137] Track created: sid=5xEM5hIgJ1jjgcEBfpkt2F name=Complicated
+2025-12-23 07:42:42 [INFO] [data_builder:114] Artist image updating: artist=Avril Lavigne sid=0p4nmQO2msCgU4IF37Wi3j
+2025-12-23 07:42:42 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Avril Lavigne sid=0p4nmQO2msCgU4IF37Wi3j
+2025-12-23 07:42:54 [INFO] [data_builder:137] Track created: sid=2LA4v20vokK9Uaj7WEEMaf name=Losing Grip
+2025-12-23 07:42:55 [INFO] [data_builder:137] Track created: sid=00Mb3DuaIH1kjrwOku9CGU name=Sk8er Boi
+2025-12-23 07:42:55 [INFO] [data_builder:137] Track created: sid=1jlG3KJ3gdYmhfuySFfpO1 name=I'm with You
+2025-12-23 07:42:55 [INFO] [data_builder:137] Track created: sid=3D3B7vahQasg8rdAYrEbNT name=Mobile
+2025-12-23 07:42:56 [INFO] [data_builder:137] Track created: sid=1vjIHlmc4WfIaEl74YAvX0 name=Unwanted
+2025-12-23 07:42:57 [INFO] [data_builder:137] Track created: sid=1T0Dv84b0Za7FoLcoeajgh name=Tomorrow
+2025-12-23 07:42:57 [INFO] [data_builder:137] Track created: sid=6STHWwMa2vbr1nKArQH7hd name=Anything but Ordinary
+2025-12-23 07:42:58 [INFO] [data_builder:137] Track created: sid=3nH2w4Q9yths31lC9C26fT name=Things I'll Never Say
+2025-12-23 07:42:58 [INFO] [data_builder:137] Track created: sid=2eQMZp4HLfQAX5S7wRuso3 name=My World
+2025-12-23 07:42:59 [INFO] [data_builder:137] Track created: sid=4UMZpWNYEDT2vVALzWdcCo name=Nobody's Fool
+2025-12-23 07:42:59 [INFO] [data_builder:137] Track created: sid=7jgPM1tEs9WNqQ0mYBAvWA name=Too Much to Ask
+2025-12-23 07:43:35 [INFO] [tasks:52] update_user_playlists
+2025-12-23 07:43:36 [INFO] [save_user_data:164] Playlists cached: sid=['6B3JNjzJoxykTZWOLMal3E', '39UHgToFdgKvhPqNFfhEgH', '1eXForund74SKoJT146u5i', '1fGIAZCku6hRmg0hHljIId', '6eaYmn3mIU0mKtptw30f48', '0BXmx3qPq1K3JAeYfAexRH', '6JMvJI2hl5U4wkw3X5FdT7', '1pV87Tlec0x5Hk634CdOst', '4NsU6r6EomEmjgHK4N5Yju']
+2025-12-23 08:02:50 [INFO] [views:67] User playlists loaded: has_stats=True
+2025-12-23 08:03:28 [INFO] [views:66] User statistics loaded: has_stats=True
+2025-12-23 08:03:28 [INFO] [views:67] User playlists loaded: has_stats=True

@@ -1,0 +1,518 @@
+2026-01-07 03:51:32 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-01-07 04:11:20 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:12:42 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:12:57 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:16:02 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:16:28 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:19:40 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:20:29 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:48:19 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-07 04:48:19 [INFO] [update_user_playlists:18] First playlist: name=幸せな悲しみ
+2026-01-07 04:48:19 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 04:49:52 [INFO] [data_builder:137] Track created: sid=3Q7Fhds0twd9SAHrcGTwYL name=Don't Sing
+2026-01-07 04:49:52 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 04:49:52 [INFO] [artist:22] Updating artist's top_tracks: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 04:49:53 [INFO] [data_builder:114] Artist image updating: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 04:49:54 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 04:49:54 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Benny Sings sid=4gHcu2JoaXJ0mV4aNPCd7N
+2026-01-07 04:49:54 [INFO] [artist:22] Updating artist's top_tracks: artist=Benny Sings sid=4gHcu2JoaXJ0mV4aNPCd7N
+2026-01-07 04:49:57 [INFO] [data_builder:137] Track created: sid=7ASFZh1D0DPZro7UXUKGmd name=Loving Is Easy
+2026-01-07 04:49:57 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 04:49:57 [INFO] [artist:22] Updating artist's top_tracks: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 04:50:00 [INFO] [data_builder:137] Track created: sid=3ld1FzyNgpZwGn4h9cOXrq name=Love Me Not (feat. Rex Orange County)
+2026-01-07 04:50:00 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 04:50:00 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 04:50:11 [INFO] [album:18] Album was successfully supplement tracks: album=Love Me Not (feat. Rex Orange County) sid=66SYFOZM5lxnGsBot10yqI
+2026-01-07 04:50:11 [INFO] [data_builder:73] Album created: sid=66SYFOZM5lxnGsBot10yqI name=Love Me Not (feat. Rex Orange County)
+2026-01-07 04:50:12 [INFO] [data_builder:137] Track created: sid=3rPtS4nfpy7PsARctAWpzd name=Best Friend
+2026-01-07 04:50:22 [INFO] [album:18] Album was successfully supplement tracks: album=Best Friend sid=7nLg6Pwut1eqXoK51ZjVFW
+2026-01-07 04:50:22 [INFO] [data_builder:73] Album created: sid=7nLg6Pwut1eqXoK51ZjVFW name=Best Friend
+2026-01-07 04:50:23 [INFO] [data_builder:137] Track created: sid=27rZYxE4l21wTaovX4WTnI name=Television / So Far So Good
+2026-01-07 04:50:35 [INFO] [data_builder:137] Track created: sid=6SK6sdcklU02bEuhjvs5bK name=Apricot Princess
+2026-01-07 04:50:35 [INFO] [data_builder:137] Track created: sid=5J27KD5G7Ub3hubaRnGoVB name=Nothing
+2026-01-07 04:50:35 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 04:50:35 [INFO] [artist:22] Updating artist's top_tracks: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:23:30 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-07 05:23:30 [INFO] [update_user_playlists:18] First playlist: name=幸せな悲しみ
+2026-01-07 05:23:30 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-01-07 05:23:30 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 05:24:54 [INFO] [data_builder:137] Track created: sid=3Q7Fhds0twd9SAHrcGTwYL name=Don't Sing
+2026-01-07 05:24:54 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 05:24:54 [INFO] [artist:22] Updating artist's top_tracks: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 05:24:56 [INFO] [data_builder:114] Artist image updating: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 05:24:56 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Data sid=75QkeG5yBHVCybZurCrMa8
+2026-01-07 05:24:56 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Benny Sings sid=4gHcu2JoaXJ0mV4aNPCd7N
+2026-01-07 05:24:56 [INFO] [artist:22] Updating artist's top_tracks: artist=Benny Sings sid=4gHcu2JoaXJ0mV4aNPCd7N
+2026-01-07 05:24:59 [INFO] [data_builder:137] Track created: sid=7ASFZh1D0DPZro7UXUKGmd name=Loving Is Easy
+2026-01-07 05:24:59 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:24:59 [INFO] [artist:22] Updating artist's top_tracks: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:01 [INFO] [data_builder:137] Track created: sid=3ld1FzyNgpZwGn4h9cOXrq name=Love Me Not (feat. Rex Orange County)
+2026-01-07 05:25:01 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:01 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:11 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:12 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:12 [INFO] [album:18] Album was successfully supplement tracks: album=Love Me Not (feat. Rex Orange County) sid=66SYFOZM5lxnGsBot10yqI
+2026-01-07 05:25:12 [INFO] [data_builder:73] Album created: sid=66SYFOZM5lxnGsBot10yqI name=Love Me Not (feat. Rex Orange County)
+2026-01-07 05:25:13 [INFO] [data_builder:137] Track created: sid=3rPtS4nfpy7PsARctAWpzd name=Best Friend
+2026-01-07 05:25:13 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:13 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:23 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:23 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:23 [INFO] [album:18] Album was successfully supplement tracks: album=Best Friend sid=7nLg6Pwut1eqXoK51ZjVFW
+2026-01-07 05:25:23 [INFO] [data_builder:73] Album created: sid=7nLg6Pwut1eqXoK51ZjVFW name=Best Friend
+2026-01-07 05:25:24 [INFO] [data_builder:137] Track created: sid=27rZYxE4l21wTaovX4WTnI name=Television / So Far So Good
+2026-01-07 05:25:24 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:24 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:35 [INFO] [data_builder:137] Track created: sid=6SK6sdcklU02bEuhjvs5bK name=Apricot Princess
+2026-01-07 05:25:35 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:36 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:36 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:36 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:36 [INFO] [data_builder:137] Track created: sid=5J27KD5G7Ub3hubaRnGoVB name=Nothing
+2026-01-07 05:25:36 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:37 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:25:37 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:25:37 [INFO] [artist:22] Updating artist's top_tracks: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:25:38 [INFO] [data_builder:137] Track created: sid=7CFxO2nX0rV1L94i55PNRO name=Silence
+2026-01-07 05:25:38 [INFO] [data_builder:114] Artist image updating: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:25:38 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:25:49 [INFO] [data_builder:137] Track created: sid=6pgTU64VKstYBsSB35ki1k name=Still Waters
+2026-01-07 05:25:50 [INFO] [data_builder:137] Track created: sid=619oGqx3HJLgE5UIFRHRA9 name=CPR
+2026-01-07 05:25:50 [INFO] [data_builder:137] Track created: sid=3c5fdJ2RPg1oBhwndV0HqB name=Unwind
+2026-01-07 05:25:51 [INFO] [data_builder:137] Track created: sid=1opUrXqkqw5j0LnEkG1Uua name=Another Love
+2026-01-07 05:25:51 [INFO] [data_builder:137] Track created: sid=6e5Uaq57n4Yc4bvlcnIDlD name=Temperature
+2026-01-07 05:25:52 [INFO] [album:18] Album was successfully supplement tracks: album=Underground sid=6FU20y55c31IEB6YEFzeYB
+2026-01-07 05:25:52 [INFO] [data_builder:73] Album created: sid=6FU20y55c31IEB6YEFzeYB name=Underground
+2026-01-07 05:25:53 [INFO] [data_builder:137] Track created: sid=1fCynl1EJesWZobfUXOPU8 name=How I Feel
+2026-01-07 05:26:03 [INFO] [album:18] Album was successfully supplement tracks: album=How I Feel sid=7HHZgsyVZhSk4qv3hsMxdO
+2026-01-07 05:26:04 [INFO] [data_builder:73] Album created: sid=7HHZgsyVZhSk4qv3hsMxdO name=How I Feel
+2026-01-07 05:26:05 [INFO] [data_builder:137] Track created: sid=2Knmf00ysVzsITSdghjxQx name=Too Far
+2026-01-07 05:26:15 [INFO] [album:18] Album was successfully supplement tracks: album=Too Far sid=39UA7cSjAZfKpPodH8cJsl
+2026-01-07 05:26:15 [INFO] [data_builder:73] Album created: sid=39UA7cSjAZfKpPodH8cJsl name=Too Far
+2026-01-07 05:26:16 [INFO] [data_builder:137] Track created: sid=1nhrPZD2EkRy3Y41qSJSIa name=Energy
+2026-01-07 05:26:27 [INFO] [data_builder:137] Track created: sid=6J0lwN365xBBl0bRJSCPKE name=Give It Up
+2026-01-07 05:26:28 [INFO] [data_builder:137] Track created: sid=24AgdZXtXwcea0zAmd31zz name=Forever
+2026-01-07 05:26:28 [INFO] [data_builder:137] Track created: sid=6DCH6hWRDaZNQFbJqONXKH name=Deep
+2026-01-07 05:26:29 [INFO] [data_builder:137] Track created: sid=6bzIPPsGkiirE7zc2TvXVX name=Learn
+2026-01-07 05:26:30 [INFO] [data_builder:137] Track created: sid=0OFX7C9NuNZ90zunYcBRsq name=On The Market
+2026-01-07 05:26:30 [INFO] [album:18] Album was successfully supplement tracks: album=E'Merse sid=6KA264GFk7cUWvjEpsuz0F
+2026-01-07 05:26:30 [INFO] [data_builder:73] Album created: sid=6KA264GFk7cUWvjEpsuz0F name=E'Merse
+2026-01-07 05:26:31 [INFO] [artist:30] Successfully added 10 top tracks to artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:26:31 [INFO] [data_builder:114] Artist image updating: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:26:31 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Marco McKinnis sid=2hnEiOVSXzO81ruLVH0KUR
+2026-01-07 05:26:32 [INFO] [data_builder:137] Track created: sid=7lUX7bNyCJZeSn0ZCvL0GW name=Sycamore Girl
+2026-01-07 05:26:32 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:32 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:33 [INFO] [data_builder:137] Track created: sid=40GRJBeHKroMtWwGX9EFyQ name=Untitled
+2026-01-07 05:26:33 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:33 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:33 [INFO] [data_builder:137] Track created: sid=4fg2EzaeNhR2PWNGXbX18n name=4 Seasons
+2026-01-07 05:26:33 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:34 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:34 [INFO] [data_builder:137] Track created: sid=1B04mWViAk7jcLEifYbvdi name=Waiting Room
+2026-01-07 05:26:34 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:34 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:35 [INFO] [data_builder:137] Track created: sid=12dtBMOafWqGvjJhKxAJ7q name=Rain Man
+2026-01-07 05:26:35 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:35 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:35 [INFO] [data_builder:137] Track created: sid=2UO6VQNKdwygetKaVCe39h name=Never Enough
+2026-01-07 05:26:35 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:36 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:36 [INFO] [data_builder:137] Track created: sid=7aSyG7cskkG3zhfO2JLxq3 name=Happiness
+2026-01-07 05:26:36 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:36 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:37 [INFO] [album:18] Album was successfully supplement tracks: album=Apricot Princess sid=4DxNdQzm6cBYuSn4dCimmT
+2026-01-07 05:26:37 [INFO] [data_builder:73] Album created: sid=4DxNdQzm6cBYuSn4dCimmT name=Apricot Princess
+2026-01-07 05:26:38 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:38 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:38 [INFO] [data_builder:137] Track created: sid=4EWBhKf1fOFnyMtUzACXEc name=Pluto Projector
+2026-01-07 05:26:38 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:38 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:50 [INFO] [data_builder:137] Track created: sid=4tVphly4D1PB8tJC9gHMcJ name=10/10
+2026-01-07 05:26:50 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:50 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:51 [INFO] [data_builder:137] Track created: sid=3SxSrUogj4LpAkLKXeTtTQ name=Always
+2026-01-07 05:26:51 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:51 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:51 [INFO] [data_builder:137] Track created: sid=1pi6ZMcC30dpQSOQHfc4QE name=Laser Lights
+2026-01-07 05:26:51 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:52 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:52 [INFO] [data_builder:137] Track created: sid=0YdIIMb2MHuxoUudkAY9gS name=Face to Face
+2026-01-07 05:26:52 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:52 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:53 [INFO] [data_builder:137] Track created: sid=7uNUSxzFjPj9JQaZidFreW name=Stressed Out
+2026-01-07 05:26:53 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:53 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:54 [INFO] [data_builder:137] Track created: sid=5h68UTytwmTJDwoGbqLwzV name=Never Had The Balls
+2026-01-07 05:26:54 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:54 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:54 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:55 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:55 [INFO] [data_builder:137] Track created: sid=7HOsPWfUoMjc2tcC4hVyQV name=Every Way
+2026-01-07 05:26:55 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:55 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:55 [INFO] [data_builder:137] Track created: sid=6lxJDscGCALBzA0BdhGCiL name=It Gets Better
+2026-01-07 05:26:55 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:56 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:56 [INFO] [data_builder:137] Track created: sid=7vRia9rlEuTDQxkfXIKySi name=It's Not The Same Anymore
+2026-01-07 05:26:56 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:56 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:57 [INFO] [album:18] Album was successfully supplement tracks: album=Pony sid=5CNckxfLf4TCoMOoxgAU8l
+2026-01-07 05:26:57 [INFO] [data_builder:73] Album created: sid=5CNckxfLf4TCoMOoxgAU8l name=Pony
+2026-01-07 05:26:58 [INFO] [data_builder:137] Track created: sid=1gH1h30wkQdd9zhY3j7a8T name=THE SHADE
+2026-01-07 05:26:58 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:26:58 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:27:09 [INFO] [data_builder:137] Track created: sid=1dxqk42KIlMyrSawZ5YjBE name=KEEP IT UP
+2026-01-07 05:27:09 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:27:10 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:27:10 [INFO] [data_builder:137] Track created: sid=1TDeDFUYHjZKLsO6bzoVg1 name=OPEN A WINDOW (feat. Tyler, The Creator)
+2026-01-07 05:27:10 [INFO] [data_builder:114] Artist image updating: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:27:11 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rex Orange County sid=7pbDxGE6nQSZVfiFdq9lOL
+2026-01-07 05:27:11 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Tyler, The Creator sid=4V8LLVI7PbaPR0K2TGSxFF
+2026-01-07 05:27:11 [INFO] [artist:22] Updating artist's top_tracks: artist=Tyler, The Creator sid=4V8LLVI7PbaPR0K2TGSxFF
+2026-01-07 05:27:13 [INFO] [data_builder:137] Track created: sid=7KA4W4McWYRpgf0fWsJZWB name=See You Again (feat. Kali Uchis)
+2026-01-07 05:27:13 [INFO] [data_builder:114] Artist image updating: artist=Tyler, The Creator sid=4V8LLVI7PbaPR0K2TGSxFF
+2026-01-07 05:27:13 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Tyler, The Creator sid=4V8LLVI7PbaPR0K2TGSxFF
+2026-01-07 05:27:13 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Kali Uchis sid=1U1el3k54VvEUzo3ybLPlM
+2026-01-07 05:27:13 [INFO] [artist:22] Updating artist's top_tracks: artist=Kali Uchis sid=1U1el3k54VvEUzo3ybLPlM
+2026-01-07 05:27:16 [INFO] [data_builder:137] Track created: sid=6tDDoYIxWvMLTdKpjFkc1B name=telepatía
+2026-01-07 05:27:16 [INFO] [data_builder:114] Artist image updating: artist=Kali Uchis sid=1U1el3k54VvEUzo3ybLPlM
+2026-01-07 05:27:16 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Kali Uchis sid=1U1el3k54VvEUzo3ybLPlM
+2026-01-07 05:27:28 [INFO] [data_builder:137] Track created: sid=2nDLZMuPMvHzNtUY2e7nV3 name=la luna enamorada
+2026-01-07 05:27:29 [INFO] [data_builder:137] Track created: sid=2I9t0e3gLAKOi5syoHxP46 name=fue mejor
+2026-01-07 05:27:30 [INFO] [data_builder:137] Track created: sid=0Ui4S8sgBCXv4Ao1HhTTun name=//aguardiente y limón %ᵕ‿‿ᵕ%
+2026-01-07 05:27:30 [INFO] [data_builder:137] Track created: sid=5OJkXdRgQPGrbl6aGnGH1G name=vaya con dios
+2026-01-07 05:27:31 [INFO] [data_builder:137] Track created: sid=2qS9IaT9KBShx2xn1CqYMC name=que te pedí//
+2026-01-07 05:27:31 [INFO] [data_builder:137] Track created: sid=1xP2jdihnPfoqPNVHHhKnm name=quiero sentirme bien
+2026-01-07 05:27:32 [INFO] [data_builder:137] Track created: sid=6vOQUrwsokMFDQLbgRDhV8 name=no eres tu(soy yo)
+2026-01-07 05:27:32 [INFO] [data_builder:137] Track created: sid=7lm2mLylLoEjPiqGgcnhSY name=de nadie
+2026-01-07 05:27:33 [INFO] [data_builder:137] Track created: sid=05ufCucv6Z1oLMWeS8XapR name=¡aquí yo mando!
+2026-01-07 05:27:33 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rico Nasty sid=2OaHYHb2XcFPvqL3VsyPzU
+2026-01-07 05:27:33 [INFO] [artist:22] Updating artist's top_tracks: artist=Rico Nasty sid=2OaHYHb2XcFPvqL3VsyPzU
+2026-01-07 05:27:37 [INFO] [data_builder:137] Track created: sid=3Zm27XyCDoAqHMGte5ydxQ name=Smack A Bitch
+2026-01-07 05:27:37 [INFO] [data_builder:114] Artist image updating: artist=Rico Nasty sid=2OaHYHb2XcFPvqL3VsyPzU
+2026-01-07 05:27:37 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rico Nasty sid=2OaHYHb2XcFPvqL3VsyPzU
+2026-01-07 05:27:50 [INFO] [data_builder:137] Track created: sid=5Y5pnYbPnZzUhv3KEa6qbd name=Pussy Poppin (I Don't Really Talk Like This)
+2026-01-07 05:27:50 [INFO] [data_builder:137] Track created: sid=6wign87DUJTlNzrFYQKcut name=OHFR?
+2026-01-07 05:27:51 [INFO] [data_builder:137] Track created: sid=6kMn1wJ8ZV6uBkiuZgvvYZ name=Smack A Bitch (feat. ppcocaine, Sukihana & Rubi Rose) [Remix]
+2026-01-07 05:27:51 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rubi Rose sid=1DGAqC29aw0FpJCejAehVk
+2026-01-07 05:27:51 [INFO] [artist:22] Updating artist's top_tracks: artist=Rubi Rose sid=1DGAqC29aw0FpJCejAehVk
+2026-01-07 05:27:52 [INFO] [data_builder:137] Track created: sid=0kNjJLiNl23HJOZDPvqoN6 name=Big Mouth
+2026-01-07 05:27:52 [INFO] [data_builder:114] Artist image updating: artist=Rubi Rose sid=1DGAqC29aw0FpJCejAehVk
+2026-01-07 05:27:53 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rubi Rose sid=1DGAqC29aw0FpJCejAehVk
+2026-01-07 05:28:03 [INFO] [album:18] Album was successfully supplement tracks: album=Big Mouth sid=4cMbVs1VWCOByiIDfOAl7M
+2026-01-07 05:28:03 [INFO] [data_builder:73] Album created: sid=4cMbVs1VWCOByiIDfOAl7M name=Big Mouth
+2026-01-07 05:28:04 [INFO] [data_builder:137] Track created: sid=76ytmgrGvCpzxzKJC3Q0nm name=Wifey
+2026-01-07 05:28:14 [INFO] [album:18] Album was successfully supplement tracks: album=Wifey sid=5UML74qxgV30KhhxmGVZUH
+2026-01-07 05:28:14 [INFO] [data_builder:73] Album created: sid=5UML74qxgV30KhhxmGVZUH name=Wifey
+2026-01-07 05:28:15 [INFO] [data_builder:137] Track created: sid=6ITaLPhDlz3LfnmmllLKB4 name=He In His Feelings
+2026-01-07 05:28:27 [INFO] [data_builder:137] Track created: sid=0tdOtsCxM0s0AYAeKzgmCt name=Intro / Cardi B Interlude
+2026-01-07 05:28:27 [INFO] [data_builder:137] Track created: sid=78bwSiFLO3yLHiPOWayHzw name=Back In The Booth
+2026-01-07 05:28:28 [INFO] [data_builder:137] Track created: sid=3jSdRLgWj2bzgh65s92A6Y name=Bailar
+2026-01-07 05:28:28 [INFO] [data_builder:137] Track created: sid=693tvqVRIJ0CFvkD0y9Ln8 name=The Truth
+2026-01-07 05:28:29 [INFO] [data_builder:137] Track created: sid=4PBiof9BsDvIHAziFWVrMC name=Whole Lotta Liquor [Feat. Future, PARTYNEXTDOOR]
+2026-01-07 05:28:29 [INFO] [data_builder:114] Artist image updating: artist=Future sid=1RyvyyTE3xzB2ZywiAwp0i
+2026-01-07 05:28:29 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Future sid=1RyvyyTE3xzB2ZywiAwp0i
+2026-01-07 05:28:29 [INFO] [data_builder:137] Track created: sid=1IHqRDUmVDglGgvjqRuktn name=Papi
+2026-01-07 05:28:30 [INFO] [data_builder:137] Track created: sid=4qJfUxJvhDWuNCWk4Zm2SX name=Viral
+2026-01-07 05:28:30 [INFO] [album:18] Album was successfully supplement tracks: album=For The Streets sid=3kt6kVdzG272bxMGMSkGlm
+2026-01-07 05:28:30 [INFO] [data_builder:73] Album created: sid=3kt6kVdzG272bxMGMSkGlm name=For The Streets
+2026-01-07 05:28:31 [INFO] [data_builder:137] Track created: sid=0T4yslLT1Gh22Fkf9bOigF name=I Like
+2026-01-07 05:28:42 [INFO] [album:18] Album was successfully supplement tracks: album=I Like sid=6yN4NzYe05Z1l0YsbhiNG8
+2026-01-07 05:28:42 [INFO] [data_builder:73] Album created: sid=6yN4NzYe05Z1l0YsbhiNG8 name=I Like
+2026-01-07 05:28:43 [INFO] [data_builder:137] Track created: sid=0qUhMtpkjjiZMEjxzBkhEF name=Pretty MF
+2026-01-07 05:28:53 [INFO] [album:18] Album was successfully supplement tracks: album=Pretty MF sid=0IXn8SgcL2eiLnALqYMNO2
+2026-01-07 05:28:53 [INFO] [data_builder:73] Album created: sid=0IXn8SgcL2eiLnALqYMNO2 name=Pretty MF
+2026-01-07 05:28:54 [INFO] [data_builder:114] Artist image updating: artist=Future sid=1RyvyyTE3xzB2ZywiAwp0i
+2026-01-07 05:28:54 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Future sid=1RyvyyTE3xzB2ZywiAwp0i
+2026-01-07 05:28:54 [INFO] [data_builder:137] Track created: sid=2DesZQFkwZ1OSKIi9e9n1t name=Deserve To Die
+2026-01-07 05:29:05 [INFO] [album:18] Album was successfully supplement tracks: album=Deserve To Die sid=2NGea7ZwsdQZssZb8K4dIj
+2026-01-07 05:29:05 [INFO] [data_builder:73] Album created: sid=2NGea7ZwsdQZssZb8K4dIj name=Deserve To Die
+2026-01-07 05:29:06 [INFO] [data_builder:137] Track created: sid=1GtDmafziV59p2jElR2SqJ name=It's On
+2026-01-07 05:29:16 [INFO] [album:18] Album was successfully supplement tracks: album=It's On sid=7p8YmVgtfA5xdUiMlk33Ru
+2026-01-07 05:29:16 [INFO] [data_builder:73] Album created: sid=7p8YmVgtfA5xdUiMlk33Ru name=It's On
+2026-01-07 05:29:17 [INFO] [data_builder:137] Track created: sid=1ElVUkyuyrFbyfwbXAK5j5 name=Cherry
+2026-01-07 05:29:27 [INFO] [album:18] Album was successfully supplement tracks: album=Cherry sid=2DrqcEEEU1hGgWvZslvg12
+2026-01-07 05:29:27 [INFO] [data_builder:73] Album created: sid=2DrqcEEEU1hGgWvZslvg12 name=Cherry
+2026-01-07 05:29:28 [INFO] [data_builder:137] Track created: sid=3oZVpolGnL5Hb36QVct4Ur name=Psycho [Feat. Rubi Rose]
+2026-01-07 05:29:28 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Dixie sid=3DKkhRCGOG4e8IUPYFPfWs
+2026-01-07 05:29:28 [INFO] [artist:22] Updating artist's top_tracks: artist=Dixie sid=3DKkhRCGOG4e8IUPYFPfWs
+2026-01-07 05:29:32 [INFO] [data_builder:137] Track created: sid=2Y0ktCGrGoGcQFXsGztvhi name=Naughty List (with Dixie)
+2026-01-07 05:29:32 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Liam Payne sid=5pUo3fmmHT8bhCyHE52hA6
+2026-01-07 05:29:32 [INFO] [artist:22] Updating artist's top_tracks: artist=Liam Payne sid=5pUo3fmmHT8bhCyHE52hA6
+2026-01-07 05:29:36 [INFO] [data_builder:137] Track created: sid=0JM8LI4HxrQs2Reqr2naYo name=All I Want (For Christmas)
+2026-01-07 05:29:36 [INFO] [data_builder:114] Artist image updating: artist=Liam Payne sid=5pUo3fmmHT8bhCyHE52hA6
+2026-01-07 05:29:36 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Liam Payne sid=5pUo3fmmHT8bhCyHE52hA6
+2026-01-07 05:29:49 [INFO] [data_builder:137] Track created: sid=2hJcvSDeAmgoftVEeAuk1Y name=Midnight (feat. Liam Payne)
+2026-01-07 05:29:49 [INFO] [data_builder:137] Track created: sid=426utyJ4B1l4vi5i5ULU5k name=Stack It Up (feat. A Boogie Wit da Hoodie)
+2026-01-07 05:29:49 [INFO] [models:86] [ARTIST] WAS CREATED: artist=A Boogie Wit da Hoodie sid=31W5EY0aAly4Qieq6OFu6I
+2026-01-07 05:29:49 [INFO] [artist:22] Updating artist's top_tracks: artist=A Boogie Wit da Hoodie sid=31W5EY0aAly4Qieq6OFu6I
+2026-01-07 05:29:51 [INFO] [data_builder:137] Track created: sid=1f5cbQtDrykjarZVrShaDI name=Drowning (feat. Kodak Black)
+2026-01-07 05:29:51 [INFO] [data_builder:114] Artist image updating: artist=A Boogie Wit da Hoodie sid=31W5EY0aAly4Qieq6OFu6I
+2026-01-07 05:29:52 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=A Boogie Wit da Hoodie sid=31W5EY0aAly4Qieq6OFu6I
+2026-01-07 05:29:52 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Kodak Black sid=46SHBwWsqBkxI7EeeBEQG7
+2026-01-07 05:29:52 [INFO] [artist:22] Updating artist's top_tracks: artist=Kodak Black sid=46SHBwWsqBkxI7EeeBEQG7
+2026-01-07 05:29:54 [INFO] [data_builder:114] Artist image updating: artist=Kodak Black sid=46SHBwWsqBkxI7EeeBEQG7
+2026-01-07 05:29:54 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Kodak Black sid=46SHBwWsqBkxI7EeeBEQG7
+2026-01-07 05:30:09 [INFO] [data_builder:137] Track created: sid=2BJpuAoDeQ1QuPvnryfAWK name=No Promises
+2026-01-07 05:30:09 [INFO] [data_builder:137] Track created: sid=2vaMWMPMgsWX4fwJiKmdWm name=Undefeated (feat. 21 Savage)
+2026-01-07 05:30:09 [INFO] [data_builder:137] Track created: sid=3AMnOVxEHUgVrythGgqPhI name=Say A'
+2026-01-07 05:30:10 [INFO] [data_builder:137] Track created: sid=32aQ7oWlgpbEQyeZhvAmzC name=No Comparison
+2026-01-07 05:30:10 [INFO] [data_builder:137] Track created: sid=1iu3UTLNy436K7S8KVOdjS name=Unhappy
+2026-01-07 05:30:10 [INFO] [data_builder:137] Track created: sid=0CveX6X9yK6jJKzIsAWroR name=Let's Start Over
+2026-01-07 05:30:11 [INFO] [data_builder:137] Track created: sid=5P1vipFCNi7SiOEVGqCc3s name=Get to You
+2026-01-07 05:30:12 [INFO] [data_builder:137] Track created: sid=7564ofEBD5mEiIkTclAW1J name=Somebody (feat. Don Q)
+2026-01-07 05:30:12 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Don Q sid=5TM9R6dNoJSMq23yZQD6Ee
+2026-01-07 05:30:12 [INFO] [artist:22] Updating artist's top_tracks: artist=Don Q sid=5TM9R6dNoJSMq23yZQD6Ee
+2026-01-07 05:30:14 [INFO] [data_builder:137] Track created: sid=5Tj4faD9lGyMw8ZatUYR6G name=Flood My Wrist (feat. Lil Uzi Vert)
+2026-01-07 05:30:14 [INFO] [data_builder:114] Artist image updating: artist=Don Q sid=5TM9R6dNoJSMq23yZQD6Ee
+2026-01-07 05:30:15 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Don Q sid=5TM9R6dNoJSMq23yZQD6Ee
+2026-01-07 05:30:15 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Lil Uzi Vert sid=4O15NlyKLIASxsJ0PrXPfz
+2026-01-07 05:30:15 [INFO] [artist:22] Updating artist's top_tracks: artist=Lil Uzi Vert sid=4O15NlyKLIASxsJ0PrXPfz
+2026-01-07 05:30:17 [INFO] [data_builder:137] Track created: sid=0uxSUdBrJy9Un0EYoBowng name=20 Min
+2026-01-07 05:30:17 [INFO] [data_builder:114] Artist image updating: artist=Lil Uzi Vert sid=4O15NlyKLIASxsJ0PrXPfz
+2026-01-07 05:30:17 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Lil Uzi Vert sid=4O15NlyKLIASxsJ0PrXPfz
+2026-01-07 05:30:30 [INFO] [data_builder:137] Track created: sid=1DZx0LEctNXUHQ9VQFKlgl name=Two®
+2026-01-07 05:30:31 [INFO] [data_builder:137] Track created: sid=6fWcHP8ce2glR9MEUZE7Cs name=444+222
+2026-01-07 05:30:31 [INFO] [data_builder:137] Track created: sid=5evSAk9q0l3TfF5dYDwDBO name=Sauce It Up
+2026-01-07 05:30:32 [INFO] [data_builder:137] Track created: sid=7284Lm1fMEABEFBrtMgUWR name=No Sleep Leak
+2026-01-07 05:30:32 [INFO] [data_builder:137] Track created: sid=2YQLTpUSFCQo9FEe29YPYs name=The Way Life Goes (feat. Oh Wonder)
+2026-01-07 05:30:32 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Oh Wonder sid=5cIc3SBFuBLVxJz58W2tU9
+2026-01-07 05:30:32 [INFO] [artist:22] Updating artist's top_tracks: artist=Oh Wonder sid=5cIc3SBFuBLVxJz58W2tU9
+2026-01-07 05:30:34 [INFO] [data_builder:137] Track created: sid=2eAZfqOm4EnOF9VvN50Tyc name=The Way Life Goes (feat. Oh Wonder)
+2026-01-07 05:30:34 [INFO] [data_builder:114] Artist image updating: artist=Oh Wonder sid=5cIc3SBFuBLVxJz58W2tU9
+2026-01-07 05:30:35 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Oh Wonder sid=5cIc3SBFuBLVxJz58W2tU9
+2026-01-07 05:30:49 [INFO] [data_builder:137] Track created: sid=65kp3OFn7JXbCvkm3m2Ui2 name=Two®
+2026-01-07 05:30:49 [INFO] [data_builder:137] Track created: sid=1QgTBfRN5m81a5K01qens6 name=444+222
+2026-01-07 05:30:49 [INFO] [data_builder:137] Track created: sid=1uL78kFWxhz3umTMWJu8n5 name=Sauce It Up
+2026-01-07 05:30:50 [INFO] [data_builder:137] Track created: sid=0QV16pno66L6K3fn4W13b7 name=No Sleep Leak
+2026-01-07 05:30:50 [INFO] [data_builder:137] Track created: sid=3tcoEYOZUHKB3RKNByIN13 name=For Real
+2026-01-07 05:30:51 [INFO] [data_builder:137] Track created: sid=5Y3Tj0wJhKAaPbwWxXxZGS name=Feelings Mutual
+2026-01-07 05:30:51 [INFO] [data_builder:137] Track created: sid=1MJErNPIQUoEMu4YUUmecm name=Neon Guts (feat. Pharrell Williams)
+2026-01-07 05:30:51 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Pharrell Williams sid=2RdwBSPQiwcmiDo9kixcl8
+2026-01-07 05:30:51 [INFO] [artist:22] Updating artist's top_tracks: artist=Pharrell Williams sid=2RdwBSPQiwcmiDo9kixcl8
+2026-01-07 05:30:55 [INFO] [data_builder:137] Track created: sid=60nZcImufyMA1MKQY3dcCH name=Happy - From "Despicable Me 2"
+2026-01-07 05:30:55 [INFO] [data_builder:114] Artist image updating: artist=Pharrell Williams sid=2RdwBSPQiwcmiDo9kixcl8
+2026-01-07 05:30:55 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Pharrell Williams sid=2RdwBSPQiwcmiDo9kixcl8
+2026-01-07 05:31:07 [INFO] [data_builder:137] Track created: sid=5KmJMi7MiBJtCeJ08lmKzo name=Marilyn Monroe
+2026-01-07 05:31:08 [INFO] [data_builder:137] Track created: sid=1RUubW9fHtIYwjl588PrhZ name=Brand New (with Justin Timberlake)
+2026-01-07 05:31:08 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Justin Timberlake sid=31TPClRtHm23RisEBtV3X7
+2026-01-07 05:31:08 [INFO] [artist:22] Updating artist's top_tracks: artist=Justin Timberlake sid=31TPClRtHm23RisEBtV3X7
+2026-01-07 05:31:10 [INFO] [data_builder:137] Track created: sid=0O45fw2L5vsWpdsOdXwNAR name=SexyBack (feat. Timbaland)
+2026-01-07 05:31:10 [INFO] [data_builder:114] Artist image updating: artist=Justin Timberlake sid=31TPClRtHm23RisEBtV3X7
+2026-01-07 05:31:10 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Justin Timberlake sid=31TPClRtHm23RisEBtV3X7
+2026-01-07 05:31:22 [INFO] [data_builder:137] Track created: sid=0B1QILlvPWfc9vovFYuUuk name=FutureSex / LoveSound
+2026-01-07 05:31:23 [INFO] [data_builder:137] Track created: sid=5Gq7IN29DbgUO8Ris1TZKl name=Sexy Ladies
+2026-01-07 05:31:23 [INFO] [data_builder:137] Track created: sid=1vMuSYlp2Im8Gpj6JxRJfj name=Medley: Let Me Talk to You / My Love (feat. T.I.)
+2026-01-07 05:31:23 [INFO] [models:86] [ARTIST] WAS CREATED: artist=T.I. sid=4OBJLual30L7gRl5UkeRcT
+2026-01-07 05:31:23 [INFO] [artist:22] Updating artist's top_tracks: artist=T.I. sid=4OBJLual30L7gRl5UkeRcT
+2026-01-07 05:31:25 [INFO] [data_builder:137] Track created: sid=3jlbL2OTD5YmIunYzgQTAN name=Live Your Life
+2026-01-07 05:31:25 [INFO] [data_builder:114] Artist image updating: artist=T.I. sid=4OBJLual30L7gRl5UkeRcT
+2026-01-07 05:31:26 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=T.I. sid=4OBJLual30L7gRl5UkeRcT
+2026-01-07 05:31:39 [INFO] [data_builder:137] Track created: sid=5uCiNprPNbFsE3OLCWLz3M name=56 Bars
+2026-01-07 05:31:39 [INFO] [data_builder:137] Track created: sid=3iNYQG2B6aBRnaCEOdNGbc name=I'm Illy
+2026-01-07 05:31:40 [INFO] [data_builder:137] Track created: sid=5X2Cy5IYsiYvk8etuE5UqQ name=Ready For Whatever
+2026-01-07 05:31:40 [INFO] [data_builder:137] Track created: sid=1Yp5r5ZtEBk0zPYok8yDHh name=On Top Of The World
+2026-01-07 05:31:41 [INFO] [data_builder:137] Track created: sid=1IAzD1muglOxOcPbUHs70R name=Whatever You Like
+2026-01-07 05:31:42 [INFO] [data_builder:137] Track created: sid=6ufB4VdDWdIXZWHxdtYKFR name=No Matter What
+2026-01-07 05:31:42 [INFO] [data_builder:137] Track created: sid=1uOLXjOFHCkkTZKlPFClsz name=My Life Your Entertainment
+2026-01-07 05:31:42 [INFO] [data_builder:137] Track created: sid=0RIbvBWoZXswtgw8lcy7Md name=Porn Star
+2026-01-07 05:31:43 [INFO] [data_builder:137] Track created: sid=3DWHDJHIAmFXyjdN0I6rj1 name=Swing Ya Rag
+2026-01-07 05:31:43 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Swizz Beatz sid=2cADQgiLMjNhbsfeN52Bf3
+2026-01-07 05:31:43 [INFO] [artist:22] Updating artist's top_tracks: artist=Swizz Beatz sid=2cADQgiLMjNhbsfeN52Bf3
+2026-01-07 05:31:46 [INFO] [data_builder:137] Track created: sid=6dRJV7zQ6S8BDdzMdV0MPW name=Money In The Bank
+2026-01-07 05:31:46 [INFO] [data_builder:114] Artist image updating: artist=Swizz Beatz sid=2cADQgiLMjNhbsfeN52Bf3
+2026-01-07 05:31:47 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Swizz Beatz sid=2cADQgiLMjNhbsfeN52Bf3
+2026-01-07 05:31:59 [INFO] [data_builder:137] Track created: sid=3A7PHbLzndgJBMmo37rTNW name=Product Man
+2026-01-07 05:32:00 [INFO] [data_builder:137] Track created: sid=6wCJ3VezXBqYboAruJoAd4 name=It's Me Bitches
+2026-01-07 05:32:01 [INFO] [data_builder:137] Track created: sid=6nXD4DuD8w2E8OlJw7ewFd name=Big Munny
+2026-01-07 05:32:02 [INFO] [data_builder:137] Track created: sid=6achsFwiAXC1eWVWpkbYx3 name=Bust Ya Gunz
+2026-01-07 05:32:02 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Drag-On sid=2NsAJcAM18AExiMWKLKzuH
+2026-01-07 05:32:02 [INFO] [artist:22] Updating artist's top_tracks: artist=Drag-On sid=2NsAJcAM18AExiMWKLKzuH
+2026-01-07 05:32:03 [INFO] [data_builder:137] Track created: sid=0e4IXw3AYaZSBC5kIAbAp1 name=Niggas Die 4 Me
+2026-01-07 05:32:03 [INFO] [data_builder:114] Artist image updating: artist=Drag-On sid=2NsAJcAM18AExiMWKLKzuH
+2026-01-07 05:32:03 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Drag-On sid=2NsAJcAM18AExiMWKLKzuH
+2026-01-07 05:32:03 [INFO] [models:86] [ARTIST] WAS CREATED: artist=DMX sid=1HwM5zlC5qNWhJtM00yXzG
+2026-01-07 05:32:04 [INFO] [artist:22] Updating artist's top_tracks: artist=DMX sid=1HwM5zlC5qNWhJtM00yXzG
+2026-01-07 05:32:05 [INFO] [data_builder:137] Track created: sid=66orjI5vOkyxOZLHWrPklh name=X Gon' Give It To Ya - Int'l Bonus track
+2026-01-07 05:32:05 [INFO] [data_builder:114] Artist image updating: artist=DMX sid=1HwM5zlC5qNWhJtM00yXzG
+2026-01-07 05:32:05 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=DMX sid=1HwM5zlC5qNWhJtM00yXzG
+2026-01-07 05:32:20 [INFO] [data_builder:137] Track created: sid=0DvQaiFT26TCg7ZWj75huk name=Dog Intro
+2026-01-07 05:32:21 [INFO] [data_builder:137] Track created: sid=5YO7YFB1f2m6k2hEsGOVUY name=My Life
+2026-01-07 05:32:21 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Chinky sid=2PYVTosVsp4y44oeuU5Asv
+2026-01-07 05:32:21 [INFO] [artist:22] Updating artist's top_tracks: artist=Chinky sid=2PYVTosVsp4y44oeuU5Asv
+2026-01-07 05:32:23 [INFO] [data_builder:137] Track created: sid=6NpssWf84816plQGUVcgtF name=Feel My Love 2
+2026-01-07 05:32:23 [INFO] [models:86] [ARTIST] WAS CREATED: artist=UMAKANT BARIK sid=7M5kQHU3UfMXysTCwzm7i5
+2026-01-07 05:32:23 [INFO] [artist:22] Updating artist's top_tracks: artist=UMAKANT BARIK sid=7M5kQHU3UfMXysTCwzm7i5
+2026-01-07 05:32:26 [INFO] [data_builder:137] Track created: sid=6EM21OTRvWbMS1hq4lr5RH name=Sagua Sagua Chudi 2.0
+2026-01-07 05:32:26 [INFO] [data_builder:114] Artist image updating: artist=UMAKANT BARIK sid=7M5kQHU3UfMXysTCwzm7i5
+2026-01-07 05:32:26 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=UMAKANT BARIK sid=7M5kQHU3UfMXysTCwzm7i5
+2026-01-07 05:32:26 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:26 [INFO] [artist:22] Updating artist's top_tracks: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:29 [INFO] [data_builder:114] Artist image updating: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:29 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:29 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:29 [INFO] [artist:22] Updating artist's top_tracks: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:32 [INFO] [data_builder:114] Artist image updating: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:32 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:32 [INFO] [data_builder:114] Artist image updating: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:33 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:43 [INFO] [data_builder:114] Artist image updating: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:43 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ashish Kumbhar sid=198JCzV2NzpfcZbNfBbHS6
+2026-01-07 05:32:43 [INFO] [data_builder:114] Artist image updating: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:44 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Antara Chakraborty sid=1eroNQ3PYCBQGntBGZk17j
+2026-01-07 05:32:44 [INFO] [album:18] Album was successfully supplement tracks: album=Sagua Sagua Chudi 2.0 sid=7g2KZhriu4e4hCuI8xiEYS
+2026-01-07 05:32:44 [INFO] [data_builder:73] Album created: sid=7g2KZhriu4e4hCuI8xiEYS name=Sagua Sagua Chudi 2.0
+2026-01-07 05:32:44 [INFO] [data_builder:137] Track created: sid=6UUazsjZcF2nv9vf3dTCWZ name=Lakhe Faguna
+2026-01-07 05:32:44 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Swayam Padhi sid=6j2ibuJ2K2YLcIUoO7GsJY
+2026-01-07 05:32:44 [INFO] [artist:22] Updating artist's top_tracks: artist=Swayam Padhi sid=6j2ibuJ2K2YLcIUoO7GsJY
+2026-01-07 05:32:48 [INFO] [data_builder:137] Track created: sid=2LdMVRyXcqEk1Rr9k7dZFG name=Mo Prema Ra Nayika
+2026-01-07 05:32:48 [INFO] [data_builder:114] Artist image updating: artist=Swayam Padhi sid=6j2ibuJ2K2YLcIUoO7GsJY
+2026-01-07 05:32:49 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Swayam Padhi sid=6j2ibuJ2K2YLcIUoO7GsJY
+2026-01-07 05:32:49 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:32:49 [INFO] [artist:22] Updating artist's top_tracks: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:32:52 [INFO] [data_builder:114] Artist image updating: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:32:53 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:03 [INFO] [data_builder:114] Artist image updating: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:03 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:03 [INFO] [album:18] Album was successfully supplement tracks: album=Mo Prema Ra Nayika sid=2kwzJzbfyRFUfjFGXjwDOr
+2026-01-07 05:33:03 [INFO] [data_builder:73] Album created: sid=2kwzJzbfyRFUfjFGXjwDOr name=Mo Prema Ra Nayika
+2026-01-07 05:33:03 [INFO] [data_builder:137] Track created: sid=6vLjeNz81IhUVyHrkyZhey name=Mahabahu Jagata Udhara Heu
+2026-01-07 05:33:03 [INFO] [data_builder:114] Artist image updating: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:04 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:14 [INFO] [data_builder:114] Artist image updating: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:14 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Ipseeta Panda sid=437cmKkbkfnmczluYObQtT
+2026-01-07 05:33:14 [INFO] [album:18] Album was successfully supplement tracks: album=Mahabahu Jagata Udhara Heu sid=1aOeHnY40krhvfYmTIC7dm
+2026-01-07 05:33:15 [INFO] [data_builder:73] Album created: sid=1aOeHnY40krhvfYmTIC7dm name=Mahabahu Jagata Udhara Heu
+2026-01-07 05:33:16 [INFO] [data_builder:137] Track created: sid=5tvVDIOrqAmIUGijy4cSRD name=Gori Tora
+2026-01-07 05:33:16 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Kuldeep Pattanaik sid=4O5bANbDjtd46vk1f7oR85
+2026-01-07 05:33:16 [INFO] [artist:22] Updating artist's top_tracks: artist=Kuldeep Pattanaik sid=4O5bANbDjtd46vk1f7oR85
+2026-01-07 05:33:20 [INFO] [data_builder:137] Track created: sid=2EaLa2R4vht5TbOyiyhcym name=Tu Mori Duniya
+2026-01-07 05:33:20 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Subhrajit Mohanty sid=7ylvXxqyG3iWejlSnR7bNP
+2026-01-07 05:33:20 [INFO] [artist:22] Updating artist's top_tracks: artist=Subhrajit Mohanty sid=7ylvXxqyG3iWejlSnR7bNP
+2026-01-07 05:33:23 [INFO] [data_builder:114] Artist image updating: artist=Subhrajit Mohanty sid=7ylvXxqyG3iWejlSnR7bNP
+2026-01-07 05:33:24 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Subhrajit Mohanty sid=7ylvXxqyG3iWejlSnR7bNP
+2026-01-07 05:33:24 [INFO] [data_builder:114] Artist image updating: artist=Kuldeep Pattanaik sid=4O5bANbDjtd46vk1f7oR85
+2026-01-07 05:33:24 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Kuldeep Pattanaik sid=4O5bANbDjtd46vk1f7oR85
+2026-01-07 05:33:24 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rakesh Dash sid=41E0AaZSbrcO90w8Kv6lpP
+2026-01-07 05:33:24 [INFO] [artist:22] Updating artist's top_tracks: artist=Rakesh Dash sid=41E0AaZSbrcO90w8Kv6lpP
+2026-01-07 05:33:28 [INFO] [data_builder:114] Artist image updating: artist=Rakesh Dash sid=41E0AaZSbrcO90w8Kv6lpP
+2026-01-07 05:33:28 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rakesh Dash sid=41E0AaZSbrcO90w8Kv6lpP
+2026-01-07 05:33:39 [INFO] [album:18] Album was successfully supplement tracks: album=Tu Mori Duniya sid=50K8SnD44ctO2zobKODnME
+2026-01-07 05:33:39 [INFO] [data_builder:73] Album created: sid=50K8SnD44ctO2zobKODnME name=Tu Mori Duniya
+2026-01-07 05:33:39 [INFO] [data_builder:137] Track created: sid=27kK4EcsgpHNy1ZEJQby5K name=Chorabali Nayika - From "First Love"
+2026-01-07 05:33:39 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Javed Ali sid=4W91bbPB2CTSsHwt7eqNl7
+2026-01-07 05:33:39 [INFO] [artist:22] Updating artist's top_tracks: artist=Javed Ali sid=4W91bbPB2CTSsHwt7eqNl7
+2026-01-07 05:33:43 [INFO] [data_builder:137] Track created: sid=1wnozUBSe7OMpmZiTPJC5j name=Tum Tak (From "Raanjhanaa")
+2026-01-07 05:33:43 [INFO] [models:86] [ARTIST] WAS CREATED: artist=A.R. Rahman sid=1mYsTxnqsietFxj1OgoGbG
+2026-01-07 05:33:43 [INFO] [artist:22] Updating artist's top_tracks: artist=A.R. Rahman sid=1mYsTxnqsietFxj1OgoGbG
+2026-01-07 05:33:49 [INFO] [data_builder:137] Track created: sid=4FeczSomVWVyU4FW7xDeAI name=Tere Bina
+2026-01-07 05:33:49 [INFO] [data_builder:114] Artist image updating: artist=A.R. Rahman sid=1mYsTxnqsietFxj1OgoGbG
+2026-01-07 05:33:49 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=A.R. Rahman sid=1mYsTxnqsietFxj1OgoGbG
+2026-01-07 05:33:49 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Chinmayi sid=5UJ2sHO2ELrgW6aXeRLTQQ
+2026-01-07 05:33:49 [INFO] [artist:22] Updating artist's top_tracks: artist=Chinmayi sid=5UJ2sHO2ELrgW6aXeRLTQQ
+2026-01-07 05:33:54 [INFO] [data_builder:114] Artist image updating: artist=Chinmayi sid=5UJ2sHO2ELrgW6aXeRLTQQ
+2026-01-07 05:33:54 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Chinmayi sid=5UJ2sHO2ELrgW6aXeRLTQQ
+2026-01-07 05:33:54 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Murtuza Khan sid=3v8isPrc8btWVMF3bnOIcj
+2026-01-07 05:33:54 [INFO] [artist:22] Updating artist's top_tracks: artist=Murtuza Khan sid=3v8isPrc8btWVMF3bnOIcj
+2026-01-07 05:34:00 [INFO] [data_builder:114] Artist image updating: artist=Murtuza Khan sid=3v8isPrc8btWVMF3bnOIcj
+2026-01-07 05:34:00 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Murtuza Khan sid=3v8isPrc8btWVMF3bnOIcj
+2026-01-07 05:34:00 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Qadir Khan sid=2gTPBFjo3M9rvMSZWTk9nT
+2026-01-07 05:34:00 [INFO] [artist:22] Updating artist's top_tracks: artist=Qadir Khan sid=2gTPBFjo3M9rvMSZWTk9nT
+2026-01-07 05:34:07 [INFO] [data_builder:114] Artist image updating: artist=Qadir Khan sid=2gTPBFjo3M9rvMSZWTk9nT
+2026-01-07 05:34:07 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Qadir Khan sid=2gTPBFjo3M9rvMSZWTk9nT
+2026-01-07 05:34:20 [INFO] [data_builder:137] Track created: sid=32DWojMZeZebVrfBkhAkKy name=Barso Re
+2026-01-07 05:34:20 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Shreya Ghoshal sid=0oOet2f43PA68X5RxKobEy
+2026-01-07 05:34:20 [INFO] [artist:22] Updating artist's top_tracks: artist=Shreya Ghoshal sid=0oOet2f43PA68X5RxKobEy
+2026-01-07 05:34:23 [INFO] [data_builder:137] Track created: sid=0xlWd9o8yjKpJ02WJy79kZ name=Tere Liye
+2026-01-07 05:34:23 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Atif Aslam sid=2oSONSC9zQ4UonDKnLqksx
+2026-01-07 05:34:23 [INFO] [artist:22] Updating artist's top_tracks: artist=Atif Aslam sid=2oSONSC9zQ4UonDKnLqksx
+2026-01-07 05:34:26 [INFO] [data_builder:114] Artist image updating: artist=Atif Aslam sid=2oSONSC9zQ4UonDKnLqksx
+2026-01-07 05:34:26 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Atif Aslam sid=2oSONSC9zQ4UonDKnLqksx
+2026-01-07 05:34:26 [INFO] [data_builder:114] Artist image updating: artist=Shreya Ghoshal sid=0oOet2f43PA68X5RxKobEy
+2026-01-07 05:34:27 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Shreya Ghoshal sid=0oOet2f43PA68X5RxKobEy
+2026-01-07 05:34:39 [INFO] [data_builder:137] Track created: sid=48Ix6ReYdJf2H4mKb3TIpj name=Tera Hone Laga Hoon
+2026-01-07 05:34:39 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Alisha Chinai sid=4mBxoO0pAcMbAwuTcrcLMc
+2026-01-07 05:34:39 [INFO] [artist:22] Updating artist's top_tracks: artist=Alisha Chinai sid=4mBxoO0pAcMbAwuTcrcLMc
+2026-01-07 05:34:44 [INFO] [data_builder:137] Track created: sid=0dLbrlAVPPjpPqnYfmJsWk name=Tera Hone Laga Hoon
+2026-01-07 05:34:44 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Pritam sid=1wRPtKGflJrBx9BmLsSwlU
+2026-01-07 05:34:44 [INFO] [artist:22] Updating artist's top_tracks: artist=Pritam sid=1wRPtKGflJrBx9BmLsSwlU
+2026-01-07 05:34:48 [INFO] [data_builder:137] Track created: sid=2cPUB8EOT6AfJ8oxhyoNXL name=Ye Tune Kya Kiya
+2026-01-07 05:34:48 [INFO] [data_builder:114] Artist image updating: artist=Pritam sid=1wRPtKGflJrBx9BmLsSwlU
+2026-01-07 05:34:48 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Pritam sid=1wRPtKGflJrBx9BmLsSwlU
+2026-01-07 05:34:48 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Javed Bashir sid=5diMmmNkRVfgUnXJrzXzjZ
+2026-01-07 05:34:48 [INFO] [artist:22] Updating artist's top_tracks: artist=Javed Bashir sid=5diMmmNkRVfgUnXJrzXzjZ
+2026-01-07 05:34:53 [INFO] [data_builder:114] Artist image updating: artist=Javed Bashir sid=5diMmmNkRVfgUnXJrzXzjZ
+2026-01-07 05:34:53 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Javed Bashir sid=5diMmmNkRVfgUnXJrzXzjZ
+2026-01-07 05:34:53 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rajat Arora sid=6Ahs12ksf1lju6bHwuX4X2
+2026-01-07 05:34:53 [INFO] [artist:22] Updating artist's top_tracks: artist=Rajat Arora sid=6Ahs12ksf1lju6bHwuX4X2
+2026-01-07 05:35:05 [INFO] [data_builder:137] Track created: sid=0oVu2WYGCKju2RSmuQ16gS name=Ultimate Bollywood Dance Celebration Mix
+2026-01-07 05:35:05 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Yo Yo Honey Singh sid=7uIbLdzzSEqnX0Pkrb56cR
+2026-01-07 05:35:05 [INFO] [artist:22] Updating artist's top_tracks: artist=Yo Yo Honey Singh sid=7uIbLdzzSEqnX0Pkrb56cR
+2026-01-07 05:35:08 [INFO] [data_builder:137] Track created: sid=78BWCd70D1X6LMkDZm1UoF name=Millionaire
+2026-01-07 05:35:08 [INFO] [data_builder:114] Artist image updating: artist=Yo Yo Honey Singh sid=7uIbLdzzSEqnX0Pkrb56cR
+2026-01-07 05:35:08 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Yo Yo Honey Singh sid=7uIbLdzzSEqnX0Pkrb56cR
+2026-01-07 05:35:22 [INFO] [data_builder:137] Track created: sid=61R3DMR4U2n25qgX9ryciJ name=Jatt Mehkma
+2026-01-07 05:35:23 [INFO] [data_builder:137] Track created: sid=3HoyK88FbiUoYF6DSZZ4MJ name=High On Me
+2026-01-07 05:35:23 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Talwiinder sid=6QoCrBHsojKnOrsGNfRcTN
+2026-01-07 05:35:23 [INFO] [artist:22] Updating artist's top_tracks: artist=Talwiinder sid=6QoCrBHsojKnOrsGNfRcTN
+2026-01-07 05:35:26 [INFO] [data_builder:137] Track created: sid=08GYLNhKthS3arMdXsveRI name=Haseen
+2026-01-07 05:35:26 [INFO] [data_builder:114] Artist image updating: artist=Talwiinder sid=6QoCrBHsojKnOrsGNfRcTN
+2026-01-07 05:35:26 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Talwiinder sid=6QoCrBHsojKnOrsGNfRcTN
+2026-01-07 05:35:27 [INFO] [models:86] [ARTIST] WAS CREATED: artist=NDS sid=5xh6szshoZ0UfZD1x6QzZG
+2026-01-07 05:35:27 [INFO] [artist:22] Updating artist's top_tracks: artist=NDS sid=5xh6szshoZ0UfZD1x6QzZG
+2026-01-07 05:35:30 [INFO] [data_builder:114] Artist image updating: artist=NDS sid=5xh6szshoZ0UfZD1x6QzZG
+2026-01-07 05:35:30 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=NDS sid=5xh6szshoZ0UfZD1x6QzZG
+2026-01-07 05:35:30 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Rippy Grewal sid=1RaZAbVB4yopz69N1XlZvj
+2026-01-07 05:35:30 [INFO] [artist:22] Updating artist's top_tracks: artist=Rippy Grewal sid=1RaZAbVB4yopz69N1XlZvj
+2026-01-07 05:35:33 [INFO] [data_builder:114] Artist image updating: artist=Rippy Grewal sid=1RaZAbVB4yopz69N1XlZvj
+2026-01-07 05:35:33 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Rippy Grewal sid=1RaZAbVB4yopz69N1XlZvj
+2026-01-07 05:35:43 [INFO] [album:18] Album was successfully supplement tracks: album=Haseen sid=3L6TDQekb2ZsaqAnw1nZRx
+2026-01-07 05:35:44 [INFO] [data_builder:73] Album created: sid=3L6TDQekb2ZsaqAnw1nZRx name=Haseen
+2026-01-07 05:35:44 [INFO] [data_builder:137] Track created: sid=4gAYB5yzeYrQ0jz13FmFOV name=Kaatilana
+2026-01-07 05:35:44 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Push Kahlon sid=3FV1d5JZKT5LjoMbBhZoBP
+2026-01-07 05:35:44 [INFO] [artist:22] Updating artist's top_tracks: artist=Push Kahlon sid=3FV1d5JZKT5LjoMbBhZoBP
+2026-01-07 05:35:47 [INFO] [data_builder:114] Artist image updating: artist=Push Kahlon sid=3FV1d5JZKT5LjoMbBhZoBP
+2026-01-07 05:35:47 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Push Kahlon sid=3FV1d5JZKT5LjoMbBhZoBP
+2026-01-07 05:35:58 [INFO] [album:18] Album was successfully supplement tracks: album=Kaatilana sid=0nBHaOa8XXkIB0e3YAYnxf
+2026-01-07 05:35:58 [INFO] [data_builder:73] Album created: sid=0nBHaOa8XXkIB0e3YAYnxf name=Kaatilana
+2026-01-07 05:35:58 [INFO] [data_builder:137] Track created: sid=2LMxnVSu2VfWBmqQxM1yBo name=Tere Jeha
+2026-01-07 05:36:08 [INFO] [album:18] Album was successfully supplement tracks: album=Tere Jeha sid=0EStSc3CvkTtzL1O5uaeko
+2026-01-07 05:36:08 [INFO] [data_builder:73] Album created: sid=0EStSc3CvkTtzL1O5uaeko name=Tere Jeha
+2026-01-07 05:36:09 [INFO] [data_builder:137] Track created: sid=5KI4JZanirpob7uc9j9WRe name=Dilan De Wich
+2026-01-07 05:36:20 [INFO] [album:18] Album was successfully supplement tracks: album=Dilan De Wich sid=4f8Mq3VDGx3z4mgYu9mMYT
+2026-01-07 05:36:20 [INFO] [data_builder:73] Album created: sid=4f8Mq3VDGx3z4mgYu9mMYT name=Dilan De Wich
+2026-01-07 05:36:21 [INFO] [data_builder:137] Track created: sid=5b7oJ3PKhXLKJ5e7by9wP6 name=Speechless
+2026-01-07 05:36:21 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Twinbeatz sid=4L7glay6qnMnr6MQawUzjT
+2026-01-07 05:36:21 [INFO] [artist:22] Updating artist's top_tracks: artist=Twinbeatz sid=4L7glay6qnMnr6MQawUzjT
+2026-01-07 05:36:23 [INFO] [data_builder:137] Track created: sid=6cCZqWHaHqHiCRupxI7DXq name=Diamond
+2026-01-07 05:36:23 [INFO] [data_builder:114] Artist image updating: artist=Twinbeatz sid=4L7glay6qnMnr6MQawUzjT
+2026-01-07 05:36:23 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Twinbeatz sid=4L7glay6qnMnr6MQawUzjT
+2026-01-07 05:36:34 [INFO] [album:18] Album was successfully supplement tracks: album=Diamond sid=09KnHxPc6RvOWAY3AfJIYd
+2026-01-07 05:36:34 [INFO] [data_builder:73] Album created: sid=09KnHxPc6RvOWAY3AfJIYd name=Diamond
+2026-01-07 05:36:48 [INFO] [data_builder:137] Track created: sid=1EUKg7WgItFImY2aAf5QpW name=Love Right Here
+2026-01-07 05:36:48 [INFO] [models:86] [ARTIST] WAS CREATED: artist=GC (Gate Citizens) sid=5bCPGPteeq3Aex9KASeq0A
+2026-01-07 05:36:48 [INFO] [artist:22] Updating artist's top_tracks: artist=GC (Gate Citizens) sid=5bCPGPteeq3Aex9KASeq0A
+2026-01-07 05:36:49 [INFO] [data_builder:137] Track created: sid=7h72e56ZnaUYOdrQQ5dYIQ name=Gal Karni
+2026-01-07 05:36:49 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Romey Maan sid=3EaRNINkFxAaMcszG2DVOm
+2026-01-07 05:36:49 [INFO] [artist:22] Updating artist's top_tracks: artist=Romey Maan sid=3EaRNINkFxAaMcszG2DVOm
+2026-01-07 05:36:51 [INFO] [data_builder:114] Artist image updating: artist=Romey Maan sid=3EaRNINkFxAaMcszG2DVOm
+2026-01-07 05:36:52 [INFO] [models:94] [ARTIST] WAS UPDATED: artist=Romey Maan sid=3EaRNINkFxAaMcszG2DVOm
+2026-01-07 05:36:52 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Amar Sandhu sid=52azpeiy7FKa0hoa8CwL6E
+2026-01-07 05:36:52 [INFO] [artist:22] Updating artist's top_tracks: artist=Amar Sandhu sid=52azpeiy7FKa0hoa8CwL6E
+2026-01-07 05:36:56 [INFO] [data_builder:137] Track created: sid=0eNFwDKwJzv4KRbVbBHtBJ name=Sandhu Takeover
+2026-01-07 05:36:56 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Manni Sandhu sid=3IzepIGEFUSFFnuIVGwZDS
+2026-01-07 05:36:56 [INFO] [artist:22] Updating artist's top_tracks: artist=Manni Sandhu sid=3IzepIGEFUSFFnuIVGwZDS
+2026-01-07 05:36:59 [INFO] [data_builder:137] Track created: sid=1QecTIbUmqn4awHGDXd1q5 name=That Girl
+2026-01-07 05:36:59 [INFO] [models:86] [ARTIST] WAS CREATED: artist=Param sid=4yRIu6uwKIMkVrG6e2bQJ0
+2026-01-07 07:26:39 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-07 07:26:39 [INFO] [update_user_playlists:18] First playlist: name=幸せな悲しみ
+2026-01-07 07:26:39 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-01-07 07:26:39 [INFO] [client_services:209] Fetching playlist tracks: pid=6B3JNjzJoxykTZWOLMal3E
+2026-01-07 07:27:58 [INFO] [update_user_playlists:29] Playlists updated successfully
+2026-01-07 07:49:36 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-07 07:49:36 [INFO] [update_user_playlists:18] First playlist: name=不運
+2026-01-07 07:49:37 [INFO] [client_services:209] Fetching playlist tracks: pid=39UHgToFdgKvhPqNFfhEgH
+2026-01-07 07:49:47 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-01-07 07:49:47 [INFO] [update_user_playlists:18] First playlist: name=不運
+2026-01-07 07:49:47 [INFO] [client_services:209] Fetching playlist tracks: pid=39UHgToFdgKvhPqNFfhEgH

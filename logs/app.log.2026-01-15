@@ -1,0 +1,53 @@
+2026-01-15 14:22:46 [INFO] [views:49] User logged in: login=andre user_id=5
+2026-01-15 14:22:46 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:22:46 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:23:05 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:23:05 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:23:30 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:23:30 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:26:41 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:26:41 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:27:18 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:27:18 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:30:15 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:30:15 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:37:03 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:37:03 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:37:55 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:37:55 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:38:21 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:38:21 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:39:19 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:39:19 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:41:36 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:41:36 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:47:16 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:47:16 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:55:45 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:55:45 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 14:56:03 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 14:56:03 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:00:28 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:00:28 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:08:48 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:08:48 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:13:52 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:13:52 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:14:02 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:14:02 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:25:08 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:25:08 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:25:14 [INFO] [views:50] User statistics loaded: has_stats=False
+2026-01-15 15:25:14 [INFO] [views:51] User playlists loaded: has_stats=True
+2026-01-15 15:30:12 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-15 15:30:12 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-15 15:32:02 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-15 15:32:02 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-15 15:34:01 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-15 15:34:01 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-15 15:36:52 [INFO] [data_builder:210] Track added to playlist: pid=1q1mEYwXmEyiENKYyWFb7f tid=PLAY HARD add=True
+2026-01-15 15:36:52 [INFO] [client_services:210] Track added to playlist: pid=1q1mEYwXmEyiENKYyWFb7f tid=2HekvRoXXGZwhDaU8sbQg7
+2026-01-15 15:37:06 [INFO] [data_builder:212] Track removed from playlist: pid=1q1mEYwXmEyiENKYyWFb7f tid=PLAY HARD add=False
+2026-01-15 15:37:06 [INFO] [client_services:216] Track removed from playlist: pid=1q1mEYwXmEyiENKYyWFb7f tid=2HekvRoXXGZwhDaU8sbQg7
+2026-01-15 15:47:13 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-15 15:47:13 [INFO] [views:52] User playlists loaded: has_stats=True

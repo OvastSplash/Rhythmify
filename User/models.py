@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
+from django.contrib.postgres.indexes import GinIndex
 
 class UserManager(BaseUserManager):
     def create_user(self, user_login, password=None, **extra_fields):
@@ -53,3 +54,12 @@ class CustomUser(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return self.is_superuser
+
+    class Meta:
+        indexes = [
+            GinIndex(
+                fields=['username'],
+                name='username_trgm_idx',
+                opclasses=['gin_trgm_ops'],
+            )
+        ]

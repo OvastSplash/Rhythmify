@@ -3,7 +3,7 @@ from django.contrib import admin
 from SpotifyController.models.models import (
     Track,
     Artist,
-    Genre, Album,
+    Genre, Album, Playlist,
 )
 from SpotifyController.models.through import FavoriteUserTracks, RecommendationTracks, UsersListenHistory
 
@@ -20,3 +20,4 @@ admin.site.register(FavoriteUserTracks)
 admin.site.register(Genre)
 admin.site.register(RecommendationTracks)
 admin.site.register(UsersListenHistory)
+admin.site.register(Playlist)

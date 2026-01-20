@@ -1,0 +1,1008 @@
+w2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:54:49 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 12:54:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:54:51 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:02 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:02 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:02 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:04 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:55:04 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:55:05 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:06 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:16 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:16 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:55:16 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:55:17 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:17 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:28 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:28 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:29 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:30 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:30 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:55:31 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:55:31 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:31 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:42 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:43 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:43 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:55:43 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:55:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:55:44 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:55 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:55 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:55 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:55:55 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:55:56 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:56 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:55:56 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 12:55:57 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 12:55:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:14 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:56:15 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:56:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:33 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:56:33 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:56:33 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:56:46 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:56:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:56:58 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:56:58 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:56:59 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 12:56:59 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 12:57:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:14 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:57:15 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:57:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:26 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:57:26 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:57:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:27 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:57:37 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:57:38 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:57:39 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 12:57:39 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 12:57:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:57:50 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:57:51 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:57:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:02 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:58:02 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:58:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:13 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:58:13 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:58:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:24 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:58:25 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:58:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:58:37 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:37 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:58:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:38 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:58:38 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:58:40 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:58:40 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:58:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:56 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:58:56 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:58:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:58:57 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:59:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:59:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:16 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 12:59:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:18 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:59:18 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:59:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS
+2025-12-19 12:59:38 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 12:59:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 12:59:50 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 12:59:50 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 12:59:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:01 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:00:01 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:00:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:12 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:00:12 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:00:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:24 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:00:24 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:00:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:36 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:36 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:36 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:36 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:37 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:37 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:37 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:37 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:00:38 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:00:38 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:00:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:53 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:00:53 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:00:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:00:54 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:07 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:07 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:08 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:08 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:09 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:09 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:10 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:10 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:12 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:14 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:01:14 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:01:15 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:01:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:26 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:01:26 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:01:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:37 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:01:37 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:01:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:01:49 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:01:49 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:01:50 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:01:51 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:01:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:09 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:02:09 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:02:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:26 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:02:27 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:02:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:27 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:02:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:38 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:02:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:02:41 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:02:41 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:02:52 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:02:52 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:02:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:10 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:03:10 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:03:21 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:03:22 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:03:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:32 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:03:32 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:03:33 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:03:33 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:03:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:03:52 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:03:53 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:03:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:12 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:12 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:14 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:15 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:15 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:16 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:17 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:18 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:19 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:19 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:23 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:23 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:24 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:26 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:27 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:27 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:28 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:29 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:29 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:04:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:33 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:33 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:33 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:34 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:04:34 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:04:35 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:50 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:04:50 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:04:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:04:51 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:06 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:07 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:08 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:09 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:10 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:05:10 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:05:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:21 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:05:22 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:05:22 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:05:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:05:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:39 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:39 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:39 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:40 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:41 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:42 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:42 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:43 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:43 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:43 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:44 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:44 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:45 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:45 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:45 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:46 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:05:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:05:46 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:05:46 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:05:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:01 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:02 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:03 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:04 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:05 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:05 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:05 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:06:06 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:06:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:23 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:29 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:30 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:31 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:32 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:33 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:06:33 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:06:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:50 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:06:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:56 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:06:57 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:06:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:06:57 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:10 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:10 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:11 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:11 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:12 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:13 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:14 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:14 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:15 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:16 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:16 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:17 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:18 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:19 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:19 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:20 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:07:20 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:07:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:36 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:37 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:37 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:48 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:48 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:49 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:50 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:51 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:52 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:53 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:56 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:07:56 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:07:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:07:57 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:07:57 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:13 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:14 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:15 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:17 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:18 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:22 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:24 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:25 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:26 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:26 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:27 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:28 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:29 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:08:29 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:08:30 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:08:30 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:08:32 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:42 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:08:43 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:08:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:58 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:58 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:08:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:08:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:00 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:09:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:02 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:09:02 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:09:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:14 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:15 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:16 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:17 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:18 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:23 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:09:23 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:09:24 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:34 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:09:35 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:09:36 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:46 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:09:46 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:09:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:09:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:00 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating
+2025-12-19 13:10:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:06 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:10:07 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:10:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:19 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:20 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:21 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:22 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:23 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:23 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:10:24 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:10:24 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:10:25 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:10:37 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:42 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:10:43 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:10:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:54 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:55 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:56 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:57 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:58 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:58 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:10:59 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:10:59 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:11:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:10 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:11:11 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:11:12 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:22 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:11:22 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:11:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:44 Updated artist top tracks
+2025-12-19 13:11:24 [INFO] SpotifyController.management.commands.update_artists_top_tracks:36 [COMMAND] UPDATING ARTIST
+2025-12-19 13:11:38 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:39 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:40 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:41 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:42 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:43 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:44 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:45 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:46 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:47 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:11:47 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:11:47 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:11:59 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:00 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:01 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:02 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:03 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:04 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:05 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:06 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:07 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks
+2025-12-19 13:12:07 [INFO] SpotifyController.services.database.data_builder:67 Album created
+2025-12-19 13:12:07 [INFO] SpotifyController.services.database.data_builder:134 Track created
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Bershy sid=6iW8bv3aUP8Dte1KnMBH8c
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=pathetic240px sid=6s6HhNePAkax0mfTK1O57K
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Olivia Rodrigo sid=1McMsnEElThX1knmY4oliG
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=RAYE sid=5KKpBU5eC2tJDzf0wmlRp2
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Dutch Melrose sid=6NRSfOnXw4qaypEfIV2QXn
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=NewJeans sid=6HvZYsbFfjnjFrWF950C9d
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=SALES sid=6vVztIuqdDHvYWxOEXCzjN
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Phantogram sid=1l9d7B8W0IHy3LqWsxP2SH
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Speed Radio sid=1YzaVDzA3EdEipDSUeNQER
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Esteve sid=5vxQVYuckN4XHIB46zPvXy
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=AGTHA sid=2K7VKSRwaJs7xifL4YOJGH
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Paramore sid=74XFHRwlV6OrjEM0A2NCMF
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Grouper sid=31uyAcnY0kjjKKIQZMKX4i
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Ezekiel sid=4qUoZ6ErhTYFhAI0W1iI9q
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Bruno Mars sid=0du5cEVh5yTK9QJze8zA0C
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=The Marías sid=2sSGPbdZJkaSE2AbcGOACx
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Isabel LaRosa sid=5arKwJZEvT5uKq4o0JfqR4
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=MARINA sid=6CwfuxIqcltXDGjfZsMd9A
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Naeleck sid=2DYDFBqoaBP2i9XrTGpOgF
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Kate Bush sid=1aSxMhuvixZ8h9dK9jIDwL
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=girl in red sid=3uwAm6vQy7kWPS2bciKWx9
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Ruby Doll sid=1SUIDAEfkqiupgHgJJULqE
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=NIVEK FFORHS sid=4PUbhYyuHOrbVt6SIA4QPG
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Sabrina Carpenter sid=74KM79TiuVKeVCqs8QtB0B
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=benny mayne sid=2R2Yg2qPloNOTOfqxfXX7l
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Chri$tian Gate$ sid=0OEYE03fBF2VoTBxGuaUxL
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Clairo sid=3l0CmX0FuQjFxr8SK7Vqag
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=PinkPantheress sid=78rUTD7y6Cy67W1RVzYs7t
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=SZA sid=7tYKF4w9nC0nq9CsPZTHyP
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Steve Lacy sid=57vWImR43h4CaDao012Ofp
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:30 [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Pastel Ghost sid=06O23tLg0or676h8EEzH7W
+2025-12-19 13:12:23 [INFO] SpotifyController.management.commands.update_artists_top_tracks:33 [COMMAND] UPDATING ARTIST: artist=Crystal Castles sid=7K3zpFXBvPcvzhj7zlGJdO
+2025-12-19 13:12:37 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3d8zIv577en5PxwwAzadN2 name=Untrust Us
+2025-12-19 13:12:37 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6rnPYe750GNdwDB6UESmKW name=Alice Practice
+2025-12-19 13:12:38 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7esXWPJMdlXfgho3zlwbqv name=Magic Spells
+2025-12-19 13:12:38 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0EJGTLcUF5V5bWedbdxfvR name=xxzxcuzx me
+2025-12-19 13:12:38 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5q87b5QgY2fljeY0DtNp4q name=Air War
+2025-12-19 13:12:39 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3zKQDZQTHkUV6bYHNhzbGv name=Courtship Dating
+2025-12-19 13:12:39 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2mDVgjGXkCMFde7a2mte2q name=Good Time
+2025-12-19 13:12:39 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=53vhpi8TTXGJvwVjFMuzu7 name=1991
+2025-12-19 13:12:40 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2Q4hl7psP5tVG6rOYZk0m0 name=Knights
+2025-12-19 13:12:40 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=36oxp49AoodaUOdMABt2gi name=Love And Caring
+2025-12-19 13:12:41 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=76Sl8UKNB6ACcrg6pjOopx name=Through The Hosiery
+2025-12-19 13:12:41 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6iJrkignemcwQ6JC212kUk name=Reckless
+2025-12-19 13:12:42 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6T2TuRHYIAw43jaaISnkYq name=Black Panther
+2025-12-19 13:12:42 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1FVL2r35pt2RDeB2dgYsXP name=Tell Me What To Swallow
+2025-12-19 13:12:43 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1v6pfDQ0msAz5mqal3LBtp name=Air War - David Wolf Remix
+2025-12-19 13:12:43 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Crystal Castles sid=6rTfUUv8Kefr6Uo3AaecXi
+2025-12-19 13:12:43 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=6rTfUUv8Kefr6Uo3AaecXi name=Crystal Castles
+2025-12-19 13:12:43 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=12oxsGACfwMozi4nK9noGQ name=Suffocation
+2025-12-19 13:12:55 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2gxklHRFEsOYP6W1aNV9u6 name=Fainting Spells
+2025-12-19 13:12:55 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1uDgCyYccPQAtPmvJ2669p name=Celestica
+2025-12-19 13:12:56 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6FRxDy2B6yOCY6Z3j1Tsue name=Doe Deer - 12" Version
+2025-12-19 13:12:56 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5DHbiRpf7TSsTCSIqkm1r3 name=Baptism
+2025-12-19 13:12:56 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5v0FdnQvCTbMiCnPHC2WrP name=Year Of Silence
+2025-12-19 13:12:57 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2R3heksil8zmzSFUwYQIPC name=Empathy
+2025-12-19 13:12:57 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0rbSMWQ8XmZTKow5cZeho3 name=Violent Dreams
+2025-12-19 13:12:58 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=43z4YW7RdYcZXMcW9Vya7A name=Vietnam
+2025-12-19 13:12:58 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=4sWIuNtS8bxQ6J2JxgK2BR name=Birds
+2025-12-19 13:12:59 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3EBCX213tph37xvo20rnsO name=Pap Smear
+2025-12-19 13:12:59 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5FVCsMyifYB2tWG3It0bBQ name=Not In Love
+2025-12-19 13:12:59 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5uVOl60Ln5Cx9BA67AtWCN name=Intimate
+2025-12-19 13:13:00 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=4HlvxSVTSIhdpojCn7ai5T name=I Am Made Of Chalk
+2025-12-19 13:13:00 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Crystal Castles (II) sid=5B2ipvFV27t5lUQYcNkTpg
+2025-12-19 13:13:00 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=5B2ipvFV27t5lUQYcNkTpg name=Crystal Castles (II)
+2025-12-19 13:13:01 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2K70ZV0Ls65Kkj0WUEfHlz name=Kerosene
+2025-12-19 13:13:13 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=4W8RFtTljQRj0phicwhilC name=Plague
+2025-12-19 13:13:14 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0WM6cgqDf2AogHLhYVVFcs name=Wrath Of God
+2025-12-19 13:13:15 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=40gzFTGHDjEsE2x7f00jZ4 name=Affection
+2025-12-19 13:13:15 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7di8JV5YRTwjKsWdJUxb9I name=Pale Flesh
+2025-12-19 13:13:16 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1mMhulpbNYovMDypYrBQjQ name=Sad Eyes
+2025-12-19 13:13:16 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0T2WwxeCzhXMiME2xs6lo2 name=Insulin
+2025-12-19 13:13:17 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3pbN3SGJott0Rgb5aE5kqc name=Transgender
+2025-12-19 13:13:17 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5Gy6XmBcmCZ6xQ4p729ldE name=Violent Youth
+2025-12-19 13:13:18 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1FiUN5EOq1BbeN01AhpLqB name=Telepath
+2025-12-19 13:13:19 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1SE3kJOxvLNJ2k1T9AJStV name=Mercenary
+2025-12-19 13:13:19 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6EjcjCQkzOYG7Xxvza1RBo name=Child I Will Hurt You
+2025-12-19 13:13:20 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=(III) sid=2KYBzzK8L9yvBe0k5GeoD8
+2025-12-19 13:13:20 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=2KYBzzK8L9yvBe0k5GeoD8 name=(III)
+2025-12-19 13:13:21 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6slWUMiyoNNWcQGu6tkTlH name=Leni (Crystal Castles vs GoodBooks)
+2025-12-19 13:13:21 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=GoodBooks sid=0pwItbAKmeSTovWzxzkkbg
+2025-12-19 13:13:34 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1SHCK0LuIl8yD5hmFEGTzU name=The Illness (The Teenagers Remix)
+2025-12-19 13:13:34 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=The Teenagers sid=6EU3ei9Aim1yaX6hTJrjXE
+2025-12-19 13:13:35 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6oxKkEQXlDpEUkvFAlZNJO name=Turn It Back (Freaks Remix)
+2025-12-19 13:13:35 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=FREAKS sid=34Ld4PVRgqpi1Mine7zTam
+2025-12-19 13:13:36 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7kAYvKxBU5nidhuwZFEIJZ name=Leni (Kissy Sell out Remix)
+2025-12-19 13:13:36 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Kissy Sell Out sid=0rpDUfXxUvzGqZXcKaN89T
+2025-12-19 13:13:37 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0MwubAFGzz05efAfQmbdXG name=Passchendaele (Minotaur Shock More Faithful Remix)
+2025-12-19 13:13:37 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Minotaur Shock sid=0th6kjDjrhxTcb8vytnH30
+2025-12-19 13:13:38 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=29pzsPTJ87WIkEbq9eIWkD name=Walk With Me (Subsource Remix)
+2025-12-19 13:13:38 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Subsource sid=2fYqkhg9leQNWErj8uae61
+2025-12-19 13:13:39 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1X2GhKNdRPNYywvPYfvLWF name=Turn It Back (Lo-Fi-Fnk Mature Remix)
+2025-12-19 13:13:39 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Lo-Fi-Fnk sid=3m7kkYCoZ7yaJB00zs0Jok
+2025-12-19 13:13:40 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=64ehTLCPQRe1HFpwxRxHtP name=The Illness (Hervé Dub Remix)
+2025-12-19 13:13:40 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Hervé sid=3mNXGOPYzxYiGxttEvJ9hx
+2025-12-19 13:13:41 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7zFTaTlt3lhuzWuemy3VLw name=Passchendaele (Kgb Remix)
+2025-12-19 13:13:41 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=KGB sid=4PEepYVmLNebJLsenCHUdU
+2025-12-19 13:13:42 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Control Freaks (The Remixes) sid=4lPBSP3DIiXn2ktREAsoHw
+2025-12-19 13:13:42 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=4lPBSP3DIiXn2ktREAsoHw name=Control Freaks (The Remixes)
+2025-12-19 13:13:43 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2mHngbc9wHeVuJr59VCV2h name=Char
+2025-12-19 13:13:54 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2LMrqSBtKQ8dbWxBXUmM72 name=Femen
+2025-12-19 13:13:55 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2tdfTvq5PrseNIZIuJyz2v name=Fleece
+2025-12-19 13:13:56 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6YcfAU2P3KETyULHliTWXn name=Enth
+2025-12-19 13:13:56 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=11FTDESnUZnbttiZT3MNF2 name=Sadist
+2025-12-19 13:13:57 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=17Gyli3xn2LFTtH7aJF2hI name=Teach Her How To Hunt
+2025-12-19 13:13:57 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6jTpdkPWw4QT7VOgUYqrsK name=Chloroform
+2025-12-19 13:13:58 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3gViuwP0HzumvGELo6ucL7 name=Concrete
+2025-12-19 13:13:59 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2963ufsnHaEzxjyPovofh7 name=Ornament
+2025-12-19 13:13:59 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=10n83bsDQRYpTKaNjX4wAE name=Their Kindness Is Charade
+2025-12-19 13:14:00 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Amnesty (I) sid=60f7DBZ5BIKTlaGak6ooUU
+2025-12-19 13:14:00 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=60f7DBZ5BIKTlaGak6ooUU name=Amnesty (I)
+2025-12-19 13:14:01 [INFO] SpotifyController.management.commands.update_artists_top_tracks:41 Updated artist top tracks: artist=Crystal Castles sid=7K3zpFXBvPcvzhj7zlGJdO tracks=Vanished, Crimewave, Untrust Us, Knights, Suffocation, Empathy, Kerosene, Transgender, Leni (Crystal Castles vs GoodBooks), Char
+2025-12-19 13:14:01 [INFO] SpotifyController.management.commands.update_artists_top_tracks:33 [COMMAND] UPDATING ARTIST: artist=Sidewalks and Skeletons sid=48nHO1cuTbpx4ELhChsxX1
+2025-12-19 13:14:15 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2cEx8Z8Of0qQu9Ict1MIMk name=Fall
+2025-12-19 13:14:16 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=785C6BpZ0YL3yUOJ8QuA6p name=Unearth
+2025-12-19 13:14:16 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1NeNc7uDdCZWWYKoHMyu9A name=Eternal
+2025-12-19 13:14:17 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1Ta0DEWo4exyC9Aqv8tVqY name=Above
+2025-12-19 13:14:18 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7uxQ9jdgsJRBTbv1yB1fwE name=Pure
+2025-12-19 13:14:18 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6mjeRHyraMc9lkNZM5fCQV name=XXX
+2025-12-19 13:14:19 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3g6weBlIJbTeFtlAuSbQBm name=Disappear
+2025-12-19 13:14:20 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3COUB16D7209jtIXX13zKS name=Blood
+2025-12-19 13:14:21 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1uwzAmgnBBO5fi6N4JQnlt name=Sleep Paralysis
+2025-12-19 13:14:21 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3hudwVe1nlrcvrMzdHSaUe name=Rapture
+2025-12-19 13:14:22 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1hmo5AzE4FA2sNx4It7H8v name=Body
+2025-12-19 13:14:23 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3WHbgoJ1DChaDaMgXR4zhr name=Underwater Sun
+2025-12-19 13:14:23 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=White Light sid=0Iq6APTGuGPe875jV0rIw2
+2025-12-19 13:14:24 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=0Iq6APTGuGPe875jV0rIw2 name=White Light
+2025-12-19 13:14:24 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5cbI0HJrTDb0njDk653bcN name=Goth (Slowed + Reverb)
+2025-12-19 13:14:34 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Goth (Slowed + Reverb) sid=7FcVJdKdyryXNniCPg75fi
+2025-12-19 13:14:34 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=7FcVJdKdyryXNniCPg75fi name=Goth (Slowed + Reverb)
+2025-12-19 13:14:35 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6VlwapDsOXFE5XPmciPcPS name=Goth (Sped up + Reverb)
+2025-12-19 13:14:45 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2AoXXli5UxkavZn7QweHsz name=Goth (Slowed + Reverb)
+2025-12-19 13:14:46 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Goth (Slowed + Reverb) sid=2cu8b9WLmyDoK0mLwfhysh
+2025-12-19 13:14:46 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=2cu8b9WLmyDoK0mLwfhysh name=Goth (Slowed + Reverb)
+2025-12-19 13:14:47 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0nR7g3MHiGzxUg3fg0pOQU name=Eternal Rest
+2025-12-19 13:14:47 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=CASHFORGOLD sid=4FzthA7DjutA71z91I1DKX
+2025-12-19 13:15:00 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=1ijos58RxXyzQnRNnTWUIi name=Exorcism
+2025-12-19 13:15:01 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7b3YF30p0ghFL7LykwaraK name=Shadow
+2025-12-19 13:15:01 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Goo Munday sid=540egazqjMY2Lm7NPclRQ2
+2025-12-19 13:15:02 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3UJ8RO9mrdhGlTwUW0Lf3N name=Awakening
+2025-12-19 13:15:02 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3CwY6pli9k2dgGQXbX9yvZ name=Cybercrimes
+2025-12-19 13:15:03 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3qsrQ6j2c23Yb9K1WkGr6W name=Euthanasia Daze
+2025-12-19 13:15:03 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5o2E6gnRvhJeYd4kqUoWtI name=Name in Blood
+2025-12-19 13:15:04 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=4M0LoalEDSSsE29sn5Ztxt name=Holy
+2025-12-19 13:15:04 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7vQgjeZnkm1xYWWBqPlm0C name=Struck by Lightning
+2025-12-19 13:15:05 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7JnQ852Iw8Yi2EUhgFb3A8 name=Scope
+2025-12-19 13:15:05 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7AZzbasAkSZvkN2q6Ar6Sr name=Eclipse
+2025-12-19 13:15:06 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6XwSNV9MicaBLu9HJG50v3 name=Nowhere
+2025-12-19 13:15:07 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=6kLaAYcRc5x5AFrhALbxQN name=Outerbody
+2025-12-19 13:15:07 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=4guVvQQKWZtTIdkHGFJbRP name=Into the Dark
+2025-12-19 13:15:07 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Ferngazer sid=7E7cvgELT72MHft4jQBnQv
+2025-12-19 13:15:09 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=Exorcism sid=39Gw0iMQQjfGI0v7p1oasA
+2025-12-19 13:15:09 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=39Gw0iMQQjfGI0v7p1oasA name=Exorcism
+2025-12-19 13:15:10 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0nrnsitY0PL2tSh9iIqEVb name=4am
+2025-12-19 13:15:10 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=soft siren sid=2231C2oqgdZQmJ0vh6bNX2
+2025-12-19 13:15:22 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3NbOwhMlPtXgurfWCXpBjV name=4am (slowed + reverb)
+2025-12-19 13:15:23 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=7zAW1qCVhskZ6Xx7vHCPt8 name=4am (witch house mix)
+2025-12-19 13:15:23 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=krystal tears sid=4fAamOWjMq33Roz43XPvps
+2025-12-19 13:15:24 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=2JBFnrsrS2EYLmcTbFYfHW name=4am (ibiza sunset mix)
+2025-12-19 13:15:24 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Alex Ender sid=4tVEnDtBhp4mjGvkgXlp1d
+2025-12-19 13:15:24 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=0et1dmIZYxnWYlwpnSKpAz name=4am (dub mix)
+2025-12-19 13:15:24 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Ravenscoon sid=7vfvYuEyJbh1Tf3QlOTAmZ
+2025-12-19 13:15:25 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=5Dye8wFgKgyOxOEKGd3GJ1 name=4am (downtempo mix)
+2025-12-19 13:15:25 [INFO] SpotifyController.services.database.data_builder:108 Artist image updating: artist=Tim Schaufert sid=3PThWtcE0CEi5IUmfgTvrC
+2025-12-19 13:15:25 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=3lUum4GacAyQ9EFC7t8zjn name=4am (sped up)
+2025-12-19 13:15:26 [INFO] SpotifyController.services.database.post_save.album:18 Album was successfully supplement tracks: album=4am (edits) sid=5wNGSTu6WedneSGt2SFHaw
+2025-12-19 13:15:26 [INFO] SpotifyController.services.database.data_builder:67 Album created: sid=5wNGSTu6WedneSGt2SFHaw name=4am (edits)
+2025-12-19 13:15:27 [INFO] SpotifyController.services.database.data_builder:131 Track created: sid=02nnSKmcAelEbzguQSX1jW name=Dissolve
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Bershy sid=6iW8bv3aUP8Dte1KnMBH8c
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=pathetic240px sid=6s6HhNePAkax0mfTK1O57K
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Olivia Rodrigo sid=1McMsnEElThX1knmY4oliG
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=RAYE sid=5KKpBU5eC2tJDzf0wmlRp2
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=David Guetta sid=1Cs0zKBU1kc0i8ypK3B9ai
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Hypaton sid=5GYaRwCWwhU6SIQrQ5G3b7
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Dutch Melrose sid=6NRSfOnXw4qaypEfIV2QXn
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=NewJeans sid=6HvZYsbFfjnjFrWF950C9d
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=SALES sid=6vVztIuqdDHvYWxOEXCzjN
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Phantogram sid=1l9d7B8W0IHy3LqWsxP2SH
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Speed Radio sid=1YzaVDzA3EdEipDSUeNQER
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Esteve sid=5vxQVYuckN4XHIB46zPvXy
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=AGTHA sid=2K7VKSRwaJs7xifL4YOJGH
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Paramore sid=74XFHRwlV6OrjEM0A2NCMF
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Grouper sid=31uyAcnY0kjjKKIQZMKX4i
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Ezekiel sid=4qUoZ6ErhTYFhAI0W1iI9q
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Bruno Mars sid=0du5cEVh5yTK9QJze8zA0C
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=The Marías sid=2sSGPbdZJkaSE2AbcGOACx
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Isabel LaRosa sid=5arKwJZEvT5uKq4o0JfqR4
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=MARINA sid=6CwfuxIqcltXDGjfZsMd9A
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Naeleck sid=2DYDFBqoaBP2i9XrTGpOgF
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Kate Bush sid=1aSxMhuvixZ8h9dK9jIDwL
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=girl in red sid=3uwAm6vQy7kWPS2bciKWx9
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Ruby Doll sid=1SUIDAEfkqiupgHgJJULqE
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=NIVEK FFORHS sid=4PUbhYyuHOrbVt6SIA4QPG
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Sabrina Carpenter sid=74KM79TiuVKeVCqs8QtB0B
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=benny mayne sid=2R2Yg2qPloNOTOfqxfXX7l
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Chri$tian Gate$ sid=0OEYE03fBF2VoTBxGuaUxL
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Clairo sid=3l0CmX0FuQjFxr8SK7Vqag
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=PinkPantheress sid=78rUTD7y6Cy67W1RVzYs7t
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=SZA sid=7tYKF4w9nC0nq9CsPZTHyP
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Steve Lacy sid=57vWImR43h4CaDao012Ofp
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Pastel Ghost sid=06O23tLg0or676h8EEzH7W
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:30] [COMMAND] TOP TRACKS ALREADY EXISTS: artist=Crystal Castles sid=7K3zpFXBvPcvzhj7zlGJdO
+2025-12-19 13:20:21 [INFO] [update_artists_top_tracks:33] [COMMAND] UPDATING ARTIST: artist=Sidewalks and Skeletons sid=48nHO1cuTbpx4ELhChsxX1

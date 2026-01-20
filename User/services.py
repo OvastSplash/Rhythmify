@@ -1,6 +1,11 @@
 from typing import Optional, Union
+
+from django.contrib.postgres.lookups import TrigramSimilar
+from django.contrib.postgres.search import TrigramDistance, TrigramSimilarity
 from django.core.files.base import ContentFile
-from SpotifyController.models.models import Artist, Track, Album
+from django.db.models import QuerySet
+
+from SpotifyController.models.models import Artist, Track, Album, Playlist
 from SpotifyController.services.spotify_auth import AuthService
 from .models import CustomUser
 from dataclasses import dataclass
@@ -17,7 +22,7 @@ class SpotifyUserUpdateResult:
 
 class UserService:
     @staticmethod
-    def update_object_image(object: Union[Artist, CustomUser, Track, Album], image_url, save=True):
+    def update_object_image(object: Union[Artist, CustomUser, Track, Album, Playlist], image_url, save=True):
         try:
             response = requests.get(image_url, timeout=10)
             response.raise_for_status()

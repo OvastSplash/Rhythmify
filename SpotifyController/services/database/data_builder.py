@@ -1,6 +1,10 @@
-from django.db import transaction
+from django.db import transaction, IntegrityError
+import logging
 
-from typing import List, Tuple, Dict, DefaultDict
+from typing import List, Tuple
+
+from django.shortcuts import get_object_or_404
+
 from SpotifyController.services.construct_data import (
     TrackClass,
     GenreClass,
@@ -12,14 +16,20 @@ from SpotifyController.models.models import (
     Artist,
     Genre,
     Album,
+    Playlist,
 )
 
 from dataclasses import dataclass
 from datetime import datetime
+
 from User.services import UserService
 from SpotifyController.services.database.check_data import CheckDataService
 
+
+
 from Deezer.services import ClientService
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class PlayedTrackDTO:
@@ -42,10 +52,12 @@ class BuildDataService:
 
         if set(artist.genres.all()) != set(new_genres):
             artist.genres.set(new_genres)
+            logger.debug("Artist genres updated: sid=%s count=%d", artist.spotify_id, len(new_genres))
 
     def _handle_album_creation(self, album: Album, image_url: str) -> None:
         self.user_service.update_object_image(album, image_url)
 
+    @transaction.atomic
     def create_album(self, constructed_album: AlbumClass) -> Album:
         album, created = Album.objects.get_or_create(
             spotify_id=constructed_album.spotify_id,
@@ -60,10 +72,15 @@ class BuildDataService:
 
         if created:
             self._handle_album_creation(album, constructed_album.image_url)
+            logger.info("Album created: sid=%s name=%s", album.spotify_id, album.name)
+
+            from SpotifyController.tasks.fetch_new_obj import process_new_album_task
+            transaction.on_commit(
+                lambda : process_new_album_task.delay(album.spotify_id)
+            )
 
         return album
 
-    @transaction.atomic
     def create_albums(self, constructed_album: List[AlbumClass]) -> List[Album]:
         return [self.create_album(album) for album in constructed_album]
 
@@ -71,6 +88,7 @@ class BuildDataService:
         if album:
             album = self.create_album(album)
             album.tracks.add(track)
+            logger.debug("Track linked to album: album_sid=%s track_sid=%s", album.spotify_id, track.spotify_id)
 
         for artist in artists:
             artist.track_list.add(track)
@@ -80,7 +98,9 @@ class BuildDataService:
 
         return album
 
+    @transaction.atomic
     def create_or_update_artist(self, artist_data: ArtistClass) -> Artist:
+        logger.debug("Artist get_or_create called: name=%s sid=%s", artist_data.name, artist_data.spotify_id)
         artist, created = Artist.objects.get_or_create(
             spotify_id=artist_data.spotify_id,
             defaults={
@@ -90,17 +110,22 @@ class BuildDataService:
             }
         )
 
-        if created:
-            print(f"Artist has been created --- Artist Name: {artist.name}")
-
         self._update_artist_genres(artist, artist_data.genres)
 
+        if created:
+            from SpotifyController.tasks.fetch_new_obj import process_new_artist_task
+            transaction.on_commit(
+                lambda : process_new_artist_task.delay(artist.spotify_id)
+            )
+
         if not created and artist.name != artist_data.name:
-            print(f"Artist name {artist.name} changed to {artist_data.name}")
+            logger.info("Artist renamed: sid=%s old=%s new=%s", artist.spotify_id, artist.name, artist_data.name)
             artist.name = artist_data.name
             artist.save()
 
         if artist_data.image_url and self.check_service.artist_image_update(artist, artist_data.image_url):
+            logger.info("Artist image updating: artist=%s sid=%s", artist.name, artist_data.spotify_id)
+
             artist.image = self.user_service.update_object_image(
                 artist, artist_data.image_url, save=True
             ) if artist_data.image_url else None
@@ -110,25 +135,33 @@ class BuildDataService:
     def _create_or_update_artists(self, artists: List[ArtistClass]) -> List[Artist]:
         return [self.create_or_update_artist(artist) for artist in artists]
 
+    @transaction.atomic
     def _get_or_create_track(self, track: TrackClass) -> Tuple[Track, bool]:
-        return Track.objects.get_or_create(
-            spotify_id=track.spotify_id,
-            defaults={
-                'name': track.name,
-                'url': track.url,
-                'duration_ms': track.duration_ms,
-            }
-        )
+        try:
+            obj, created = Track.objects.get_or_create(
+                spotify_id=track.spotify_id,
+                defaults={
+                    'name': track.name,
+                    'url': track.url,
+                    'duration_ms': track.duration_ms,
+                }
+            )
+            if created:
+                logger.info("Track created: sid=%s name=%s", track.spotify_id, track.name)
+
+            return obj, created
+        except IntegrityError:
+            logger.warning("Track get_or_create IntegrityError; fetching existing: sid=%s", track.spotify_id)
+            return Track.objects.get(spotify_id=track.spotify_id), False
 
     def _handle_track_creation(self, track: Track, constructed_track: TrackClass) -> None:
-        print(f"Track was created --- Track Name: {track.name}")
+        logger.debug("Handle track creation: sid=%s name=%s", track.spotify_id, track.name)
         review = self.deezer_client.get_preview_by_track(track)
 
         if review:
             track.save_preview(review)
 
         self.user_service.update_object_image(track, constructed_track.image_url)
-
 
     def create_track(self, constructed_track: TrackClass) -> Track:
         track, created = self._get_or_create_track(constructed_track)
@@ -144,7 +177,6 @@ class BuildDataService:
 
         return track
 
-    @transaction.atomic
     def create_tracks(self, constructed_tracks: List[TrackClass]) -> List[Track]:
         tracks: List[Track] = list()
         for constructed_track in constructed_tracks:
@@ -152,25 +184,43 @@ class BuildDataService:
 
         return tracks
 
-    def create_artists_top_track(self, constructed_tracks: TrackClass, artist: Artist) -> Track:
-        track = self.create_track(constructed_tracks)
-
-        if not artist.top_tracks.filter(spotify_id=track.spotify_id).exists():
-            artist.top_tracks.add(track)
-            print(f"Track successfully added to artist's top tracks --- Track Name: {track.name} --- Artist Name: {artist.name}")
-
-        return track
-
-    @transaction.atomic
-    def create_artists_top_tracks(self, tracks: List[TrackClass], artist: Artist) -> List[Track]:
-        return [self.create_artists_top_track(track, artist) for track in tracks]
-
     def create_played_at_track(self, track: TrackClass) -> PlayedTrackDTO:
         return PlayedTrackDTO(
             track=self.create_track(track),
             played_at=track.played_at,
         )
 
-    @transaction.atomic
     def create_played_at_tracks(self, tracks: List[TrackClass]) -> List[PlayedTrackDTO]:
         return [self.create_played_at_track(track) for track in tracks]
+
+
+class UpdateDataService:
+    def _update_playlist(self, playlist_id: str, track: str, add: bool) -> None:
+        """Update playlist with track."""
+        try:
+            playlist = get_object_or_404(Playlist, spotify_id=playlist_id)
+            track = get_object_or_404(Track, spotify_id=track)
+
+            playlist.tracks.add(track) if add else playlist.tracks.remove(track)
+            playlist.track_count += 1 if add else -1
+
+            playlist.save()
+
+            if add:
+                logger.info("Track added to playlist: pid=%s tid=%s add=%s", playlist_id, track, add)
+            else:
+                logger.info("Track removed from playlist: pid=%s tid=%s add=%s", playlist_id, track, add)
+
+        except Exception as e:
+            logger.error("Track adding error: pid=%s tid=%s add=%s error=%s", playlist_id, track, add, e)
+            raise
+
+
+    def add_track_to_playlist(self, playlist_id: str, track_id: str) -> None:
+        """Update playlist with track."""
+        self._update_playlist(playlist_id, track_id, True)
+
+
+    def remove_track_from_playlist(self, playlist_id: str, track_id: str) -> None:
+        """Remove track from playlist."""
+        self._update_playlist(playlist_id, track_id, False)

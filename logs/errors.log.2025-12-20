@@ -1,0 +1,371 @@
+2025-12-20 01:03:37 [ERROR] [log:253] Internal Server Error: /spotify/callback
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: User_customuser.spotify_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/SpotifyController/views.py", line 32, in get
+    result = UserService.spotify_update_user(
+  File "/Users/obscurum/Rhythmify/User/services.py", line 69, in spotify_update_user
+    user.save()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/contrib/auth/base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1138, in _save_table
+    updated = self._do_update(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/base.py", line 1203, in _do_update
+    return filtered._update(values) > 0
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1288, in _update
+    return query.get_compiler(self.db).execute_sql(ROW_COUNT)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 2060, in execute_sql
+    row_count = super().execute_sql(result_type)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 360, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: User_customuser.spotify_id
+2025-12-20 01:18:55 [ERROR] [log:253] Internal Server Error: /profile/artist/385
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 71, in get
+    return render(request, "Profile/artist.html", {"artist": artist_data})
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 169, in render
+    with context.bind_template(self):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/context.py", line 259, in bind_template
+    context = processor(self.request)
+  File "/Users/obscurum/Rhythmify/processors/context_processor.py", line 7, in user_header_data
+    "name": user.get_full_name() or user.username,
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'get_full_name'
+2025-12-20 01:18:56 [ERROR] [log:253] Internal Server Error: /profile/artist/385
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 71, in get
+    return render(request, "Profile/artist.html", {"artist": artist_data})
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 169, in render
+    with context.bind_template(self):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/context.py", line 259, in bind_template
+    context = processor(self.request)
+  File "/Users/obscurum/Rhythmify/processors/context_processor.py", line 7, in user_header_data
+    "name": user.get_full_name() or user.username,
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/utils/functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'CustomUser' object has no attribute 'get_full_name'
+2025-12-20 01:34:31 [ERROR] [log:253] Internal Server Error: /profile/genre/slowcore
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 82, in get
+    with GetGenreDataService(genre_name) as genre_data:
+AttributeError: __exit__
+2025-12-20 01:41:31 [ERROR] [log:253] Internal Server Error: /profile/14
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 67, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'album' not found. 'album' is not a valid view function or pattern name.
+2025-12-20 01:42:01 [ERROR] [log:253] Internal Server Error: /profile/14
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 67, in get
+    return render(request, "Profile/profile.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'album' not found. 'album' is not a valid view function or pattern name.
+2025-12-20 04:39:21 [ERROR] [log:253] Internal Server Error: /profile/14
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 32, in get
+    user_favorite_long_term_tracks) = user_cache_service.get_all_user_favorite_tracks()
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 37, in get_all_user_favorite_tracks
+    short_term_tracks = self.get_user_favorite_short_term_tracks()
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 47, in get_user_favorite_short_term_tracks
+    return self.get_user_favorite_tracks(term="short_term")
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 34, in get_user_favorite_tracks
+    return cache.get(key)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/cache/backends/redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/cache/backends/redis.py", line 100, in get
+    value = client.get(key)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/commands/core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 2601, in get_connection
+    connection.connect()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+2025-12-20 04:39:26 [ERROR] [log:253] Internal Server Error: /profile/14
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 32, in get
+    user_favorite_long_term_tracks) = user_cache_service.get_all_user_favorite_tracks()
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 37, in get_all_user_favorite_tracks
+    short_term_tracks = self.get_user_favorite_short_term_tracks()
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 47, in get_user_favorite_short_term_tracks
+    return self.get_user_favorite_tracks(term="short_term")
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/user_cache.py", line 34, in get_user_favorite_tracks
+    return cache.get(key)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/cache/backends/redis.py", line 188, in get
+    return self._cache.get(key, default)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/cache/backends/redis.py", line 100, in get
+    value = client.get(key)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/commands/core.py", line 1834, in get
+    return self.execute_command("GET", name, keys=[name])
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 2601, in get_connection
+    connection.connect()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.

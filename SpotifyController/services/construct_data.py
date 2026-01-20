@@ -1,5 +1,6 @@
+import logging
 from dataclasses import (dataclass, field)
-from typing import (Optional, List)
+from typing import (Optional, List, Dict)
 from datetime import (datetime, date)
 from django.contrib.auth import get_user_model
 
@@ -147,3 +148,96 @@ class ConstructDataService:
             genres=genres,
             followers=followers
         )
+
+
+@dataclass
+class PlaylistClass:
+    name: str
+    spotify_id: str
+    spotify_url: str
+    description: str
+    image_url: str
+    track_count: int
+    owner_sid: str
+
+class ConstructPlaylistDataService:
+    def __init__(self, user_sid) -> None:
+        self.user_sid = user_sid
+        self.cached_playlist_data = None
+
+    @property
+    def _image(self) -> str:
+        try:
+            image_url = self.cached_playlist_data.get("images")[0]["url"]
+        except Exception as e:
+            logging.exception(e)
+            image_url = None
+
+        return image_url
+
+    @property
+    def _is_user_playlist(self) -> bool:
+        owner_data = self.cached_playlist_data.get("owner")
+        owner_id = owner_data.get("id")
+
+        if owner_id == self.user_sid:
+            return True
+
+        return False
+
+    @property
+    def _spotify_url(self) -> str:
+        external_urls = self.cached_playlist_data.get("external_urls")
+        spotify_id = external_urls.get("spotify")
+        return spotify_id
+
+    @property
+    def _tracks_count(self) -> int:
+        try:
+            tracks = self.cached_playlist_data.get("tracks")
+            tracks_count = int(tracks.get("total"))
+            return tracks_count
+        except Exception as e:
+            logging.exception(e)
+            return 0
+
+    def construct_playlist(self, playlist_data=None) -> PlaylistClass | None:
+        logging.debug(f"Construct Playlist: {playlist_data}")
+
+        if self.cached_playlist_data is None:
+            logging.warning(f"Construct Playlist: has not been cached yet")
+
+            if playlist_data:
+                self.cached_playlist_data = playlist_data
+            else:
+                raise Exception("Playlist data not found")
+
+        if self._is_user_playlist:
+            playlist = PlaylistClass(
+                name=self.cached_playlist_data.get("name"),
+                spotify_id=self.cached_playlist_data.get("id"),
+                spotify_url=self._spotify_url,
+                description=self.cached_playlist_data.get("description"),
+                image_url=self._image,
+                track_count=self._tracks_count,
+                owner_sid=self.user_sid,
+            )
+
+            logging.debug(f"Construct Playlist: {playlist}")
+            return playlist
+
+        return None
+
+
+    def construct_playlists(self, playlists_data: dict) -> List[PlaylistClass]:
+        playlists: List[PlaylistClass] = list()
+
+        for playlist_data in playlists_data.get("items", []):
+            self.cached_playlist_data = playlist_data
+            playlist = self.construct_playlist()
+
+            if playlist:
+                playlists.append(playlist)
+
+        playlists = sorted(playlists, key=lambda playlist: playlist.track_count, reverse=True)
+        return playlists
