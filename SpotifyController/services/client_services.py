@@ -4,7 +4,8 @@ import logging
 from SpotifyController.services.database.check_data import CheckDataService
 from SpotifyController.services.database.convert_data import ConvertSpotifyDataBaseService
 from SpotifyController.services.database.get_user_data import GetUserDataService
-from SpotifyController.services.construct_data import ConstructDataService, ConstructPlaylistDataService, TrackClass, AlbumClass, PlaylistClass
+from SpotifyController.services.construct_data import ConstructDataService, ConstructPlaylistDataService, TrackClass, \
+    AlbumClass, PlaylistClass, ArtistClass
 from SpotifyController.services.spotify_auth import AuthService
 from SpotifyController.services.user_cache import UserCacheService
 from SpotifyController.serializers import SpotifyProfileSerializer
@@ -33,10 +34,20 @@ class PublicClient:
     def _construct_albums_data(self, data) -> List[AlbumClass]:
         return self.construct_sp.get_albums_data(data)
 
+    def _construct_artist_data(self, data) -> ArtistClass:
+        return self.construct_sp.artist_data(data)
 
 
-    def get_artist_info(self, artist_id):
-        return self.client.artist(artist_id)
+    def get_artist_info(self, artist_id, constructed: bool = True) -> ArtistClass | dict:
+        artist_data = self.client.artist(artist_id)
+
+        if constructed:
+            return self._construct_artist_data(artist_data)
+
+        return artist_data
+
+    def get_top_tracks(self):
+        return self.client
 
     def get_artist_albums(self, artist_id, constructed: bool = True):
         album_data = self.client.artist_albums(artist_id)['items']

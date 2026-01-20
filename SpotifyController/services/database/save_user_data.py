@@ -46,7 +46,8 @@ class SaveUserDataService:
         return [track for track in tracks if track.spotify_id not in existing_ids]
 
     #RECOMMENDATION TRACKS
-    def recommendation_tracks(self, tracks: List[Track]) -> List[Track]:
+
+    def save_user_recommendation_tracks(self, tracks: List[Track]) -> List[Track]:
         unique_tracks: List[Track] = list()
         seen = set()
         for track in tracks:
@@ -104,7 +105,7 @@ class SaveUserDataService:
 
     # USER LISTEN TO HISTORY
 
-    def listen_tracks_history(self, tracks: List[PlayedTrackDTO]) -> List[UsersListenHistory]:
+    def save_listen_tracks_history(self, tracks: List[PlayedTrackDTO]) -> List[UsersListenHistory]:
         existing = set(UsersListenHistory.objects.filter(user=self.user).values_list(
             "track__spotify_id", "played_at"
         ))

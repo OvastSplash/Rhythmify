@@ -52,6 +52,11 @@ class LastFMClientService:
     def get_artist(self, artist_name: str) -> Artist:
         return self.client.get_artist(artist_name)
 
+    def get_top_tracks(self) -> List[TopItem]:
+        return self.client.get_top_tracks(limit=10)
+
+    def get_top_artists(self) -> List[TopItem]:
+        return self.client.get_top_artists(limit=10)
 
 class LastFMDataService:
     def __init__(self):

@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.views import View
+
+from SpotifyController.services.aggregator.update_user_favorite_tracks import UpdateUserFavoriteTracks
 from .forms import LoginForm, RegisterForm, ConfirmRegisterForm
 from django.contrib.auth import authenticate, login
 from SpotifyController.services.spotify_auth import AuthService
-from SpotifyController.services.data_aggregator import AggregatorService
+from SpotifyController.services.aggregator.aggregator_base import BaseUserAggregator
 
 class LoginView(View):
     form = LoginForm
@@ -70,9 +72,12 @@ class ConfirmRegisterView(View):
 
             login(request, user)
 
-            aggregator = AggregatorService(user=user)
+            aggregator = BaseUserAggregator(users=[user])
 
-            aggregator.update_user_favorite_tracks()
+            aggregator.run_services_for_each_user(
+                UpdateUserFavoriteTracks,
+            )
+
             aggregator.update_user_recommendations()
 
             return redirect("profile", user_id = user.id)

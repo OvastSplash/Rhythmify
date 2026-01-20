@@ -51,6 +51,8 @@ INSTALLED_APPS = [
 
     "LastFM",
     "Deezer",
+
+    "Main",
 ]
 
 MIDDLEWARE = [
@@ -95,7 +97,7 @@ DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "rhythmify",
-        "USER": "admin",
+        "USER": "obscurum",
         "PASSWORD": "admin",
         "HOST": "127.0.0.1",
         "PORT": "5432",
@@ -162,8 +164,22 @@ LOGGING = {
             "formatter": "verbose",
             "level": "ERROR",
         },
+        "tests_file": {
+            "class": "logging.handlers.TimedRotatingFileHandler",
+            "filename": os.path.join(APP_LOG_DIR, "tests.log"),
+            "when": "midnight",
+            "backupCount": 7,
+            "encoding": "utf-8",
+            "formatter": "verbose",
+            "level": "DEBUG",
+        },
     },
     "loggers": {
+        "tests": {
+            "handlers": ["console", "tests_file"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
         # Ваше приложение целиком
         "SpotifyController": {
             "handlers": ["console", "app_file", "errors_file"],

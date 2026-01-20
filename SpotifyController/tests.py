@@ -88,7 +88,7 @@ class UserHistoryTrackStatisticsServiceTest(TestCase):
     #     user_sp_db = SaveUserDataService(user=self.user)
     #     user_data = GetUserDataService(user=self.user)
     #
-    #     user_sp_db.listen_tracks_history(tracks=tracks)
+    #     user_sp_db.save_listen_tracks_history(tracks=tracks)
     #
     #     user_statistics_data = user_data.listen_statistic()
     #     print(ConvertSpotifyDataBaseService.convert_user_statistic(user_statistics_data))

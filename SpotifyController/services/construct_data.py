@@ -130,7 +130,7 @@ class ConstructDataService:
                 from SpotifyController.services.client_services import PublicClient
                 sp_public_client = PublicClient()
 
-                spotify_artist_data = sp_public_client.get_artist_info(artist_id)
+                spotify_artist_data = sp_public_client.get_artist_info(artist_id, constructed=False)
                 artists.append(self.artist_data(spotify_artist_data))
 
         return artists
