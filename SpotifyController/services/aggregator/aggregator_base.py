@@ -7,9 +7,15 @@ from User.models import CustomUser
 from typing import List
 
 class BaseAggregator:
-    def __init__(self) -> None:
-        self.sp_db = BuildDataService()
-        self.sp_public = PublicClient()
+    def __init__(self, sp_db: BuildDataService | None = None,
+                 sp_public: PublicClient | None = None) -> None:
+
+        """
+        None values for testability
+        """
+
+        self.sp_db = sp_db or BuildDataService()
+        self.sp_public = sp_public or PublicClient()
 
 class BaseUserAggregator(BaseAggregator):
     def __init__(self, users: List[CustomUser]) -> None:

@@ -39,12 +39,16 @@ class PublicClient:
 
 
     def get_artist_info(self, artist_id, constructed: bool = True) -> ArtistClass | dict:
-        artist_data = self.client.artist(artist_id)
+        try:
+            artist_data = self.client.artist(artist_id)
 
-        if constructed:
-            return self._construct_artist_data(artist_data)
+            if constructed:
+                return self._construct_artist_data(artist_data)
 
-        return artist_data
+            return artist_data
+        except SpotifyException as e:
+            logger.error("Artist fetching error: id=%s error=%s", artist_id, e)
+            raise Exception("Artist not found")
 
     def get_top_tracks(self):
         return self.client
@@ -102,16 +106,17 @@ class UserClient:
         self.user = user
 
         #Check token on available and refresh if expired
-        AuthService.refresh_user_tokens(user)
-
-        self.access_token = user.access_token
-        self.client = AuthService.get_client(self.access_token)
-        self.construct_playlist = ConstructPlaylistDataService(user_sid=user.spotify_id)
-
-        if not self._is_token_valid():
+        if user.access_token:
             AuthService.refresh_user_tokens(user)
+
             self.access_token = user.access_token
             self.client = AuthService.get_client(self.access_token)
+            self.construct_playlist = ConstructPlaylistDataService(user_sid=user.spotify_id)
+
+            if not self._is_token_valid():
+                AuthService.refresh_user_tokens(user)
+                self.access_token = user.access_token
+                self.client = AuthService.get_client(self.access_token)
 
     def _is_token_valid(self) -> bool:
         try:
@@ -154,15 +159,19 @@ class UserClient:
         return self._get_user_top_tracks(construct=construct, limit=limit, time_range="long_term")
 
     def get_user_recently_played(self, construct=True, limit: int = 50):
-        recently_played = self.client.current_user_recently_played(limit=limit)
+        try:
+            recently_played = self.client.current_user_recently_played(limit=limit)
 
-        if construct:
-            construct_sp = ConstructDataService()
-            return construct_sp.tracks_data_with_played_at(
-                tracks_data=recently_played['items'],
-            )
+            if construct:
+                construct_sp = ConstructDataService()
+                return construct_sp.tracks_data_with_played_at(
+                    tracks_data=recently_played['items'],
+                )
 
-        return recently_played
+            return recently_played
+        except SpotifyException as e:
+            logger.error("Recently played tracks fetching error: error=%s", e)
+            raise Exception("Recently played tracks not found")
 
     def create_user_recommendation_playlist(self, user: CustomUser):
         user_cache_service = UserCacheService(user_id=user.id)

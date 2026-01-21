@@ -1,0 +1,251 @@
+2026-01-20 02:54:24 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:54:24 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:54:24 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:54:24 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:54:29 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:54:29 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:54:29 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:54:29 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:54:59 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:54:59 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:54:59 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:54:59 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:55:49 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:55:49 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:55:49 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:55:49 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:55:55 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:55:55 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:55:55 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:55:55 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:00 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:00 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:00 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:00 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:07 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:07 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:07 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:07 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:13 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:13 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:13 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:13 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:22 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:22 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:22 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:22 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:39 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:39 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:39 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:39 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:56:59 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:56:59 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:56:59 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:56:59 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 02:57:28 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 02:57:28 [INFO] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 02:57:28 [INFO] [test_models:24] Running test_top_tracks_unique with track: Test Name
+2026-01-20 02:57:28 [DEBUG] [test_models:28] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:01:22 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:01:22 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:01:22 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:01:22 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:01:22 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:01:41 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:01:41 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:01:41 [DEBUG] [test_models:24] Successfully verified TopTracks for Test Name
+2026-01-20 03:01:41 [INFO] [test_models:30] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:01:41 [DEBUG] [test_models:34] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:01:52 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:01:52 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:01:52 [DEBUG] [test_models:24] Successfully verified TopTracks for Test Name
+2026-01-20 03:01:52 [INFO] [test_models:30] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:01:52 [DEBUG] [test_models:34] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:02:05 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:02:05 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:02:05 [DEBUG] [test_models:24] Successfully verified TopTracks for Test Name
+2026-01-20 03:02:05 [INFO] [test_models:30] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:02:05 [DEBUG] [test_models:34] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:03:22 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:03:22 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:03:22 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:03:22 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:03:22 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:03:34 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:03:34 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:03:34 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:03:34 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:03:34 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:05:03 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:05:03 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:05:03 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:05:03 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:05:03 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:05:03 [INFO] [test_models:42] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:05:03 [DEBUG] [test_models:45] Successfully created TopArtists for Test Artist
+2026-01-20 03:05:03 [INFO] [test_models:47] Verifying TopArtists tracks for Test Artist
+2026-01-20 03:05:03 [DEBUG] [test_models:49] Successfully verified TopArtists tracks for Test Artist
+2026-01-20 03:05:08 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:05:08 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:05:08 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:05:08 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:05:08 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:05:08 [INFO] [test_models:42] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:05:08 [DEBUG] [test_models:45] Successfully created TopArtists for Test Artist
+2026-01-20 03:05:08 [INFO] [test_models:47] Verifying TopArtists tracks for Test Artist
+2026-01-20 03:05:08 [DEBUG] [test_models:49] Successfully verified TopArtists tracks for Test Artist
+2026-01-20 03:05:29 [INFO] [test_models:17] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:05:29 [DEBUG] [test_models:20] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:05:29 [DEBUG] [test_models:23] Successfully verified TopTracks for Test Name
+2026-01-20 03:05:29 [INFO] [test_models:29] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:05:29 [DEBUG] [test_models:33] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:05:29 [INFO] [test_models:42] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:05:29 [DEBUG] [test_models:45] Successfully created TopArtists for Test Artist
+2026-01-20 03:05:29 [INFO] [test_models:47] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:05:29 [DEBUG] [test_models:49] Successfully verified TopArtists tracks for Test Artist
+2026-01-20 03:09:55 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:09:55 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:09:55 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:09:55 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:09:55 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:09:55 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:09:55 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:09:55 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:09:55 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:09:55 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:09:55 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:09:55 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:09:55 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:09:55 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:09:55 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:10:53 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:10:53 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:10:53 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:10:53 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:10:53 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:10:53 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:10:53 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:10:53 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:10:53 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:10:53 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:10:53 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:10:53 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:10:53 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:10:53 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:10:53 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:11:43 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:11:43 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:11:43 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:11:43 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:11:43 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:11:43 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:11:43 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:11:43 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:11:43 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:11:43 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:11:43 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:11:43 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:11:43 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:11:43 [INFO] [test_models:75] Verifying TopAlbums tracks for Test Album --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:11:43 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:11:43 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:11:43 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:12:38 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:12:38 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:12:38 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:12:38 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:12:38 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:12:38 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:12:38 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:12:38 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:12:38 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:12:38 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:12:38 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:12:38 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:12:38 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:12:38 [INFO] [test_models:75] Verifying TopAlbums tracks for Test Album --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:12:38 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:12:38 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:12:38 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:15:04 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:15:04 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:15:04 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:15:04 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:15:04 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:15:04 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:15:04 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:15:04 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:15:04 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:15:04 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:15:04 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:15:04 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:15:04 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:15:04 [INFO] [test_models:75] Verifying TopAlbums tracks for Test Album --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:15:04 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:15:04 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:15:04 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:15:21 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:15:21 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:15:21 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:15:21 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:15:21 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:15:21 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:15:21 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:15:21 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:15:21 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:15:21 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:15:21 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:15:21 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:15:21 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:15:21 [INFO] [test_models:75] Verifying TopAlbums tracks for Test Album --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:15:21 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:15:21 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:15:21 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:15:21 [INFO] [test_models:99] Running test_recommendations_str with playlist: Test Playlist
+2026-01-20 03:15:21 [DEBUG] [test_models:102] Successfully created RecommendationPlaylist
+2026-01-20 03:15:21 [INFO] [test_models:104] Verifying RecommendationPlaylist tracks <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:15:21 [DEBUG] [test_models:107] Successfully verified RecommendationPlaylist
+2026-01-20 03:16:11 [INFO] [test_models:15] Running test_top_tracks_str with track: Test Name
+2026-01-20 03:16:11 [DEBUG] [test_models:18] Successfully created and verified TopTracks for Test Name
+2026-01-20 03:16:11 [DEBUG] [test_models:21] Successfully verified TopTracks for Test Name
+2026-01-20 03:16:11 [INFO] [test_models:27] Running test_top_tracks_unique with track: Test Name
+2026-01-20 03:16:11 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position on Test Name
+2026-01-20 03:16:11 [INFO] [test_models:40] Running test_top_artists_str with artist: Test Artist
+2026-01-20 03:16:11 [DEBUG] [test_models:43] Successfully created TopArtists for Test Artist
+2026-01-20 03:16:11 [INFO] [test_models:45] Verifying TopArtists tracks for Test Artist --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:16:11 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:16:11 [INFO] [test_models:55] Running test_top_artists_unique_constraint with artist: Test Artist
+2026-01-20 03:16:11 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position on Test Artist
+2026-01-20 03:16:11 [INFO] [test_models:69] Running test_top_albums_str with album: Test Album
+2026-01-20 03:16:11 [DEBUG] [test_models:73] Successfully created TopAlbums for Test Album
+2026-01-20 03:16:11 [INFO] [test_models:75] Verifying TopAlbums tracks for Test Album --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:16:11 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:16:11 [INFO] [test_models:85] Running test_top_albums_unique_constraint with album: Test Album
+2026-01-20 03:16:11 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position on Test Album
+2026-01-20 03:16:11 [INFO] [test_models:99] Running test_recommendations_str with playlist: Test Playlist
+2026-01-20 03:16:11 [DEBUG] [test_models:102] Successfully created RecommendationPlaylist
+2026-01-20 03:16:11 [INFO] [test_models:104] Verifying RecommendationPlaylist tracks <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:16:11 [INFO] [test_models:106] RecommendationPlaylist tracks --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:16:11 [DEBUG] [test_models:108] Successfully verified RecommendationPlaylist
+2026-01-20 03:18:16 [INFO] [test_models:15] Running test_top_tracks_str
+2026-01-20 03:18:16 [DEBUG] [test_models:18] Successfully created and verified TopTracks
+2026-01-20 03:18:16 [DEBUG] [test_models:21] Successfully verified TopTracks
+2026-01-20 03:18:16 [INFO] [test_models:27] Running test_top_tracks_unique
+2026-01-20 03:18:16 [DEBUG] [test_models:31] IntegrityError raised as expected for duplicate position
+2026-01-20 03:18:16 [INFO] [test_models:40] Running test_top_artists_str
+2026-01-20 03:18:16 [DEBUG] [test_models:43] Successfully created TopArtists
+2026-01-20 03:18:16 [INFO] [test_models:45] Verifying TopArtists tracks <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:18:16 [DEBUG] [test_models:48] Successfully verified TopArtists
+2026-01-20 03:18:16 [INFO] [test_models:55] Running test_top_artists_unique_constraint
+2026-01-20 03:18:16 [DEBUG] [test_models:60] IntegrityError raised as expected for duplicate position
+2026-01-20 03:18:16 [INFO] [test_models:69] Running test_top_albums_str
+2026-01-20 03:18:16 [DEBUG] [test_models:73] Successfully created TopAlbums
+2026-01-20 03:18:16 [INFO] [test_models:75] Verifying TopAlbums tracks --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:18:16 [DEBUG] [test_models:78] Successfully verified TopAlbums
+2026-01-20 03:18:16 [INFO] [test_models:85] Running test_top_albums_unique_constraint
+2026-01-20 03:18:16 [DEBUG] [test_models:90] IntegrityError raised as expected for duplicate position
+2026-01-20 03:18:16 [INFO] [test_models:99] Running test_recommendations_str
+2026-01-20 03:18:16 [DEBUG] [test_models:102] Successfully created RecommendationPlaylist
+2026-01-20 03:18:16 [INFO] [test_models:104] Verifying RecommendationPlaylist tracks <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:18:16 [INFO] [test_models:106] RecommendationPlaylist tracks --- <QuerySet [<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>]>
+2026-01-20 03:18:16 [DEBUG] [test_models:108] Successfully verified RecommendationPlaylist

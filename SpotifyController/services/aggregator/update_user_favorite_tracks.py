@@ -22,13 +22,13 @@ class UpdateUserFavoriteTracks(UserDataProcessor):
         """Create tracks from constructed data and save them to database."""
         return self.sp_db.create_tracks(constructed_tracks)
 
-    def _save_tracks_to_user(self, short_term_tracks: List[Track], medium_term_tracks: List[Track], long_term_tracks: List[Track]) -> None:
+    def _save_tracks_to_user(self, short_term_tracks: List[Track], medium_term_tracks: List[Track], long_term_tracks: List[Track], cache=True) -> None:
         """Save favorite tracks to user and redis."""
-        self.user_db.favorite_user_tracks_short_term(short_term_tracks)
-        self.user_db.favorite_user_tracks_medium_term(medium_term_tracks)
-        self.user_db.favorite_user_tracks_long_term(long_term_tracks)
+        self.user_db.save_favorite_user_tracks_short_term(short_term_tracks, cache=cache)
+        self.user_db.save_favorite_user_tracks_medium_term(medium_term_tracks, cache=cache)
+        self.user_db.save_favorite_user_tracks_long_term(long_term_tracks, cache=cache)
 
-    def run(self) -> None:
+    def run(self, cache=True) -> None:
         """
         Execute the process of constructing and saving the user's favorite tracks.
 
@@ -58,7 +58,7 @@ class UpdateUserFavoriteTracks(UserDataProcessor):
 
             logger.info("User favorite tracks saved: username=%s", self.user.username)
 
-            self._save_tracks_to_user(short_term_tracks, medium_term_tracks, long_term_tracks)
+            self._save_tracks_to_user(short_term_tracks, medium_term_tracks, long_term_tracks, cache=cache)
 
             logger.info("User short term tracks updated: username=%s", self.user.username)
             logger.info("User medium term tracks updated: username=%s", self.user.username)

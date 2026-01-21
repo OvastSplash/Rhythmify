@@ -26,7 +26,7 @@ class ArtistClass:
     spotify_id: str
     spotify_url: str
     genres: Optional[List[GenreClass]] = field(default_factory=list)
-    followers: int = None
+    followers: int = 0
     image_url: str = None
 
 @dataclass

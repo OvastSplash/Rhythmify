@@ -47,7 +47,10 @@ class SaveUserDataService:
 
     #RECOMMENDATION TRACKS
 
-    def save_user_recommendation_tracks(self, tracks: List[Track]) -> List[Track]:
+    def save_user_recommendation_tracks(self, tracks: List[Track], cache=True) -> List[Track]:
+        if not tracks:
+            raise ValueError("Tracks list is empty")
+
         unique_tracks: List[Track] = list()
         seen = set()
         for track in tracks:
@@ -65,13 +68,13 @@ class SaveUserDataService:
 
         random.shuffle(tracks)
 
-        tracks_ids = ConvertSpotifyDataBaseService.convert_tracks_to_ids(tracks)
-        self.user_cache_service.set_user_recommended_tracks(tracks_ids)
+        if cache:
+            tracks_ids = ConvertSpotifyDataBaseService.convert_tracks_to_ids(tracks)
+            self.user_cache_service.set_user_recommended_tracks(tracks_ids)
+            logger.debug("Tracks IDs saved to Redis: count=%d", len(tracks_ids))
 
         RecommendationTracks.objects.bulk_create(add_tracks)
-
         logger.info("Recommendation tracks saved: count=%d", len(tracks))
-        logger.debug("Tracks IDs saved to Redis: count=%d", len(tracks_ids))
 
         return tracks
 
@@ -82,36 +85,56 @@ class SaveUserDataService:
         add_tracks: List[FavoriteUserTracks] = [FavoriteUserTracks(track=track, user=self.user, term=term) for track in cleared_tracks]
         return FavoriteUserTracks.objects.bulk_create(add_tracks)
 
-    def _save_and_cache_favorite_tracks(self, tracks: List[Track], term: str) -> List[FavoriteUserTracks]:
-        cache_methods = {
-            'short_term': self.user_cache_service.set_user_favorite_short_term_tracks,
-            'medium_term': self.user_cache_service.set_user_favorite_medium_term_tracks,
-            'long_term': self.user_cache_service.set_user_favorite_long_term_tracks,
-        }
-        converted_tracks = ConvertSpotifyDataBaseService.convert_tracks_to_ids(tracks)
+    def _save_and_cache_favorite_tracks(self, tracks: List[Track], term: str, cache=True) -> List[FavoriteUserTracks]:
+        if cache:
+            cache_methods = {
+                'short_term': self.user_cache_service.set_user_favorite_short_term_tracks,
+                'medium_term': self.user_cache_service.set_user_favorite_medium_term_tracks,
+                'long_term': self.user_cache_service.set_user_favorite_long_term_tracks,
+            }
+            converted_tracks = ConvertSpotifyDataBaseService.convert_tracks_to_ids(tracks)
 
-        cache_methods[term](converted_tracks)
+            cache_methods[term](converted_tracks)
+
         return self._favorite_tracks(tracks, term=term)
 
-    def favorite_user_tracks_short_term(self, tracks: List[Track]) -> List[FavoriteUserTracks]:
-        return self._save_and_cache_favorite_tracks(tracks, term="short_term")
+    def save_favorite_user_tracks_short_term(self, tracks: List[Track], cache=True) -> List[FavoriteUserTracks]:
+        if tracks:
+            return self._save_and_cache_favorite_tracks(tracks, term="short_term", cache=cache)
 
-    def favorite_user_tracks_medium_term(self, tracks: List[Track]) -> List[FavoriteUserTracks]:
-        return self._save_and_cache_favorite_tracks(tracks, term="medium_term")
+        raise ValueError("Tracks list is empty")
 
-    def favorite_user_tracks_long_term(self, tracks: List[Track]) -> List[FavoriteUserTracks]:
-        return self._save_and_cache_favorite_tracks(tracks, term="long_term")
+    def save_favorite_user_tracks_medium_term(self, tracks: List[Track], cache=True) -> List[FavoriteUserTracks]:
+        if tracks:
+            return self._save_and_cache_favorite_tracks(tracks, term="medium_term", cache=cache)
+
+        raise ValueError("Tracks list is empty")
+
+    def save_favorite_user_tracks_long_term(self, tracks: List[Track], cache=True) -> List[FavoriteUserTracks]:
+        if tracks:
+            return self._save_and_cache_favorite_tracks(tracks, term="long_term", cache=cache)
+
+        raise ValueError("Tracks list is empty")
 
 
     # USER LISTEN TO HISTORY
 
-    def save_listen_tracks_history(self, tracks: List[PlayedTrackDTO]) -> List[UsersListenHistory]:
+    def save_listen_tracks_history(self, tracks: List[PlayedTrackDTO], cache=True) -> List[UsersListenHistory]:
+        if not tracks:
+            raise ValueError("Tracks list is empty")
+
         existing = set(UsersListenHistory.objects.filter(user=self.user).values_list(
             "track__spotify_id", "played_at"
         ))
 
         new_tracks: List[UsersListenHistory] = list()
         for dto in tracks:
+            if not dto:
+                continue
+
+            if not dto.track or not dto.played_at:
+                continue
+
             key = (dto.track.spotify_id, dto.played_at)
 
             if key not in existing:
@@ -122,9 +145,11 @@ class SaveUserDataService:
                 ))
 
 
-        user_listen_history =  UsersListenHistory.objects.bulk_create(new_tracks)
+        user_listen_history = UsersListenHistory.objects.bulk_create(new_tracks)
         get_user_data = GetUserDataService(user=self.user)
-        get_user_data.listen_statistic() # For saving statistics to cache
+
+        if cache:
+            get_user_data.listen_statistic() # For saving statistics to cache
 
         return user_listen_history
 

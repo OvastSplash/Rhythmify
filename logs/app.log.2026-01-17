@@ -1,0 +1,12 @@
+2026-01-17 01:23:00 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-17 01:23:00 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-17 01:26:14 [INFO] [data_builder:210] Track added to playlist: pid=39UHgToFdgKvhPqNFfhEgH tid=PLAY HARD add=True
+2026-01-17 01:26:14 [INFO] [client_services:210] Track added to playlist: pid=39UHgToFdgKvhPqNFfhEgH tid=2HekvRoXXGZwhDaU8sbQg7
+2026-01-17 01:26:57 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-17 01:26:57 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-17 01:27:04 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-17 01:27:04 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-17 01:28:35 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-17 01:28:35 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-01-17 01:30:44 [INFO] [views:51] User statistics loaded: has_stats=False
+2026-01-17 01:30:44 [INFO] [views:52] User playlists loaded: has_stats=True
