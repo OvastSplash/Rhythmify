@@ -16,6 +16,15 @@ class ConvertSpotifyDataBaseService:
         return [tracks[spotify_id] for spotify_id in spotify_ids if spotify_id in tracks]
 
     @staticmethod
+    def convert_artists_to_ids(artists: List[Artist]) -> List[str]:
+        return [artist.spotify_id for artist in artists]
+
+    @staticmethod
+    def convert_ids_to_artists(spotify_ids: List[str]) -> List[Artist]:
+        artists = {artist.spotify_id: artist for artist in Artist.objects.filter(spotify_id__in=spotify_ids)}
+        return [artists[spotify_id] for spotify_id in spotify_ids if spotify_id in artists]
+
+    @staticmethod
     def convert_ids_to_playlists(spotify_ids: List[str]) -> List[Playlist]:
         return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
 

@@ -119,5 +119,10 @@ class UserCacheService:
 
         return None
 
+    def add_playlist_to_user_playlists(self, playlist_id: str) -> None:
+        playlists = self.get_user_playlists() or list()
+        playlists.append(playlist_id)
+        self.set_user_playlists(playlists)
+
     def clear_user_playlists(self):
         cache.delete(UserCacheService.PLAYLISTS_KEY.format(user_id=self.user_id))

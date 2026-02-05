@@ -25,8 +25,6 @@ from datetime import datetime
 from User.services import UserService
 from SpotifyController.services.database.check_data import CheckDataService
 
-
-
 from Deezer.services import ClientService
 
 logger = logging.getLogger(__name__)
@@ -37,10 +35,10 @@ class PlayedTrackDTO:
     played_at: datetime = None
 
 class BuildDataService:
-    def __init__(self):
+    def __init__(self, deezer_client: ClientService | None = None):
         self.user_service = UserService()
         self.check_service = CheckDataService()
-        self.deezer_client = ClientService()
+        self.deezer_client = deezer_client or ClientService()
 
     @staticmethod
     def get_or_create_genre(genre: GenreClass) -> Genre:
@@ -220,6 +218,9 @@ class UpdateDataService:
         """Update playlist with track."""
         self._update_playlist(playlist_id, track_id, True)
 
+    def add_tracks_to_playlist(self, playlist_id: str, tracks: List[str]) -> None:
+        for track in tracks:
+            self.add_track_to_playlist(playlist_id, track)
 
     def remove_track_from_playlist(self, playlist_id: str, track_id: str) -> None:
         """Remove track from playlist."""

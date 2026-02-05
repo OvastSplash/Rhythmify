@@ -1,6 +1,7 @@
 from celery import shared_task
 import logging
 
+from SpotifyController.services.aggregator.update_user_playlists import UpdateUserPlaylists
 from User.models import CustomUser
 from SpotifyController.models.models import Artist
 
@@ -58,11 +59,10 @@ def update_user_listen_tracks():
 def update_user_playlists():
     logger.info("update_user_playlists")
 
-    aggregator = AggregatorService(users=_get_active_users())
-    aggregator.update_users_playlists()
+    aggregator = BaseUserAggregator(users=_get_active_users())
+    aggregator.run_services_for_each_user(UpdateUserPlaylists)
 
-@shared_task
-def update_top_tracks():
-    logger.info("update_top_tracks")
+
+
 
 

@@ -29,10 +29,6 @@ class UpdateArtistData(BaseAggregator):
             logger.info(f"Updating artist {artist_sid}")
             artist_data = self.sp_public.get_artist_info(artist_sid)
 
-            # if artist_data is None:
-            #     logger.error(f"Artist {artist_sid} not found")
-            #     raise Exception("Artist not found")
-
             self.sp_db.create_or_update_artist(artist_data)
             logger.info(f"Artist {artist_sid} updated")
         except Exception as e:

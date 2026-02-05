@@ -1,64 +1,23 @@
-from pylast import Track, SimilarItem, Tag, LastFMNetwork, Artist, TopItem
-from SpotifyController.models.models import Track as TrackModel, Artist as ArtistModel
-from typing import List, Union
-from Rhythmify.settings import LAST_FM_KEY, LAST_FM_SECRET
-import pylast
 import logging
+
+from typing import List, Union
+from pylast import SimilarItem, Track, Artist
+
+from LastFM.services.client_service import LastFMClientService, LastFMService
+from SpotifyController.models.models import Track as TrackModel, Artist as ArtistModel
 
 logger = logging.getLogger(__name__)
 
-class LastFMService:
-    @staticmethod
-    def get_client() -> LastFMNetwork | None:
-        try:
-            return pylast.LastFMNetwork(api_key=LAST_FM_KEY, api_secret=LAST_FM_SECRET)
-        except Exception as e:
-            logger.exception("LastFM client init error")
-
-    @staticmethod
-    def get_similar_tracks(track: Track, count: int = 10) -> List[SimilarItem]:
-        return track.get_similar(count)
-
-    @staticmethod
-    def get_tracks_by_genre(genre: Tag, count: int = 5) -> List[Track]:
-        return genre.get_top_tracks(count)
-
-    @staticmethod
-    def get_similar_artists(artist: Artist, count: int = 5) -> List[SimilarItem]:
-        return artist.get_similar(count)
-
-    @staticmethod
-    def get_artists_top_tracks(artist: Artist, count: int = 5) -> List[Track]:
-        return artist.get_top_tracks(count)
-
-    @staticmethod
-    def get_artists_top_genres(artist: Artist, count: int = 5) -> List[TopItem]:
-        return artist.get_top_tags(count)
-
-
-class LastFMClientService:
-    def __init__(self):
-        self.client = LastFMService.get_client()
-
-        if not self.client:
-            raise Exception("LastFM client is not initialized")
-
-    def get_track(self, artist_name: str, track_name: str) -> Track:
-        return self.client.get_track(artist_name, track_name)
-
-    def get_genre(self, genre: str) -> Tag:
-        return  self.client.get_tag(genre)
-
-    def get_artist(self, artist_name: str) -> Artist:
-        return self.client.get_artist(artist_name)
-
-    def get_top_tracks(self) -> List[TopItem]:
-        return self.client.get_top_tracks(limit=10)
-
-    def get_top_artists(self) -> List[TopItem]:
-        return self.client.get_top_artists(limit=10)
-
 class LastFMDataService:
+    """
+    Provides methods for interacting with LastFM services.
+
+    This class serves as a data aggregation service that interacts with LastFM's data through client
+    and service layers. It facilitates fetching tracks, artists, and similar items based on various
+    criteria such as tracks, genres, and artists. It also includes methods for data transformation
+    like converting similar artists to artist entities.
+    """
+
     def __init__(self):
         self.client = LastFMClientService()
         self.last_fm_service = LastFMService()

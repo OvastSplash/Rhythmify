@@ -62,17 +62,18 @@ class AddTrackToPlaylistView(View):
             track_id = data.get("track_id")
             
             # For backward compatibility and mixed use
-            playlist_ids_to_add = data.get("add_to", [])
-            playlist_ids_to_remove = data.get("remove_from", [])
-            
+            playlists_ids = data.get("add_to", [])
+
             # Compatibility with old single 'playlist_id' or 'playlist_ids' (default to add)
-            if not playlist_ids_to_add and not playlist_ids_to_remove:
+            if not playlists_ids:
                 playlist_ids = data.get("playlist_ids", [])
                 if not playlist_ids:
                     playlist_id = data.get("playlist_id")
                     if playlist_id:
                         playlist_ids = [playlist_id]
-                playlist_ids_to_add = playlist_ids
+                playlists_ids = playlist_ids
+
+            logger.info("Track playlist update: track_id=%s playlists=%s", track_id, playlists_ids)
 
             if not track_id:
                 return HttpResponse("Missing track_id", status=400)
@@ -83,19 +84,8 @@ class AddTrackToPlaylistView(View):
 
             user_client = UserClient(user)
             
-            for pid in playlist_ids_to_add:
-                # We use sync_track_to_playlist which toggles, 
-                # but here we specifically want to ADD if not present.
-                # However, the current sync_track_to_playlist implementation 
-                # ALREADY checks if track is in playlist and adds only if not.
-                # Actually, it toggles. 
-                # Let's check if we should add or remove specifically.
-                if not CheckDataService.track_in_playlist(playlist_id=pid, track_id=track_id):
-                    user_client.sync_track_to_playlist(pid, track_id)
-
-            for pid in playlist_ids_to_remove:
-                if CheckDataService.track_in_playlist(playlist_id=pid, track_id=track_id):
-                    user_client.sync_track_to_playlist(pid, track_id)
+            for pid in playlists_ids:
+                user_client.sync_track_to_playlist(pid, track_id)
 
             return HttpResponse(json.dumps({"status": "success"}), content_type="application/json")
 

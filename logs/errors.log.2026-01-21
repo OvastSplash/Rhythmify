@@ -1,0 +1,316 @@
+2026-01-21 01:27:48 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:27:50 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:27:51 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:28:02 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:28:07 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:28:32 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:28:45 [ERROR] [log:253] Internal Server Error: /admin
+2026-01-21 01:45:43 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:48:56 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:48:56 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:49:45 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:49:45 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:50:46 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:50:46 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:52:02 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:52:02 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:54:03 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:54:03 [ERROR] [update_artist_data:34] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:55:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:55:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:55:40 [ERROR] [update_artist_data:33] Artist test_sid not found
+2026-01-21 01:55:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 01:57:41 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 01:57:41 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 01:57:41 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:13:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:13:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:13:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:16:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:16:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:16:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:17:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:17:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:17:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:17:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:17:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:17:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:17:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:17:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:17:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:18:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:18:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:18:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:23:09 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:23:09 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:23:09 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:27:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:27:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:27:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:29:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:29:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:29:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:29:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:29:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:29:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:29:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:29:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:29:52 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:33:11 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:33:11 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:33:11 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:37:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:37:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:37:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:43:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:43:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:43:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:45:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:45:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:45:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:45:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:45:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:45:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:45:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:45:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:45:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 02:47:05 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 02:47:05 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 02:47:05 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:39:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:39:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:39:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:42:33 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:42:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:42:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:42:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:44:53 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:44:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:44:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:44:53 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:45:22 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:45:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:45:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:45:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:47:18 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:47:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:47:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:47:18 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:48:28 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:48:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:48:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:48:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:49:20 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:49:20 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:49:20 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:49:20 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:50:30 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:50:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:50:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:50:30 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:52:10 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:52:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:52:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:52:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:52:43 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:52:43 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:52:43 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:52:43 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:54:14 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:54:14 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:54:14 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:54:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:54:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:54:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 03:59:21 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 03:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 03:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 03:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 04:00:55 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 04:00:55 [ERROR] [update_artist_data:39] Error occurred while updating artist 3bFkcQbsuV6ROeAkewAHmy: Database access not allowed, use the "django_db" mark, or the "db" or "transactional_db" fixtures to enable it.
+2026-01-21 04:00:55 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 04:00:55 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 04:02:32 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 04:02:32 [ERROR] [update_artist_data:39] Error occurred while updating artist 3bFkcQbsuV6ROeAkewAHmy: Database access not allowed, use the "django_db" mark, or the "db" or "transactional_db" fixtures to enable it.
+2026-01-21 04:02:32 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 04:02:32 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 04:03:42 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 04:04:53 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'Mock' object is not iterable
+2026-01-21 04:07:45 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'ManyRelatedManager' object is not iterable
+2026-01-21 04:09:53 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'ManyRelatedManager' object is not iterable
+2026-01-21 04:13:23 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'ManyRelatedManager' object is not iterable
+2026-01-21 04:16:33 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: Track Test Track has no artists
+2026-01-21 04:16:49 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: null value in column "followers" of relation "SpotifyController_artist" violates not-null constraint
+DETAIL:  Failing row contains (1, Test Artist, , Test_Artist_Id, https://Test_Artist_Url.com, null).
+
+2026-01-21 04:17:16 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: 'NoneType' object is not iterable
+2026-01-21 04:34:17 [ERROR] [update_user_favorite_tracks:68] Error occurred while updating user favorite tracks: cannot unpack non-iterable Mock object
+2026-01-21 04:39:00 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 04:39:00 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 04:39:00 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 04:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 04:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 04:59:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 04:59:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 04:59:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 04:59:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:01:01 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:01:01 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:01:01 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:01:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:01:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:01:17 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:05:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:05:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:05:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:08:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:08:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:08:34 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:10:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:10:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:10:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:12:08 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:12:08 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:12:08 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:13:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:13:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:13:47 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:15:27 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:15:27 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:15:27 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:15:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:15:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:15:48 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:18:38 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:18:38 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:18:38 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:19:26 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:19:26 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:19:26 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:19:26 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:20:06 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:20:06 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:20:06 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:20:06 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:20:35 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:20:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:20:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:20:35 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:24:02 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:24:02 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:24:02 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:24:02 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:24:25 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:24:25 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:24:25 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:24:25 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:24:25 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:33:15 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:33:15 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:33:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:33:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:33:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:41:42 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:41:42 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:41:42 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:41:42 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:41:42 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:47:36 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:47:36 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:47:36 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 05:47:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:47:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:47:36 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:47:57 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:47:57 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:47:57 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 05:47:57 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:47:57 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:47:57 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 05:59:37 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 05:59:37 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 05:59:37 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 05:59:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 05:59:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 05:59:37 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:06:33 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:06:33 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:06:33 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:06:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:06:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:06:33 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:10:49 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:10:49 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:10:49 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:10:49 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:10:49 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:10:49 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:13:10 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:13:10 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:13:10 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:13:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:13:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:13:10 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:13:39 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:13:39 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:13:39 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:13:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:13:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:13:39 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:15:15 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:15:15 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:15:15 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:15:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:15:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:15:15 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:15:28 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: 'UserClient' object has no attribute 'client'
+2026-01-21 06:15:28 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:15:28 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:15:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:15:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:15:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:17:28 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 06:17:28 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:17:28 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:17:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:17:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:17:28 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:17:56 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 06:17:56 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:17:56 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:17:56 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:17:56 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:17:56 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:20:19 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 06:20:19 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:20:19 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:20:19 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:20:19 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:20:19 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:24:21 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 06:24:21 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:24:21 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:24:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:24:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:24:21 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 06:28:40 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 06:28:40 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 06:28:40 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 06:28:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 06:28:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 06:28:40 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 07:47:22 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 07:47:22 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 07:47:22 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 07:47:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 07:47:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 07:47:22 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 21:37:45 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 21:37:45 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 21:37:45 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found
+2026-01-21 21:38:03 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-21 21:38:03 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-21 21:38:03 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-21 21:38:03 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Spotify API down
+2026-01-21 21:38:03 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Database error
+2026-01-21 21:38:03 [ERROR] [update_artist_data:39] Error occurred while updating artist test_sid: Artist not found

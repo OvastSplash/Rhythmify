@@ -154,7 +154,7 @@ class SaveUserDataService:
         return user_listen_history
 
     @transaction.atomic
-    def create_playlist(self, playlist_class: PlaylistClass) -> Playlist:
+    def create_playlist(self, playlist_class: PlaylistClass, process: bool = True) -> Playlist:
         user = get_object_or_404(CustomUser, spotify_id=playlist_class.owner_sid)
 
         playlist, created = Playlist.objects.get_or_create(
@@ -174,9 +174,10 @@ class SaveUserDataService:
 
             from SpotifyController.tasks.fetch_new_obj import process_new_playlist_task
 
-            transaction.on_commit(
-                lambda : process_new_playlist_task.delay(playlist.spotify_id)
-            )
+            if process:
+                transaction.on_commit(
+                    lambda : process_new_playlist_task.delay(playlist.spotify_id)
+                )
 
         else:
             logger.debug("Playlist already exists: sid=%s", playlist.spotify_id)

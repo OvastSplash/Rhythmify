@@ -2,7 +2,7 @@ from django.db import models
 from SpotifyController.models.models import Track, Artist, Album, Playlist
 # Create your models here.
 
-class TopTracks(models.Model):
+class TopTrack(models.Model):
     track = models.ForeignKey(Track, on_delete=models.CASCADE)
     position = models.PositiveIntegerField()
 
@@ -12,7 +12,7 @@ class TopTracks(models.Model):
     class Meta:
         unique_together = ('track', 'position')
 
-class TopArtists(models.Model):
+class TopArtist(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     position = models.PositiveIntegerField()
 
@@ -22,7 +22,7 @@ class TopArtists(models.Model):
     class Meta:
         unique_together = ('artist', 'position')
 
-class TopAlbums(models.Model):
+class TopAlbum(models.Model):
     album = models.ForeignKey(Album, on_delete=models.CASCADE)
     position = models.PositiveIntegerField()
 

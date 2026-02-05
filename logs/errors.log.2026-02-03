@@ -1,0 +1,6 @@
+2026-02-03 02:09:40 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-02-03 02:09:40 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-02-03 02:09:40 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-02-03 02:09:42 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-02-03 02:09:42 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-02-03 02:09:42 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found

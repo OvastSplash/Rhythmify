@@ -28,7 +28,6 @@ urlpatterns = [
     path("profile/", include("Profile.urls")),
     path("catalog/", include("Catalog.urls")),
     path("search/", include("Search.urls")),
-    path("", include("Search.urls")),
 ]
 
 if settings.DEBUG:

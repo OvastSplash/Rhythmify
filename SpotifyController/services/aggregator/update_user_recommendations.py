@@ -1,5 +1,5 @@
 from SpotifyController.services.aggregator.aggregator_base import UserDataProcessor
-from LastFM.construct_data_services import TrackSyncManager
+from LastFM.services.construct_data_services import TrackSyncManager
 
 import logging
 

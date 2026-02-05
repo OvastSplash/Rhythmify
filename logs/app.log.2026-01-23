@@ -1,0 +1,120 @@
+2026-01-23 08:19:45 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-01-23 08:19:45 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-01-23 08:19:45 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:19:45 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-01-23 08:19:45 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:19:45 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-01-23 08:19:45 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:19:45 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:46] Construct favorite tracks: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:52] User favorite tracks constructed: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:54] Start saving favorite tracks to database: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:59] User favorite tracks saved: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:63] User short term tracks updated: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:64] User medium term tracks updated: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_favorite_tracks:65] User long term favorite tracks updated: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Test User
+2026-01-23 08:20:17 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-23 08:20:17 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_playlists:27] User playlists updated: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:20:17 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-23 08:20:17 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_recommendations:33] User recommendations updated: username=Test User
+2026-01-23 08:20:17 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:20:17 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-23 08:20:17 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:20:17 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:20:17 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:20:17 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-01-23 08:20:17 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-01-23 08:20:17 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:20:17 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-01-23 08:20:17 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:20:17 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-01-23 08:20:17 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:20:17 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:46] Construct favorite tracks: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:52] User favorite tracks constructed: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:54] Start saving favorite tracks to database: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:59] User favorite tracks saved: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:63] User short term tracks updated: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:64] User medium term tracks updated: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_favorite_tracks:65] User long term favorite tracks updated: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Test User
+2026-01-23 08:21:59 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-23 08:21:59 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_playlists:27] User playlists updated: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:21:59 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-23 08:21:59 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_recommendations:33] User recommendations updated: username=Test User
+2026-01-23 08:21:59 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:21:59 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-23 08:21:59 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:21:59 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:21:59 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:21:59 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-01-23 08:21:59 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-01-23 08:21:59 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:21:59 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-01-23 08:21:59 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:21:59 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-01-23 08:21:59 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:21:59 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:46] Construct favorite tracks: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:52] User favorite tracks constructed: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:54] Start saving favorite tracks to database: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:59] User favorite tracks saved: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:63] User short term tracks updated: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:64] User medium term tracks updated: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_favorite_tracks:65] User long term favorite tracks updated: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Test User
+2026-01-23 08:24:26 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-23 08:24:26 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_playlists:27] User playlists updated: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:24:26 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-23 08:24:26 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_recommendations:33] User recommendations updated: username=Test User
+2026-01-23 08:24:26 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:24:26 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-23 08:24:26 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:24:26 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:24:26 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:24:26 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-01-23 08:24:26 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-01-23 08:24:26 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:24:26 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-01-23 08:24:26 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:24:26 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-01-23 08:24:26 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:24:26 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:46] Construct favorite tracks: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:52] User favorite tracks constructed: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:54] Start saving favorite tracks to database: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:59] User favorite tracks saved: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:63] User short term tracks updated: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:64] User medium term tracks updated: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_favorite_tracks:65] User long term favorite tracks updated: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Test User
+2026-01-23 08:34:18 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-01-23 08:34:18 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_playlists:27] User playlists updated: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-01-23 08:34:18 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-01-23 08:34:18 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_recommendations:33] User recommendations updated: username=Test User
+2026-01-23 08:34:18 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-01-23 08:34:18 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-01-23 08:34:18 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:34:18 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:34:18 [INFO] [save_user_data:77] Recommendation tracks saved: count=5
+2026-01-23 08:34:18 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-01-23 08:34:18 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-01-23 08:34:18 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:34:18 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-01-23 08:34:18 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:34:18 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-01-23 08:34:18 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-01-23 08:34:18 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found

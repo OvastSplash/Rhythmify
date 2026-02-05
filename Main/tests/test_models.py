@@ -10,10 +10,10 @@ logger = logging.getLogger("test")
 
 @pytest.mark.django_db
 def test_top_tracks_str(track):
-    from Main.models import TopTracks
+    from Main.models import TopTrack
 
     logger.info(f"[START] test_top_tracks_str")
-    top = TopTracks.objects.create(track=track, position=1)
+    top = TopTrack.objects.create(track=track, position=1)
     assert str(top) == track.name
     logger.info(f"[PROCESSING] created and verified TopTracks")
 
@@ -22,12 +22,12 @@ def test_top_tracks_str(track):
 
 @pytest.mark.django_db
 def test_top_tracks_unique(track):
-    from Main.models import TopTracks
+    from Main.models import TopTrack
 
     logger.info(f"[START] test_top_tracks_unique")
-    TopTracks.objects.create(track=track, position=1)
+    TopTrack.objects.create(track=track, position=1)
     with pytest.raises(IntegrityError):
-        TopTracks.objects.create(track=track, position=1)
+        TopTrack.objects.create(track=track, position=1)
     logger.info(f"[END] test_top_tracks_unique")
 
 # -----------------------------
@@ -35,10 +35,10 @@ def test_top_tracks_unique(track):
 # -----------------------------
 @pytest.mark.django_db
 def test_top_artists_str(artist, tracks):
-    from Main.models import TopArtists
+    from Main.models import TopArtist
 
     logger.info(f"[START] test_top_artists_str")
-    top = TopArtists.objects.create(artist=artist, position=1)
+    top = TopArtist.objects.create(artist=artist, position=1)
     assert str(top) == "Test Artist"
     logger.info(f"[PROCESSING] created TopArtists")
 
@@ -50,12 +50,12 @@ def test_top_artists_str(artist, tracks):
 
 @pytest.mark.django_db
 def test_top_artists_unique_constraint(artist):
-    from Main.models import TopArtists
+    from Main.models import TopArtist
 
     logger.info(f"[START] test_top_artists_unique_constraint")
-    TopArtists.objects.create(artist=artist, position=1)
+    TopArtist.objects.create(artist=artist, position=1)
     with pytest.raises(IntegrityError):
-        TopArtists.objects.create(artist=artist, position=1)
+        TopArtist.objects.create(artist=artist, position=1)
 
     logger.info(f"[END] test_top_artists_unique_constraint")
 
@@ -64,11 +64,11 @@ def test_top_artists_unique_constraint(artist):
 # -----------------------------
 @pytest.mark.django_db
 def test_top_albums_str(album):
-    from Main.models import TopAlbums
+    from Main.models import TopAlbum
 
     logger.info(f"[START] test_top_albums_str")
 
-    top = TopAlbums.objects.create(album=album, position=1)
+    top = TopAlbum.objects.create(album=album, position=1)
     assert str(top) == "Test Album"
     logger.info(f"[PROCESSING] Successfully created TopAlbums")
 
@@ -80,12 +80,12 @@ def test_top_albums_str(album):
 
 @pytest.mark.django_db
 def test_top_albums_unique_constraint(album):
-    from Main.models import TopAlbums
+    from Main.models import TopAlbum
 
     logger.info(f"[START] test_top_albums_unique_constraint")
-    TopAlbums.objects.create(album=album, position=1)
+    TopAlbum.objects.create(album=album, position=1)
     with pytest.raises(IntegrityError):
-        TopAlbums.objects.create(album=album, position=1)
+        TopAlbum.objects.create(album=album, position=1)
 
     logger.info(f"[END] test_top_albums_unique_constraint")
 

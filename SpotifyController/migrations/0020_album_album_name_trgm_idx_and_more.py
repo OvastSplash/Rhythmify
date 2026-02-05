@@ -7,7 +7,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('SpotifyController', '0019_postgres_extensions'),
+        ('SpotifyController', '0019_playlist_tracks'),
     ]
 
     operations = [

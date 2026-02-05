@@ -40,7 +40,7 @@ def tracks(db) -> List[Track]:
             name=f"Test Track {i}",
             url=f"https://Test_Url_{i}.com",
             spotify_id=f"test_id_{i}"
-        ) for i in range(5)
+        ) for i in range(10)
     ]
 
 
@@ -54,6 +54,16 @@ def artist(db, tracks) -> Artist:
 
     artist.top_tracks.add(*tracks)
     return artist
+
+@fixture
+def artists(db) -> List[Artist]:
+    return [
+        Artist.objects.create(
+            name=f"Test Artist {i}",
+            spotify_url=f"https://Test_Url_{i}.com",
+            spotify_id=f"test_id_{i}"
+        ) for i in range(10)
+    ]
 
 @fixture
 def playlist(db, tracks, user) -> Playlist:

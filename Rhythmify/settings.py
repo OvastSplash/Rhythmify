@@ -272,33 +272,41 @@ CELERY_BEAT_SCHEDULER = "django_celery_beat.schedulers:DatabaseScheduler"
 # Что бы запустить добавь тэг -B при запуске celery
 CELERY_BEAT_SCHEDULE = {
     # "update-user-favorite-tracks-every-day": {
-    #     "task": "SpotifyController.tasks.update_user_favorite_tracks",
+    #     "task": "SpotifyController.tasks.update_user_data.update_user_favorite_tracks",
     #     "schedule": crontab(hour="2", minute="0"),
     #     "args": (),
     # },
-    # "save_users_listen_tracks-every-day": {
-    #     "task": "SpotifyController.tasks.update_user_listen_tracks",
-    #     "schedule": crontab(minute="*/5"),
-    #     "args": (),
-    # },
+    "save_users_listen_tracks-every-day": {
+        "task": "SpotifyController.tasks.update_user_data.update_user_listen_tracks",
+        "schedule": crontab(minute="*/5"),
+        "args": (),
+    },
     # "update-artist-data-every-day":{
-    #     "task": "SpotifyController.tasks.update_artist_data",
+    #     "task": "SpotifyController.tasks.update_user_data.update_artist_data",
     #     "schedule": crontab(hour="3"),
     #     "args": (),
     # },
-    # "update-user-recommendations-list-every-day": {
-    #     "task": "SpotifyController.tasks.update_user_recommendations",
-    #     "schedule": crontab(minute="*/2"),
-    #     "args": (),
-    # }
-    "update-user-playlists-every-day": {
-        "task": "SpotifyController.tasks.update_user_playlists",
-        "schedule": crontab(minute="*"),
+    "update-user-recommendations-list-every-day": {
+        "task": "SpotifyController.tasks.update_user_data.update_user_recommendations",
+        "schedule": crontab(minute="*/10"),
         "args": (),
     }
+    # "update-user-playlists-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_data.update_user_playlists",
+    #     "schedule": crontab(minute="*"),
+    #     "args": (),
+    # },
+    # "update_top_tracks-every-day": {
+    #     "task": "Main.tasks.update_data.update_top_tracks",
+    #     "schedule": crontab(minute="*"),
+    # },
+    # "update_top_artists-every-day": {
+    #     "task": "Main.tasks.update_data.update_top_artists",
+    #     "schedule": crontab(minute="*"),
+    # }
 }
 
 CELERY_TASK_ROUTES = {
     'SpotifyController.tasks.fetch_new_obj.*': {'queue': 'heavy_tasks'},
-    'SpotifyController.tasks.update_data.update_user_playlists': {'queue': 'low_priority'},
+    'SpotifyController.tasks.update_user_data.update_user_playlists': {'queue': 'low_priority'},
 }

@@ -8,7 +8,6 @@ from typing import List
 
 from SpotifyController.services.construct_data import TrackClass, ArtistClass, GenreClass
 from SpotifyController.services.database.data_builder import PlayedTrackDTO
-from SpotifyController.services.database.get_user_data import GetUserDataService
 from SpotifyController.services.database.save_user_data import SaveUserDataService
 from User.models import CustomUser
 
