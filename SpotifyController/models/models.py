@@ -2,6 +2,7 @@ from django.core.files.base import ContentFile
 from django.db import models
 
 from django.contrib.postgres.indexes import GinIndex
+from django.utils.timezone import now
 
 import logging
 
@@ -118,6 +119,8 @@ class Playlist(models.Model):
     track_count = models.IntegerField(verbose_name="Tracks Count", default=0)
 
     tracks = models.ManyToManyField(Track, verbose_name="Tracks", related_name="playlists", blank=True)
+
+    created_at = models.DateTimeField(verbose_name="Created At", auto_now_add=True)
 
     def __str__(self):
         return f"{self.name} --- {self.user.username}"

@@ -29,6 +29,10 @@ class ConvertSpotifyDataBaseService:
         return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
 
     @staticmethod
+    def convert_playlists_to_ids(playlists: List[Playlist]) -> List[str]:
+        return [playlist.spotify_id for playlist in playlists]
+
+    @staticmethod
     def convert_user_statistic(user_statistic_data: Dict):
         converted_user_statistic = defaultdict(
             lambda: {

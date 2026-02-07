@@ -1,0 +1,797 @@
+2026-02-05 02:11:17 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-05 02:11:17 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-02-05 02:11:19 [INFO] [data_builder:148] Track created: sid=4fnRr6vZwvxW1ycJQ9TVYH name=Making Me Nervous
+2026-02-05 02:11:19 [INFO] [data_builder:125] Artist image updating: artist=Brad Sucks sid=13yy1c4aDXIWu2zfvtvGLn
+2026-02-05 02:11:19 [INFO] [data_builder:73] Album created: sid=5JuoWId7VBeIeVKVwGUi0g name=I Don't Know What I'm Doing
+2026-02-05 02:11:20 [INFO] [data_builder:148] Track created: sid=5H1sKFMzDeMtXwND3V6hRY name=JUMP
+2026-02-05 02:11:20 [INFO] [data_builder:125] Artist image updating: artist=BLACKPINK sid=41MozSoPIsD1dJM0CLPjZF
+2026-02-05 02:11:21 [INFO] [data_builder:73] Album created: sid=3hzoZlx2KwtvJEUl9piPWr name=JUMP
+2026-02-05 02:11:21 [INFO] [data_builder:148] Track created: sid=0VjIjW4GlUZAMYd2vXMi3b name=Blinding Lights
+2026-02-05 02:11:21 [INFO] [data_builder:125] Artist image updating: artist=The Weeknd sid=1Xyo4u8uXC1ZmMpatF05PJ
+2026-02-05 02:11:22 [INFO] [data_builder:73] Album created: sid=4yP0hdKOZPNshxUOjY0cZj name=After Hours
+2026-02-05 02:11:22 [INFO] [data_builder:148] Track created: sid=0je57Uq5eTk1wrPzn9sWbl name=When Did You Get Hot?
+2026-02-05 02:11:22 [INFO] [data_builder:125] Artist image updating: artist=Sabrina Carpenter sid=74KM79TiuVKeVCqs8QtB0B
+2026-02-05 02:11:23 [INFO] [data_builder:73] Album created: sid=1aqg30bNvLSWgShZgX4oop name=Man’s Best Friend
+2026-02-05 02:11:23 [INFO] [data_builder:148] Track created: sid=4mZ59jnHHvm3GR3oOwRwjA name=Lost Soul
+2026-02-05 02:11:23 [INFO] [data_builder:125] Artist image updating: artist=NBSPLV sid=61TQfpvTjHYQjPrvtJPwVa
+2026-02-05 02:11:24 [INFO] [data_builder:73] Album created: sid=3SFYm3pJKSJKm4RAZx7sZF name=Jade Tape
+2026-02-05 02:11:25 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Obscurum
+2026-02-05 02:12:00 [ERROR] [client_services:50] Artist fetching error: id=Radiohead error=http status: 400, code: -1 - https://api.spotify.com/v1/artists/Radiohead:
+ Invalid base62 id, reason: None
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:46] Construct favorite tracks: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:52] User favorite tracks constructed: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:54] Start saving favorite tracks to database: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:59] User favorite tracks saved: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:63] User short term tracks updated: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:64] User medium term tracks updated: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_favorite_tracks:65] User long term favorite tracks updated: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Test User
+2026-02-05 02:21:06 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-02-05 02:21:06 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_playlists:27] User playlists updated: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_playlists:22] Updating user playlists: username=Test User
+2026-02-05 02:21:06 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-02-05 02:21:06 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_recommendations:33] User recommendations updated: username=Test User
+2026-02-05 02:21:06 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Test User
+2026-02-05 02:21:06 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-02-05 02:21:06 [INFO] [save_user_data:77] Recommendation tracks saved: count=10
+2026-02-05 02:21:06 [INFO] [save_user_data:77] Recommendation tracks saved: count=10
+2026-02-05 02:21:06 [INFO] [save_user_data:77] Recommendation tracks saved: count=10
+2026-02-05 02:21:06 [INFO] [update_artist_data:29] Updating artist 3bFkcQbsuV6ROeAkewAHmy
+2026-02-05 02:21:06 [INFO] [update_artist_data:33] Artist 3bFkcQbsuV6ROeAkewAHmy updated
+2026-02-05 02:21:06 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-02-05 02:21:06 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-02-05 02:21:06 [INFO] [update_artist_data:29] Updating artist test_sid
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-02-05 02:21:25 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-05 02:21:25 [INFO] [data_builder:125] Artist image updating: artist=Radiohead sid=4Z8W4fKeB5YxbusRsdQVPb
+2026-02-05 02:21:26 [INFO] [data_builder:125] Artist image updating: artist=Drake sid=3TVXtAsR1Inumwj472S9r4
+2026-02-05 02:21:26 [INFO] [data_builder:148] Track created: sid=6Ec5LeRzkisa5KJtwLfOoW name=Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)
+2026-02-05 02:21:26 [INFO] [data_builder:125] Artist image updating: artist=Metro Boomin sid=0iEtIxbK0KxaSlF7G42ZOp
+2026-02-05 02:21:26 [INFO] [data_builder:125] Artist image updating: artist=Tyler, The Creator sid=4V8LLVI7PbaPR0K2TGSxFF
+2026-02-05 02:21:26 [INFO] [data_builder:125] Artist image updating: artist=A$AP Rocky sid=13ubrt8QOOCPljQ2FL1Kca
+2026-02-05 02:21:27 [INFO] [data_builder:125] Artist image updating: artist=Roisee sid=5pCGvSxNNUcddlRrG0wsrY
+2026-02-05 02:21:27 [INFO] [data_builder:125] Artist image updating: artist=Lady Gaga sid=1HY2Jd0NmPuamShAr6KMms
+2026-02-05 02:21:27 [INFO] [data_builder:73] Album created: sid=1bwbZJ6khPJyVpOaqgKsoZ name=METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE (SOUNDTRACK FROM AND INSPIRED BY THE MOTION PICTURE)
+2026-02-05 02:21:28 [INFO] [data_builder:148] Track created: sid=1P484VErh4SNpSj2dBRKPk name=Automotivo Galático
+2026-02-05 02:21:28 [INFO] [data_builder:125] Artist image updating: artist=Dj Brunin XM sid=6MSMZkBlZT4vhQmjO5Ynv3
+2026-02-05 02:21:28 [INFO] [data_builder:125] Artist image updating: artist=Mc Erikah sid=0TxoLMLA79mHKkRRe2dxEs
+2026-02-05 02:21:28 [INFO] [data_builder:125] Artist image updating: artist=Mc Mary Maii sid=6znF2OanyBjad0ycfBUfGH
+2026-02-05 02:21:29 [INFO] [data_builder:73] Album created: sid=1TXjJUBMXJp0DuTG2oELsB name=Automotivo Galático
+2026-02-05 02:21:30 [INFO] [data_builder:125] Artist image updating: artist=BLACKPINK sid=41MozSoPIsD1dJM0CLPjZF
+2026-02-05 02:21:31 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Obscurum
+2026-02-05 02:32:03 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-05 02:32:04 [INFO] [data_builder:148] Track created: sid=4PR8h5hgnBl93VSQYZMap1 name=Avatar's Love
+2026-02-05 02:32:04 [INFO] [data_builder:125] Artist image updating: artist=Samuel Kim sid=2bdcBjvuI9worc472GbeU0
+2026-02-05 02:32:05 [INFO] [data_builder:73] Album created: sid=0sxJTvkDWHK7TrEYiid8pR name=The Power of Balance
+2026-02-05 02:32:06 [INFO] [data_builder:148] Track created: sid=1EdQCb51lC8usq47IMhADP name=Keep It Tucked
+2026-02-05 02:32:06 [INFO] [data_builder:125] Artist image updating: artist=ThxSoMch sid=4MvZhE1iuzttcoyepkpfdF
+2026-02-05 02:32:06 [INFO] [data_builder:73] Album created: sid=0hiHeuhf5lqyeDbfCb7SQY name=Keep It Tucked
+2026-02-05 02:32:07 [INFO] [data_builder:125] Artist image updating: artist=Metro Boomin sid=0iEtIxbK0KxaSlF7G42ZOp
+2026-02-05 02:32:07 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Obscurum
+2026-02-05 02:32:27 [INFO] [views:49] User logged in: login=andre user_id=5
+2026-02-05 02:32:27 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 02:32:27 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 02:33:23 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 02:33:23 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 02:40:00 [INFO] [update_user_data:44] update_user_recommendations
+2026-02-05 02:40:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-05 02:40:00 [INFO] [update_user_recommendations:23] Updating user recommendations: username=Obscurum
+2026-02-05 02:40:01 [INFO] [data_builder:148] Track created: sid=6QKLkjLGiiOgtPRYjm257G name=COFFINYARD
+2026-02-05 02:40:01 [INFO] [data_builder:125] Artist image updating: artist=Witchouse 40k sid=7chdPv6Kx0frN0lKfppD2J
+2026-02-05 02:40:02 [INFO] [data_builder:73] Album created: sid=2n90ugazhgrJYNwgKCSp5B name=GHOSTLANDS
+2026-02-05 02:40:04 [INFO] [data_builder:148] Track created: sid=2ZgKOGthLtSzmDWde75FtY name=Vampiro
+2026-02-05 02:40:04 [INFO] [data_builder:125] Artist image updating: artist=French Police sid=75vqTLIltGApfI0NxcsJaC
+2026-02-05 02:40:05 [INFO] [data_builder:73] Album created: sid=4hQBvgh0Cq2VoXccNVnbBu name=Haunted Castle (Extended Play)
+2026-02-05 02:40:05 [INFO] [data_builder:148] Track created: sid=6kamZOSWb8ahxRkrYARPNG name=HEAVENLY JUMPSTYLE
+2026-02-05 02:40:05 [INFO] [data_builder:125] Artist image updating: artist=TWXNY sid=1HcduAQRxX1Q9hOTAQ8bOI
+2026-02-05 02:40:06 [INFO] [data_builder:125] Artist image updating: artist=Sxilwix sid=6cUZdCbsiJJXae86kwiH5v
+2026-02-05 02:40:06 [INFO] [data_builder:125] Artist image updating: artist=INNXCENCE sid=3i5xWUEFpG6g9pcRo4C2yc
+2026-02-05 02:40:07 [INFO] [data_builder:73] Album created: sid=6Mh8tamHejeSdNYR7p3GFl name=HEAVENLY JUMPSTYLE
+2026-02-05 02:40:07 [INFO] [data_builder:125] Artist image updating: artist=Samuel Kim sid=2bdcBjvuI9worc472GbeU0
+2026-02-05 02:40:08 [INFO] [update_user_listened_tracks:34] User listen statistic updated: username=Obscurum
+2026-02-05 02:40:09 [INFO] [client_services:97] Fetching track info: name=ball w/o you artist=21 Savage
+2026-02-05 02:40:09 [INFO] [client_services:97] Fetching track info: name=You Say Run artist=林ゆうき
+2026-02-05 02:40:10 [INFO] [client_services:97] Fetching track info: name=Unravel artist=TK from 凛として時雨
+2026-02-05 02:40:10 [INFO] [client_services:97] Fetching track info: name=Crustpunk artist=IBDY
+2026-02-05 02:40:11 [INFO] [client_services:97] Fetching track info: name=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) artist=KOHTA YAMAMOTO
+2026-02-05 02:40:11 [INFO] [client_services:97] Fetching track info: name=Giorno's Theme artist=Friedrich Habetler
+2026-02-05 02:40:11 [INFO] [client_services:97] Fetching track info: name=Steel Ball Run Johnny Joestar Theme artist=Friedrich Habetler
+2026-02-05 02:40:12 [INFO] [client_services:97] Fetching track info: name=GATTI artist=JACKBOYS
+2026-02-05 02:40:12 [INFO] [client_services:97] Fetching track info: name=Hot Pink artist=Let's Eat Grandma
+2026-02-05 02:40:13 [INFO] [client_services:97] Fetching track info: name=Lonely in Gorgeous artist=Tommy february6
+2026-02-05 02:40:13 [INFO] [client_services:97] Fetching track info: name=My Hero Academia artist=林ゆうき
+2026-02-05 02:40:14 [INFO] [client_services:97] Fetching track info: name=Falling Into Me artist=Let's Eat Grandma
+2026-02-05 02:40:14 [INFO] [client_services:97] Fetching track info: name=OUT WEST (feat. Young Thug) artist=JACKBOYS
+2026-02-05 02:40:15 [INFO] [client_services:97] Fetching track info: name=Guren no Yumiya artist=Linked Horizon
+2026-02-05 02:40:15 [INFO] [client_services:97] Fetching track info: name=again artist=YUI
+2026-02-05 02:40:16 [INFO] [client_services:97] Fetching track info: name=Hold My Weight artist=Ronen
+2026-02-05 02:40:16 [INFO] [client_services:97] Fetching track info: name=Hills Have Eyes artist=POORSTACY
+2026-02-05 02:40:16 [INFO] [client_services:97] Fetching track info: name=a lot artist=21 Savage
+2026-02-05 02:40:17 [INFO] [client_services:97] Fetching track info: name=Crossing Field artist=Lisa
+2026-02-05 02:40:17 [INFO] [client_services:97] Fetching track info: name=Ashes on The Fire artist=KOHTA YAMAMOTO
+2026-02-05 02:40:18 [INFO] [client_services:97] Fetching track info: name=You See Big Girl / T:T artist=Hiroyuki Sawano
+2026-02-05 02:40:18 [INFO] [client_services:97] Fetching track info: name=attack ON titan artist=Hiroyuki Sawano
+2026-02-05 02:40:18 [INFO] [client_services:97] Fetching track info: name=Let Me Be With You artist=ROUND TABLE featuring Nino
+2026-02-05 02:40:19 [INFO] [client_services:97] Fetching track info: name=Don't Look At Me artist=POORSTACY
+2026-02-05 02:40:19 [INFO] [client_services:97] Fetching track info: name=Night City (Cyberpunk 2077 98.7 Body Heat Radio) artist=Artemis Delta
+2026-02-05 02:40:20 [INFO] [client_services:97] Fetching track info: name=Night City artist=Artemis Delta
+2026-02-05 02:40:20 [INFO] [client_services:97] Fetching track info: name=光るなら artist=Goose house
+2026-02-05 02:40:21 [INFO] [data_builder:148] Track created: sid=50a8bKqlwDEqeiEknrzkTO name=ball w/o you
+2026-02-05 02:40:21 [INFO] [data_builder:125] Artist image updating: artist=21 Savage sid=1URnnhqYAYcrqrcwql10ft
+2026-02-05 02:40:21 [INFO] [data_builder:73] Album created: sid=007DWn799UWvfY1wwZeENR name=i am > i was
+2026-02-05 02:40:22 [INFO] [data_builder:148] Track created: sid=0hHc2igYYlSUyZdByauJmB name=You Say Run
+2026-02-05 02:40:22 [INFO] [data_builder:125] Artist image updating: artist=Yuki Hayashi sid=3oGVQWQy7lgTMuTnKUZZNZ
+2026-02-05 02:40:22 [INFO] [data_builder:73] Album created: sid=173zS6O8pRYiAU3UJUzg2S name=TVアニメ『僕のヒーローアカデミア』オリジナル・サウンドトラック
+2026-02-05 02:40:23 [INFO] [data_builder:148] Track created: sid=1rN9QoVxw5U7TJkyaUR8C1 name=unravel
+2026-02-05 02:40:23 [INFO] [data_builder:125] Artist image updating: artist=TK from Ling tosite sigure sid=3B9O5mYYw89fFXkwKh7jCS
+2026-02-05 02:40:24 [INFO] [data_builder:73] Album created: sid=1jLua47U6YKYY4GyktVbBb name=Fantastic Magic
+2026-02-05 02:40:25 [INFO] [data_builder:148] Track created: sid=2nnyvuEKMFWm006YaI5fb1 name=I.D.C.
+2026-02-05 02:40:25 [INFO] [data_builder:125] Artist image updating: artist=Chalk sid=3qa9pv6B0dmiBVETLQOCpi
+2026-02-05 02:40:26 [INFO] [data_builder:73] Album created: sid=2JcaLMni0sJcuU2rEGOd9w name=I.D.C.
+2026-02-05 02:40:27 [INFO] [data_builder:148] Track created: sid=7uF1nTuJRGUlZzODPcmPva name=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack)
+2026-02-05 02:40:27 [INFO] [data_builder:125] Artist image updating: artist=KOHTA YAMAMOTO sid=2hE2ofc7IKD1iQ39HYU5N4
+2026-02-05 02:40:27 [INFO] [data_builder:73] Album created: sid=2D75BWyFdglxuY29CGfF4i name=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack)
+2026-02-05 02:40:28 [INFO] [data_builder:148] Track created: sid=0oFPCGIO4t2cmOkksXknoD name=Giorno's Theme
+2026-02-05 02:40:28 [INFO] [data_builder:125] Artist image updating: artist=Friedrich Habetler sid=3VudC1DraV4LjIdLzpqQ80
+2026-02-05 02:40:29 [INFO] [data_builder:73] Album created: sid=6UDDr9aZsmprJXfgU48Lqa name=Giorno's Theme
+2026-02-05 02:40:29 [INFO] [data_builder:148] Track created: sid=7DFd3FrmUA6LPz4b5z5k2p name=Steel Ball Run Johnny Joestar Theme
+2026-02-05 02:40:30 [INFO] [data_builder:73] Album created: sid=1RNavXLNGOPA3cUnSJY0zN name=Steel Ball Run Johnny Joestar Theme
+2026-02-05 02:40:31 [INFO] [data_builder:148] Track created: sid=40mjsnRjCpycdUw3xhS20g name=GATTI
+2026-02-05 02:40:31 [INFO] [data_builder:125] Artist image updating: artist=JACKBOYS sid=7A8S43ryYdbWpJKeHRZRcq
+2026-02-05 02:40:31 [INFO] [data_builder:125] Artist image updating: artist=Pop Smoke sid=0eDvMgVFoNV3TpwtrVCoTj
+2026-02-05 02:40:32 [INFO] [data_builder:125] Artist image updating: artist=Travis Scott sid=0Y5tJX1MQlPlqiwlOH1tJY
+2026-02-05 02:40:32 [INFO] [data_builder:73] Album created: sid=1Sf8GsXG32t0jNrX11xqWx name=JACKBOYS
+2026-02-05 02:40:33 [INFO] [data_builder:148] Track created: sid=59rdoga3q8OVCR5WnSGVM8 name=Hot Pink
+2026-02-05 02:40:33 [INFO] [data_builder:73] Album created: sid=4TgXvHJWXGk0BlBvfs13Qg name=I'm All Ears
+2026-02-05 02:40:34 [INFO] [data_builder:148] Track created: sid=59e8U3Zr7Eo3KG9pNB4XSk name=Lonely in Gorgeous
+2026-02-05 02:40:34 [INFO] [data_builder:125] Artist image updating: artist=Tommy february6 sid=4B9dJjZ4F00cExmGc2OiST
+2026-02-05 02:40:34 [INFO] [data_builder:73] Album created: sid=3Q11GHYE2q4dyZKqZ58zHH name=Lonely in Gorgeous
+2026-02-05 02:40:35 [INFO] [data_builder:148] Track created: sid=50o13VmOJiUj3WfU7XmEAn name=My Hero Academia
+2026-02-05 02:40:36 [INFO] [data_builder:148] Track created: sid=6fIOgIkJNCII14BMTqSoct name=Falling Into Me
+2026-02-05 02:40:37 [INFO] [data_builder:148] Track created: sid=6gi6y1xwmVszDWkUqab1qw name=OUT WEST (feat. Young Thug)
+2026-02-05 02:40:37 [INFO] [data_builder:125] Artist image updating: artist=Travis Scott sid=0Y5tJX1MQlPlqiwlOH1tJY
+2026-02-05 02:40:37 [INFO] [data_builder:125] Artist image updating: artist=Young Thug sid=50co4Is1HCEo8bhOyUWKpn
+2026-02-05 02:40:39 [INFO] [data_builder:148] Track created: sid=70p3HYq9iHZisJqpDmWd1U name=Guren no Yumiya
+2026-02-05 02:40:39 [INFO] [data_builder:125] Artist image updating: artist=Linked Horizon sid=3eNYrVLcWfjJ9JdH9kiPJO
+2026-02-05 02:40:39 [INFO] [data_builder:73] Album created: sid=24pr7CLiiJk8rUsXcocSA4 name=Shingeki no Kiseki
+2026-02-05 02:40:40 [INFO] [data_builder:148] Track created: sid=4OQq1bcP12GQQXJNupxqfR name=again
+2026-02-05 02:40:40 [INFO] [data_builder:125] Artist image updating: artist=YUI sid=5WBO8UyOuJ1l7ZBqqBimpO
+2026-02-05 02:40:41 [INFO] [data_builder:73] Album created: sid=2rOHJ6kE8LjvDegataPviX name=HOLIDAYS IN THE SUN
+2026-02-05 02:40:41 [INFO] [data_builder:148] Track created: sid=4rLzlAnvu6ozmrnYdiian9 name=Hold My Weight
+2026-02-05 02:40:41 [INFO] [data_builder:125] Artist image updating: artist=RONEN sid=3wDeS1sr05fxaOeiJJrOnL
+2026-02-05 02:40:42 [INFO] [data_builder:73] Album created: sid=72tY0JQ54xSGs6Qyx24E6P name=Hold My Weight
+2026-02-05 02:40:43 [INFO] [data_builder:148] Track created: sid=4XfHXJwsa5SS8vs33Bs3x7 name=Hills Have Eyes
+2026-02-05 02:40:43 [INFO] [data_builder:125] Artist image updating: artist=POORSTACY sid=7vSY9HEreOqb1Llar3UC38
+2026-02-05 02:40:43 [INFO] [data_builder:73] Album created: sid=5Yxm8C04wvz0idav8AelmU name=Hills Have Eyes
+2026-02-05 02:40:44 [INFO] [data_builder:148] Track created: sid=2t8yVaLvJ0RenpXUIAC52d name=a lot
+2026-02-05 02:40:44 [INFO] [data_builder:125] Artist image updating: artist=21 Savage sid=1URnnhqYAYcrqrcwql10ft
+2026-02-05 02:40:45 [INFO] [data_builder:148] Track created: sid=4BvuZVf9KyBN3QiPfeI9hw name=crossing field
+2026-02-05 02:40:45 [INFO] [data_builder:125] Artist image updating: artist=LiSA sid=0blbVefuxOGltDBa00dspv
+2026-02-05 02:40:46 [INFO] [data_builder:73] Album created: sid=5HFUxDJPT23Q2VN32WPi3c name=LANDSPACE
+2026-02-05 02:40:46 [INFO] [data_builder:148] Track created: sid=4dHOnPucB5VBYq3gjRtYy9 name=You See Big Girl / T:T
+2026-02-05 02:40:47 [INFO] [data_builder:125] Artist image updating: artist=Sawano Hiroyuki sid=0Riv2KnFcLZA3JSVryRg4y
+2026-02-05 02:40:47 [INFO] [data_builder:73] Album created: sid=0jNwqmKIwudqqbMJRRtzQb name=TV Anime "Attack on Titan Season 2" (Original Soundtrack)
+2026-02-05 02:40:48 [INFO] [data_builder:148] Track created: sid=5IzZpz0vA73IIjqFPpXSXP name=Attack on Titan
+2026-02-05 02:40:48 [INFO] [data_builder:73] Album created: sid=3WDkuVqT1OfkTdCyYQ2gXa name=TV Anime "Attack on Titan" Original Soundtrack
+2026-02-05 02:40:49 [INFO] [data_builder:148] Track created: sid=4UBt00S6TNsKwgfxMcfNal name=Let Me Be With You
+2026-02-05 02:40:49 [INFO] [data_builder:125] Artist image updating: artist=ROUND TABLE featuring Nino sid=3KkRgA5LEmBTfjkODZvLzG
+2026-02-05 02:40:50 [INFO] [data_builder:73] Album created: sid=1A84EfaPGuBdtLSEG0K0Fz name=APRIL
+2026-02-05 02:40:50 [INFO] [data_builder:148] Track created: sid=3U7mehH6qFWzsDrAljZ7VW name=Don't Look At Me
+2026-02-05 02:40:51 [INFO] [data_builder:73] Album created: sid=2kKR8sRKNRqlN8axIsAvnB name=The Breakfast Club (Deluxe Edition)
+2026-02-05 02:40:52 [INFO] [data_builder:148] Track created: sid=4dK0YKNUAMEV58MZxqN359 name=Night City
+2026-02-05 02:40:52 [INFO] [data_builder:125] Artist image updating: artist=R E L sid=1esV1Kbjb2mU2NuxzRDQ0D
+2026-02-05 02:40:53 [INFO] [data_builder:148] Track created: sid=2BlDX1yfT0ea5wo0vjCKKa name=光るなら
+2026-02-05 02:40:53 [INFO] [data_builder:125] Artist image updating: artist=Goose house sid=7BzEKSgHp2yrNC6w5NkFhQ
+2026-02-05 02:40:53 [INFO] [data_builder:73] Album created: sid=0uF7LYXx0mDrWeMxZ3vRkz name=Milk
+2026-02-05 02:40:54 [INFO] [save_user_data:77] Recommendation tracks saved: count=36
+2026-02-05 02:40:54 [INFO] [update_user_recommendations:33] User recommendations updated: username=Obscurum
+2026-02-05 02:40:54 [INFO] [update_user_data:49] Users recommendations updated
+2026-02-05 02:41:43 [INFO] [views:49] User logged in: login=andre user_id=5
+2026-02-05 02:41:43 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 02:41:43 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 02:41:51 [INFO] [client_services:223] Playlist created: name=Obscurum Recommendation Playlist id=2n8F76K7bHyu9zJBvKg4jn
+2026-02-05 02:42:23 [INFO] [data_builder:208] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=Duvet add=True
+2026-02-05 02:42:23 [INFO] [client_services:258] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=1veZkUONsfxYDfqcGo6YbG
+2026-02-05 02:43:37 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Hills Have Eyes add=True
+2026-02-05 02:43:37 [INFO] [client_services:258] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=4XfHXJwsa5SS8vs33Bs3x7
+2026-02-05 02:45:07 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Don't Look At Me add=True
+2026-02-05 02:45:07 [INFO] [client_services:258] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=3U7mehH6qFWzsDrAljZ7VW
+2026-02-05 02:48:08 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Ghost add=True
+2026-02-05 02:48:08 [INFO] [client_services:258] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=15CXWtEaOlVG2Yj5L77zc8
+2026-02-05 02:48:44 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=again add=True
+2026-02-05 02:48:44 [INFO] [client_services:258] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=4OQq1bcP12GQQXJNupxqfR
+2026-02-05 02:48:58 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Genesis add=True
+2026-02-05 02:48:58 [INFO] [client_services:258] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=3cjvqsvvU80g7WJPMVh8iq
+2026-02-05 03:26:26 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:26:26 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:26:44 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-02-05 03:26:44 [INFO] [client_services:236] Playlist created: name=Obscurum Recommendation Playlist id=1leGzWmr70bkec9PiR75fy
+2026-02-05 03:26:45 [INFO] [client_services:206] Playlist processing: name=1leGzWmr70bkec9PiR75fy id=1leGzWmr70bkec9PiR75fy
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=a lot add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Duvet add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Hold My Weight add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=crossing field add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=COLORS add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Attack on Titan add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Hills Have Eyes add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=You Say Run add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=You See Big Girl / T:T add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=unravel add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Wind add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=GATTI add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Oblivion add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Don't Look At Me add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Falling Into Me add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=光るなら add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Lights Out add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Ponpon Shit add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=User Friendly add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Lonely in Gorgeous add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Guren no Yumiya add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Giorno's Theme add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Ghost add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=ball w/o you add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Night City add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Losing My Mind add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=My Hero Academia add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=I.D.C. add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Hot Pink add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=again add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Genesis add=True
+2026-02-05 03:26:46 [INFO] [data_builder:208] Track added to playlist: pid=1leGzWmr70bkec9PiR75fy tid=Let Me Be With You add=True
+2026-02-05 03:26:46 [INFO] [client_services:217] Playlist processed: name=1leGzWmr70bkec9PiR75fy id=1leGzWmr70bkec9PiR75fy
+2026-02-05 03:26:46 [INFO] [client_services:236] Playlist created: name=Obscurum Recommendation Playlist id=1OxFG7DQDXg2knqyrOjaxa
+2026-02-05 03:26:46 [INFO] [client_services:206] Playlist processing: name=1OxFG7DQDXg2knqyrOjaxa id=1OxFG7DQDXg2knqyrOjaxa
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=a lot add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Duvet add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Hold My Weight add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=crossing field add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=COLORS add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Attack on Titan add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Hills Have Eyes add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=You Say Run add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=You See Big Girl / T:T add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=unravel add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Wind add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=GATTI add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Oblivion add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Don't Look At Me add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Falling Into Me add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=光るなら add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Lights Out add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Ponpon Shit add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=User Friendly add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Lonely in Gorgeous add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Guren no Yumiya add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Giorno's Theme add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Ghost add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=ball w/o you add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Night City add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Losing My Mind add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=My Hero Academia add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=I.D.C. add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Hot Pink add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=again add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Genesis add=True
+2026-02-05 03:26:47 [INFO] [data_builder:208] Track added to playlist: pid=1OxFG7DQDXg2knqyrOjaxa tid=Let Me Be With You add=True
+2026-02-05 03:26:47 [INFO] [client_services:217] Playlist processed: name=1OxFG7DQDXg2knqyrOjaxa id=1OxFG7DQDXg2knqyrOjaxa
+2026-02-05 03:26:54 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:26:54 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:30:17 [INFO] [views:49] User logged in: login=andre user_id=5
+2026-02-05 03:30:17 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:30:17 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:30:24 [INFO] [client_services:239] Playlist created: name=Obscurum Recommendation Playlist id=4nAyrJ7704Fz2K6RGDzyxt
+2026-02-05 03:30:24 [INFO] [client_services:206] Playlist processing: name=4nAyrJ7704Fz2K6RGDzyxt id=4nAyrJ7704Fz2K6RGDzyxt
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=a lot add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Duvet add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Hold My Weight add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=crossing field add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=COLORS add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Attack on Titan add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Hills Have Eyes add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=You Say Run add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=You See Big Girl / T:T add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=unravel add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Wind add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=GATTI add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Oblivion add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Don't Look At Me add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Falling Into Me add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=光るなら add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Lights Out add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Ponpon Shit add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=User Friendly add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Lonely in Gorgeous add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Guren no Yumiya add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Giorno's Theme add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Ghost add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=ball w/o you add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Night City add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Losing My Mind add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=My Hero Academia add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=I.D.C. add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Hot Pink add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=again add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Genesis add=True
+2026-02-05 03:30:25 [INFO] [data_builder:208] Track added to playlist: pid=4nAyrJ7704Fz2K6RGDzyxt tid=Let Me Be With You add=True
+2026-02-05 03:30:25 [INFO] [client_services:220] Playlist processed: name=4nAyrJ7704Fz2K6RGDzyxt id=4nAyrJ7704Fz2K6RGDzyxt
+2026-02-05 03:30:27 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:30:27 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:31:06 [INFO] [client_services:239] Playlist created: name=Obscurum Recommendation Playlist id=3b4q4oCPHBj4GNLP1kXf51
+2026-02-05 03:31:06 [INFO] [client_services:206] Playlist processing: name=3b4q4oCPHBj4GNLP1kXf51 id=3b4q4oCPHBj4GNLP1kXf51
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=a lot add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Duvet add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Hold My Weight add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=crossing field add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=COLORS add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Attack on Titan add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Hills Have Eyes add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=You Say Run add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=You See Big Girl / T:T add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=unravel add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Wind add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=GATTI add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Oblivion add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Don't Look At Me add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Falling Into Me add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=光るなら add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Lights Out add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Ponpon Shit add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=User Friendly add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Lonely in Gorgeous add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Guren no Yumiya add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Giorno's Theme add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Ghost add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=ball w/o you add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Night City add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Losing My Mind add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=My Hero Academia add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=I.D.C. add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Hot Pink add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=again add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Genesis add=True
+2026-02-05 03:31:07 [INFO] [data_builder:208] Track added to playlist: pid=3b4q4oCPHBj4GNLP1kXf51 tid=Let Me Be With You add=True
+2026-02-05 03:31:07 [INFO] [client_services:220] Playlist processed: name=3b4q4oCPHBj4GNLP1kXf51 id=3b4q4oCPHBj4GNLP1kXf51
+2026-02-05 03:31:17 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:31:17 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:38:18 [INFO] [client_services:239] Playlist created: name=Obscurum Recommendation Playlist id=3hzzRIDfBCJpvVpnmigMQt
+2026-02-05 03:38:18 [INFO] [client_services:206] Playlist processing: name=3hzzRIDfBCJpvVpnmigMQt id=3hzzRIDfBCJpvVpnmigMQt
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=a lot add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Duvet add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Hold My Weight add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=crossing field add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=COLORS add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Attack on Titan add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Hills Have Eyes add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=You Say Run add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=You See Big Girl / T:T add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=unravel add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Wind add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=GATTI add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Oblivion add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Don't Look At Me add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Falling Into Me add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=光るなら add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Lights Out add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Ponpon Shit add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=User Friendly add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Lonely in Gorgeous add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Guren no Yumiya add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Giorno's Theme add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Ghost add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=ball w/o you add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Night City add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Losing My Mind add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=My Hero Academia add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=I.D.C. add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Hot Pink add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=again add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Genesis add=True
+2026-02-05 03:38:19 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Let Me Be With You add=True
+2026-02-05 03:38:19 [INFO] [client_services:220] Playlist processed: name=3hzzRIDfBCJpvVpnmigMQt id=3hzzRIDfBCJpvVpnmigMQt
+2026-02-05 03:38:20 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:38:20 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:38:29 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:38:29 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:41:00 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:41:00 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:41:53 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:41:53 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:43:28 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=PLAY HARD add=True
+2026-02-05 03:43:28 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-05 03:44:54 [INFO] [views:68] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 add_to=[] remove_from=[]
+2026-02-05 03:44:59 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:44:59 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:45:10 [INFO] [views:68] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 add_to=[] remove_from=[]
+2026-02-05 03:45:10 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Never Gonna Give You Up add=True
+2026-02-05 03:45:10 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=4PTG3Z6ehGkBFwjybzWkR8
+2026-02-05 03:46:03 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:46:03 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:46:09 [INFO] [views:78] Track playlist update: track_id=2AAYdx4XXaFd6JEWbdhZal add_to=['3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:46:09 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Сидативи add=True
+2026-02-05 03:46:09 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:46:20 [INFO] [views:78] Track playlist update: track_id=2AAYdx4XXaFd6JEWbdhZal add_to=['3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:46:33 [INFO] [views:78] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 add_to=['3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:47:34 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:47:34 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:47:40 [INFO] [views:78] Track playlist update: track_id=2AAYdx4XXaFd6JEWbdhZal add_to=['3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:47:42 [INFO] [data_builder:210] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Сидативи add=False
+2026-02-05 03:47:42 [INFO] [client_services:287] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:48:01 [INFO] [views:78] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 add_to=['3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:48:02 [INFO] [data_builder:210] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Never Gonna Give You Up add=False
+2026-02-05 03:48:02 [INFO] [client_services:287] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=4PTG3Z6ehGkBFwjybzWkR8
+2026-02-05 03:48:37 [INFO] [views:78] Track playlist update: track_id=2AAYdx4XXaFd6JEWbdhZal add_to=['0BXmx3qPq1K3JAeYfAexRH', '3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:48:37 [INFO] [data_builder:208] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=Сидативи add=True
+2026-02-05 03:48:37 [INFO] [client_services:281] Track added to playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:48:38 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Сидативи add=True
+2026-02-05 03:48:38 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:48:49 [INFO] [views:78] Track playlist update: track_id=2AAYdx4XXaFd6JEWbdhZal add_to=['0BXmx3qPq1K3JAeYfAexRH', '3hzzRIDfBCJpvVpnmigMQt'] remove_from=[]
+2026-02-05 03:48:49 [INFO] [data_builder:210] Track removed from playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=Сидативи add=False
+2026-02-05 03:48:49 [INFO] [client_services:287] Track removed from playlist: pid=0BXmx3qPq1K3JAeYfAexRH tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:48:49 [INFO] [data_builder:210] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Сидативи add=False
+2026-02-05 03:48:49 [INFO] [client_services:287] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2AAYdx4XXaFd6JEWbdhZal
+2026-02-05 03:50:23 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:50:23 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:50:39 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['3hzzRIDfBCJpvVpnmigMQt']
+2026-02-05 03:50:39 [INFO] [data_builder:210] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=PLAY HARD add=False
+2026-02-05 03:50:39 [INFO] [client_services:287] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-05 03:50:46 [INFO] [views:76] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 playlists=['3hzzRIDfBCJpvVpnmigMQt']
+2026-02-05 03:50:46 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Never Gonna Give You Up add=True
+2026-02-05 03:50:46 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=4PTG3Z6ehGkBFwjybzWkR8
+2026-02-05 03:50:52 [INFO] [views:76] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 playlists=['3hzzRIDfBCJpvVpnmigMQt']
+2026-02-05 03:50:52 [INFO] [data_builder:210] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Never Gonna Give You Up add=False
+2026-02-05 03:50:52 [INFO] [client_services:287] Track removed from playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=4PTG3Z6ehGkBFwjybzWkR8
+2026-02-05 03:51:01 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:51:01 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:51:12 [INFO] [views:76] Track playlist update: track_id=4PTG3Z6ehGkBFwjybzWkR8 playlists=['3hzzRIDfBCJpvVpnmigMQt']
+2026-02-05 03:51:12 [INFO] [data_builder:208] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=Never Gonna Give You Up add=True
+2026-02-05 03:51:12 [INFO] [client_services:281] Track added to playlist: pid=3hzzRIDfBCJpvVpnmigMQt tid=4PTG3Z6ehGkBFwjybzWkR8
+2026-02-05 03:51:18 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:51:18 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:54:40 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:54:40 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:54:46 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=3h4oWW5IQ9iXVANIfuEk9B
+2026-02-05 03:54:46 [INFO] [client_services:204] Playlist processing: name=3h4oWW5IQ9iXVANIfuEk9B id=3h4oWW5IQ9iXVANIfuEk9B
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=a lot add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Duvet add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Hold My Weight add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=crossing field add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=COLORS add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Attack on Titan add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Hills Have Eyes add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=You Say Run add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=You See Big Girl / T:T add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=unravel add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Wind add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=GATTI add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Oblivion add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Don't Look At Me add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Falling Into Me add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=光るなら add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Lights Out add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Ponpon Shit add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=User Friendly add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Lonely in Gorgeous add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Guren no Yumiya add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Giorno's Theme add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Ghost add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=ball w/o you add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Night City add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Losing My Mind add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=My Hero Academia add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=I.D.C. add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Hot Pink add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=again add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Genesis add=True
+2026-02-05 03:54:47 [INFO] [data_builder:208] Track added to playlist: pid=3h4oWW5IQ9iXVANIfuEk9B tid=Let Me Be With You add=True
+2026-02-05 03:54:47 [INFO] [client_services:218] Playlist processed: name=3h4oWW5IQ9iXVANIfuEk9B id=3h4oWW5IQ9iXVANIfuEk9B
+2026-02-05 03:54:48 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:54:48 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:54:53 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:54:53 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:54:56 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=77VuDioBZE65fIyFPDo8yt
+2026-02-05 03:54:56 [INFO] [client_services:204] Playlist processing: name=77VuDioBZE65fIyFPDo8yt id=77VuDioBZE65fIyFPDo8yt
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=a lot add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Duvet add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Hold My Weight add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=crossing field add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=COLORS add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Attack on Titan add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:54:56 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Hills Have Eyes add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=You Say Run add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=You See Big Girl / T:T add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=unravel add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Wind add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=GATTI add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Oblivion add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Don't Look At Me add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Falling Into Me add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=光るなら add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Lights Out add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Ponpon Shit add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=User Friendly add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Lonely in Gorgeous add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Guren no Yumiya add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Giorno's Theme add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Ghost add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=ball w/o you add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Night City add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Losing My Mind add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=My Hero Academia add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=I.D.C. add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Hot Pink add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=again add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Genesis add=True
+2026-02-05 03:54:57 [INFO] [data_builder:208] Track added to playlist: pid=77VuDioBZE65fIyFPDo8yt tid=Let Me Be With You add=True
+2026-02-05 03:54:57 [INFO] [client_services:218] Playlist processed: name=77VuDioBZE65fIyFPDo8yt id=77VuDioBZE65fIyFPDo8yt
+2026-02-05 03:54:57 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=0bQIlEeFe7yrwvaqkZir5v
+2026-02-05 03:54:57 [INFO] [client_services:204] Playlist processing: name=0bQIlEeFe7yrwvaqkZir5v id=0bQIlEeFe7yrwvaqkZir5v
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=a lot add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Duvet add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Hold My Weight add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=crossing field add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=COLORS add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Attack on Titan add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Hills Have Eyes add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=You Say Run add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=You See Big Girl / T:T add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=unravel add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Wind add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=GATTI add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Oblivion add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Don't Look At Me add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Falling Into Me add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=光るなら add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Lights Out add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Ponpon Shit add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=User Friendly add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Lonely in Gorgeous add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Guren no Yumiya add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Giorno's Theme add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Ghost add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=ball w/o you add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Night City add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Losing My Mind add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=My Hero Academia add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=I.D.C. add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Hot Pink add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=again add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Genesis add=True
+2026-02-05 03:54:58 [INFO] [data_builder:208] Track added to playlist: pid=0bQIlEeFe7yrwvaqkZir5v tid=Let Me Be With You add=True
+2026-02-05 03:54:58 [INFO] [client_services:218] Playlist processed: name=0bQIlEeFe7yrwvaqkZir5v id=0bQIlEeFe7yrwvaqkZir5v
+2026-02-05 03:55:00 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=4Ymlpa57tejN0ZlqvsU09R
+2026-02-05 03:55:00 [INFO] [client_services:204] Playlist processing: name=4Ymlpa57tejN0ZlqvsU09R id=4Ymlpa57tejN0ZlqvsU09R
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=a lot add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Duvet add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Hold My Weight add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=crossing field add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=COLORS add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Attack on Titan add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Hills Have Eyes add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=You Say Run add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=You See Big Girl / T:T add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=unravel add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Wind add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=GATTI add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Oblivion add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Don't Look At Me add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Falling Into Me add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=光るなら add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Who's Ready for Tomorrow add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Lights Out add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Ponpon Shit add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=User Friendly add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Lonely in Gorgeous add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Guren no Yumiya add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Giorno's Theme add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Ghost add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=ball w/o you add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Night City add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Losing My Mind add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=My Hero Academia add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=I.D.C. add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Hot Pink add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=again add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Genesis add=True
+2026-02-05 03:55:01 [INFO] [data_builder:208] Track added to playlist: pid=4Ymlpa57tejN0ZlqvsU09R tid=Let Me Be With You add=True
+2026-02-05 03:55:01 [INFO] [client_services:218] Playlist processed: name=4Ymlpa57tejN0ZlqvsU09R id=4Ymlpa57tejN0ZlqvsU09R
+2026-02-05 03:55:07 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:55:07 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 03:55:18 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['']
+2026-02-05 03:55:19 [ERROR] [check_data:45] 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 03:55:19 [ERROR] [views:93] Track playlist update error: 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 88, in post
+    user_client.sync_track_to_playlist(pid, track_id)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/client_services.py", line 277, in sync_track_to_playlist
+    if not CheckDataService.track_in_playlist(playlist_id=playlist_id, track_id=track_id):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 03:57:12 [INFO] [update_user_playlists:15] Updating playlists for all users
+2026-02-05 03:57:12 [INFO] [update_user_playlists:19] First playlist: name=Gym
+2026-02-05 03:57:12 [INFO] [client_services:294] Fetching playlist tracks: pid=1q1mEYwXmEyiENKYyWFb7f
+2026-02-05 03:58:42 [INFO] [update_user_playlists:22] Updating user playlists: username=Obscurum
+2026-02-05 03:58:43 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+2026-02-05 03:58:56 [INFO] [update_user_playlists:22] Updating user playlists: username=Obscurum
+2026-02-05 03:58:57 [INFO] [save_user_data:198] Playlists cached: sid=['6B3JNjzJoxykTZWOLMal3E', '39UHgToFdgKvhPqNFfhEgH', '1q1mEYwXmEyiENKYyWFb7f', '1eXForund74SKoJT146u5i', '2fDRgibP6qd3b5C9W6gk5a', '0BXmx3qPq1K3JAeYfAexRH', '6eaYmn3mIU0mKtptw30f48', '6JMvJI2hl5U4wkw3X5FdT7', '1pV87Tlec0x5Hk634CdOst', '4NsU6r6EomEmjgHK4N5Yju']
+2026-02-05 03:58:57 [INFO] [update_user_playlists:27] User playlists updated: username=Obscurum
+2026-02-05 03:59:55 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 03:59:55 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:00:03 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=6HzxrgxP6FZUlp3Uj6ybWZ
+2026-02-05 04:00:03 [INFO] [client_services:204] Playlist processing: name=6HzxrgxP6FZUlp3Uj6ybWZ id=6HzxrgxP6FZUlp3Uj6ybWZ
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=a lot add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Duvet add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Hold My Weight add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=crossing field add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=COLORS add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Attack on Titan add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Hills Have Eyes add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=You Say Run add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=You See Big Girl / T:T add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=unravel add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Wind add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=GATTI add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Oblivion add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Don't Look At Me add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Falling Into Me add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=光るなら add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Who's Ready for Tomorrow add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Lights Out add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Ponpon Shit add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=User Friendly add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Lonely in Gorgeous add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Guren no Yumiya add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Giorno's Theme add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Ghost add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=ball w/o you add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Night City add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Losing My Mind add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=My Hero Academia add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=I.D.C. add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Hot Pink add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=again add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Genesis add=True
+2026-02-05 04:00:04 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=Let Me Be With You add=True
+2026-02-05 04:00:04 [INFO] [client_services:218] Playlist processed: name=6HzxrgxP6FZUlp3Uj6ybWZ id=6HzxrgxP6FZUlp3Uj6ybWZ
+2026-02-05 04:00:05 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:00:05 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:00:11 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['6HzxrgxP6FZUlp3Uj6ybWZ']
+2026-02-05 04:00:11 [INFO] [data_builder:208] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=PLAY HARD add=True
+2026-02-05 04:00:11 [INFO] [client_services:281] Track added to playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-05 04:00:49 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['6HzxrgxP6FZUlp3Uj6ybWZ']
+2026-02-05 04:00:49 [INFO] [data_builder:210] Track removed from playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=PLAY HARD add=False
+2026-02-05 04:00:49 [INFO] [client_services:287] Track removed from playlist: pid=6HzxrgxP6FZUlp3Uj6ybWZ tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-05 04:00:52 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:00:52 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:02:35 [INFO] [update_user_playlists:22] Updating user playlists: username=Obscurum
+2026-02-05 04:02:36 [INFO] [save_user_data:198] Playlists cached: sid=['6B3JNjzJoxykTZWOLMal3E', '39UHgToFdgKvhPqNFfhEgH', '1q1mEYwXmEyiENKYyWFb7f', '1eXForund74SKoJT146u5i', '2fDRgibP6qd3b5C9W6gk5a', '0BXmx3qPq1K3JAeYfAexRH', '6eaYmn3mIU0mKtptw30f48', '6JMvJI2hl5U4wkw3X5FdT7', '6HzxrgxP6FZUlp3Uj6ybWZ', '1pV87Tlec0x5Hk634CdOst', '4NsU6r6EomEmjgHK4N5Yju']
+2026-02-05 04:02:36 [INFO] [update_user_playlists:27] User playlists updated: username=Obscurum
+2026-02-05 04:03:14 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:03:14 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:03:24 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['']
+2026-02-05 04:03:24 [ERROR] [check_data:45] 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 04:03:24 [ERROR] [views:93] Track playlist update error: 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 88, in post
+    user_client.sync_track_to_playlist(pid, track_id)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/client_services.py", line 277, in sync_track_to_playlist
+    if not CheckDataService.track_in_playlist(playlist_id=playlist_id, track_id=track_id):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 04:08:27 [INFO] [update_user_playlists:22] Updating user playlists: username=Obscurum
+2026-02-05 04:08:27 [INFO] [save_user_data:198] Playlists cached: sid=['6B3JNjzJoxykTZWOLMal3E', '39UHgToFdgKvhPqNFfhEgH', '1q1mEYwXmEyiENKYyWFb7f', '1eXForund74SKoJT146u5i', '2fDRgibP6qd3b5C9W6gk5a', '0BXmx3qPq1K3JAeYfAexRH', '6eaYmn3mIU0mKtptw30f48', '6JMvJI2hl5U4wkw3X5FdT7', '1pV87Tlec0x5Hk634CdOst', '4NsU6r6EomEmjgHK4N5Yju']
+2026-02-05 04:08:27 [INFO] [update_user_playlists:27] User playlists updated: username=Obscurum
+2026-02-05 04:08:31 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:08:31 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:08:38 [INFO] [client_services:237] Playlist created: name=Obscurum Recommendation Playlist id=70hgQIrRmaMBngCg0ArxUg
+2026-02-05 04:08:38 [INFO] [client_services:204] Playlist processing: name=70hgQIrRmaMBngCg0ArxUg id=70hgQIrRmaMBngCg0ArxUg
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=a lot add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Duvet add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Hold My Weight add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=crossing field add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=COLORS add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Attack on Titan add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Ashes on The Fire (Attack on Titan The Final Season Original Soundtrack) add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Hills Have Eyes add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=You Say Run add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=You See Big Girl / T:T add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=unravel add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Wind add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=GATTI add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Oblivion add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Don't Look At Me add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=OUT WEST (feat. Young Thug) add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Falling Into Me add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=光るなら add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Who's Ready for Tomorrow add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Lights Out add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Steel Ball Run Johnny Joestar Theme add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Ponpon Shit add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=User Friendly add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Lonely in Gorgeous add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Guren no Yumiya add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Giorno's Theme add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Ghost add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=ball w/o you add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Night City add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Losing My Mind add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=My Hero Academia add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=I.D.C. add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Hot Pink add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=again add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Genesis add=True
+2026-02-05 04:08:39 [INFO] [data_builder:208] Track added to playlist: pid=70hgQIrRmaMBngCg0ArxUg tid=Let Me Be With You add=True
+2026-02-05 04:08:39 [INFO] [client_services:218] Playlist processed: name=70hgQIrRmaMBngCg0ArxUg id=70hgQIrRmaMBngCg0ArxUg
+2026-02-05 04:08:42 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:08:42 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:08:53 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:08:53 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:09:40 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:09:40 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:10:26 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:10:26 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:11:49 [INFO] [views:76] Track playlist update: track_id=4hD4nwWtkqTmf5U8FY3SsE playlists=['6B3JNjzJoxykTZWOLMal3E']
+2026-02-05 04:11:49 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Evil Morty Theme (For The Damaged Coda) (Epic Version) - Cover add=True
+2026-02-05 04:11:49 [INFO] [client_services:284] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=4hD4nwWtkqTmf5U8FY3SsE
+2026-02-05 04:12:36 [INFO] [views:76] Track playlist update: track_id=1clJU55o8rtxOHmdrswth2 playlists=['6B3JNjzJoxykTZWOLMal3E']
+2026-02-05 04:12:36 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=Let You Down add=True
+2026-02-05 04:12:36 [INFO] [client_services:284] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=1clJU55o8rtxOHmdrswth2
+2026-02-05 04:14:11 [INFO] [views:76] Track playlist update: track_id=3RO1KYNf65mRHXyPMcFHMn playlists=['6B3JNjzJoxykTZWOLMal3E']
+2026-02-05 04:14:12 [INFO] [data_builder:208] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=GUISTORIA add=True
+2026-02-05 04:14:12 [INFO] [client_services:284] Track added to playlist: pid=6B3JNjzJoxykTZWOLMal3E tid=3RO1KYNf65mRHXyPMcFHMn
+2026-02-05 04:15:57 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:15:57 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-05 04:17:24 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-05 04:17:24 [INFO] [views:52] User playlists loaded: has_stats=True

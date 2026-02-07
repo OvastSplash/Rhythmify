@@ -78,6 +78,34 @@ def playlist(db, tracks, user) -> Playlist:
     return playlist
 
 @fixture
+def playlists_one_user(db, user, tracks) -> List[Playlist]:
+    return [
+        Playlist.objects.create(
+            user=user,
+            name=f"Test Playlist {i}",
+            spotify_id=f"Test_Playlist_{i}",
+            spotify_url=f"https://Test_Playlist_Url_{i}.com"
+        ) for i in range(5)
+    ]
+
+@fixture
+def playlists_multiple_users(db, tracks, users) -> List[Playlist]:
+    playlists = list()
+    for index, user in enumerate(users):
+        playlists.extend(
+            [
+                Playlist.objects.create(
+                    user=user,
+                    name=f"Test Playlist {i} for {user.id}",
+                    spotify_id=f"Test_Playlist_{user.id}_{i}",
+                    spotify_url=f"https://Test_Playlist_Url_{user.id}_{i}.com"
+                ) for i in range(5)
+            ]
+        )
+
+    return playlists
+
+@fixture
 def album(db, tracks) -> Album:
     album = Album.objects.create(
         name="Test Album",

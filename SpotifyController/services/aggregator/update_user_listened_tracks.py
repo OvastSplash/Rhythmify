@@ -1,6 +1,7 @@
 import logging
 
 from SpotifyController.services.aggregator.aggregator_base import UserDataProcessor
+from Main.services.database.repositories.played_today_track import PlayedTodayTrackRegister
 
 logger = logging.getLogger(__name__)
 
@@ -27,9 +28,12 @@ class UpdateUserListenedTracks(UserDataProcessor):
             logger.debug("Saving user listened tracks: username=%s", self.user.username)
 
             constructed_tracks = self.sp_client.get_user_recently_played(limit=5)
-            tracks = self.sp_db.create_played_at_tracks(constructed_tracks)
+            tracks_dto = self.sp_db.create_played_at_tracks(constructed_tracks)
 
-            self.user_db.save_listen_tracks_history(tracks)
+            listen_history = self.user_db.save_listen_tracks_history(tracks_dto)
+
+            register_tracks = PlayedTodayTrackRegister(self.user)
+            register_tracks.register_tracks_play([history.track for history in listen_history])
 
             logger.info("User listen statistic updated: username=%s", self.user.username)
         except Exception as e:

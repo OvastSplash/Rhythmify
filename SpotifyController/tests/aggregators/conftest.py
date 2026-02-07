@@ -8,7 +8,8 @@ from SpotifyController.services.aggregator.update_user_playlists import UpdateUs
 from SpotifyController.services.aggregator.update_user_recommendations import UpdateUserRecommendations
 
 
-from unittest.mock import Mock
+from unittest.mock import Mock, MagicMock
+
 
 @fixture
 def base_aggregator(sp_db, sp_public) -> BaseAggregator:
@@ -28,7 +29,7 @@ def update_user_favorite_tracks(base_user_aggregator, user) -> UpdateUserFavorit
 @fixture
 def update_user_listened_tracks(base_user_aggregator, user, sp_client) -> UpdateUserListenedTracks:
     aggregator = UpdateUserListenedTracks(user=user, parent=base_user_aggregator)
-    aggregator.user_db = Mock()
+    aggregator.user_db = MagicMock()
     aggregator.sp_client = sp_client
     return aggregator
 

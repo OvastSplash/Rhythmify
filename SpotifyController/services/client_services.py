@@ -1,6 +1,7 @@
 from spotipy import SpotifyException
 import logging
 
+from Main.services.database.repositories.fresh_playlist import FreshPlaylistRegister
 from SpotifyController.services.database.check_data import CheckDataService
 from SpotifyController.services.database.convert_data import ConvertSpotifyDataBaseService
 from SpotifyController.services.database.get_user_data import GetUserDataService
@@ -11,7 +12,9 @@ from SpotifyController.services.user_cache import UserCacheService
 from SpotifyController.serializers import SpotifyProfileSerializer
 from SpotifyController.services.database.data_builder import UpdateDataService
 
+from SpotifyController.models.models import Playlist
 from User.models import CustomUser
+
 from typing import List
 
 logger = logging.getLogger("SpotifyController.services")
@@ -200,7 +203,7 @@ class UserClient:
             logger.error("Recently played tracks fetching error: error=%s", e)
             raise Exception("Recently played tracks not found")
 
-    def _handler_recommended_playlist_created(self, playlist_id: str, tracks_ids: List[str]):
+    def _handler_recommended_playlist_created(self, playlist_id: str, tracks_ids: List[str]) -> Playlist:
         logger.info("Playlist processing: name=%s id=%s", playlist_id, playlist_id)
 
         constructed_playlist = self.get_user_playlist_data(playlist_id)
@@ -216,6 +219,7 @@ class UserClient:
         cache_service.add_playlist_to_user_playlists(playlist_id=playlist_id)
 
         logger.info("Playlist processed: name=%s id=%s", playlist_id, playlist_id)
+        return playlist
 
     def create_user_recommendation_playlist(self, user: CustomUser):
         user_cache_service = UserCacheService(user_id=user.id)
@@ -248,10 +252,12 @@ class UserClient:
         playlist_id = playlist['id']
 
         if playlist_id:
-            self._handler_recommended_playlist_created(playlist_id=playlist['id'], tracks_ids=tracks_ids)
+            playlist = self._handler_recommended_playlist_created(playlist_id=playlist['id'], tracks_ids=tracks_ids)
+
+            fresh_playlist_register = FreshPlaylistRegister()
+            fresh_playlist_register.register_playlist(playlist)
 
         logger.debug("Playlist tracks URIs: count=%d", len(tracks_uri))
-
 
     def get_user_playlists_data(self, construct=True) -> List[PlaylistClass] | List[dict]:
         """Get user playlists data"""

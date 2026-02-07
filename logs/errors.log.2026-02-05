@@ -1,0 +1,39 @@
+2026-02-05 02:12:00 [ERROR] [client_services:50] Artist fetching error: id=Radiohead error=http status: 400, code: -1 - https://api.spotify.com/v1/artists/Radiohead:
+ Invalid base62 id, reason: None
+2026-02-05 02:21:06 [ERROR] [update_user_listened_tracks:36] Error occurred while updating user listen statistic: Spotify API down
+2026-02-05 02:21:06 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Spotify API down
+2026-02-05 02:21:06 [ERROR] [update_user_recommendations:35] Error occurred while updating user recommendations: No data
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Spotify API down
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Database error
+2026-02-05 02:21:06 [ERROR] [update_artist_data:35] Error occurred while updating artist test_sid: Artist not found
+2026-02-05 03:55:19 [ERROR] [check_data:45] 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 03:55:19 [ERROR] [views:93] Track playlist update error: 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 88, in post
+    user_client.sync_track_to_playlist(pid, track_id)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/client_services.py", line 277, in sync_track_to_playlist
+    if not CheckDataService.track_in_playlist(playlist_id=playlist_id, track_id=track_id):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 03:55:19 [ERROR] [log:253] Internal Server Error: /profile/add_track/
+2026-02-05 03:58:43 [ERROR] [update_user_playlists:29] Error occurred while updating user playlists: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+2026-02-05 04:03:24 [ERROR] [check_data:45] 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 04:03:24 [ERROR] [views:93] Track playlist update error: 'NoneType' object has no attribute 'tracks'
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Profile/views.py", line 88, in post
+    user_client.sync_track_to_playlist(pid, track_id)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/client_services.py", line 277, in sync_track_to_playlist
+    if not CheckDataService.track_in_playlist(playlist_id=playlist_id, track_id=track_id):
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/check_data.py", line 42, in track_in_playlist
+    return playlist.tracks.filter(spotify_id=track_id).exists()
+AttributeError: 'NoneType' object has no attribute 'tracks'
+2026-02-05 04:03:24 [ERROR] [log:253] Internal Server Error: /profile/add_track/

@@ -180,6 +180,14 @@ LOGGING = {
             "level": "DEBUG",
             "propagate": False,
         },
+
+        "tasks": {
+            "handlers": ["console", "tests_file"],
+            "level": "DEBUG",
+            "propagate": False,
+        },
+
+
         # Ваше приложение целиком
         "SpotifyController": {
             "handlers": ["console", "app_file", "errors_file"],
@@ -192,6 +200,66 @@ LOGGING = {
             "level": DJANGO_LOG_LEVEL,
             "propagate": False,
         },
+
+
+        "Main": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+        "Main.services": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+
+        "LastFM": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+        "LastFM.services": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+
+        "Deezer": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+        "Catalog": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+
+        "Profile": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+
+
+        "Search": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
+
+        "User": {
+            "handlers": ["console", "app_file", "errors_file"],
+            "level": DJANGO_LOG_LEVEL,
+            "propagate": False,
+        },
+
         # Django запросы/ошибки
         "django.request": {
             "handlers": ["errors_file", "console"],
@@ -286,11 +354,11 @@ CELERY_BEAT_SCHEDULE = {
     #     "schedule": crontab(hour="3"),
     #     "args": (),
     # },
-    "update-user-recommendations-list-every-day": {
-        "task": "SpotifyController.tasks.update_user_data.update_user_recommendations",
-        "schedule": crontab(minute="*/10"),
-        "args": (),
-    }
+    # "update-user-recommendations-list-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_data.update_user_recommendations",
+    #     "schedule": crontab(minute="*/10"),
+    #     "args": (),
+    # }
     # "update-user-playlists-every-day": {
     #     "task": "SpotifyController.tasks.update_user_data.update_user_playlists",
     #     "schedule": crontab(minute="*"),
@@ -303,7 +371,16 @@ CELERY_BEAT_SCHEDULE = {
     # "update_top_artists-every-day": {
     #     "task": "Main.tasks.update_data.update_top_artists",
     #     "schedule": crontab(minute="*"),
-    # }
+    # },
+    # "clear_all_data-every-day": {
+    #     "task": "Main.tasks.clear_data.clear_all_data",
+    #     "schedule": crontab(hour="2"),
+    # },
+    "update_recently_replayed_tracks-every-five-minutes": {
+        "task": "Main.tasks.update_data.update_recently_replayed_tracks",
+        "schedule": crontab(minute="*/5"),
+        "args": (),
+    },
 }
 
 CELERY_TASK_ROUTES = {

@@ -146,9 +146,9 @@ class SaveUserDataService:
 
 
         user_listen_history = UsersListenHistory.objects.bulk_create(new_tracks)
-        get_user_data = GetUserDataService(user=self.user)
 
         if cache:
+            get_user_data = GetUserDataService(user=self.user)
             get_user_data.listen_statistic() # For saving statistics to cache
 
         return user_listen_history

@@ -1,0 +1,210 @@
+2026-02-06 03:45:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 03:45:00 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-02-06 03:45:02 [INFO] [data_builder:148] Track created: sid=6pWlv50Lthad8jyd6f1TlC name=Harpy Hare
+2026-02-06 03:45:02 [INFO] [data_builder:125] Artist image updating: artist=Yaelokre sid=3rRyfgGByetsaaujkjQ7rY
+2026-02-06 03:45:02 [INFO] [data_builder:73] Album created: sid=5YtN8x4Q8H7zEFroBn9yq0 name=Harpy Hare
+2026-02-06 03:45:04 [INFO] [data_builder:148] Track created: sid=4JVMdDQbIn8QMbHLUROmkl name=too much
+2026-02-06 03:45:04 [INFO] [data_builder:125] Artist image updating: artist=Softheart sid=5dXo2Tz3pAZ8X9byrME5Ce
+2026-02-06 03:45:04 [INFO] [data_builder:125] Artist image updating: artist=guccihighwaters sid=7EIOmfcBRSR63ZaUptkD09
+2026-02-06 03:45:04 [INFO] [data_builder:73] Album created: sid=4EzwWUzlGryMIqiM6wdoqL name=not around here
+2026-02-06 03:45:05 [INFO] [data_builder:148] Track created: sid=0TUR6yCXeddzttZXplNLp4 name=nobody
+2026-02-06 03:45:05 [INFO] [data_builder:125] Artist image updating: artist=Toby Mai sid=71XRExAcKFmzM0fckCrCvo
+2026-02-06 03:45:05 [INFO] [data_builder:73] Album created: sid=5XJqBg9aPDcBOTuZ8lPZ2K name=nobody
+2026-02-06 03:45:06 [INFO] [data_builder:148] Track created: sid=09By4L1F4e7kcAtLIvsRuJ name=Get Around Town
+2026-02-06 03:45:06 [INFO] [data_builder:125] Artist image updating: artist=Revolver sid=2ERWfqqrtdXicQJ9wcOONf
+2026-02-06 03:45:06 [INFO] [data_builder:73] Album created: sid=1buxGHKCI6MMnWzmwciTAK name=Music For A While
+2026-02-06 03:45:07 [INFO] [data_builder:148] Track created: sid=0lGTVZfU82bYT2uJw22Kz4 name=Mis
+2026-02-06 03:45:07 [INFO] [data_builder:125] Artist image updating: artist=Alex G sid=6lcwlkAjBPSKnFBZjjZFJs
+2026-02-06 03:45:07 [INFO] [data_builder:73] Album created: sid=7CEIedRZFPYuKt9W2wcliK name=Rules
+2026-02-06 03:45:08 [ERROR] [update_user_listened_tracks:40] Error occurred while updating user listen statistic: Field 'id' expected a number but got PlayedTrackDTO(track=<Track: Harpy Hare>, played_at=datetime.datetime(2026, 2, 6, 3, 42, 50, 570000, tzinfo=datetime.timezone.utc)).
+2026-02-06 03:50:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 03:50:01 [INFO] [data_builder:125] Artist image updating: artist=Grouper sid=31uyAcnY0kjjKKIQZMKX4i
+2026-02-06 03:50:01 [INFO] [data_builder:125] Artist image updating: artist=Klangkarussell sid=041iTeoMIwXMlShuQPIVKo
+2026-02-06 03:50:01 [INFO] [data_builder:125] Artist image updating: artist=Toby Mai sid=71XRExAcKFmzM0fckCrCvo
+2026-02-06 03:50:01 [ERROR] [update_user_listened_tracks:40] Error occurred while updating user listen statistic: Field 'id' expected a number but got PlayedTrackDTO(track=<Track: Heavy Water/I'd Rather Be Sleeping>, played_at=datetime.datetime(2026, 2, 6, 3, 49, 29, 876000, tzinfo=datetime.timezone.utc)).
+2026-02-06 03:55:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 03:55:01 [INFO] [data_builder:148] Track created: sid=0gZ6hv8Am0HBXx4gYqKSOs name=I Don’t Wanna Know
+2026-02-06 03:55:01 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 03:55:02 [INFO] [data_builder:73] Album created: sid=0WGMSrfOSPh1vctL94IWD3 name=Over The Moon
+2026-02-06 03:55:03 [INFO] [data_builder:125] Artist image updating: artist=Grouper sid=31uyAcnY0kjjKKIQZMKX4i
+2026-02-06 03:55:03 [INFO] [data_builder:125] Artist image updating: artist=Klangkarussell sid=041iTeoMIwXMlShuQPIVKo
+2026-02-06 03:55:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:00:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:00:01 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:00:01 [INFO] [data_builder:148] Track created: sid=6d67Xv8ms2noA8wWFLiPDN name=Twilight
+2026-02-06 04:00:01 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:00:02 [INFO] [data_builder:73] Album created: sid=7sGYAV0xv7ZfAMzIpMl8m1 name=Twilight
+2026-02-06 04:00:03 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:00:03 [INFO] [data_builder:125] Artist image updating: artist=Grouper sid=31uyAcnY0kjjKKIQZMKX4i
+2026-02-06 04:00:03 [INFO] [data_builder:125] Artist image updating: artist=Klangkarussell sid=041iTeoMIwXMlShuQPIVKo
+2026-02-06 04:00:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:05:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:05:01 [INFO] [data_builder:148] Track created: sid=2Y1kGjAic94r4tEohhSDZ4 name=Roi - Instrumental Slowed
+2026-02-06 04:05:01 [INFO] [data_builder:125] Artist image updating: artist=Mckyyy sid=1Y5AYn8VTrTR3f8HXQQQug
+2026-02-06 04:05:01 [INFO] [data_builder:73] Album created: sid=1EwTZsIEI8Awy30mt2P9d2 name=Roi
+2026-02-06 04:05:02 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:05:02 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:05:02 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:05:02 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:05:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:10:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:10:00 [INFO] [data_builder:148] Track created: sid=2SqLkcztfDC9xtMt3zW9ow name=Never Come Down
+2026-02-06 04:10:00 [INFO] [data_builder:125] Artist image updating: artist=Brave Shores sid=2GNoet4qVhsaqF1Q1ucEwe
+2026-02-06 04:10:01 [INFO] [data_builder:73] Album created: sid=1zyYv12bs8jO9lV8Bg5tYJ name=Brave Shores
+2026-02-06 04:10:02 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:10:02 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:10:02 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:10:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:15:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:15:01 [INFO] [data_builder:148] Track created: sid=4mh0rIKPBhMBAln7t3m0Zk name=Walk With Me
+2026-02-06 04:15:01 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:15:01 [INFO] [data_builder:73] Album created: sid=1iRSudnWjT9qWRU3v0k6ah name=Whiplash
+2026-02-06 04:15:02 [INFO] [data_builder:148] Track created: sid=4EUQvVJ8fT1WCCxISFxMKW name=Frozen Heart
+2026-02-06 04:15:02 [INFO] [data_builder:125] Artist image updating: artist=ominix sid=6MmBfkGkUe5eMKjZbhJcBd
+2026-02-06 04:15:03 [INFO] [data_builder:73] Album created: sid=3wbjNDzn4nUpe2pHUN1CnR name=Frozen Heart
+2026-02-06 04:15:04 [INFO] [data_builder:125] Artist image updating: artist=LEE CHAE YEON sid=2nkZR6LwPxaAVtaVitNIPT
+2026-02-06 04:15:04 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:20:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:20:02 [INFO] [data_builder:148] Track created: sid=2AHZICZHpwfW0jGQnNUUlW name=Don't Worry (with Ray Dalton) - Radio Edit
+2026-02-06 04:20:02 [INFO] [data_builder:125] Artist image updating: artist=Madcon sid=6c4sUNBgdonFJz8Kx2VsGz
+2026-02-06 04:20:02 [INFO] [data_builder:125] Artist image updating: artist=Ray Dalton sid=4e0nWw2r4BoQSKPQ2zpU13
+2026-02-06 04:20:03 [INFO] [data_builder:73] Album created: sid=3Phx4ZCBjLcD8noU55Ved2 name=W drodze na wakacje
+2026-02-06 04:20:04 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:20:04 [INFO] [played_today_track:140] Registering tracks plays: tracks=[<Track: Don't Worry (with Ray Dalton) - Radio Edit>]
+2026-02-06 04:20:04 [INFO] [played_today_track:115] Registering track play: tid=2AHZICZHpwfW0jGQnNUUlW uid=5
+2026-02-06 04:20:04 [INFO] [played_today_track:81] Track added to today played: tid=2AHZICZHpwfW0jGQnNUUlW uid=5
+2026-02-06 04:20:04 [INFO] [played_today_track:100] Track created today played: tid=2AHZICZHpwfW0jGQnNUUlW uid=5
+2026-02-06 04:20:04 [INFO] [played_today_track:122] Track played today: tid=2AHZICZHpwfW0jGQnNUUlW uid=5
+2026-02-06 04:20:04 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:25:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:25:01 [INFO] [data_builder:148] Track created: sid=5v2wBVnZ8Wdj1qwIqhcVw2 name=The Love I Lost
+2026-02-06 04:25:01 [INFO] [data_builder:125] Artist image updating: artist=Fried By Fluoride sid=0qwt0uuav6sDn54MRKrL1u
+2026-02-06 04:25:01 [INFO] [data_builder:73] Album created: sid=30lqUcHnBNxCseddTVrXIU name=In Excellent Order
+2026-02-06 04:25:03 [INFO] [data_builder:148] Track created: sid=0i77506epd8NgmHxZwMOwS name=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)
+2026-02-06 04:25:03 [INFO] [data_builder:125] Artist image updating: artist=Mike Shinoda sid=6xBZgSMsnKVmaAxzWEwMSD
+2026-02-06 04:25:03 [INFO] [data_builder:125] Artist image updating: artist=Emily Armstrong sid=2j5MUrKK6wSLdUxy2ijqHC
+2026-02-06 04:25:03 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:25:04 [INFO] [data_builder:73] Album created: sid=2Iu5auPZp12ftZiNv0eZP5 name=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)
+2026-02-06 04:25:04 [ERROR] [services:31] Deezer preview fetch error: track=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends) artist=Arcane
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-06 04:25:04 [INFO] [data_builder:148] Track created: sid=7hCNBVRhHzcsRAv0TQnOzq name=Runaway Baby
+2026-02-06 04:25:04 [INFO] [data_builder:73] Album created: sid=6J84szYCnMfzEcvIcfWMFL name=Doo-Wops & Hooligans
+2026-02-06 04:25:05 [INFO] [data_builder:125] Artist image updating: artist=bôa sid=5jTtGLk1mGFMY5lQOvJYUj
+2026-02-06 04:25:05 [INFO] [played_today_track:140] Registering tracks plays: tracks=[<Track: The Love I Lost>, <Track: Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)>, <Track: Runaway Baby>]
+2026-02-06 04:25:05 [INFO] [played_today_track:115] Registering track play: tid=5v2wBVnZ8Wdj1qwIqhcVw2 uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:81] Track added to today played: tid=5v2wBVnZ8Wdj1qwIqhcVw2 uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:100] Track created today played: tid=5v2wBVnZ8Wdj1qwIqhcVw2 uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:122] Track played today: tid=5v2wBVnZ8Wdj1qwIqhcVw2 uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:115] Registering track play: tid=0i77506epd8NgmHxZwMOwS uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:81] Track added to today played: tid=0i77506epd8NgmHxZwMOwS uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:100] Track created today played: tid=0i77506epd8NgmHxZwMOwS uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:122] Track played today: tid=0i77506epd8NgmHxZwMOwS uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:115] Registering track play: tid=7hCNBVRhHzcsRAv0TQnOzq uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:81] Track added to today played: tid=7hCNBVRhHzcsRAv0TQnOzq uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:100] Track created today played: tid=7hCNBVRhHzcsRAv0TQnOzq uid=5
+2026-02-06 04:25:05 [INFO] [played_today_track:122] Track played today: tid=7hCNBVRhHzcsRAv0TQnOzq uid=5
+2026-02-06 04:25:05 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:27:14 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-06 04:27:14 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-06 04:27:39 [INFO] [views:25] Searching: name=heavy
+2026-02-06 04:27:39 [ERROR] [views:27] {'name': 'heavy'}
+2026-02-06 04:27:39 [INFO] [views:25] Searching: name=heavy is
+2026-02-06 04:27:39 [ERROR] [views:27] {'name': 'heavy is'}
+2026-02-06 04:27:40 [INFO] [views:25] Searching: name=heavy is the
+2026-02-06 04:27:40 [ERROR] [views:27] {'name': 'heavy is the'}
+2026-02-06 04:27:41 [INFO] [views:25] Searching: name=heavy is the cr
+2026-02-06 04:27:41 [ERROR] [views:27] {'name': 'heavy is the cr'}
+2026-02-06 04:27:43 [INFO] [views:25] Searching: name=heavy is the crown
+2026-02-06 04:27:43 [ERROR] [views:27] {'name': 'heavy is the crown'}
+2026-02-06 04:27:49 [INFO] [views:98] Searching data: name=heavy is the crown
+2026-02-06 04:28:02 [INFO] [views:25] Searching: name=Leag
+2026-02-06 04:28:02 [ERROR] [views:27] {'name': 'Leag'}
+2026-02-06 04:28:03 [INFO] [views:25] Searching: name=League f
+2026-02-06 04:28:03 [ERROR] [views:27] {'name': 'League f'}
+2026-02-06 04:28:03 [INFO] [views:25] Searching: name=League of
+2026-02-06 04:28:03 [ERROR] [views:27] {'name': 'League of'}
+2026-02-06 04:28:06 [INFO] [views:25] Searching: name=League of Legends
+2026-02-06 04:28:06 [ERROR] [views:27] {'name': 'League of Legends'}
+2026-02-06 04:28:07 [INFO] [views:98] Searching data: name=League of Legends
+2026-02-06 04:28:50 [INFO] [views:98] Searching data: name=League of Legends
+2026-02-06 04:28:53 [INFO] [views:49] User logged in: login=andre user_id=5
+2026-02-06 04:28:54 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-06 04:28:54 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-06 04:29:20 [INFO] [views:25] Searching: name=Leag
+2026-02-06 04:29:20 [ERROR] [views:27] {'name': 'Leag'}
+2026-02-06 04:29:20 [INFO] [views:25] Searching: name=Leagu
+2026-02-06 04:29:20 [ERROR] [views:27] {'name': 'Leagu'}
+2026-02-06 04:29:21 [INFO] [views:25] Searching: name=League
+2026-02-06 04:29:21 [ERROR] [views:27] {'name': 'League'}
+2026-02-06 04:29:22 [INFO] [views:25] Searching: name=League of
+2026-02-06 04:29:22 [ERROR] [views:27] {'name': 'League of'}
+2026-02-06 04:29:23 [INFO] [views:25] Searching: name=League of Legends
+2026-02-06 04:29:23 [ERROR] [views:27] {'name': 'League of Legends'}
+2026-02-06 04:29:23 [INFO] [views:98] Searching data: name=League of Legends
+2026-02-06 04:30:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:30:01 [INFO] [data_builder:148] Track created: sid=2BH3j05ZXWr5PR30sW079d name=Crystals
+2026-02-06 04:30:01 [INFO] [data_builder:125] Artist image updating: artist=Isolate.exe sid=6awzrpxHXHtibHWUv86jVI
+2026-02-06 04:30:02 [INFO] [data_builder:73] Album created: sid=0pbn1QDWs2wOehyxQwVhJS name=Crystals
+2026-02-06 04:30:03 [INFO] [data_builder:125] Artist image updating: artist=Mike Shinoda sid=6xBZgSMsnKVmaAxzWEwMSD
+2026-02-06 04:30:03 [INFO] [data_builder:125] Artist image updating: artist=Emily Armstrong sid=2j5MUrKK6wSLdUxy2ijqHC
+2026-02-06 04:30:03 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:30:04 [INFO] [played_today_track:140] Registering tracks plays: tracks=[<Track: Crystals>]
+2026-02-06 04:30:04 [INFO] [played_today_track:115] Registering track play: tid=2BH3j05ZXWr5PR30sW079d uid=5
+2026-02-06 04:30:04 [INFO] [played_today_track:81] Track added to today played: tid=2BH3j05ZXWr5PR30sW079d uid=5
+2026-02-06 04:30:04 [INFO] [played_today_track:100] Track created today played: tid=2BH3j05ZXWr5PR30sW079d uid=5
+2026-02-06 04:30:04 [INFO] [played_today_track:122] Track played today: tid=2BH3j05ZXWr5PR30sW079d uid=5
+2026-02-06 04:30:04 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:30:04 [INFO] [views:25] Searching: name=Heavy Is The Crown
+2026-02-06 04:30:04 [ERROR] [views:27] {'name': 'Heavy Is The Crown'}
+2026-02-06 04:30:05 [INFO] [views:98] Searching data: name=Heavy Is The Crown
+2026-02-06 04:30:10 [INFO] [views:25] Searching: name=Heavy Is The Crown
+2026-02-06 04:30:10 [ERROR] [views:27] {'name': 'Heavy Is The Crown'}
+2026-02-06 04:30:10 [INFO] [views:98] Searching data: name=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)
+2026-02-06 04:30:11 [INFO] [views:25] Searching: name=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)
+2026-02-06 04:30:11 [ERROR] [views:27] {'name': 'Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)'}
+2026-02-06 04:35:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:35:01 [INFO] [data_builder:148] Track created: sid=50qY6EQTt33QAUQnDgbYOS name=Goodbye (from the series Arcane League of Legends)
+2026-02-06 04:35:01 [INFO] [data_builder:125] Artist image updating: artist=Ramsey sid=1se3w7gpZkwcJYgHSPDoQ8
+2026-02-06 04:35:01 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:35:01 [INFO] [data_builder:125] Artist image updating: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2026-02-06 04:35:02 [INFO] [data_builder:73] Album created: sid=7q2FV4zz7UvTr29VroExbu name=Goodbye (from the series Arcane League of Legends)
+2026-02-06 04:35:02 [ERROR] [services:31] Deezer preview fetch error: track=Goodbye (from the series Arcane League of Legends) artist=Arcane
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-06 04:35:02 [INFO] [data_builder:125] Artist image updating: artist=Mike Shinoda sid=6xBZgSMsnKVmaAxzWEwMSD
+2026-02-06 04:35:02 [INFO] [data_builder:125] Artist image updating: artist=Emily Armstrong sid=2j5MUrKK6wSLdUxy2ijqHC
+2026-02-06 04:35:03 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:35:03 [INFO] [played_today_track:140] Registering tracks plays: tracks=[<Track: Goodbye (from the series Arcane League of Legends)>]
+2026-02-06 04:35:03 [INFO] [played_today_track:115] Registering track play: tid=50qY6EQTt33QAUQnDgbYOS uid=5
+2026-02-06 04:35:03 [INFO] [played_today_track:81] Track added to today played: tid=50qY6EQTt33QAUQnDgbYOS uid=5
+2026-02-06 04:35:03 [INFO] [played_today_track:100] Track created today played: tid=50qY6EQTt33QAUQnDgbYOS uid=5
+2026-02-06 04:35:03 [INFO] [played_today_track:122] Track played today: tid=50qY6EQTt33QAUQnDgbYOS uid=5
+2026-02-06 04:35:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 04:40:00 [INFO] [update_user_data:53] update_user_listen_tracks
+2026-02-06 04:40:01 [INFO] [data_builder:148] Track created: sid=4i7HqWsN7iJzsXpsW5h1nb name=Bad Habit - Sped Up
+2026-02-06 04:40:01 [INFO] [data_builder:125] Artist image updating: artist=Steve Lacy sid=57vWImR43h4CaDao012Ofp
+2026-02-06 04:40:01 [INFO] [data_builder:73] Album created: sid=5vg6tTa6EHy0c9NNSOSM8T name=Bad Habit (Sped Up)
+2026-02-06 04:40:02 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:40:02 [INFO] [data_builder:125] Artist image updating: artist=League of Legends sid=47mIJdHORyRerp4os813jD
+2026-02-06 04:40:03 [INFO] [data_builder:125] Artist image updating: artist=Mike Shinoda sid=6xBZgSMsnKVmaAxzWEwMSD
+2026-02-06 04:40:03 [INFO] [data_builder:125] Artist image updating: artist=Emily Armstrong sid=2j5MUrKK6wSLdUxy2ijqHC
+2026-02-06 04:40:03 [INFO] [data_builder:125] Artist image updating: artist=Arcane sid=57nPqD7z62gDdq37US9XJR
+2026-02-06 04:40:03 [INFO] [played_today_track:140] Registering tracks plays: tracks=[<Track: Bad Habit - Sped Up>]
+2026-02-06 04:40:03 [INFO] [played_today_track:115] Registering track play: tid=4i7HqWsN7iJzsXpsW5h1nb uid=5
+2026-02-06 04:40:03 [INFO] [played_today_track:81] Track added to today played: tid=4i7HqWsN7iJzsXpsW5h1nb uid=5
+2026-02-06 04:40:03 [INFO] [played_today_track:100] Track created today played: tid=4i7HqWsN7iJzsXpsW5h1nb uid=5
+2026-02-06 04:40:03 [INFO] [played_today_track:122] Track played today: tid=4i7HqWsN7iJzsXpsW5h1nb uid=5
+2026-02-06 04:40:03 [INFO] [update_user_listened_tracks:38] User listen statistic updated: username=Obscurum
+2026-02-06 21:42:51 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-06 21:42:51 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-06 21:42:57 [INFO] [views:25] Searching: name=Play
+2026-02-06 21:42:57 [ERROR] [views:27] {'name': 'Play'}

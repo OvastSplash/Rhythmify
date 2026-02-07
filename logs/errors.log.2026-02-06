@@ -1,0 +1,34 @@
+2026-02-06 03:45:08 [ERROR] [update_user_listened_tracks:40] Error occurred while updating user listen statistic: Field 'id' expected a number but got PlayedTrackDTO(track=<Track: Harpy Hare>, played_at=datetime.datetime(2026, 2, 6, 3, 42, 50, 570000, tzinfo=datetime.timezone.utc)).
+2026-02-06 03:50:01 [ERROR] [update_user_listened_tracks:40] Error occurred while updating user listen statistic: Field 'id' expected a number but got PlayedTrackDTO(track=<Track: Heavy Water/I'd Rather Be Sleeping>, played_at=datetime.datetime(2026, 2, 6, 3, 49, 29, 876000, tzinfo=datetime.timezone.utc)).
+2026-02-06 04:25:04 [ERROR] [services:31] Deezer preview fetch error: track=Heavy Is The Crown (Original Score) (from the series Arcane League of Legends) artist=Arcane
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-06 04:27:39 [ERROR] [views:27] {'name': 'heavy'}
+2026-02-06 04:27:39 [ERROR] [views:27] {'name': 'heavy is'}
+2026-02-06 04:27:40 [ERROR] [views:27] {'name': 'heavy is the'}
+2026-02-06 04:27:41 [ERROR] [views:27] {'name': 'heavy is the cr'}
+2026-02-06 04:27:43 [ERROR] [views:27] {'name': 'heavy is the crown'}
+2026-02-06 04:28:02 [ERROR] [views:27] {'name': 'Leag'}
+2026-02-06 04:28:03 [ERROR] [views:27] {'name': 'League f'}
+2026-02-06 04:28:03 [ERROR] [views:27] {'name': 'League of'}
+2026-02-06 04:28:06 [ERROR] [views:27] {'name': 'League of Legends'}
+2026-02-06 04:29:20 [ERROR] [views:27] {'name': 'Leag'}
+2026-02-06 04:29:20 [ERROR] [views:27] {'name': 'Leagu'}
+2026-02-06 04:29:21 [ERROR] [views:27] {'name': 'League'}
+2026-02-06 04:29:22 [ERROR] [views:27] {'name': 'League of'}
+2026-02-06 04:29:23 [ERROR] [views:27] {'name': 'League of Legends'}
+2026-02-06 04:30:04 [ERROR] [views:27] {'name': 'Heavy Is The Crown'}
+2026-02-06 04:30:10 [ERROR] [views:27] {'name': 'Heavy Is The Crown'}
+2026-02-06 04:30:11 [ERROR] [views:27] {'name': 'Heavy Is The Crown (Original Score) (from the series Arcane League of Legends)'}
+2026-02-06 04:35:02 [ERROR] [services:31] Deezer preview fetch error: track=Goodbye (from the series Arcane League of Legends) artist=Arcane
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-06 21:42:57 [ERROR] [views:27] {'name': 'Play'}
