@@ -22,7 +22,7 @@ def test_update_top_artists(update_top_artists_manager: UpdateTopArtistsManager,
 #
 #     with patch.object(update_top_tracks_manager, "_get_top_tracks", side_effect=Exception("LastFM API Error")):
 #         with pytest.raises(Exception) as exinfo:
-#             update_top_tracks_manager.run()
+#             update_top_tracks_manager.process_top_tracks()
 #
 #         assert "LastFM API Error" in str(exinfo.value)
 #
@@ -34,7 +34,7 @@ def test_update_top_artists(update_top_artists_manager: UpdateTopArtistsManager,
 #
 #     with patch.object(update_top_tracks_manager, "_convert_to_spotify_data", side_effect=Exception("Spotify API Error")):
 #         with pytest.raises(Exception) as exinfo:
-#             update_top_tracks_manager.run()
+#             update_top_tracks_manager.process_top_tracks()
 #
 #         assert "Spotify API Error" in str(exinfo.value)
 #

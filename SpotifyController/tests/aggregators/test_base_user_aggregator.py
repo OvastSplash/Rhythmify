@@ -27,7 +27,7 @@ def test_run_services_for_each_user_with_mocks(users):
     for user in users:
         service_class_mock.assert_any_call(parent=aggregator, user=user)
 
-    # проверяем, что run() вызвался у каждого экземпляра
+    # проверяем, что process_top_tracks() вызвался у каждого экземпляра
     assert service_instance_mock.run.call_count == len(users)
 
     logger.info("[END] test_run_services_for_each_user_with_mocks")

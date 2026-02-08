@@ -1,13 +1,16 @@
 import logging
 
+from django.db import transaction
+
 from Main.models import FreshPlaylist
+from Main.services.database.repositories.base_repository_class import BaseRepository
 
 from SpotifyController.models.models import Playlist
 
 logger = logging.getLogger(__name__)
 
 
-class FreshPlaylistRegister:
+class FreshPlaylistRegister(BaseRepository):
     """
     Manages the registration and retrieval of fresh playlists.
 
@@ -24,6 +27,7 @@ class FreshPlaylistRegister:
     def __init__(self):
         self.playlist: Playlist | None = None
         self.fresh_playlist: FreshPlaylist | None = None
+        super().__init__()
 
     @property
     def _is_playlist_registered(self) -> bool:
@@ -43,6 +47,7 @@ class FreshPlaylistRegister:
         self.fresh_playlist = fresh_playlist
         return fresh_playlist is not None
 
+    @transaction.atomic
     def _create_fresh_playlist(self) -> FreshPlaylist:
         """
         Creates a fresh playlist based on an existing playlist. This function utilizes
@@ -60,6 +65,8 @@ class FreshPlaylistRegister:
         if self.playlist:
             self.fresh_playlist = FreshPlaylist.objects.create(playlist=self.playlist)
             logger.info(f"Fresh playlist {self.fresh_playlist.playlist.name} created")
+            self.cache.update_fresh_playlists(self.playlist.spotify_id)
+
             return self.fresh_playlist
 
         raise Exception("Playlist not found")
@@ -109,9 +116,25 @@ class FreshPlaylistRegister:
 
         return fresh_playlists
 
-    @classmethod
-    def clear_fresh_playlists(cls) -> None:
+    def clear_fresh_playlists(self, clear_cache: bool = True) -> None:
+        """
+        Clears all fresh playlists from the database and optionally clears the related cache.
+
+        This method deletes all records of fresh playlists stored in the database and
+        logs the operation. Additionally, it provides the option to clear the associated
+        cache, which may be used to optimize performance for fresh playlist queries.
+
+        Parameters:
+            clear_cache (bool): Indicates whether to clear the cache for fresh playlists.
+                Defaults to True.
+
+        Returns:
+            None
+        """
+
         FreshPlaylist.objects.all().delete()
+        self.cache.clear_fresh_playlists() if clear_cache else None
+        logger.info("Cleared fresh playlists")
 
     @classmethod
     def get_fresh_playlists(cls, limit: int = 5) -> list[FreshPlaylist]:

@@ -1,12 +1,12 @@
 from LastFM.services.managers.update_top_artists import UpdateTopArtistsManager
-from LastFM.services.managers.update_top_tracks import UpdateTopTracksManager
+from LastFM.services.managers.update_top_tracks import GetTopTracksHandler
 
 from pytest import fixture
 from unittest.mock import MagicMock, patch
 
 @fixture
-def update_top_tracks_manager(tracks) -> UpdateTopTracksManager:
-    manager = UpdateTopTracksManager()
+def update_top_tracks_manager(tracks) -> GetTopTracksHandler:
+    manager = GetTopTracksHandler()
 
     mock_data = [MagicMock() for _ in range(10)]
     patch.object(manager, "_get_top_tracks", return_value=mock_data).start()

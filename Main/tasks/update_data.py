@@ -2,8 +2,8 @@ import logging
 
 from celery import shared_task
 
-from LastFM.services.managers.update_top_artists import UpdateTopArtistsManager
-from LastFM.services.managers.update_top_tracks import UpdateTopTracksManager
+from Main.services.handlers.handle_update_top_tracks import UpdateTopTracksHandler
+from Main.services.handlers.handle_update_top_artists import UpdateTopArtistsManager
 
 from SpotifyController.services.database.convert_data import ConvertSpotifyDataBaseService
 
@@ -19,19 +19,20 @@ logger = logging.getLogger(__name__)
 def update_top_tracks():
     logger.info("update_top_tracks")
 
-    manager = UpdateTopTracksManager()
-    manager.run()
+    handler = UpdateTopTracksHandler()
+    top_tracks = handler.run()
 
-    logger.info("Top tracks updated")
+    logger.info("Top tracks updated: tracks=%s", top_tracks)
 
 @shared_task
 def update_top_artists():
     logger.info("update_top_artists")
 
-    manager = UpdateTopArtistsManager()
-    manager.run()
+    handler = UpdateTopArtistsManager()
+    top_artists = handler.run()
 
-    logger.info("Top artists updated")
+
+    logger.info("Top artists updated: artists=%s", top_artists)
 
 @shared_task
 def update_recently_replayed_tracks():

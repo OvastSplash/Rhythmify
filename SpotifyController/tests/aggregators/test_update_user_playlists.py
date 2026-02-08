@@ -30,11 +30,11 @@ def test_update_user_playlists_spotify_error(update_user_playlists: UpdateUserPl
     """
     This function tests the behavior of the `UpdateUserPlaylists` functionality when the Spotify
     API encounters an error. Specifically, it simulates a scenario where the Spotify API is down
-    and verifies that the appropriate exception is raised during the execution of the `run` method.
+    and verifies that the appropriate exception is raised during the execution of the `process_top_tracks` method.
 
     Args:
         update_user_playlists (UpdateUserPlaylists): The instance of `UpdateUserPlaylists`
-            whose `run` method is being tested under the faulty Spotify API condition.
+            whose `process_top_tracks` method is being tested under the faulty Spotify API condition.
     """
 
     logger.info("[START] test_update_user_playlists_spotify_error")

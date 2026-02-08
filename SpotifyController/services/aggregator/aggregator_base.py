@@ -28,7 +28,7 @@ class BaseUserAggregator(BaseAggregator):
 
         Raises an exception if the users list is empty. For each user, it initializes
         the given service classes, passing the current user and the parent instance
-        to the service, and then executes their run method.
+        to the service, and then executes their process_top_tracks method.
 
         Raises:
             Exception: If the users list is empty.

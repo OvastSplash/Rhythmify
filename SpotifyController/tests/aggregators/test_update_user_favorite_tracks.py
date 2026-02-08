@@ -9,7 +9,7 @@ logger = logging.getLogger("test")
 
 def test_update_user_favorite_tracks_unit(update_user_favorite_tracks: UpdateUserFavoriteTracks):
     """
-    Test function to validate the behavior of update_user_favorite_tracks.run method under unit testing
+    Test function to validate the behavior of update_user_favorite_tracks.process_top_tracks method under unit testing
     conditions. This test targets the functionality related to fetching, creating, and saving user favorite
     tracks using mocked dependencies.
 

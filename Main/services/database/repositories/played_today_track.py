@@ -2,7 +2,11 @@ import logging
 
 from typing import List
 
+from deezer.resources import track
+from django.db import transaction
+
 from Main.models import PlayedTodayTrack
+from Main.services.database.repositories.base_repository_class import BaseRepository
 
 from SpotifyController.models.models import Track
 from User.models import CustomUser
@@ -10,7 +14,7 @@ from User.models import CustomUser
 logger = logging.getLogger(__name__)
 
 
-class PlayedTodayTrackRegister:
+class PlayedTodayTrackRegister(BaseRepository):
     """
     Repository class for handling operations related to tracks played today.
 
@@ -24,7 +28,7 @@ class PlayedTodayTrackRegister:
     played_track (PlayedTodayTrack | None): The instance representing the played track if it exists.
     """
 
-    def __init__(self, user: CustomUser) -> None:
+    def __init__(self, user: CustomUser | None = None) -> None:
         """
         Initializes an instance of the object.
 
@@ -42,6 +46,7 @@ class PlayedTodayTrackRegister:
         self.user = user
         self.track: Track | None = None
         self.played_track: PlayedTodayTrack | None = None
+        super().__init__()
 
     @property
     def _is_track_today_played(self) -> bool:
@@ -85,6 +90,7 @@ class PlayedTodayTrackRegister:
         else:
             raise ValueError("played_track is None")
 
+    @transaction.atomic
     def _create_played_today_track(self) -> None:
         """
         Creates a new track marked as played today and triggers its update process.
@@ -99,6 +105,8 @@ class PlayedTodayTrackRegister:
         self.played_track = PlayedTodayTrack.objects.create(track=self.track)
         self._update_played_today_track()
 
+        self.cache.update_played_tracks(self.track.spotify_id)
+
         logger.info("Track created today played: tid=%s uid=%s", self.track.spotify_id, self.user.id)
 
     def register_track_play(self, track: Track) -> PlayedTodayTrack:
@@ -112,6 +120,9 @@ class PlayedTodayTrackRegister:
         Returns:
             None
         """
+
+        if self.user is None:
+            raise ValueError("User is not set")
 
         self.track = track
         logger.info("Registering track play: tid=%s uid=%s", self.track.spotify_id, self.user.id)
@@ -149,10 +160,9 @@ class PlayedTodayTrackRegister:
 
         return played_tracks
 
-
-    @classmethod
-    def clear_played_tracks(cls) -> None:
+    def clear_played_tracks(self, clear_cache: bool = True) -> None:
         PlayedTodayTrack.objects.all().delete()
+        self.cache.clear_played_tracks() if clear_cache else None
         logger.info("Cleared played tracks")
 
     @classmethod
