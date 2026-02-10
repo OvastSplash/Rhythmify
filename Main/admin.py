@@ -6,4 +6,3 @@ from Main.models import TopTrack, TopArtist, RecentlyReplayedTrack, PlayedTodayT
 admin.site.register(TopTrack)
 admin.site.register(TopArtist)
 admin.site.register(PlayedTodayTrack)
-admin.site.register(RecentlyReplayedTrack)

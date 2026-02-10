@@ -75,8 +75,7 @@ class GetTopTracksHandler:
             if isinstance(track, Track):
                 converted_tracks.append(track)
             else:
-                constructed_track = self.construct_sp.track_data(track)
-                converted_tracks.append(self._create_track(constructed_track))
+                converted_tracks.append(self._create_track(track))
 
         return converted_tracks
 

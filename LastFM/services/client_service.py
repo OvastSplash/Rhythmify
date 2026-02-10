@@ -86,7 +86,7 @@ class LastFMClientService:
 
     def get_top_tracks(self) -> List[TopItem]:
         try:
-            return self.client.get_top_tracks(limit=10)
+            return self.client.get_top_tracks(limit=50)
         except Exception as e:
             raise Exception(f"Failed to get top tracks {e}")
 

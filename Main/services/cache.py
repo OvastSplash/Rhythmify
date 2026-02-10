@@ -11,17 +11,18 @@ class MainCache:
     RECENTLY_REPLAYED_TRACKS_KEY = "recently_replayed_tracks"
     FRESH_PLAYLISTS_KEY = "fresh_playlists"
 
-    def _set_key_cache(self, key: str, value: List[str]) -> None:
-        cache.set(key, value)
+    def _set_key_cache(self, key: str, value: List[str], timeout: float = None) -> None:
+        cache.set(key, value, timeout)
         logger.info("[Main Cache] %s updated", key)
 
     def _get_key_cache(self, key: str) -> List[str] | None:
         value = cache.get(key)
         if value is not None:
             logger.info("[Main Cache] %s retrieved from cache", key)
-            return value
-        logger.info("[Main Cache] %s not found in cache", key)
-        return None
+        else:
+            logger.info("[Main Cache] %s not found in cache", key)
+
+        return value
 
     def _update_key_cache(self, key: str, value: str) -> None:
         value_list = self._get_key_cache(key) or list()
@@ -35,11 +36,11 @@ class MainCache:
     """ TOP TRACKS """
 
 
-    def set_top_tracks(self, top_tracks_ids: List[str]) -> None:
-        self._set_key_cache(self.TOP_TRACKS_KEY, top_tracks_ids)
+    def set_top_tracks(self, top_tracks_ids: List[str], timeout: float = None) -> None:
+        self._set_key_cache(self.TOP_TRACKS_KEY, top_tracks_ids, timeout)
 
     def get_top_tracks(self) -> List[str] | None:
-        self._get_key_cache(self.TOP_TRACKS_KEY)
+        return self._get_key_cache(self.TOP_TRACKS_KEY)
 
     def update_top_tracks(self, top_track_id: str) -> None:
         self._update_key_cache(self.TOP_TRACKS_KEY, top_track_id)
@@ -51,11 +52,11 @@ class MainCache:
     """ TOP ARTISTS """
 
 
-    def set_top_artists(self, top_artists_ids: List[str]) -> None:
-        self._set_key_cache(self.TOP_ARTISTS_KEY, top_artists_ids)
+    def set_top_artists(self, top_artists_ids: List[str], timeout: float = None) -> None:
+        self._set_key_cache(self.TOP_ARTISTS_KEY, top_artists_ids, timeout)
 
     def get_top_artists(self) -> List[str] | None:
-        self._get_key_cache(self.TOP_ARTISTS_KEY)
+        return self._get_key_cache(self.TOP_ARTISTS_KEY)
 
     def update_top_artists(self, top_artist_id: str) -> None:
         self._update_key_cache(self.TOP_ARTISTS_KEY, top_artist_id)
@@ -67,11 +68,11 @@ class MainCache:
     """ RECENTLY REPLAYED TRACKS """
 
 
-    def set_recently_replayed_tracks(self, tracks_ids: List[str]) -> None:
-        self._set_key_cache(self.RECENTLY_REPLAYED_TRACKS_KEY, tracks_ids)
+    def set_recently_replayed_tracks(self, tracks_ids: List[str], timeout: float = None) -> None:
+        self._set_key_cache(self.RECENTLY_REPLAYED_TRACKS_KEY, tracks_ids, timeout)
 
     def get_recently_replayed_tracks(self) -> List[str] | None:
-        self._get_key_cache(self.RECENTLY_REPLAYED_TRACKS_KEY)
+        return self._get_key_cache(self.RECENTLY_REPLAYED_TRACKS_KEY)
 
     def update_recently_replayed_tracks(self, track_id: str) -> None:
         self._update_key_cache(self.RECENTLY_REPLAYED_TRACKS_KEY, track_id)
@@ -83,11 +84,11 @@ class MainCache:
     """ FRESH PLAYLISTS """
 
 
-    def set_fresh_playlists(self, playlists_ids: List[str]) -> None:
-        self._set_key_cache(self.FRESH_PLAYLISTS_KEY, playlists_ids)
+    def set_fresh_playlists(self, playlists_ids: List[str], timeout: float = None) -> None:
+        self._set_key_cache(self.FRESH_PLAYLISTS_KEY, playlists_ids, timeout)
 
     def get_fresh_playlists(self) -> List[str] | None:
-        self._get_key_cache(self.FRESH_PLAYLISTS_KEY)
+        return self._get_key_cache(self.FRESH_PLAYLISTS_KEY)
 
     def update_fresh_playlists(self, playlist_id: str) -> None:
         self._update_key_cache(self.FRESH_PLAYLISTS_KEY, playlist_id)

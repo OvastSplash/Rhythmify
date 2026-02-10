@@ -1,0 +1,261 @@
+2026-02-08 05:32:36 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist created
+2026-02-08 05:32:37 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 created
+2026-02-08 05:32:37 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 3 created
+2026-02-08 05:32:37 [INFO] [played_today_track:124] Registering track play: tid=Test_Id uid=8
+2026-02-08 05:32:37 [INFO] [played_today_track:87] Track added to today played: tid=Test_Id uid=8
+2026-02-08 05:32:37 [INFO] [played_today_track:150] Registering tracks plays: tracks=[<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>, <Track: Test Track 5>, <Track: Test Track 6>, <Track: Test Track 7>, <Track: Test Track 8>, <Track: Test Track 9>]
+2026-02-08 05:32:37 [INFO] [played_today_track:124] Registering track play: tid=test_id_0 uid=9
+2026-02-08 05:32:37 [INFO] [played_today_track:87] Track added to today played: tid=test_id_0 uid=9
+2026-02-08 05:32:37 [INFO] [played_today_track:124] Registering track play: tid=test_id_0 uid=10
+2026-02-08 05:32:37 [INFO] [played_today_track:87] Track added to today played: tid=test_id_0 uid=10
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 for 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 for 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 for 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 for 3 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 for 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 for 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 for 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 for 4 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 5 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 for 5 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 for 5 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 for 5 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 for 5 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 6 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 for 6 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 for 6 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 for 6 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 for 6 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 0 for 7 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 1 for 7 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 2 for 7 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 3 for 7 created
+2026-02-08 05:35:17 [INFO] [fresh_playlist:67] Fresh playlist Test Playlist 4 for 7 created
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=Test_Id uid=8
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=Test_Id uid=8
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=Test_Id uid=8
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=Test_Id uid=8
+2026-02-08 05:35:17 [INFO] [played_today_track:151] Registering tracks plays: tracks=[<Track: Test Track 0>, <Track: Test Track 1>, <Track: Test Track 2>, <Track: Test Track 3>, <Track: Test Track 4>, <Track: Test Track 5>, <Track: Test Track 6>, <Track: Test Track 7>, <Track: Test Track 8>, <Track: Test Track 9>]
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_0 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_0 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_0 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_0 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_1 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_1 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_1 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_1 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_2 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_2 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_2 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_2 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_3 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_3 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_3 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_3 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_4 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_4 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_5 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_5 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_6 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_6 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_7 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_7 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_8 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_8 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_9 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_9 uid=9
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_0 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_0 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_0 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_0 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_1 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_2 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_3 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_4 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_5 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_6 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_7 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_8 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:110] Track created today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:132] Track played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:125] Registering track play: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:88] Track added to today played: tid=test_id_9 uid=10
+2026-02-08 05:35:17 [INFO] [played_today_track:129] Track already played today: tid=test_id_9 uid=10

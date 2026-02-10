@@ -221,15 +221,7 @@ class UserClient:
         logger.info("Playlist processed: name=%s id=%s", playlist_id, playlist_id)
         return playlist
 
-    def create_user_recommendation_playlist(self, user: CustomUser):
-        user_cache_service = UserCacheService(user_id=user.id)
-        tracks_ids = user_cache_service.get_user_recommended_tracks()
-
-        if tracks_ids is None:
-            user_data = GetUserDataService(user)
-            tracks = user_data.recommend_tracks()
-            tracks_ids = ConvertSpotifyDataBaseService.convert_tracks_to_ids(tracks)
-
+    def create_playlist(self, tracks_ids: List[str]):
         user = self.client.me()
         playlist = self.client.user_playlist_create(
             user=user['id'],

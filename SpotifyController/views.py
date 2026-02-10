@@ -5,7 +5,11 @@ from django.views import View
 from django.shortcuts import redirect
 from SpotifyController.services.spotify_auth import AuthService
 from User.services import UserService
-from SpotifyController.services.client_services import UserClient
+
+from SpotifyController.services.aggregator.aggregator_base import BaseUserAggregator
+from SpotifyController.services.aggregator.create_user_recommendation_playlist import CreateUserRecommendationPlaylist
+from SpotifyController.services.aggregator.create_top_tracks_playlist import CreateTopTracksPlaylist
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -13,6 +17,22 @@ logger = logging.getLogger(__name__)
 class SpotifyLoginView(View):
     @staticmethod
     def get(request):
+        """
+        Handles the OAuth authorization process by generating an authorization URL
+        and redirecting the user to it.
+
+        Parameters
+        ----------
+        request : HttpRequest
+            The HTTP request object received from the client.
+
+        Returns
+        -------
+        HttpResponseRedirect
+            A redirection to the constructed authorization URL.
+
+        """
+
         sp_oauth = AuthService.oauth()
         auth_url = sp_oauth.get_authorize_url()
         return redirect(auth_url)
@@ -20,6 +40,24 @@ class SpotifyLoginView(View):
 class SpotifyCallbackView(View):
     @staticmethod
     def get(request):
+        """
+        Handles Spotify user authentication and updates the user information in the database,
+        including token retrieval and user session management. Redirects the user
+        to appropriate views based on the authentication and user status.
+
+        Parameters:
+            request: HttpRequest
+                The HTTP request object containing user, session, and GET data.
+
+        Raises:
+            None
+
+        Returns:
+            HttpResponseRedirect
+                A redirect response to the appropriate URL, such as 'login',
+                'confirm_register' or 'profile'.
+        """ 
+
         code = request.GET.get('code')
 
         sp_oauth = AuthService.oauth()
@@ -55,7 +93,50 @@ class SpotifyCallbackView(View):
 class CreateSpotifyPlaylistView(View):
     @staticmethod
     def post(request):
+        """
+        Handles a POST request to create a user recommendation playlist for the authenticated user.
+
+        This static method processes a request to create a recommendation playlist for the authenticated user. If the user is authenticated, it initializes a `BaseUserAggregator` with the user, executes the `CreateUserRecommendationPlaylist` service for the user, and returns an HTTP status 200 response. If the user is not authenticated, it returns an HTTP status 401 response.
+
+        Arguments:
+            request: The HTTP request object containing user information.
+
+        Returns:
+            HttpResponse: A response with status 200 if the user is authenticated,
+            otherwise a response with status 401.
+        """
+
         user = request.user
-        sp_client = UserClient(user=user)
-        sp_client.create_user_recommendation_playlist(user)
-        return HttpResponse(status=200)
+
+        if user:
+            base_user_aggregator = BaseUserAggregator(users=[user])
+            base_user_aggregator.run_services_for_each_user(CreateUserRecommendationPlaylist)
+            return HttpResponse(status=200)
+
+        return HttpResponse(status=401)
+
+class CreateSpotifyPlaylistTopTracksView(View):
+    @staticmethod
+    def post(request):
+        """
+        Executes the logic to create top tracks playlists for the authenticated
+        user if available. Returns appropriate HTTP response based on the user's
+        authentication status.
+
+        Args:
+            request (HttpRequest): The HTTP request object.
+
+        Returns:
+            HttpResponse: An HTTP response with the status code 200 if a user is
+            authenticated and the operation is successful, or 401 if the user is
+            not authenticated.
+        """
+
+        user = request.user
+
+        if user:
+            base_user_aggregator = BaseUserAggregator(users=[user])
+            base_user_aggregator.run_services_for_each_user(CreateTopTracksPlaylist)
+            return HttpResponse(status=200)
+
+        return HttpResponse(status=401)

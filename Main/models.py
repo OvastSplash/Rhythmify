@@ -1,4 +1,6 @@
 from django.db import models
+from django.db.models import ManyToManyField, ForeignKey
+
 from SpotifyController.models.models import Track, Artist, Album, Playlist
 from User.models import CustomUser
 

@@ -143,4 +143,4 @@ class TopTrackRegister(BaseRepository):
 
         return TopTrack.objects.aggregate(
             max_pos=Max('position')
-        )["max_post"] or 0
+        )["max_pos"] or 0

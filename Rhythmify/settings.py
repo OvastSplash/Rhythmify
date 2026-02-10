@@ -344,11 +344,11 @@ CELERY_BEAT_SCHEDULE = {
     #     "schedule": crontab(hour="2", minute="0"),
     #     "args": (),
     # },
-    "save_users_listen_tracks-every-day": {
-        "task": "SpotifyController.tasks.update_user_data.update_user_listen_tracks",
-        "schedule": crontab(minute="*/5"),
-        "args": (),
-    },
+    # "save_users_listen_tracks-every-day": {
+    #     "task": "SpotifyController.tasks.update_user_data.update_user_listen_tracks",
+    #     "schedule": crontab(minute="*/5"),
+    #     "args": (),
+    # },
     # "update-artist-data-every-day":{
     #     "task": "SpotifyController.tasks.update_user_data.update_artist_data",
     #     "schedule": crontab(hour="3"),
@@ -364,23 +364,23 @@ CELERY_BEAT_SCHEDULE = {
     #     "schedule": crontab(minute="*"),
     #     "args": (),
     # },
-    # "update_top_tracks-every-day": {
-    #     "task": "Main.tasks.update_data.update_top_tracks",
-    #     "schedule": crontab(minute="*"),
-    # },
-    # "update_top_artists-every-day": {
-    #     "task": "Main.tasks.update_data.update_top_artists",
-    #     "schedule": crontab(minute="*"),
-    # },
+    "update_top_tracks-every-day": {
+        "task": "Main.tasks.update_data.update_top_tracks",
+        "schedule": crontab(minute="*/5"),
+    },
+    "update_top_artists-every-day": {
+        "task": "Main.tasks.update_data.update_top_artists",
+        "schedule": crontab(minute="*/5"),
+    },
     # "clear_all_data-every-day": {
     #     "task": "Main.tasks.clear_data.clear_all_data",
     #     "schedule": crontab(hour="2"),
     # },
-    "update_recently_replayed_tracks-every-five-minutes": {
-        "task": "Main.tasks.update_data.update_recently_replayed_tracks",
-        "schedule": crontab(minute="*/5"),
-        "args": (),
-    },
+    # "update_recently_replayed_tracks-every-five-minutes": {
+    #     "task": "Main.tasks.update_data.update_recently_replayed_tracks",
+    #     "schedule": crontab(minute="*/5"),
+    #     "args": (),
+    # },
 }
 
 CELERY_TASK_ROUTES = {

@@ -1,8 +1,6 @@
 import logging
 
 from typing import List
-
-from deezer.resources import track
 from django.db import transaction
 
 from Main.models import PlayedTodayTrack
@@ -168,3 +166,7 @@ class PlayedTodayTrackRegister(BaseRepository):
     @classmethod
     def get_replayed_tracks(cls, limit: int = 5, min_play: int = 3) -> list[PlayedTodayTrack]:
         return list(PlayedTodayTrack.objects.filter(play_count__gte=min_play).order_by('-play_count')[:limit])
+
+    @classmethod
+    def get_most_played_tracks(cls, limit: int = 5) -> list[PlayedTodayTrack]:
+        return list(PlayedTodayTrack.objects.order_by('-play_count')[:limit])
