@@ -29,6 +29,7 @@ class AuthService:
                 redirect_uri=REDIRECT_URL,
                 scope=SCOPE,
                 cache_handler=NoCacheHandler(),
+                show_dialog=True,
             )
         except Exception as e:
             logging.getLogger(__name__).exception("Spotify OAuth init error")

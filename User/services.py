@@ -1,3 +1,5 @@
+import logging
+
 from typing import Optional, Union
 
 from django.contrib.postgres.lookups import TrigramSimilar
@@ -12,6 +14,8 @@ from dataclasses import dataclass
 
 import requests
 import os
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class SpotifyUserUpdateResult:
@@ -53,6 +57,17 @@ class UserService:
         user_exists = CustomUser.objects.filter(spotify_id=spotify_id).first()
 
         if user_exists and not user:
+            logger.info("User already exists: user_id=%s", user_exists.id)
+
+            existed_user = CustomUser.objects.get(spotify_id=spotify_id)
+
+            if not existed_user.access_token and not existed_user.refresh_token:
+                existed_user.access_token = access_token
+                existed_user.refresh_token = refresh_token
+                existed_user.token_expires_at = AuthService.convert_expires_at(expires_at)
+
+                existed_user.save()
+
             return SpotifyUserUpdateResult(
                 is_existing=True,
                 user=user_exists

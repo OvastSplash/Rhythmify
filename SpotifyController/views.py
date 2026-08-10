@@ -87,7 +87,6 @@ class SpotifyCallbackView(View):
             logger.info("User logged in: login=%s user_id=%s", result.user.user_login, result.user.id)
 
         logger.debug("Redirecting to profile: user_id=%s", result.user.id)
-
         return redirect('profile', user_id = result.user.id)
 
 class CreateSpotifyPlaylistView(View):

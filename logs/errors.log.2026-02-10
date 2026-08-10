@@ -1,0 +1,737 @@
+2026-02-10 06:19:14 [ERROR] [log:253] Internal Server Error: /spotify/create_playlist
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/SpotifyController/views.py", line 65, in post
+    base_user_aggregator.run_services_for_each_user(CreateUserRecommendationPlaylist)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/aggregator/aggregator_base.py", line 51, in run_services_for_each_user
+    service.run()
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/aggregator/create_user_recommendation_playlist.py", line 18, in run
+    self.sp_client.create_playlist(tracks=recommended_tracks)
+TypeError: UserClient.create_playlist() got an unexpected keyword argument 'tracks'
+2026-02-10 06:52:13 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 07:05:03 [ERROR] [services:31] Deezer preview fetch error: track=Opalite - Life Is A Song Acoustic Version artist=Taylor Swift
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-10 07:05:24 [ERROR] [services:31] Deezer preview fetch error: track=BIRDS OF A FEATHER artist=Billie Eilish
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-10 07:05:26 [ERROR] [services:31] Deezer preview fetch error: track=luther (with sza) artist=Kendrick Lamar
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/Deezer/services.py", line 20, in _get_preview_by_name
+    review_url = self.client.search(track=track_name, artist=artist_name)[0].preview
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/deezer/pagination.py", line 57, in __getitem__
+    return self.__elements[index]
+IndexError: list index out of range
+2026-02-10 07:06:39 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 07:43:56 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 07:55:57 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 07:58:30 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 37, in get
+    print(self._top_tracks)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 07:59:23 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:17:00 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:18:03 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:18:35 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:20:26 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:21:35 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Main.views.view didn't return an HttpResponse object. It returned None instead.
+2026-02-10 08:21:54 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:21:55 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:22:06 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:26:17 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:26:24 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:26:24 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:28:18 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:28:26 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:28:30 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:28:55 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 38, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:34:53 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:35:11 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:35:22 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 40, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:41:23 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 42, in get
+    "top_tracks": self._top_tracks,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 20, in _top_tracks
+    return ConvertSpotifyDataBaseService.convert_ids_to_tracks(tracks_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 15, in convert_ids_to_tracks
+    tracks = {track.spotify_id: track for track in Track.objects.filter(spotify_id__in=spotify_ids)}
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1646, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1678, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1588, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1415, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 536, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/db/models/lookups.py", line 311, in get_prep_lookup
+    for rhs_value in self.rhs:
+TypeError: 'NoneType' object is not iterable
+2026-02-10 08:44:37 [ERROR] [log:253] Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 44, in get
+    "fresh_playlists": self._fresh_playlist,
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 30, in _fresh_playlist
+    return ConvertSpotifyDataBaseService.convert_ids_to_playlists(playlists_ids)
+  File "/Users/obscurum/Rhythmify/SpotifyController/services/database/convert_data.py", line 29, in convert_ids_to_playlists
+    return [Playlist.objects.filter(spotify_id=spotify_id).first() for spotify_id in spotify_ids]
+TypeError: 'NoneType' object is not iterable
+2026-02-10 09:26:14 [ERROR] [log:253] Internal Server Error: /chat/
+Traceback (most recent call last):
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/views/generic/base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/obscurum/Rhythmify/Main/views.py", line 95, in get
+    return render(request, "Chat/chat.html", context)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/obscurum/Rhythmify/.venv/lib/python3.10/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Chat/chat.html

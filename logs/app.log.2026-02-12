@@ -1,0 +1,77 @@
+2026-02-12 15:28:17 [INFO] [cache:21] [Main Cache] top_tracks retrieved from cache
+2026-02-12 15:28:17 [INFO] [cache:21] [Main Cache] top_artists retrieved from cache
+2026-02-12 15:28:17 [INFO] [cache:21] [Main Cache] fresh_playlists retrieved from cache
+2026-02-12 15:28:39 [INFO] [spotify_auth:138] User tokens refreshed: username=Obscurum
+2026-02-12 15:28:39 [INFO] [cache:21] [Main Cache] top_tracks retrieved from cache
+2026-02-12 15:28:40 [INFO] [client_services:233] Playlist created: name=Obscurum Recommendation Playlist id=39fw3ymjmTEoZ96uGsDToV
+2026-02-12 15:28:40 [INFO] [client_services:207] Playlist processing: name=39fw3ymjmTEoZ96uGsDToV id=39fw3ymjmTEoZ96uGsDToV
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=DtMF add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Stateside + Zara Larsson add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Fame is a Gun add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Opalite - Life Is A Song Acoustic Version add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=End of Beginning add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=NUEVAYoL add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=BAILE INoLVIDABLE add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Manchild add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Man I Need add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=WHERE IS MY HUSBAND! add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Midnight Sun add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=So Easy (To Fall In Love) add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Aperture add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=The Fate of Ophelia add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=back to friends add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=No One Noticed add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Good Luck, Babe! add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=VOY A LLeVARTE PA PR add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Sienna add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=EoO add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=WILDFLOWER add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=The Less I Know The Better add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Lush Life add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Creep add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=4 Raws add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Tears add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=I Thought I Saw Your Face Today add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=BIRDS OF A FEATHER add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=luther (with sza) add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Let Down add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=505 add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Dracula add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Gabriela add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Flashing Lights add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Lovers Rock add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Duvet add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Sports car add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=E85 add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=PIXELATED KISSES add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Espresso add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=12 to 12 add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Body add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Lover, You Should've Come Over add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=SLOW DANCING IN THE DARK add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=The Subway add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Every Breath You Take add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Mr. Brightside add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Sweater Weather add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Iris add=True
+2026-02-12 15:28:41 [INFO] [data_builder:208] Track added to playlist: pid=39fw3ymjmTEoZ96uGsDToV tid=Von dutch add=True
+2026-02-12 15:28:41 [INFO] [client_services:221] Playlist processed: name=39fw3ymjmTEoZ96uGsDToV id=39fw3ymjmTEoZ96uGsDToV
+2026-02-12 15:28:41 [INFO] [fresh_playlist:67] Fresh playlist Obscurum Recommendation Playlist created
+2026-02-12 15:28:41 [INFO] [cache:21] [Main Cache] fresh_playlists retrieved from cache
+2026-02-12 15:28:41 [INFO] [cache:16] [Main Cache] fresh_playlists updated
+2026-02-12 15:29:11 [INFO] [cache:21] [Main Cache] top_tracks retrieved from cache
+2026-02-12 15:29:11 [INFO] [cache:21] [Main Cache] top_artists retrieved from cache
+2026-02-12 15:29:11 [INFO] [cache:21] [Main Cache] fresh_playlists retrieved from cache
+2026-02-12 15:29:57 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-12 15:29:57 [INFO] [views:52] User playlists loaded: has_stats=True
+2026-02-12 15:30:16 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['1eXForund74SKoJT146u5i']
+2026-02-12 15:30:17 [INFO] [data_builder:208] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=PLAY HARD add=True
+2026-02-12 15:30:17 [INFO] [client_services:282] Track added to playlist: pid=1eXForund74SKoJT146u5i tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-12 15:30:22 [INFO] [views:76] Track playlist update: track_id=2HekvRoXXGZwhDaU8sbQg7 playlists=['1eXForund74SKoJT146u5i']
+2026-02-12 15:30:22 [INFO] [data_builder:210] Track removed from playlist: pid=1eXForund74SKoJT146u5i tid=PLAY HARD add=False
+2026-02-12 15:30:22 [INFO] [client_services:288] Track removed from playlist: pid=1eXForund74SKoJT146u5i tid=2HekvRoXXGZwhDaU8sbQg7
+2026-02-12 15:30:48 [INFO] [cache:21] [Main Cache] top_tracks retrieved from cache
+2026-02-12 15:30:48 [INFO] [cache:21] [Main Cache] top_artists retrieved from cache
+2026-02-12 15:30:48 [INFO] [cache:21] [Main Cache] fresh_playlists retrieved from cache
+2026-02-12 15:30:53 [INFO] [views:51] User statistics loaded: has_stats=True
+2026-02-12 15:30:53 [INFO] [views:52] User playlists loaded: has_stats=True

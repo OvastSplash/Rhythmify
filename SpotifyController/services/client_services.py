@@ -223,12 +223,21 @@ class UserClient:
 
     def create_playlist(self, tracks_ids: List[str]):
         user = self.client.me()
-        playlist = self.client.user_playlist_create(
-            user=user['id'],
-            name=f"{user['display_name']} Recommendation Playlist",
-            public=True,
-            description=f"Recommendation for {user['display_name']} playlist",
-        )
+
+        # OLD VERSION
+        # playlist = self.client.user_playlist_create(
+        #     user=user['id'],
+        #     name=f"{user['display_name']} Recommendation Playlist",
+        #     public=True,
+        #     description=f"Recommendation for {user['display_name']} playlist",
+        # )
+
+        data = {
+            "name": f"{user['display_name']} Recommendation Playlist",
+            "public": True,
+            "description": f"Recommendation for {user['display_name']} playlist",
+        }
+        playlist = self.client._post("me/playlists", payload=data)
 
         logger.info("Playlist created: name=%s id=%s", playlist["name"], playlist["id"])
 
